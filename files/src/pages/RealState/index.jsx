@@ -83,19 +83,19 @@ export default function RealState() {
   const [maxPriceInputValue, setmaxPriceInputValue] = useState(0);
 
   useEffect(() => {
-    if (localStorage.cityData !== "" && cityData === "") {
+    if (localStorage?.cityData && cityData === "") {
       setcityData(localStorage.cityData);
     }
-    if (localStorage.typeData !== "" && typeData === "") {
+    if (localStorage?.typeData && typeData === "") {
       settypeData(localStorage.typeData);
     }
-    if (localStorage.BedroomData !== "" && BedroomData === "") {
+    if (localStorage?.BedroomData && BedroomData === "") {
       setBedroomData(localStorage.BedroomData);
     }
-    if (localStorage.minPriceInputValue !== "" && minPriceInputValue === 0) {
+    if (localStorage?.minPriceInputValue && minPriceInputValue === 0) {
       setminPriceInputValue(localStorage.minPriceInputValue);
     }
-    if (localStorage.maxPriceInputValue !== "" && maxPriceInputValue === 0) {
+    if (localStorage?.maxPriceInputValue && maxPriceInputValue === 0) {
       setmaxPriceInputValue(localStorage.maxPriceInputValue);
     }
   }, []);
