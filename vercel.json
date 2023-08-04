@@ -1,14 +1,14 @@
 {
   "builds": [
     {
-      "src": "./stripe/server.js",
+      "src": "./server.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/.*",
-      "dest": "stripe/server.js"
+      "dest": "server.js"
     }
   ]
 }

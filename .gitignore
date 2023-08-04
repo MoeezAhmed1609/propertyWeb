@@ -1,11 +1,12 @@
 /stripe/node_modules
 /files/node_modules
+/node_modules
+.env
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /files/.pnp
 /files/.pnp.js
-
 # testing
 /files/coverage
 
