@@ -108,7 +108,6 @@ export default function RealState() {
     maxPriceInputValue,
   });
 
-
   return (
     <div>
       <RealStateHeader
@@ -122,6 +121,7 @@ export default function RealState() {
         setBedroomData={setBedroomData}
         setminPriceInputValue={setminPriceInputValue}
         setmaxPriceInputValue={setmaxPriceInputValue}
+        scroll={true}
       />
       <RealStatesearchdiv
         cityData={cityData}

@@ -31,6 +31,7 @@ export default function RealStateHeader({
   maxPriceInputValue,
   setsearchModelToggle,
   searchModelToggle,
+  scroll
 }) {
   const [openLocation, setOpenLocation] = useState(false);
   const [openType, setOpenopenType] = useState(false);
@@ -165,7 +166,7 @@ export default function RealStateHeader({
     <div
       id="search-filter"
       className={`showRefId ${
-        scrollValue > 120 ? `${state ? "" : "fixed"}` : ""
+        scroll && scrollValue > 120 ? `${state ? "" : "fixed"}` : ""
       } `}
     >
       {searchModelToggle && (

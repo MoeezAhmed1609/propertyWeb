@@ -478,6 +478,7 @@ export default function Header() {
             setBedroomData={setBedroomData}
             setminPriceInputValue={setminPriceInputValue}
             setmaxPriceInputValue={setmaxPriceInputValue}
+            scroll={false}
           />
         </Box>
       </header>

@@ -1,7 +1,6 @@
 import {
   Box,
   Button,
-  Grid,
   Paper,
   Typography,
   TextField,
@@ -75,7 +74,7 @@ const Stripe = () => {
   const [success, setSuccess] = useState(false);
 
   // Submit Function
-  const handleSubmit = async (e, elements, stripe) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const { error, paymentMethod } = await stripe.createPaymentMethod({
       type: "card",
@@ -246,7 +245,7 @@ const Stripe = () => {
             >
               <ElementsConsumer>
                 {({ elements, stripe }) => (
-                  <form onSubmit={(e) => handleSubmit(e, elements, stripe)}>
+                  <form onSubmit={(e) => handleSubmit(e)}>
                     {enquiries?.map((item, i, arr) => {
                       return (
                         <Box
