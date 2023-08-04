@@ -12,6 +12,7 @@
 /files/Work2.zip
 
 # production
+/stripe/.env
 
 
 /package-lock.json
