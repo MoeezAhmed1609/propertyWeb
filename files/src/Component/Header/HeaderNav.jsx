@@ -20,21 +20,21 @@ export default function HeaderNav() {
   const dispatch = useDispatch();
 
   const AboutToggle = () => {
-    setAboutTurkeyToggle(!AboutTurkeyToggle);
+    setAboutTurkeyToggle(true);
     setBuyerGuide(false);
     setActive(false);
     dispatch(AboutTurkeyNavHandle(!AboutTurkeyToggle));
   };
 
   const BuyerToggle = () => {
-    setBuyerGuide(!BuyerGuide);
+    setBuyerGuide(true);
     setAboutTurkeyToggle(false);
     setActive(false);
     dispatch(AboutTurkeyNavHandle(!BuyerGuide));
   };
 
   const AboutUsToggle = () => {
-    setActive(!Active);
+    setActive(true);
     setAboutTurkeyToggle(false);
     setBuyerGuide(false);
     dispatch(AboutTurkeyNavHandle(!Active));
@@ -69,7 +69,7 @@ export default function HeaderNav() {
               fontWeight: location.pathname === "/" ? "bold" : "normal",
             }}
           >
-            Home
+            <b>Home</b>
           </Link>
         </li>
         <li>
@@ -88,9 +88,10 @@ export default function HeaderNav() {
         {NavigationData.map((item) => {
           return (
             <li
-              className={`has-child ${
-                AboutTurkeyToggle ? "active z-auto" : ""
-              }`}
+              className={`has-child `}
+              style={{ zIndex: 999999 }}
+              onMouseOver={() => setAboutTurkeyToggle(true)}
+              onMouseOut={() => setAboutTurkeyToggle(false)}
             >
               <Link
                 to="/USA"
@@ -100,20 +101,18 @@ export default function HeaderNav() {
                   fontWeight: location.pathname === "/USA" ? "bold" : "normal",
                 }}
               >
-                {item.title}
+                <b>{item.title}</b>
               </Link>
               <div className="DesktopNav">
-                {AboutTurkeyToggle ? (
-                  <FiChevronUp
-                    onClick={AboutToggle}
-                    className="IconMove cursor-pointer fa fa-angle-down"
-                  />
+                <FiChevronDown className="IconMove cursor-pointer fa fa-angle-down" />
+                {/* {AboutTurkeyToggle ? (
+                  
                 ) : (
                   <FiChevronDown
-                    onClick={AboutToggle}
+                    onMouseOut={() => setAboutTurkeyToggle(false)}
                     className="IconMove cursor-pointer fa fa-angle-down"
                   />
-                )}
+                )} */}
               </div>
 
               <div className="MobileNav">
@@ -138,7 +137,7 @@ export default function HeaderNav() {
                             className="fa fa-angle-down"
                           />
                         </Link>
-                        {item.innerLinks.map((item) => {
+                        {item.innerLinks.map((item, i) => {
                           return (
                             <div
                               id="toggleRegion"
@@ -146,7 +145,7 @@ export default function HeaderNav() {
                             >
                               <ul className="no-bullets">
                                 <li className="has-child">
-                                  <Link to="" title="About Antalya">
+                                  <Link title="About Antalya">
                                     {item.innerLinksText}
                                     <i className="fa fa-angle-right" />
                                   </Link>
@@ -154,24 +153,39 @@ export default function HeaderNav() {
                                     <ul className="no-bullets">
                                       <li>
                                         <Link
-                                          to=""
-                                          title="Konyaalti beach best of both worlds"
+                                          to={`/about/${i + 1}`}
+                                          state={{
+                                            data: {
+                                              title:
+                                                "Konyaalti beach best of both worlds",
+                                            },
+                                          }}
                                         >
                                           Konyaalti beach best of both worlds
                                         </Link>
                                       </li>
                                       <li>
                                         <Link
-                                          to=""
-                                          title="Antalya old city or Kaleici of Antalya"
+                                          to={`/about/${i + 1}`}
+                                          state={{
+                                            data: {
+                                              title:
+                                                "Antalya old city or Kaleici of Antalya",
+                                            },
+                                          }}
                                         >
                                           Antalya old city or Kaleici of Antalya
                                         </Link>
                                       </li>
                                       <li>
                                         <Link
-                                          to=""
-                                          title="The vibrant Lara beach district"
+                                          to={`/about/${i + 1}`}
+                                          state={{
+                                            data: {
+                                              title:
+                                                "The vibrant Lara beach district",
+                                            },
+                                          }}
                                         >
                                           The vibrant Lara beach district
                                         </Link>
@@ -192,7 +206,11 @@ export default function HeaderNav() {
           );
         })}
 
-        <li className={`has-child  ${BuyerGuide ? "active z-auto" : ""}`}>
+        <li
+          className={`has-child  ${BuyerGuide ? "active z-auto" : ""}`}
+          onMouseOver={() => setBuyerGuide(true)}
+          onMouseOut={() => setBuyerGuide(false)}
+        >
           <Link
             to="/buyer"
             title="Buyer Guide"
@@ -204,17 +222,10 @@ export default function HeaderNav() {
             <b>Buyer Guide</b>
           </Link>
           <div className="DesktopNav">
-            {BuyerGuide ? (
-              <FiChevronUp
-                onClick={BuyerToggle}
-                className="IconMove cursor-pointer fa fa-angle-down"
-              />
-            ) : (
-              <FiChevronDown
-                onClick={BuyerToggle}
-                className="IconMove cursor-pointer fa fa-angle-down"
-              />
-            )}
+            <FiChevronDown
+              // onClick={BuyerToggle}
+              className="IconMove cursor-pointer fa fa-angle-down"
+            />
           </div>
 
           <div className="MobileNav">
@@ -434,7 +445,11 @@ export default function HeaderNav() {
             </ul>
           </div>
         </li>
-        <li className={`has-child ${Active ? "active z-50" : ""}`}>
+        <li
+          className={`has-child ${Active ? "active z-50" : ""}`}
+          onMouseOver={() => setActive(true)}
+          onMouseOut={() => setActive(false)}
+        >
           <Link
             to="/aboutusguide"
             title="About Us"
@@ -448,17 +463,10 @@ export default function HeaderNav() {
             <b>About Us</b>
           </Link>
           <div className="DesktopNav">
-            {Active ? (
-              <FiChevronUp
-                onClick={AboutUsToggle}
-                className="IconMove cursor-pointer fa fa-angle-down"
-              />
-            ) : (
-              <FiChevronDown
-                onClick={AboutUsToggle}
-                className="IconMove cursor-pointer fa fa-angle-down"
-              />
-            )}
+            <FiChevronDown
+              // onClick={AboutUsToggle}
+              className="IconMove cursor-pointer fa fa-angle-down"
+            />
           </div>
 
           <div className="MobileNav">

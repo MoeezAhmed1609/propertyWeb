@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d4ef4877.css",
-    "main.js": "/static/js/main.9bde0975.js",
+    "main.css": "/static/css/main.f5090fe4.css",
+    "main.js": "/static/js/main.db51b461.js",
     "static/js/765.50f82f6f.chunk.js": "/static/js/765.50f82f6f.chunk.js",
     "static/media/Feature.jpg": "/static/media/Feature.309af511116035f843a4.jpg",
     "static/media/offices_1.png": "/static/media/offices_1.e9815002854fcfc4171f.png",
@@ -48,10 +48,10 @@
     "static/media/CitizenshipAppFee_Icon.svg": "/static/media/CitizenshipAppFee_Icon.e61d347b5ea804591e584022af44778a.svg",
     "static/media/PT-coins.svg": "/static/media/PT-coins.a32446f5ddf0dd1b4c33f1a053e3be7c.svg",
     "static/media/contact-form-icon.svg": "/static/media/contact-form-icon.a1fc954cafbeff3e2ee6f25b905fff32.svg",
+    "index.html": "/index.html",
     "static/media/bedrooms.svg": "/static/media/bedrooms.924cfaa3f6b56e71879241a28d6cf291.svg",
     "static/media/home-logo.svg": "/static/media/home-logo.cba32006ba0406ec361e1da3fd198c25.svg",
     "static/media/youtube-playicon.svg": "/static/media/youtube-playicon.ff0abd8d4c7ec6489e74141c997935ba.svg",
-    "index.html": "/index.html",
     "static/media/bathrooms.svg": "/static/media/bathrooms.bc3824f58864f15dd364cc4ec4821db8.svg",
     "static/media/questionmark.svg": "/static/media/questionmark.538b486e4f297e8dd1ccab1b7908bd81.svg",
     "static/media/whatsapp-brands.svg": "/static/media/whatsapp-brands.cd133a71154c01f0f9486e7ea6e5b19f.svg",
@@ -65,12 +65,12 @@
     "static/media/share-alt-solid.-gold.svg": "/static/media/share-alt-solid.-gold.454c1a0f2bed13988ee5a2ad5c4007f1.svg",
     "static/media/location-gold-filled.svg": "/static/media/location-gold-filled.fbdef2176de9cf9eecb243c805972f8e.svg",
     "static/media/path387.svg": "/static/media/path387.1d8c978e21a6a6e69da218b2db87e89c.svg",
-    "main.d4ef4877.css.map": "/static/css/main.d4ef4877.css.map",
-    "main.9bde0975.js.map": "/static/js/main.9bde0975.js.map",
+    "main.f5090fe4.css.map": "/static/css/main.f5090fe4.css.map",
+    "main.db51b461.js.map": "/static/js/main.db51b461.js.map",
     "765.50f82f6f.chunk.js.map": "/static/js/765.50f82f6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4ef4877.css",
-    "static/js/main.9bde0975.js"
+    "static/css/main.f5090fe4.css",
+    "static/js/main.db51b461.js"
   ]
 }

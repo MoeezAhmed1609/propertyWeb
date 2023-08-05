@@ -574,9 +574,9 @@ const RealState_search_div = ({
             );
           })}
         </div>
-        <Link to="#" className="show_hidev1">
+        {/* <Link to="#" className="show_hidev1">
           Continue Reading
-        </Link>
+        </Link> */}
       </div>
       <div className="wrap-dis-9 wrap-tab-9 wrap-mob-9 clearfix mt-3">
         <div className="row cardRow">
@@ -670,9 +670,9 @@ const RealState_search_div = ({
             );
           })}
         </div>
-        <Link href="#" className="show_hidev1">
+        {/* <Link href="#" className="show_hidev1">
           Continue Reading
-        </Link>
+        </Link> */}
       </div>{" "}
       <div style={{ display: "none" }}>
         <div className="form_popup" id="data">

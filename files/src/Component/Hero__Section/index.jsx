@@ -30,6 +30,7 @@ import useFetch from "../../Hooks/useFetch";
 import { useEffect } from "react";
 import { PropertyFilter } from "../../Redux/Action/PropertyFilter";
 import ColumnBox from "../../ReUseAbleComponent/ColumnBox";
+import StyledButton from "../../ReUseAbleComponent/StyledButton";
 
 export default function HeroSection() {
   const [locationtoggle, setLocationToggle] = React.useState(true);
@@ -1132,7 +1133,8 @@ export default function HeroSection() {
                     </Box>
                   </Box>
                   <Box className="col-lg-2 col-md-4 col-12 mb-4">
-                    <Link
+                    <StyledButton title={'Search'} onClick={() => handleSearchClick()}  />
+                    {/* <Link
                       id="createSearchData"
                       className="bg-pt-dark-red createSearchData"
                       type="button"
@@ -1140,7 +1142,7 @@ export default function HeroSection() {
                       style={{ padding: "5px 0" }}
                     >
                       <span className="me-md-3 ms-md-0 mx-auto text-white fs-md-6 fs-5">
-                        SEARCH
+                        SEARCH H
                       </span>
                       <img
                         src={SearchArrow}
@@ -1150,7 +1152,7 @@ export default function HeroSection() {
                         height={150}
                         loading="lazy"
                       />
-                    </Link>
+                    </Link> */}
                   </Box>
                 </Box>
               </Box>

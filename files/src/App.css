@@ -33,9 +33,10 @@ audio:not([controls]) {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -77,7 +78,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1em
 }
 
@@ -138,7 +139,7 @@ button,
 input,
 select,
 textarea {
-  font-family: inherit;
+  font-family: 'Poppins', sans-serif;
   font-size: 100%;
   margin: 0
 }
@@ -200,7 +201,7 @@ table {
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* @font-face {
-  font-family: 'FontAwesome';
+  font-family: 'Poppins', sans-serif: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot?v=4.5.0");
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
   font-weight: normal;
@@ -3134,7 +3135,7 @@ table {
 .sp-right-thumbnails.sp-has-pointer .sp-selected-thumbnail:after {
   content: '\25C0';
   position: absolute;
-  font-family: Arial;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 1;
   color: #F00;
@@ -3173,7 +3174,7 @@ table {
 .sp-left-thumbnails.sp-has-pointer .sp-selected-thumbnail:after {
   content: '\25BA';
   position: absolute;
-  font-family: Arial;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 1;
   color: #F00;
@@ -3212,7 +3213,7 @@ table {
 .sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail:after {
   content: '\25B2';
   position: absolute;
-  font-family: Arial;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 1;
   color: #F00;
@@ -3242,7 +3243,7 @@ table {
 .sp-top-thumbnails.sp-has-pointer .sp-selected-thumbnail:after {
   content: '\25BC';
   position: absolute;
-  font-family: Arial;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 1;
   color: #F00;
@@ -6221,7 +6222,7 @@ img.fr-shadow,
 
 .fr-view span.fr-emoticon {
   font-weight: normal;
-  font-family: "Apple Color Emoji", "Segoe UI Emoji", "NotoColorEmoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+  font-family: 'Poppins', sans-serif;
   display: inline;
   line-height: 0
 }
@@ -6271,7 +6272,7 @@ img.fr-shadow,
   background-clip: padding-box;
   background: #f5f5f5;
   padding: 10px;
-  font-family: "Courier New", Courier, monospace
+  font-family: 'Poppins', sans-serif
 }
 
 .fr-view .fr-class-transparency {
@@ -6848,7 +6849,7 @@ iframe.fr-iframe {
   color: #ffffff;
   font-size: 11px;
   line-height: 22px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-transition: opacity 0.2s ease 0s;
   -moz-transition: opacity 0.2s ease 0s;
   -ms-transition: opacity 0.2s ease 0s;
@@ -7277,7 +7278,7 @@ body.prevent-scroll.fr-mobile {
 
 .fr-modal {
   color: #222222;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   position: fixed;
   overflow-x: auto;
   overflow-y: scroll;
@@ -7474,7 +7475,7 @@ body.prevent-scroll.fr-mobile {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -7841,7 +7842,7 @@ body.prevent-scroll.fr-mobile {
   background: #ffffff;
   position: relative;
   z-index: 4;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -8089,7 +8090,7 @@ span.fr-sr-only {
   color: #cccccc;
   content: attr(data-chars);
   font-size: 15px;
-  font-family: "Times New Roman", Georgia, Serif;
+  font-family: 'Poppins', sans-serif;
   z-index: 1;
   background: #ffffff;
   border-top: solid 1px #ebebeb;
@@ -8149,7 +8150,7 @@ textarea.fr-code {
   border: none;
   padding: 10px;
   margin: 0px;
-  font-family: "Courier New", monospace;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   background: #ffffff;
   color: #000000;
@@ -8382,7 +8383,7 @@ textarea.fr-code {
 
 .fr-popup .fr-color-set>span .fr-selected-color {
   color: #ffffff;
-  font-family: FontAwesome;
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 32px;
@@ -8476,7 +8477,7 @@ textarea.fr-code {
   line-height: 1;
   cursor: default;
   font-weight: normal;
-  font-family: "Apple Color Emoji", "Segoe UI Emoji", "NotoColorEmoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+  font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box
@@ -10002,7 +10003,7 @@ a.fr-file {
 a.fr-file:before {
   position: relative;
   display: inline-block;
-  font-family: FontAwesome;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -10998,7 +10999,7 @@ body.compensate-for-scrollbar {
   top: 0px;
   left: 0px;
   float: right;
-  font-family: Arial;
+  font-family: 'Poppins', sans-serif;
   font-size: 17px;
   background-color: #d1d1d1;
   color: #4c4c4c;
@@ -11207,7 +11208,7 @@ body.compensate-for-scrollbar {
 
 .arthref .icon-container ul li span {
   text-align: center;
-  font-family: Arial;
+  font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.9);
@@ -11720,26 +11721,26 @@ body.compensate-for-scrollbar {
 }
 
 /* @font-face {
-  font-family: AbhayaLibre-bold;
+  font-family: 'Poppins', sans-serif: AbhayaLibre-bold;
   src: url("../fonts/abahya-libre-bold/AbhayaLibre-ExtraBold.ttf") format("opentype");
   font-display: swap
 }
 
 @font-face {
-  font-family: Raleway;
+  font-family: 'Poppins', sans-serif: Raleway;
   src: url("../fonts/aileron/Aileron-Regular.otf") format("opentype");
   font-display: swap
 }
 
 @font-face {
-  font-family: Raleway;
+  font-family: 'Poppins', sans-serif: Raleway;
   font-weight: bold;
   src: url("../fonts/aileron/Aileron-Bold.otf") format("opentype");
   font-display: swap
 }
 
 @font-face {
-  font-family: Yekan-Bakh-Regular;
+  font-family: 'Poppins', sans-serif: Yekan-Bakh-Regular;
   src: url("../fonts/Yekan-Bakh-Regular/Yekan-Bakh-Regular.ttf") format("opentype");
   font-display: swap
 } */
@@ -11747,7 +11748,7 @@ body.compensate-for-scrollbar {
 body,
 html {
   font-size: 16px;
-  font-family: 'Raleway', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   margin: 0
 }
 
@@ -11766,11 +11767,11 @@ h6 {
 }
 
 .abhaya {
-  font-family: 'Abhaya Libre', serif !important
+  font-family: 'Poppins', sans-serif !important
 }
 
 .raleway {
-  font-family: 'Raleway', sans-serif !important
+  font-family: 'Poppins', sans-serif !important
 }
 
 h1 {
@@ -11842,7 +11843,7 @@ p {
 }
 
 b {
-  font-family: AbhayaLibre-bold
+  font-family: 'Poppins', sans-serif
 }
 
 h1,
@@ -11999,7 +12000,7 @@ hr {
 
 .page-title {
   margin: 0 0 0;
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.4rem;
   line-height: 1.2;
   color: #000
@@ -12940,7 +12941,7 @@ form .realestate_title {
   color: #000 !important;
   border: 1px solid #5081ff;
   border-radius: 0;
-  font-family: 'Abhaya Libre', serif
+  font-family: 'Poppins', sans-serif
 }
 
 .btn.\--gray {
@@ -15926,7 +15927,7 @@ body.loading #main:before {
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
   z-index: 9;
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.2;
@@ -15957,7 +15958,7 @@ body.loading #main:before {
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
   z-index: 9;
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.2;
@@ -16028,7 +16029,7 @@ body.loading #main:before {
 
 .widget .body li a {
   display: block;
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.2;
@@ -16189,7 +16190,7 @@ body.loading #main:before {
 }
 
 .header-img-buyerguide p {
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.4rem;
   line-height: 1.2;
   color: #000
@@ -16364,7 +16365,7 @@ header .header-top .header-phone-items a:not(:last-of-type) {
 
 header .header-top a {
   color: #000;
-  padding: 0 0.5rem
+  /* padding: 0 0.5rem */
 }
 
 header .header-top a.active {
@@ -16415,7 +16416,7 @@ header .header-top .usermenu a:last-of-type {
 header .header-top .usermenu .dropdown-header span {
   font-size: 1.4rem;
   color: #000;
-  font-family: 'Abhaya Libre', serif !important
+  font-family: 'Poppins', sans-serif !important
 }
 
 header .header-top .usermenu .dropdown-header i {
@@ -16428,7 +16429,7 @@ header .header-top .usermenu .addyourhome p {
   color: #000;
   font-size: 1.2rem;
   padding: 1.5rem 0px;
-  font-family: 'Raleway', sans-serif !important
+  font-family: 'Poppins', sans-serif !important
 }
 
 header .header-top .usermenu .addyourhome a {
@@ -16455,7 +16456,7 @@ header .header-top .usermenu .dropdown-savedhome a {
 header .header-top .usermenu .dropdown-savedhome .savedhome-dropdown-header {
   font-size: 1.4rem;
   color: #000;
-  font-family: 'Abhaya Libre', serif !important
+  font-family: 'Poppins', sans-serif !important
 }
 
 header .header-top .usermenu .saved-searches-dropdown .saved-searches-dropdown-title {
@@ -16468,13 +16469,13 @@ header .header-top .usermenu .saved-searches-dropdown .saved-searches-dropdown-t
 
 header .header-top .usermenu .saved-searches-dropdown .saved-searches-dropdown-title a {
   color: #000;
-  font-family: 'Raleway', sans-serif !important
+  font-family: 'Poppins', sans-serif !important
 }
 
 header .header-top .usermenu .saved-searches-dropdown .saved-searches-dropdown-title span {
   font-size: 1.4rem;
   color: #000;
-  font-family: 'Abhaya Libre', serif !important
+  font-family: 'Poppins', sans-serif !important
 }
 
 header .header-top .usermenu .setting-logout {
@@ -16483,7 +16484,7 @@ header .header-top .usermenu .setting-logout {
 }
 
 header .header-top .usermenu .setting-logout a {
-  font-family: 'Raleway', sans-serif !important
+  font-family: 'Poppins', sans-serif !important
 }
 
 header .header-top .user {
@@ -16519,7 +16520,7 @@ header .main-header nav li.active {
 header .main-header nav li b {
   font-weight: 900 !important;
   padding-right: 1rem;
-  font-family: Raleway !important
+  font-family: 'Poppins', sans-serif !important
 }
 
 header .main-header nav li img {
@@ -16757,7 +16758,7 @@ header .main-header .burgermenu {
     display: none;
     position: absolute;
     top: 0;
-    left: 100%;
+    left: 65%;
     width: 105%;
     background: #fff;
     z-index: 9;
@@ -16859,7 +16860,7 @@ header .main-header .burgermenu {
 
 .ion-social-facebook {
   display: inline-block;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1;
   padding: 1rem;
   color: white;
@@ -16871,7 +16872,7 @@ header .main-header .burgermenu {
 
 .ion-social-google {
   display: inline-block;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1;
   padding: 1rem;
   color: #757575;
@@ -17560,7 +17561,7 @@ header .main-header .burgermenu {
   border: 1px solid #ddd;
   border-radius: unset;
   font-size: 1.22rem;
-  font-family: 'Raleway', sans-serif !important
+  font-family: 'Poppins', sans-serif !important
 }
 
 .popular-cities li a.active {
@@ -19033,7 +19034,7 @@ body.property-endpage.real_estate #search-filter {
     background-color: transparent;
     color: #5e5a59 !important;
     border: 2px solid #5e5a59 !important;
-    font-family: "Raleway", sans-serif !important
+    font-family: 'Poppins', sans-serif !important
   }
 
   #searchh-iconss {
@@ -19120,8 +19121,8 @@ body.property-endpage.real_estate #search-filter {
 
 #myTabContent {
   width: 100vw;
-  z-index: 100;
-  font-family: 'Raleway', sans-serif !important
+  /* z-index: 100; */
+  font-family: 'Poppins', sans-serif !important
 }
 
 #myTabContent .home-tab {
@@ -19485,7 +19486,7 @@ body.property-endpage.real_estate #search-filter {
   border: 1px solid #ddd;
   border-radius: unset;
   font-size: 1.22rem;
-  font-family: 'Raleway', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   padding: 1rem;
   display: inline-block;
   margin-bottom: .5rem;
@@ -20262,7 +20263,7 @@ section>.meta span {
 
   .endpage-title-actions h1 {
     font-size: 1.9rem !important;
-    font-family: 'Abhaya Libre', serif !important;
+    font-family: 'Poppins', sans-serif !important;
     font-weight: 800;
     color: #5e5a59;
     padding: 1rem 0
@@ -20357,7 +20358,7 @@ section>.meta span {
 }
 
 #straigntalk-aboutus .card-body h2 {
-  font-family: 'Abhaya Libre', serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
   color: #5e5a59
@@ -20503,7 +20504,7 @@ section>.meta span {
 .features {
   display: flex;
   padding: 0.5rem;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center
 }
 
@@ -21241,7 +21242,7 @@ article.details-open {
 }
 
 .buttonlist span b {
-  font-family: inherit;
+  font-family: 'Poppins', sans-serif;
   font-weight: 200 !important;
   color: #463d2b;
   font-size: 1.2rem;
@@ -21283,7 +21284,7 @@ article.details-open {
   box-shadow: none;
   margin: 0 !important;
   display: block;
-  font-family: inherit;
+  font-family: 'Poppins', sans-serif;
   font-size: inherit;
   border: 1px solid #d4d4d4;
   border-bottom: none
@@ -21404,7 +21405,7 @@ select.pagination-dropdown {
   line-height: 1.7rem;
   padding-bottom: 0;
   margin: 0;
-  font-family: 'Abhaya Libre', serif !important
+  font-family: 'Poppins', sans-serif !important
 }
 
 .videoContainer {
@@ -21678,7 +21679,7 @@ article.over .enquire-box {
 }
 
 #reviews h2 a {
-  font-family: "Abhaya Libre", serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.8rem;
   font-weight: 800;
   line-height: 1.16;
@@ -22047,7 +22048,7 @@ article.over .enquire-box {
 }
 
 .introDescription .page-title {
-  font-family: "Abhaya Libre", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.19;
@@ -22066,7 +22067,7 @@ article.over .enquire-box {
 }
 
 .introDescription .introText {
-  font-family: "Raleway", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.3rem;
   line-height: 1.41;
   color: #463d2b
@@ -22140,7 +22141,7 @@ article.over .enquire-box {
 }
 
 .room-details .room-details--h1 span {
-  font-family: "Abhaya Libre", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   line-height: 1.17;
@@ -22148,14 +22149,14 @@ article.over .enquire-box {
 }
 
 .room-details .room-details--price {
-  font-family: "Raleway", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.5rem;
   line-height: 1.2;
   color: #5e5a59
 }
 
 .room-details .room-details--price span {
-  font-family: Roboto;
+  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.21;
@@ -22164,7 +22165,7 @@ article.over .enquire-box {
 }
 
 .room-details .room-details--baseprice {
-  font-family: "Raleway", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.8rem;
   line-height: 1.2;
   color: #5e5a59;
@@ -22186,7 +22187,7 @@ article.over .enquire-box {
 }
 
 .room-details .room-details--ref {
-  font-family: "Raleway", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.8rem;
   line-height: 1.2;
   color: #5081ff
@@ -22291,7 +22292,7 @@ article.over .enquire-box {
 }
 
 .roomcard-desc span {
-  font-family: "Abhaya Libre", serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
   line-height: 1.17;
@@ -22299,7 +22300,7 @@ article.over .enquire-box {
 }
 
 .roomcard-desc p {
-  font-family: "Raleway", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.2rem;
   line-height: 1.63;
   color: #000;
@@ -22368,7 +22369,7 @@ article.over .enquire-box {
 }
 
 .endpage-form h3 {
-  font-family: "Abhaya Libre", serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 2rem;
   line-height: 1.17;
   color: #000;
@@ -22849,7 +22850,7 @@ body span[data-pin-log="button_pinit_floating"] {
   margin-top: 10px;
   color: #5e5a59;
   font-weight: 900;
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   width: calc(70% - 2rem);
   display: flex;
   flex-flow: column;
@@ -22861,7 +22862,7 @@ body span[data-pin-log="button_pinit_floating"] {
   font-size: 13px;
   color: #000;
   font-weight: normal;
-  font-family: 'Raleway', sans-serif !important
+  font-family: 'Poppins', sans-serif !important
 }
 
 .blog-item.intro {
@@ -23197,14 +23198,14 @@ body span[data-pin-log="button_pinit_floating"] {
 }
 
 .propertynews-date {
-  font-family: 'Raleway', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1rem;
   line-height: 1.21;
   color: 000
 }
 
 .propertynews-title {
-  font-family: AbhayaLibre-bold;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
   font-weight: 800;
   color: #5e5a59;
@@ -23219,7 +23220,7 @@ body span[data-pin-log="button_pinit_floating"] {
 }
 
 .propertynews-span {
-  font-family: 'Raleway', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.15rem;
   line-height: 1.5;
   color: 000
@@ -23228,7 +23229,7 @@ body span[data-pin-log="button_pinit_floating"] {
 .propertynews-btn a {
   border: none;
   padding: 0 !important;
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.17;
@@ -23465,7 +23466,7 @@ body span[data-pin-log="button_pinit_floating"] {
   height: auto;
   overflow: hidden;
   margin: 0;
-  font-family: AbhayaLibre;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.24;
@@ -23733,7 +23734,7 @@ body span[data-pin-log="button_pinit_floating"] {
 }
 
 .profile-view--img .profile-view--img--first {
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.7rem;
   font-weight: 500;
   line-height: 1.17;
@@ -23758,14 +23759,14 @@ body span[data-pin-log="button_pinit_floating"] {
 }
 
 .profile-view--info--title {
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.4rem;
   line-height: 1.2;
   color: #463d2b
 }
 
 .profile-view--info .label-title {
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.14rem;
   font-weight: 500;
   line-height: 1.06;
@@ -23785,7 +23786,7 @@ body span[data-pin-log="button_pinit_floating"] {
 }
 
 .profile-view--emailsettings .first {
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.4rem;
   line-height: 1.2;
   color: #463d2b
@@ -23803,7 +23804,7 @@ body span[data-pin-log="button_pinit_floating"] {
 }
 
 .profile-view--passwordsetting .first {
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.4rem;
   line-height: 1.2;
   color: #463d2b
@@ -23884,7 +23885,7 @@ body span[data-pin-log="button_pinit_floating"] {
 }
 
 .profile-form h3 {
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.8rem;
   line-height: 1.16;
   color: #463d2b
@@ -23951,7 +23952,7 @@ body span[data-pin-log="button_pinit_floating"] {
 }
 
 .savedsearch-card .title-2 {
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 2rem;
   font-weight: 800;
   line-height: 1.17;
@@ -24159,7 +24160,7 @@ ul.tabs li:hover::after {
 }
 
 #page_404 .page-title {
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 3rem !important;
   font-weight: bold;
   line-height: 1.18 !important;
@@ -24947,7 +24948,7 @@ ul.tabs li:hover::after {
 }
 
 .property_features .cf {
-  font-family: "Abhaya Libre", serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.1rem;
   font-weight: 800;
   color: #5e5a59;
@@ -24963,7 +24964,7 @@ ul.tabs li:hover::after {
 }
 
 .property_features .cf .cf--title {
-  font-family: "Raleway", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.1rem;
   line-height: 1.1;
   color: #000 !important;
@@ -24973,7 +24974,7 @@ ul.tabs li:hover::after {
 
 .property_features .cf .cf--title a {
   color: #000 !important;
-  font-family: "Raleway", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.1rem
 }
 
@@ -25057,14 +25058,14 @@ ul.tabs li:hover::after {
 }
 
 .area .property-area {
-  font-family: "Raleway", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.2rem;
   line-height: 1.63;
   color: #463d2b
 }
 
 .area .property-area strong {
-  font-family: "Raleway", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 0.95;
@@ -25074,7 +25075,7 @@ ul.tabs li:hover::after {
 .title-similarproperties,
 .title-similarproperties span,
 .title-similarproperties span b {
-  font-family: "Abhaya Libre", serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 2.8rem;
   font-weight: normal !important;
   line-height: 1.18;
@@ -25144,13 +25145,13 @@ ul.tabs li:hover::after {
 }
 
 .cameron-section-aboutus .cameron-section-blackquote {
-  font-family: Georgia;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   color: rgba(0, 0, 0, 0.87)
 }
 
 .cameron-section-aboutus .cameron-section-author {
-  font-family: "Abhaya Libre", serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.6rem;
   font-weight: bold;
   color: #5081ff;
@@ -25304,7 +25305,7 @@ ul.tabs li:hover::after {
   font-weight: 500;
   line-height: 1.17;
   color: 000;
-  font-family: 'Abhaya Libre', serif !important
+  font-family: 'Poppins', sans-serif !important
 }
 
 .tv-endpage h1 span {
@@ -25316,7 +25317,7 @@ ul.tabs li:hover::after {
   font-size: 2.07rem;
   line-height: 1.31;
   color: 000;
-  font-family: 'Abhaya Libre', serif !important
+  font-family: 'Poppins', sans-serif !important
 }
 
 .tvlist-card {
@@ -25344,7 +25345,7 @@ ul.tabs li:hover::after {
 }
 
 #videos .tvlist-card--second-title {
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.8rem;
   font-weight: 800;
   line-height: 1.04;
@@ -25402,7 +25403,7 @@ ul.tabs li:hover::after {
   font-size: 2.07rem;
   line-height: 1.31;
   color: #c5a153;
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   cursor: pointer;
   margin-top: 1rem;
   display: inline-block
@@ -25412,7 +25413,7 @@ ul.tabs li:hover::after {
   font-size: 2.07rem;
   line-height: 1.31;
   color: 000;
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   height: 5rem;
   overflow: hidden
 }
@@ -25421,7 +25422,7 @@ ul.tabs li:hover::after {
   font-size: 2.07rem;
   line-height: 1.31 !important;
   color: 000;
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   overflow: hidden
 }
 
@@ -26284,7 +26285,7 @@ footer {
 .social-iconss {
   position: fixed;
   right: 55px;
-  top: 0.4rem;
+  bottom: 30px;
   z-index: 99999999
 }
 
@@ -26356,7 +26357,7 @@ footer {
 
 .social-iconss .navbar-nav li {
   position: absolute;
-  top: 15px;
+  bottom: -63px;
   z-index: -1;
   transition: 0.2s all
 }
@@ -26366,20 +26367,20 @@ footer {
 }
 
 .social-iconss .navbar-nav.show li:nth-child(1) {
-  top: 75px
+  bottom: 120px
 }
 
 .social-iconss .navbar-nav.show li:nth-child(2) {
-  top: 150px
+  bottom: 60px
 }
 
 .social-iconss .navbar-nav.show li:nth-child(3) {
-  top: 230px
+  bottom: 0px
 }
 
-.social-iconss .navbar-nav.show li:nth-child(4) {
-  top: 310px
-}
+/* .social-iconss .navbar-nav.show li:nth-child(4) {
+  bottom: 70px
+} */
 
 @media (max-width: 700px) {
   .social-iconss {
@@ -26450,7 +26451,7 @@ footer {
 .btn-msg {
   color: #5e5a59;
   background-color: #c5a153;
-  font-family: "Abhaya Libre", serif !important;
+  font-family: 'Poppins', sans-serif !important;
   padding: 1rem 2rem;
   font-size: 1.5rem;
   font-weight: 700;
@@ -26604,7 +26605,7 @@ footer {
   border: 1px solid #5081ff !important;
   padding: .5rem 3rem;
   color: #FFF;
-  font-family: 'Abhaya Libre', serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5rem
 }
 
@@ -26613,7 +26614,7 @@ footer {
   border: 1px solid #5081ff !important;
   padding: .5rem 3rem;
   color: #FFF;
-  font-family: 'Abhaya Libre', serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5rem
 }
 
@@ -26630,7 +26631,7 @@ footer {
   .adviser-form--btn {
     font-size: 1.5rem;
     padding: .5rem 3rem !important;
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Poppins', sans-serif;
     border-radius: unset !important
   }
 
@@ -26654,7 +26655,7 @@ footer {
 }
 
 .citizenship-landing b {
-  font-family: inherit
+  font-family: 'Poppins', sans-serif
 }
 
 .citizenship-landing h2.title-lined {
@@ -26731,7 +26732,7 @@ footer {
 }
 
 .citizenship-landing .citizenship-intro p b {
-  font-family: inherit;
+  font-family: 'Poppins', sans-serif;
   color: #464646
 }
 
@@ -26776,7 +26777,7 @@ footer {
   color: #d42c2c;
   margin-top: auto;
   margin-bottom: 0;
-  font-family: 'Allerta Stencil', sans-serif !important
+  font-family: 'Poppins', sans-serif !important
 }
 
 .citizenship-landing .types {
@@ -26971,7 +26972,7 @@ footer {
 }
 
 .citizenship-landing .Steps .steps-container .step-item span {
-  font-family: 'Abhaya Libre', serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-weight: 900;
   font-size: 12rem;
   color: #5081ff;
@@ -27081,7 +27082,7 @@ footer {
 }
 
 .buyer-guide--title {
-  font-family: "Abhaya Libre", serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.17;
@@ -27094,7 +27095,7 @@ footer {
 }
 
 .buyer-guide--side-bar-bg .buyer-guide-readmore {
-  font-family: "Abhaya Libre", serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.5rem;
   line-height: 1.19;
   letter-spacing: 0.21px;
@@ -27156,7 +27157,7 @@ footer {
 }
 
 .buyer-guide--side-bar-bg-details--main-title {
-  font-family: "Abhaya Libre", serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 3rem;
   font-weight: 500;
   line-height: 1.18;
@@ -27228,7 +27229,7 @@ footer {
 }
 
 .buyer-guide--side-bar-bg-details .download_buyerguide {
-  font-family: Abhaya Libre, serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.5rem;
   line-height: 1.19;
   letter-spacing: 0.21px;
@@ -27245,7 +27246,7 @@ footer {
 }
 
 .buyer-guide--side-bar-bg-details .buyer-guide-readmore {
-  font-family: "Abhaya Libre", serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.5rem;
   line-height: 1.19;
   letter-spacing: 0.21px;
@@ -27288,7 +27289,7 @@ footer {
 .buyer-guide .straigntalk-virtualtour h3,
 .buyer-guide .straigntalk-virtualtour h2 {
   text-transform: capitalize;
-  font-family: Abhaya Libre, serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-size: 1.6rem;
   font-weight: 500;
   padding-bottom: 2rem;
@@ -27311,7 +27312,7 @@ footer {
 }
 
 .buyer-guide .straigntalk-virtualtour h5 {
-  font-family: AbhayaLibre;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   font-weight: 500
 }
@@ -31086,7 +31087,7 @@ footer {
   .property-box .features {
     font-size: 13px;
     padding: 1rem;
-    font-family: Raleway
+    font-family: 'Poppins', sans-serif
   }
 
   .intro .details+a {
@@ -31557,7 +31558,7 @@ footer {
 [lang='fa'] .propertynews-btn a,
 [lang='fa'] .widget .title,
 [lang='fa'] .widget .body li a {
-  font-family: 'Yekan-Bakh-Regular', sans-serif !important
+  font-family: 'Poppins', sans-serif !important
 }
 
 [lang='fa'] .citizenship-landing .Facts .fact-container ul li {

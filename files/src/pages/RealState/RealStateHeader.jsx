@@ -17,6 +17,7 @@ import { PropertyFilter } from "../../Redux/Action/PropertyFilter";
 import { PropertyTypeFilter } from "../../Redux/Action/PropertyTypeFilter";
 import { PropertyBedroom } from "../../Redux/Action/PropertyBedroom";
 import CloseIcon from "@mui/icons-material/Close";
+import StyledButton from "../../ReUseAbleComponent/StyledButton";
 
 export default function RealStateHeader({
   setcityData,
@@ -31,7 +32,7 @@ export default function RealStateHeader({
   maxPriceInputValue,
   setsearchModelToggle,
   searchModelToggle,
-  scroll
+  scroll,
 }) {
   const [openLocation, setOpenLocation] = useState(false);
   const [openType, setOpenopenType] = useState(false);
@@ -1188,24 +1189,33 @@ export default function RealStateHeader({
           </div>
           <div className="search-filter-buttons flex listing">
             {searchModelToggle ? (
-              <button
-                id="createSearchData"
-                style={{ lineHeight: "1rem !important" }}
-                type="button"
-                className="primary btn  text-[#5081ff]"
+              <StyledButton
+                title={"Search"}
                 onClick={() => handleSearchClick()}
-              >
-                SEARCH
-              </button>
+              />
             ) : (
-              <button
-                id="createSearchData"
-                style={{ lineHeight: "1rem !important" }}
-                type="button"
-                className="primary btn  text-[#5081ff]"
-              >
-                SEARCH
-              </button>
+              // <button
+              //   id="createSearchData"
+              //   style={{ lineHeight: "1rem !important" }}
+              //   type="button"
+              //   className="primary btn  text-[#5081ff]"
+              //   onClick={() => handleSearchClick()}
+              // >
+              //   SEARCH
+              // </button>
+              <StyledButton
+                title={"Search"}
+                // onClick={() => handleSearchClick()}
+              />
+
+              // <button
+              //   id="createSearchData"
+              //   style={{ lineHeight: "1rem !important" }}
+              //   type="button"
+              //   className="primary btn  text-[#5081ff]"
+              // >
+              //   SEARCH
+              // </button>
             )}
             <span className="or-seperator">OR</span>
             <Link

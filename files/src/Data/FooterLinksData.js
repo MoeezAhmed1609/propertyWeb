@@ -47,34 +47,34 @@ export const FooterLinksPopularLocationsData = [
     {
         Link:'Alanya',
     },
-    {
-        Link:'Kas',
-    },
-    {
-        Link:'Bursa',
-    },
+    // {
+    //     Link:'Kas',
+    // },
+    // {
+    //     Link:'Bursa',
+    // },
     
-    {
-        Link:'Gocek',
-    },
-    {
-        Link:'Side',
-    },
-    {
-        Link:'Kemer',
-    },
+    // {
+    //     Link:'Gocek',
+    // },
+    // {
+    //     Link:'Side',
+    // },
+    // {
+    //     Link:'Kemer',
+    // },
     
-    {
-        Link:'Dalyan',
-    },
+    // {
+    //     Link:'Dalyan',
+    // },
     
-    {
-        Link:'Izmir',
-    },
+    // {
+    //     Link:'Izmir',
+    // },
     
-    {
-        Link:'Belek',
-    },
+    // {
+    //     Link:'Belek',
+    // },
 
 
 

@@ -29,7 +29,7 @@ export default function Footer() {
       <Box className="foooter">
         <Box className="wrap-dis-85 wrap wrap-tab-11 wrap-mob-11">
           <Box className="row padding-top-1">
-            <Box className="col-4 col-md-2">
+            <Box className="col-4 col-md-3">
               <ul className={`list-unstyled ${search ? "expanded" : null}`}>
                 <li className="li-header">Popular Searches</li>
                 {FooterLinksPopularSearchesData.map((item) => {
@@ -125,7 +125,7 @@ export default function Footer() {
                     Sell Your Property
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link title="Bargain Properties">Bargain Properties</Link>
                 </li>
                 <li>
@@ -143,18 +143,20 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link title="Design & build">Design &amp; build</Link>
-                </li>
+                </li> */}
               </ul>
               <Link
                 className="margin-top-05 clr-brightpt-grey expand"
                 onClick={() => setLinks(!links)}
               >
-                {locations ? "Less" : "More"}{" "}
-                {locations ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                {links ? "Less" : "More"}{" "}
+                {links ? <ExpandLessIcon /> : <ExpandMoreIcon />}
               </Link>
             </Box>
           </Box>
-          <Box className="socialmedia-links text-center padding-top-1 padding-bottom-md-3">
+          <Box
+            className="socialmedia-links text-center padding-top-1 padding-bottom-md-3"
+          >
             <ul className="list-inline">
               <li className="list-inline-item">
                 <Link style={{ display: "block" }}>

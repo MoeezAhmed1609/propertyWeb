@@ -27,6 +27,7 @@ import ModalComponent from "../../ReUseAbleComponent/ModalComponent";
 import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
 import useProperties from "../../Hooks/useProperties";
+import StyledButton from "../../ReUseAbleComponent/StyledButton";
 
 const responsive = {
   superLargeDesktop: {
@@ -135,17 +136,28 @@ export default function RecomendedTurkishProperty() {
           <Box className="section--filter-wrapper">
             <ul className="popular-cities section--filter " style={{}}>
               <li>
-                <Link
+                <StyledButton
+                  title={"All"}
+                  onClick={() => setData("All")}
+                  mode={data === "All" ? true : false}
+                />
+                {/* <Link
                   onClick={() => setData("All")}
                   className="btn section--filter-Link"
                   // ripple button button-default active
                   style={{ background: data === "All" ? "#5081ff" : "white" }}
                 >
                   All
-                </Link>
+                </Link> */}
               </li>
               <li>
-                <Link
+                <StyledButton
+                  title={"California"}
+                  onClick={() => setData("California")}
+                  mode={data === "California" ? true : false}
+                />
+
+                {/* <Link
                   onClick={() => setData("California")}
                   className="btn section--filter-Link "
                   // rel="Istanbul"
@@ -154,11 +166,16 @@ export default function RecomendedTurkishProperty() {
                   }}
                 >
                   California
-                </Link>
+                </Link> */}
               </li>
 
               <li>
-                <Link
+                <StyledButton
+                  title={"San Francisco"}
+                  onClick={() => setData("San Francisco")}
+                  mode={data === "San Francisco" ? true : false}
+                />
+                {/* <Link
                   onClick={() => setData("San Francisco")}
                   className="btn section--filter-Link "
                   // rel="Istanbul"
@@ -167,13 +184,15 @@ export default function RecomendedTurkishProperty() {
                   }}
                 >
                   San Francisco
-                </Link>
+                </Link> */}
               </li>
             </ul>
           </Box>
           <ElasticSlider ItemShop={4}>
             {propertiesData
-              .filter((item) => data === "All" ? item : item.property_Location === data)
+              .filter((item) =>
+                data === "All" ? item : item.property_Location === data
+              )
               .map((item) => {
                 return (
                   <Box
@@ -275,7 +294,7 @@ export default function RecomendedTurkishProperty() {
                             </span>
                           </Box>
                         </Box>
-                        <Box className="bathrooms flex content-space-evenly padding-left-05">
+                        {/* <Box className="bathrooms flex content-space-evenly padding-left-05">
                           <Box>
                             <Image
                               alt="pic 04"
@@ -291,22 +310,74 @@ export default function RecomendedTurkishProperty() {
                         </Box>
                         <Box className="quantity  padding-dir-05">
                           {item.Propert_Living_space}
+                        </Box> */}
+                      </Box>
+                      <Box className="features skelton-loading">
+                        {/* <Box className="location">
+                          <img
+                            alt="pic 08"
+                            className="icon-location img-fluid"
+                            src={LocationSvg}
+                          />
+                          <span className="quantity">
+                            {item.property_Location}
+                          </span>
                         </Box>
+                        <Box className="bedrooms flex content-space-evenly">
+                          <Box>
+                            <Image
+                              alt="pic 03"
+                              className="icon-bedroom img-fluid"
+                              src={BedroomsIcon}
+                            />
+                          </Box>
+                          <Box>
+                            <span className="quantity">
+                              {item.property_BedRoom}
+                            </span>
+                          </Box>
+                        </Box> */}
+                        <Box className="bathrooms flex content-space-evenly padding-left-05">
+                          <Box>
+                            <Image
+                              alt="pic 04"
+                              className="icon-bathrooms img-fluid"
+                              src={BathroomSvg}
+                            />
+                          </Box>
+                          <Box>
+                            <span className="quantity">
+                              {item.Propert_Bathroom}
+                            </span>
+                          </Box>
+                        </Box>
+                        <Box className="bathrooms flex content-space-evenly padding-left-05">
+                          {item.Propert_Living_space}
+                        </Box>
+                        {/* <Box className="quantity  padding-dir-05">
+                          
+                        </Box> */}
                       </Box>
                       <Box className="card-actions flex padding-1 content-space-between skelton-loading">
                         <Box className="price flex-align-self-center">
                           <span className="unit-price flex">
-                            {item.Property_Price}
+                            ${item.Property_Price}
                           </span>
                         </Box>
                         <Box>
-                          <Link
+                          <StyledButton
+                            title={"Quick Enquiry"}
+                            onClick={() => showModal(item.id, item.isActive)}
+                            size="small"
+                            font="10"
+                          />
+                          {/* <Link
                             onClick={() => showModal(item.id, item.isActive)}
                             className="quich-enquire-btn abhaya"
                             id="inline"
                           >
                             <span>Quick Enquire</span>
-                          </Link>
+                          </Link> */}
                         </Box>
                       </Box>
                     </Box>

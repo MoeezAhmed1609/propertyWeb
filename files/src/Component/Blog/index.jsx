@@ -13,6 +13,7 @@ import { auth, db } from "../../Config";
 import { useEffect } from "react";
 import { onSnapshot, collection, doc, setDoc } from "firebase/firestore";
 import { v4 as uuidv4 } from "uuid";
+import StyledButton from "../../ReUseAbleComponent/StyledButton";
 
 export default function Blog() {
   // Getting blogs
@@ -92,7 +93,6 @@ export default function Blog() {
             <Typography
               variant="h5"
               sx={{
-                fontFamily: "serif",
                 paddingBottom: "6px",
                 fontSize: "25px",
                 color: "#5e5a59",
@@ -104,7 +104,6 @@ export default function Blog() {
               variant="h3"
               sx={{
                 fontWeight: "700",
-                fontFamily: "serif",
                 paddingLeft: "6px",
                 color: "#5e5a59",
               }}
@@ -147,7 +146,6 @@ export default function Blog() {
                       <Typography
                         sx={{
                           fontWeight: "600",
-                          fontFamily: "serif",
                           color: "#5e5a59",
                           fontSize: "18px",
                           lineHeight: "18px",
@@ -173,18 +171,15 @@ export default function Blog() {
             }}
           >
             <Link to={"/blog"}>
-              <Button variant="outlined" size="large" sx={{ color: "black" }}>
-                View All
-              </Button>
+              <StyledButton title={"View All"} size="small" />
             </Link>
-            <Button
-              variant="outlined"
-              size="large"
-              sx={{ color: "black" }}
+            <StyledButton
+              title={"Subscribe"}
               onClick={() => setSubscribeModal(true)}
-            >
-              Subscribe
-            </Button>
+              width={"100px"}
+              size="small"
+            />
+
             <Modal
               open={subscribeModal}
               onClose={() => setSubscribeModal(false)}
@@ -207,7 +202,6 @@ export default function Blog() {
                     <Typography
                       variant="h4"
                       sx={{
-                        fontFamily: "serif",
                         fontWeight: "600",
                         color: "#72685f",
                         textAlign: "center",
@@ -232,7 +226,6 @@ export default function Blog() {
                       variant="h4"
                       sx={{
                         textTransform: "capitalize",
-                        fontFamily: "serif",
                         color: "#72685f",
                       }}
                     >
@@ -320,7 +313,6 @@ export default function Blog() {
             <Typography
               variant="h5"
               sx={{
-                fontFamily: "serif",
                 paddingBottom: "6px",
                 fontSize: "25px",
                 color: "#5e5a59",
@@ -332,7 +324,6 @@ export default function Blog() {
               variant="h3"
               sx={{
                 fontWeight: "700",
-                fontFamily: "serif",
                 paddingLeft: "6px",
                 color: "#5e5a59",
               }}
@@ -368,7 +359,6 @@ export default function Blog() {
                       <Typography
                         sx={{
                           fontWeight: "600",
-                          fontFamily: "serif",
                           color: "#5e5a59",
                           fontSize: "18px",
                           lineHeight: "18px",
@@ -394,9 +384,7 @@ export default function Blog() {
             }}
           >
             <Link to={"/blog"}>
-              <Button variant="outlined" size="large" sx={{ color: "black" }}>
-                View All
-              </Button>
+              <StyledButton title={"View All"} size="small" />
             </Link>
           </Grid>
         </Grid>

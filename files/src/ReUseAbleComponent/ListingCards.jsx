@@ -26,6 +26,7 @@ import { FeaturedProperty } from "../Redux/Action/FeaturedProperty";
 import Bedroomsvg from "../assets/bedrooms.svg";
 import { v4 as uuidv4 } from "uuid";
 import HeartBrokenOutlinedIcon from "@mui/icons-material/HeartBrokenOutlined";
+import StyledButton from "./StyledButton";
 import AddIcon from "@mui/icons-material/Add";
 
 export default function ListingCards(props) {
@@ -312,13 +313,19 @@ export default function ListingCards(props) {
               ></div>
               {currentUser?.AccountOptions !== "Broker" ? (
                 <div>
-                  <Link
+                  <StyledButton
+                    title={"Quick Enquiry"}
+                    onClick={() => openModal(props.item)}
+                    size="small"
+                    font="10"
+                  />
+                  {/* <Link
                     className="quich-enquire-btn abhaya"
                     title="Quick Enquire"
                     onClick={() => openModal(props.item)}
                   >
                     <span>Quick Enquire</span>
-                  </Link>
+                  </Link> */}
                 </div>
               ) : null}
             </div>
