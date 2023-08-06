@@ -6,6 +6,8 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modals from "@mui/material/Modal";
 import "datejs";
+import CloseIcon from "@mui/icons-material/Close";
+import { cityToggle } from "../../Data/CityToggle";
 import {
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
@@ -29,7 +31,7 @@ import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 import { BiCog } from "react-icons/bi";
 import { FaSignOutAlt } from "react-icons/fa";
 import GoogleLogo from "../../assets/google-icon-removebg-preview.png";
-import { IconButton } from "@mui/material";
+import { IconButton, TextField, Chip, Divider } from "@mui/material";
 import RealStateHeader from "../../pages/RealState/RealStateHeader";
 
 const style = {
@@ -38,10 +40,10 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: 400,
-  height: "600px !important",
+  height: "85vh !important",
   overflowY: "auto",
   bgcolor: "background.paper",
-  border: "2px solid #000",
+  // border: "2px solid #000",
   boxShadow: 24,
   p: 4,
 };
@@ -263,6 +265,22 @@ export default function Header() {
   const [minPriceInputValue, setminPriceInputValue] = useState(0);
   const [maxPriceInputValue, setmaxPriceInputValue] = useState(0);
 
+  // Search
+  const [searchQuery, setSearchQuery] = useState("");
+  const handleSearchClick = (city) => {
+    const data = {
+      cityData: city,
+      typeData: "",
+      BedroomData: "",
+      minPriceInputValue: 0,
+      maxPriceInputValue: 0,
+    };
+    window.localStorage.setItem("search", JSON.stringify(data));
+    if (location.pathname !== "/realState") {
+      window.location.replace("/realState");
+    } else window.location.reload();
+  };
+
   return (
     <>
       <header
@@ -451,6 +469,81 @@ export default function Header() {
             searchModelToggle ? "open" : ""
           }`}
         >
+          <Box
+            sx={{
+              background: "white",
+              height: "15vh",
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              position: "relative",
+            }}
+            // onMouseLeave={() =>
+            //   window.setTimeout(() => setsearchModelToggle(false), 1500)
+            // }
+            // onMouseEnter={() => setsearchModelToggle(true)}
+          >
+            <TextField
+              placeholder="Search property by city name..."
+              variant="outlined"
+              sx={{
+                width: { xs: "95%", sm: "80%", md: "60%" },
+                border: "1.5px solid #5081ff",
+                borderRadius: "6px",
+              }}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+            <IconButton onClick={() => setsearchModelToggle(false)}>
+              <CloseIcon />
+            </IconButton>
+            {searchQuery !== "" && searchModelToggle && (
+              <Box
+                sx={{
+                  position: "absolute",
+                  top: "15vh",
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <Box
+                  sx={{
+                    backgroundColor: "white",
+                    maxHeight: "300px",
+                    overflowY: "auto",
+                    width: { xs: "95%", sm: "60%", md: "40%" },
+                    padding: "15px",
+                    boxShadow:
+                      "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
+                  }}
+                >
+                  {cityToggle
+                    .filter((item) =>
+                      item.County.toLowerCase().includes(
+                        searchQuery?.toLowerCase()
+                      )
+                    )
+                    .map((item, i, arr) => {
+                      return (
+                        <Typography
+                          key={i}
+                          variant="h6"
+                          sx={{
+                            padding: "6px",
+                            cursor: "pointer",
+                            color: "black",
+                          }}
+                          onClick={() => handleSearchClick(item.County)}
+                        >
+                          {item.County}
+                        </Typography>
+                      );
+                    })}
+                </Box>
+              </Box>
+            )}
+          </Box>
           {/* <form>
             <input
               type="text"
@@ -465,7 +558,7 @@ export default function Header() {
               </p>
             </button>
           </form> */}
-          <RealStateHeader
+          {/* <RealStateHeader
             setsearchModelToggle={setsearchModelToggle}
             searchModelToggle={searchModelToggle}
             cityData={cityData}
@@ -479,7 +572,7 @@ export default function Header() {
             setminPriceInputValue={setminPriceInputValue}
             setmaxPriceInputValue={setmaxPriceInputValue}
             scroll={false}
-          />
+          /> */}
         </Box>
       </header>
 
@@ -488,14 +581,16 @@ export default function Header() {
         onClose={handleClose}
         aria-labelledby="Modals-Modals-title"
         aria-describedby="Modals-Modals-description"
-        style={{ height: "400px !important" }}
       >
         <Box sx={style}>
-          <Box className="w-full   overflow-y-auto flex flex-col justify-center items-center">
-            <Box className="w-[70px] h-[70px] ">
-              <img src={Logo} alt="" />
+          <Box className="w-full overflow-y-auto flex flex-col justify-center items-center">
+            <Box className=" ">
+              <img src={Logo} alt="" style={{ height: "30px" }} />
             </Box>
-            <h3 className="margin-bottom-1 margin-top-1 text blink">
+            <h3
+              className="margin-bottom-1 margin-top-1 text blink"
+              style={{ textAlign: "center" }}
+            >
               Sign up to Save Properties
             </h3>
 
@@ -556,7 +651,7 @@ export default function Header() {
             >
               Register
             </button>
-            <Typography>
+            <Typography sx={{ marginTop: "8px" }}>
               By creating your Creating You must agree with our Privcy policy
             </Typography>
           </Box>
@@ -565,10 +660,8 @@ export default function Header() {
 
       <Modal
         style={{ position: "relative", top: 10, height: 300 }}
-        title="Login"
         open={isModalOpen}
-        onOk={handleOk}
-        onCancel={handleCancel}
+        onClose={() => setIsModalOpen(false)}
       >
         <Box
           style={{ display: "inline-block" }}
@@ -578,20 +671,18 @@ export default function Header() {
           <Box className="container text-center">
             <Box className="register-form">
               <Box marginLeft={14}>
-                {" "}
                 <Image
                   src={PTHEADERLOGO}
-                  className="h-[80px]"
+                  style={{ height: "60px" }}
                   alt="Property Turkey"
-                />{" "}
+                />
               </Box>
-              <h3 className="margin-bottom-3  margin-top-1 ">
-                Sign in to Save Properties
-              </h3>
+              {/* <h3 style={{ margin: "8px 0" }}>Sign in to Save Properties</h3> */}
               <Link
                 to=""
                 className="ion-social-google w-75 margin-ver-1 h-[45px] flex justify-around items-center"
                 onClick={AuthGoogle}
+                style={{marginTop: '20px'}}
               >
                 <span className="relative">
                   <img
@@ -612,22 +703,29 @@ export default function Header() {
                   with Facebook
                 </span>
               </Link>
-
-              <p className="pos-relarive mt-2">
-                <span className="or-btn mr-2">OR</span>
-              </p>
+              <Divider sx={{ marginBottom: "8px" }}>
+                <Chip
+                  label="OR"
+                  sx={{ backgroundColor: "#5081ff", color: "white" }}
+                />
+              </Divider>
               <Box className="body">
-                <Box className="form-field">
-                  <label>E-mail*</label>
-                  <input
+                {/* <Box className="form-field">
+                  
+                  {/* <input
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="E-mail"
+                    placeholder="Email*"
                     name="email"
                     type="email"
-                  />
-                </Box>
-                <Box className="form-field">
-                  <label>Password*</label>
+                  /> 
+                </Box> */}
+                <TextField
+                  placeholder="Email*"
+                  onChange={(e) => setEmail(e.target.value)}
+                  type="email"
+                  sx={{ width: "90%", margin: "8px 0" }}
+                />
+                {/* <Box className="form-field">
                   <input
                     placeholder="Password"
                     name="password"
@@ -635,11 +733,17 @@ export default function Header() {
                     defaultValue=""
                     onChange={(e) => setPassword(e.target.value)}
                   />
-                </Box>
-                <Box className="form-field">
+                </Box> */}
+                <TextField
+                  placeholder="Password*"
+                  onChange={(e) => setPassword(e.target.value)}
+                  type="password"
+                  sx={{ width: "90%", margin: "8px 0" }}
+                />
+                {/* <Box className="form-field">
                   <input name="remember" type="checkbox" defaultValue={1} />{" "}
                   Remember Me
-                </Box>
+                </Box> */}
                 <input
                   type="hidden"
                   name="LoginUser"
@@ -653,29 +757,20 @@ export default function Header() {
                   Submit
                 </button>
               </Box>
-              <Box className="text-left padding-bottom-05">
+              <Box
+                className="text-left padding-bottom-05"
+                sx={{ textAlign: "center" }}
+              >
                 <Link to="">Forget Password</Link>
               </Box>
-              <p className="text-left">
+              <p className="text-left" style={{ textAlign: "center" }}>
                 Do not have an account?
-                <Link className="clr-pt" to="">
+                <Link className="clr-pt" to="" style={{ paddingLeft: "4px" }}>
                   Signup
                 </Link>
               </p>
             </Box>
           </Box>
-          <button
-            type="button"
-            className="fancybox-button fancybox-close-small"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              version={1}
-              viewBox="0 0 24 24"
-            >
-              <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z" />
-            </svg>
-          </button>
         </Box>
       </Modal>
     </>

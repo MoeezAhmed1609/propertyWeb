@@ -75,6 +75,7 @@ export default function RealStateHeader({
 
   const HandleOpenLocation = () => {
     setOpenLocation(!openLocation);
+    
     setOpenopenType(false);
     setOpenPrice(false);
     setopenBedroom(false);
@@ -197,6 +198,7 @@ export default function RealStateHeader({
               } search-filter-input search-filter-input-city originValue cursor-pointer`}
               linktype="location"
               onClick={HandleOpenLocation}
+              onMouseLeave={() => setOpenLocation(false)}
             >
               <Image className="search-icon" src={LocationGold} />
               <div className="filter-type-dropdown-wrap">

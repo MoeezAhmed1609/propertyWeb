@@ -28,6 +28,10 @@ import IntlTelInput from "react-intl-tel-input";
 import "react-intl-tel-input/dist/main.css";
 import useProperties from "../../Hooks/useProperties";
 import StyledButton from "../../ReUseAbleComponent/StyledButton";
+import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import KingBedOutlinedIcon from "@mui/icons-material/KingBedOutlined";
+import BathtubOutlinedIcon from "@mui/icons-material/BathtubOutlined";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 
 const responsive = {
   superLargeDesktop: {
@@ -212,24 +216,9 @@ export default function RecomendedTurkishProperty() {
                             href="#logins2"
                             data-id={6199}
                           >
-                            <span className="flex">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20.189"
-                                height="18.465"
-                                viewBox="0 0 20.189 18.465"
-                              >
-                                <path
-                                  id="Heart"
-                                  d="M16.76,1.479a4.887,4.887,0,0,0-6.956,0l-.684.684-.684-.684A4.919,4.919,0,0,0,1.479,8.435l7.64,7.64,7.64-7.64a4.887,4.887,0,0,0,0-6.956"
-                                  transform="translate(0.975 0.975)"
-                                  fill="none"
-                                  stroke="#fff"
-                                  strokeWidth={2}
-                                  fillRule="evenodd"
-                                />
-                              </svg>
-                            </span>
+                            <FavoriteBorderOutlinedIcon
+                              sx={{ color: "white" }}
+                            />
                           </Link>
                         </>
                       )}
@@ -271,22 +260,14 @@ export default function RecomendedTurkishProperty() {
                       </Link>
                       <Box className="features skelton-loading">
                         <Box className="location">
-                          <img
-                            alt="pic 08"
-                            className="icon-location img-fluid"
-                            src={LocationSvg}
-                          />
+                          <LocationOnOutlinedIcon sx={{ color: "#5081ff" }} />
                           <span className="quantity">
                             {item.property_Location}
                           </span>
                         </Box>
                         <Box className="bedrooms flex content-space-evenly">
                           <Box>
-                            <Image
-                              alt="pic 03"
-                              className="icon-bedroom img-fluid"
-                              src={BedroomsIcon}
-                            />
+                            <KingBedOutlinedIcon sx={{ color: "#5081ff" }} />
                           </Box>
                           <Box>
                             <span className="quantity">
@@ -339,11 +320,7 @@ export default function RecomendedTurkishProperty() {
                         </Box> */}
                         <Box className="bathrooms flex content-space-evenly padding-left-05">
                           <Box>
-                            <Image
-                              alt="pic 04"
-                              className="icon-bathrooms img-fluid"
-                              src={BathroomSvg}
-                            />
+                            <BathtubOutlinedIcon sx={{ color: "#5081ff" }} />
                           </Box>
                           <Box>
                             <span className="quantity">
@@ -402,7 +379,12 @@ export default function RecomendedTurkishProperty() {
         <Box
           className="form_popup newcolor fancybox-content"
           id="data"
-          style={{ display: "inline-block" }}
+          style={{
+            display: "inline-block",
+            borderRadius: "6px",
+            boxShadow:
+              "rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px",
+          }}
         >
           <form
             onSubmit={HandleSubmitEnquiryForm}

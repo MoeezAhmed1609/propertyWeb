@@ -1,10 +1,20 @@
 import React from "react";
 import { Button } from "@mui/material";
 
-const StyledButton = ({ title, validation, onClick, width, mode, size, font }) => {
+const StyledButton = ({
+  title,
+  validation,
+  onClick,
+  width,
+  mode,
+  size,
+  font,
+  type,
+}) => {
   return (
     <Button
       variant="contained"
+      type={type ? type : "button"}
       sx={{
         borderRadius: "4px",
         display: "flex",
@@ -21,7 +31,7 @@ const StyledButton = ({ title, validation, onClick, width, mode, size, font }) =
         },
         width: width || "100%",
         fontFamily: "Poppins, sans-serif",
-        fontSize: font ? font : '13px'
+        fontSize: font ? font : "13px",
       }}
       className="swiper-btn"
       size={size ? "small" : "medium"}

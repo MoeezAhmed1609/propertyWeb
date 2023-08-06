@@ -151,7 +151,7 @@ function NewsBodyContainer() {
             </div>
             <div className="container">
               <div className="continue-readingg">
-                <p>
+                <p style={{ fontSize: "18px" }}>
                   Property Turkey's blog is designed to give you an insight into
                   all things Turkish, including tips about life in Turkey,
                   Turkish culture, economic &amp; political matters and how to
@@ -164,7 +164,7 @@ function NewsBodyContainer() {
                 <p>
                   <br />
                 </p>
-                <p>
+                <p style={{ fontSize: "18px" }}>
                   Focusing on the main hotspots of Bodrum, Antalya, Fethiye,
                   Kalkan, Istanbul, Kas, Side, and more - you can expect us to
                   blog weekly about the latest trends, case studies and news

@@ -90,8 +90,9 @@ export default function HeaderNav() {
             <li
               className={`has-child `}
               style={{ zIndex: 999999 }}
-              onMouseOver={() => setAboutTurkeyToggle(true)}
-              onMouseOut={() => setAboutTurkeyToggle(false)}
+              onClick={() => setAboutTurkeyToggle(false)}
+              onMouseEnter={() => setAboutTurkeyToggle(true)}
+              onMouseLeave={() => setAboutTurkeyToggle(false)}
             >
               <Link
                 to="/USA"
@@ -129,14 +130,14 @@ export default function HeaderNav() {
                   {item.innerLinks.map((item) => {
                     return (
                       <li className="has-child">
-                        <Link title="Mediterranean region">
+                        <span>
                           {item.title}
                           <i
                             id="MediterraneanRegion"
                             onClick={() => setMediterranean(!Mediterranean)}
                             className="fa fa-angle-down"
                           />
-                        </Link>
+                        </span>
                         {item.innerLinks.map((item, i) => {
                           return (
                             <div
@@ -145,7 +146,13 @@ export default function HeaderNav() {
                             >
                               <ul className="no-bullets">
                                 <li className="has-child">
-                                  <Link title="About Antalya">
+                                  <Link
+                                    state={{
+                                      data: {
+                                        title: item.innerLinksText,
+                                      },
+                                    }}
+                                  >
                                     {item.innerLinksText}
                                     <i className="fa fa-angle-right" />
                                   </Link>
@@ -154,6 +161,11 @@ export default function HeaderNav() {
                                       <li>
                                         <Link
                                           to={`/about/${i + 1}`}
+                                          onClick={() => {
+                                            window.setTimeout(function () {
+                                              setAboutTurkeyToggle(false);
+                                            }, 500);
+                                          }}
                                           state={{
                                             data: {
                                               title:
@@ -208,8 +220,9 @@ export default function HeaderNav() {
 
         <li
           className={`has-child  ${BuyerGuide ? "active z-auto" : ""}`}
-          onMouseOver={() => setBuyerGuide(true)}
-          onMouseOut={() => setBuyerGuide(false)}
+          onMouseEnter={() => setBuyerGuide(true)}
+          onMouseLeave={() => setBuyerGuide(false)}
+          onClick={() => setBuyerGuide(false)}
         >
           <Link
             to="/buyer"
@@ -238,34 +251,114 @@ export default function HeaderNav() {
           <div className={`level-2 ${BuyerGuide ? "open  z-50" : ""}`}>
             <ul className="no-bullets">
               <li className="has-child">
-                <Link title="Investing in Turkey">
+                <Link
+                  title="Investing in Turkey"
+                  to={`/about/3`}
+                  onClick={() => {
+                    window.setTimeout(function () {
+                      setAboutTurkeyToggle(false);
+                    }, 500);
+                  }}
+                  state={{
+                    data: {
+                      title: "Investing in Turkey",
+                    },
+                  }}
+                >
                   Investing in Turkey
                   <i className="fa fa-angle-down" />
                 </Link>
                 <div className="level-3">
                   <ul className="no-bullets">
                     <li>
-                      <Link title="Why invest in property in Turkey">
+                      <Link
+                        title="Why invest in property in Turkey"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Why invest in property in Turkey",
+                          },
+                        }}
+                      >
                         Why invest in property in Turkey
                       </Link>
                     </li>
                     <li>
-                      <Link title="How to set up a business in Turkey">
+                      <Link
+                        title="How to set up a business in Turkey"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "How to set up a business in Turkey",
+                          },
+                        }}
+                      >
                         How to set up a business in Turkey
                       </Link>
                     </li>
                     <li>
-                      <Link title="Tax and Turkish real estate">
+                      <Link
+                        title="Tax and Turkish real estate"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Tax and Turkish real estate",
+                          },
+                        }}
+                      >
                         Tax and Turkish real estate
                       </Link>
                     </li>
                     <li>
-                      <Link title="EU negotiations and Turkish property prices">
+                      <Link
+                        title="EU negotiations and Turkish property prices"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title:
+                              "EU negotiations and Turkish property prices",
+                          },
+                        }}
+                      >
                         EU negotiations and Turkish property prices
                       </Link>
                     </li>
                     <li>
-                      <Link title="Download macro-economic & investment analysis">
+                      <Link
+                        title="Download macro-economic & investment analysis"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title:
+                              "Download macro-economic &amp; investment analysis",
+                          },
+                        }}
+                      >
                         Download macro-economic &amp; investment analysis
                       </Link>
                     </li>
@@ -273,69 +366,239 @@ export default function HeaderNav() {
                 </div>
               </li>
               <li className="has-child">
-                <Link title="Purchase process">
+                <Link
+                  title="Purchase process"
+                  to={`/about/3`}
+                  onClick={() => {
+                    window.setTimeout(function () {
+                      setAboutTurkeyToggle(false);
+                    }, 500);
+                  }}
+                  state={{
+                    data: {
+                      title: "Purchase Process",
+                    },
+                  }}
+                >
                   Purchase process
                   <i className="fa fa-angle-down" />
                 </Link>
                 <div className="level-3">
                   <ul className="no-bullets">
                     <li>
-                      <Link title="Who Can Buy Property in Turkey">
+                      <Link
+                        title="Who Can Buy Property in Turkey"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Investing in Turkey",
+                          },
+                        }}
+                      >
                         Who Can Buy Property in Turkey
                       </Link>
                     </li>
                     <li>
-                      <Link title="How to buy property in Turkey">
+                      <Link
+                        title="How to buy property in Turkey"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Investing in Turkey",
+                          },
+                        }}
+                      >
                         How to buy property in Turkey
                       </Link>
                     </li>
                     <li>
-                      <Link title="How to design and build your own">
+                      <Link
+                        title="How to design and build your own"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Investing in Turkey",
+                          },
+                        }}
+                      >
                         How to design and build your own
                       </Link>
                     </li>
                     <li>
-                      <Link title="Property USA Inspection Trips">
+                      <Link
+                        title="Property USA Inspection Trips"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Property USA Inspection Trips",
+                          },
+                        }}
+                      >
                         Property USA Inspection Trips
                       </Link>
                     </li>
                     <li>
-                      <Link title="Virtual Tour with Property Turkey">
+                      <Link
+                        title="Virtual Tour with Property Turkey"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Virtual Tour with Property Turkey",
+                          },
+                        }}
+                      >
                         Virtual Tour with Property Turkey
                       </Link>
                     </li>
                     <li>
-                      <Link title="Costs of Purchasing a Property in Turkey">
+                      <Link
+                        title="Costs of Purchasing a Property in Turkey"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Costs of Purchasing a Property in Turkey",
+                          },
+                        }}
+                      >
                         Costs of Purchasing a Property in Turkey
                       </Link>
                     </li>
                     <li>
-                      <Link title="Finance for property in Turkey">
+                      <Link
+                        title="Finance for property in Turkey"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Finance for property in Turkey",
+                          },
+                        }}
+                      >
                         Finance for property in Turkey
                       </Link>
                     </li>
                     <li>
-                      <Link title="Property maintenance and management">
+                      <Link
+                        title="Property maintenance and management"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Property maintenance and management",
+                          },
+                        }}
+                      >
                         Property maintenance and management
                       </Link>
                     </li>
                     <li>
-                      <Link title="How to get a Turkish Title Deed">
+                      <Link
+                        title="How to get a Turkish Title Deed"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "How to get a Turkish Title Deed",
+                          },
+                        }}
+                      >
                         How to get a Turkish Title Deed
                       </Link>
                     </li>
                     <li>
-                      <Link title="Should I use a solicitor to buy property in Turkey">
+                      <Link
+                        title="Should I use a solicitor to buy property in Turkey"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title:
+                              "Should I use a solicitor to buy property in Turkey",
+                          },
+                        }}
+                      >
                         Should I use a solicitor to buy property in Turkey
                       </Link>
                     </li>
                     <li>
-                      <Link title="Power of Attorney in Turkey">
+                      <Link
+                        title="Power of Attorney in Turkey"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Power of Attorney in Turkey",
+                          },
+                        }}
+                      >
                         Power of Attorney in Turkey
                       </Link>
                     </li>
                     <li>
-                      <Link title="Buying property in USA through a company">
+                      <Link
+                        title="Buying property in USA through a company"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Buying property in USA through a company",
+                          },
+                        }}
+                      >
                         Buying property in USA through a company
                       </Link>
                     </li>
@@ -343,19 +606,58 @@ export default function HeaderNav() {
                 </div>
               </li>
               <li className="has-child">
-                <Link title="Residency permits and visas">
+                <Link
+                  title="Residency permits and visas"
+                  to={`/about/3`}
+                  onClick={() => {
+                    window.setTimeout(function () {
+                      setAboutTurkeyToggle(false);
+                    }, 500);
+                  }}
+                  state={{
+                    data: {
+                      title: "Residency permits and visas",
+                    },
+                  }}
+                >
                   Residency permits and visas
                   <i className="fa fa-angle-down" />
                 </Link>
                 <div className="level-3">
                   <ul className="no-bullets">
                     <li>
-                      <Link title="Residency permits in Turkey">
+                      <Link
+                        title="Residency permits in Turkey"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Residency permits in Turkey",
+                          },
+                        }}
+                      >
                         Residency permits in Turkey
                       </Link>
                     </li>
                     <li>
-                      <Link title="Work permits in Turkey">
+                      <Link
+                        title="Work permits in Turkey"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Work permits in Turkey",
+                          },
+                        }}
+                      >
                         Work permits in Turkey
                       </Link>
                     </li>
@@ -363,19 +665,58 @@ export default function HeaderNav() {
                 </div>
               </li>
               <li className="has-child">
-                <Link title="Your pets and cars">
+                <Link
+                  title="Your pets and cars"
+                  to={`/about/3`}
+                  onClick={() => {
+                    window.setTimeout(function () {
+                      setAboutTurkeyToggle(false);
+                    }, 500);
+                  }}
+                  state={{
+                    data: {
+                      title: "Your pets and cars",
+                    },
+                  }}
+                >
                   Your pets and cars
                   <i className="fa fa-angle-down" />
                 </Link>
                 <div className="level-3">
                   <ul className="no-bullets">
                     <li>
-                      <Link title="Bringing your pets into Turkey">
+                      <Link
+                        title="Bringing your pets into Turkey"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Bringing your pets into Turkey",
+                          },
+                        }}
+                      >
                         Bringing your pets into Turkey
                       </Link>
                     </li>
                     <li>
-                      <Link title="Bringing your car into Turkey">
+                      <Link
+                        title="Bringing your car into Turkey"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Bringing your car into Turkey",
+                          },
+                        }}
+                      >
                         Bringing your car into Turkey
                       </Link>
                     </li>
@@ -383,29 +724,96 @@ export default function HeaderNav() {
                 </div>
               </li>
               <li className="has-child">
-                <Link title="Property taxes">
+                <Link
+                  title="Property taxes"
+                  to={`/about/3`}
+                  onClick={() => {
+                    window.setTimeout(function () {
+                      setAboutTurkeyToggle(false);
+                    }, 500);
+                  }}
+                  state={{
+                    data: {
+                      title: "Property taxes",
+                    },
+                  }}
+                >
                   Property taxes
                   <i className="fa fa-angle-down" />
                 </Link>
                 <div className="level-3">
                   <ul className="no-bullets">
                     <li>
-                      <Link title="Income Tax On Turkish Property">
+                      <Link
+                        title="Income Tax On Turkish Property"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Income Tax On Turkish Property",
+                          },
+                        }}
+                      >
                         Income Tax On Turkish Property
                       </Link>
                     </li>
                     <li>
-                      <Link title="Capital Gains Tax On Sale Of Turkish Property">
+                      <Link
+                        title="Capital Gains Tax On Sale Of Turkish Property"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title:
+                              "Capital Gains Tax On Sale Of Turkish Property",
+                          },
+                        }}
+                      >
                         Capital Gains Tax On Sale Of Turkish Property
                       </Link>
                     </li>
                     <li>
-                      <Link title="VAT exemption when buying Turkish real estate">
+                      <Link
+                        title="VAT exemption when buying Turkish real estate"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title:
+                              "VAT exemption when buying Turkish real estate",
+                          },
+                        }}
+                      >
                         VAT exemption when buying Turkish real estate
                       </Link>
                     </li>
                     <li>
-                      <Link title="Real estate inheritance tax in Turkey">
+                      <Link
+                        title="Real estate inheritance tax in Turkey"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Real estate inheritance tax in Turkey",
+                          },
+                        }}
+                      >
                         Real estate inheritance tax in Turkey
                       </Link>
                     </li>
@@ -413,24 +821,76 @@ export default function HeaderNav() {
                 </div>
               </li>
               <li className="has-child">
-                <Link title="Living in Turkey">
+                <Link
+                  title="Living in Turkey"
+                  to={`/about/3`}
+                  onClick={() => {
+                    window.setTimeout(function () {
+                      setAboutTurkeyToggle(false);
+                    }, 500);
+                  }}
+                  state={{
+                    data: {
+                      title: "Living in Turkey",
+                    },
+                  }}
+                >
                   Living in Turkey
                   <i className="fa fa-angle-down" />
                 </Link>
                 <div className="level-3">
                   <ul className="no-bullets">
                     <li>
-                      <Link title="Retire to low cost of living in Turkey">
+                      <Link
+                        title="Retire to low cost of living in Turkey"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Retire to low cost of living in Turkey",
+                          },
+                        }}
+                      >
                         Retire to low cost of living in Turkey
                       </Link>
                     </li>
                     <li>
-                      <Link title="Healthcare in Turkey">
+                      <Link
+                        title="Healthcare in Turkey"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Healthcare in Turkey",
+                          },
+                        }}
+                      >
                         Healthcare in Turkey
                       </Link>
                     </li>
                     <li>
-                      <Link title="Where to buy property in Turkey?">
+                      <Link
+                        title="Where to buy property in Turkey?"
+                        to={`/about/3`}
+                        onClick={() => {
+                          window.setTimeout(function () {
+                            setAboutTurkeyToggle(false);
+                          }, 500);
+                        }}
+                        state={{
+                          data: {
+                            title: "Where to buy property in Turkey?",
+                          },
+                        }}
+                      >
                         Where to buy property in Turkey?
                       </Link>
                     </li>
@@ -438,7 +898,20 @@ export default function HeaderNav() {
                 </div>
               </li>
               <li>
-                <Link title="Download Complete Buyer Guide">
+                <Link
+                  title="Download Complete Buyer Guide"
+                  to={`/about/3`}
+                  onClick={() => {
+                    window.setTimeout(function () {
+                      setAboutTurkeyToggle(false);
+                    }, 500);
+                  }}
+                  state={{
+                    data: {
+                      title: "Download Complete Buyer Guide",
+                    },
+                  }}
+                >
                   Download Complete Buyer Guide
                 </Link>
               </li>
@@ -486,22 +959,82 @@ export default function HeaderNav() {
           <div className={`level-2 ${Active ? "open" : ""}`}>
             <ul className="no-bullets">
               <li>
-                <Link title="Our Services and Fees">Our Services and Fees</Link>
+                <Link
+                  title="Our Services and Fees"
+                  to={`/about/4`}
+                  state={{
+                    data: {
+                      title: "Our Services and Fees",
+                    },
+                  }}
+                >
+                  Our Services and Fees
+                </Link>
               </li>
               <li>
-                <Link title="London">London</Link>
+                <Link
+                  title="London"
+                  to={`/about/4`}
+                  state={{
+                    data: {
+                      title: "London",
+                    },
+                  }}
+                >
+                  London
+                </Link>
               </li>
               <li>
-                <Link title="Istanbul">Istanbul</Link>
+                <Link
+                  title="Istanbul"
+                  to={`/about/4`}
+                  state={{
+                    data: {
+                      title: "Istanbul",
+                    },
+                  }}
+                >
+                  Istanbul
+                </Link>
               </li>
               <li>
-                <Link title="Bodrum">Bodrum</Link>
+                <Link
+                  title="Bodrum"
+                  to={`/about/4`}
+                  state={{
+                    data: {
+                      title: "Bodrum",
+                    },
+                  }}
+                >
+                  Bodrum
+                </Link>
               </li>
               <li>
-                <Link title="Fethiye">Fethiye</Link>
+                <Link
+                  title="Fethiye"
+                  to={`/about/4`}
+                  state={{
+                    data: {
+                      title: "Fethiye",
+                    },
+                  }}
+                >
+                  Fethiye
+                </Link>
               </li>
               <li>
-                <Link title="Antalya">Antalya</Link>
+                <Link
+                  title="Antalya"
+                  to={`/about/4`}
+                  state={{
+                    data: {
+                      title: "Antalya",
+                    },
+                  }}
+                >
+                  Antalya
+                </Link>
               </li>
             </ul>
           </div>
