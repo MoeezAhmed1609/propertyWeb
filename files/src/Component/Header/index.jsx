@@ -33,6 +33,7 @@ import { FaSignOutAlt } from "react-icons/fa";
 import GoogleLogo from "../../assets/google-icon-removebg-preview.png";
 import { IconButton, TextField, Chip, Divider } from "@mui/material";
 import RealStateHeader from "../../pages/RealState/RealStateHeader";
+import StyledButton from "../../ReUseAbleComponent/StyledButton";
 
 const style = {
   position: "absolute",
@@ -46,6 +47,19 @@ const style = {
   // border: "2px solid #000",
   boxShadow: 24,
   p: 4,
+};
+const loginStyle = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  height: "90vh !important",
+  overflowY: "hidden",
+  bgcolor: "background.paper",
+  // border: "2px solid #000",
+  boxShadow: 24,
+  p: 2,
 };
 
 export default function Header() {
@@ -354,18 +368,18 @@ export default function Header() {
               <Box className="logo">
                 <Link
                   to="/"
-                  title="Property Turkey"
+                  title="Property USA"
                   className="logoImg flex items-center content-center flex-direction-column pos-logo-lg"
                   id="desktopLogo"
                 >
                   <img
                     className="w-[300px] h-[100px] Desktop_Logo"
                     src={PTHEADERLOGO}
-                    alt="Property Turkey"
+                    alt="Property USA"
                   />
                 </Link>
                 <Link
-                  title="Property Turkey"
+                  title="Property USA"
                   className="flex items-center content-center flex-direction-column pos-logo-lg"
                   id="mobileLogo"
                 ></Link>
@@ -396,7 +410,7 @@ export default function Header() {
                       <Box className="addyourhome">
                         <p>
                           Whatever your reasons for selling your property in
-                          Turkey. you certainly will want to achieve a handsome
+                          USA. you certainly will want to achieve a handsome
                           price with minimum imposition on your time.
                         </p>
                         <Box className="text-right">
@@ -658,23 +672,26 @@ export default function Header() {
         </Box>
       </Modals>
 
-      <Modal
-        style={{ position: "relative", top: 10, height: 300 }}
+      <Modals
         open={isModalOpen}
         onClose={() => setIsModalOpen(false)}
+        aria-labelledby="Modals-Modals-title"
+        aria-describedby="Modals-Modals-description"
       >
-        <Box
-          style={{ display: "inline-block" }}
-          id="logins"
-          className="fancybox-content"
-        >
+        <Box sx={loginStyle} id="logins" className="fancybox-content">
+          <IconButton
+            sx={{ position: "absolute", top: "15px", right: "15px" }}
+            onClick={() => setIsModalOpen(false)}
+          >
+            <CloseIcon />
+          </IconButton>
           <Box className="container text-center">
             <Box className="register-form">
               <Box marginLeft={14}>
                 <Image
                   src={PTHEADERLOGO}
                   style={{ height: "60px" }}
-                  alt="Property Turkey"
+                  alt="Property USA"
                 />
               </Box>
               {/* <h3 style={{ margin: "8px 0" }}>Sign in to Save Properties</h3> */}
@@ -682,7 +699,7 @@ export default function Header() {
                 to=""
                 className="ion-social-google w-75 margin-ver-1 h-[45px] flex justify-around items-center"
                 onClick={AuthGoogle}
-                style={{marginTop: '20px'}}
+                style={{ marginTop: "20px" }}
               >
                 <span className="relative">
                   <img
@@ -697,7 +714,11 @@ export default function Header() {
                 </span>
               </Link>
 
-              <Link to="" className="ion-social-facebook w-75">
+              <Link
+                to=""
+                className="ion-social-facebook w-75"
+                style={{ marginBottom: "10px" }}
+              >
                 <span>
                   <i className="fa fa-facebook" aria-hidden="true" /> Continue
                   with Facebook
@@ -750,12 +771,17 @@ export default function Header() {
                   defaultValue=""
                   style={{ display: "none" }}
                 />
-                <button
+                <StyledButton
+                  title={"Submit"}
+                  onClick={AuthRegister}
+                  margin={"8px"}
+                />
+                {/* <button
                   className="btn btn-block bg-pt crl-white margin-ver-1"
                   onClick={AuthRegister}
                 >
                   Submit
-                </button>
+                </button> */}
               </Box>
               <Box
                 className="text-left padding-bottom-05"
@@ -763,7 +789,10 @@ export default function Header() {
               >
                 <Link to="">Forget Password</Link>
               </Box>
-              <p className="text-left" style={{ textAlign: "center" }}>
+              <p
+                className="text-left"
+                style={{ textAlign: "center", marginBottom: "0" }}
+              >
                 Do not have an account?
                 <Link className="clr-pt" to="" style={{ paddingLeft: "4px" }}>
                   Signup
@@ -772,7 +801,7 @@ export default function Header() {
             </Box>
           </Box>
         </Box>
-      </Modal>
+      </Modals>
     </>
   );
 }

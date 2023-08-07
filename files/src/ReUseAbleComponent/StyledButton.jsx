@@ -10,6 +10,7 @@ const StyledButton = ({
   size,
   font,
   type,
+  margin,
 }) => {
   return (
     <Button
@@ -32,6 +33,7 @@ const StyledButton = ({
         width: width || "100%",
         fontFamily: "Poppins, sans-serif",
         fontSize: font ? font : "13px",
+        margin: `${margin ? margin : 0} 0`,
       }}
       className="swiper-btn"
       size={size ? "small" : "medium"}

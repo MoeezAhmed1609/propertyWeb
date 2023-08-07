@@ -134,7 +134,7 @@ export default function RecomendedTurkishProperty() {
         >
           <h1 className="title-lined abhaya">
             <Box className="font-small-29">
-              <b>Today</b>'s Recommended Turkish Properties
+              <b>Recommended</b> Properties in USA
             </Box>
           </h1>
           <Box className="section--filter-wrapper">
@@ -455,12 +455,18 @@ export default function RecomendedTurkishProperty() {
                 name="enqID"
                 defaultValue=""
               />
-              <input
+              <StyledButton
+                title={"Submit"}
+                width="80%"
+                size="small"
+                type={"submit"}
+              />
+              {/* <input
                 type="submit"
                 defaultValue="Send"
                 className=" bg-[#5081ff] px-3 text-white rounded-md py-2"
                 onclick=""
-              />
+              /> */}
             </Box>
           </form>{" "}
           <button

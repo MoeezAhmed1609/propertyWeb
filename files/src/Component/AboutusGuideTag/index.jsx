@@ -184,7 +184,7 @@ export default function AboutusGuideTag({ title }) {
                   <strong>The Property USA Difference</strong>
                 </h2>
                 <p>
-                  With 20+ years experience in the Turkish real estate market,
+                  With 20+ years experience in the American real estate market,
                   team Property USA are your experienced, friendly, and
                   independent overseas real estate consultants. Our head office
                   is located in London, UK with regional operational offices
@@ -234,9 +234,9 @@ export default function AboutusGuideTag({ title }) {
                   <strong>Industry Leaders</strong>
                 </h2>
                 <p>
-                  In the crowded field of Turkish investment and property,
+                  In the crowded field of American investment and property,
                   Property USA stands head and shoulders above the rest. Our
-                  success in Turkish real estate and investment over the past
+                  success in American real estate and investment over the past
                   20+ years has cemented our position as industry leaders and
                   experts. Client-focused, knowledgeable and thorough, we’re
                   simply the most effective investment consultants for property

@@ -139,15 +139,15 @@ export default function Footer() {
                 <li className="li-header">Useful Links</li>
                 <li>
                   <Link
-                    title="Turkish Citizenship By investment"
+                    title="American Citizenship By investment"
                     to={`/about/1`}
                     state={{
                       data: {
-                        title: "Turkish Citizenship By investment",
+                        title: "American Citizenship By investment",
                       },
                     }}
                   >
-                    Turkish Citizenship By investment
+                    American Citizenship By investment
                   </Link>
                 </li>
                 <li>

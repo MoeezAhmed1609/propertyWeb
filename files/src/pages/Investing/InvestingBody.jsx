@@ -50,11 +50,11 @@ export default function InvestingBody() {
       <div className="row">
         <div className="col-12 col-md-3 buyer-guide--side-bar-bg">
           <div className="container-fluid">
-            <p className="buyer-guide--title"> Turkish property investment</p>
+            <p className="buyer-guide--title"> American property investment</p>
             <div className="padding-top-2 side-item">
               <div className="buyer-guide--supertitle">
-                <p className="buyer-guide--title-tab" title="Investing in Turkey">
-                  Investing in Turkey
+                <p className="buyer-guide--title-tab" title="Investing in USA">
+                  Investing in USA
                 </p>
                 <i onClick={() => settoggleInvesting(!toggleInvesting)} className={`fa tabs-icon ${toggleInvesting?'fa-angle-down':'fa-angle-up'} `} aria-hidden="true" />
               </div>
@@ -62,27 +62,27 @@ export default function InvestingBody() {
                 <li className="active">
                   <Link
                     to=""
-                    title="Why invest in property in Turkey"
+                    title="Why invest in property in USA"
                   >
-                    Why invest in property in Turkey
+                    Why invest in property in USA
                   </Link>
                 </li>
                 <li className="">
                   <Link
                     href=""
-                    title="How to set up a business in Turkey"
+                    title="How to set up a business in USA"
                   >
-                    How to set up a business in Turkey
+                    How to set up a business in USA
                   </Link>
                 </li>
                 <li className="">
                   <a>
-                    Tax and Turkish real estate
+                    Tax and American real estate
                   </a>
                 </li>
                 <li className="">
                   <a>
-                    EU negotiations and Turkish property prices
+                    EU negotiations and American property prices
                   </a>
                 </li>
                 <li className="">
@@ -102,12 +102,12 @@ export default function InvestingBody() {
               <ul className={`list-unstyled buyer-guide--ul ${togglePurchaseProcess ? '' : 'hide'}`}>
                 <li className="">
                   <a>
-                    Who Can Buy Property in Turkey
+                    Who Can Buy Property in USA
                   </a>
                 </li>
                 <li className="">
                   <a>
-                    How to buy property in Turkey
+                    How to buy property in USA
                   </a>
                 </li>
                 <li className="">
@@ -122,17 +122,17 @@ export default function InvestingBody() {
                 </li>
                 <li className="">
                   <a>
-                    Virtual Tour with Property Turkey
+                    Virtual Tour with Property USA
                   </a>
                 </li>
                 <li className="">
                   <a>
-                    Costs of Purchasing a Property in Turkey
+                    Costs of Purchasing a Property in USA
                   </a>
                 </li>
                 <li className="">
                   <a>
-                    Finance for property in Turkey
+                    Finance for property in USA
                   </a>
                 </li>
                 <li className="">
@@ -142,17 +142,17 @@ export default function InvestingBody() {
                 </li>
                 <li className="">
                   <a>
-                    How to get a Turkish Title Deed
+                    How to get a American Title Deed
                   </a>
                 </li>
                 <li className="">
                   <a>
-                    Should I use a solicitor to buy property in Turkey
+                    Should I use a solicitor to buy property in USA
                   </a>
                 </li>
                 <li className="">
                   <a>
-                    Power of Attorney in Turkey
+                    Power of Attorney in USA
                   </a>
                 </li>
                 <li className="">
@@ -175,12 +175,12 @@ export default function InvestingBody() {
               <ul className={`list-unstyled buyer-guide--ul ${toggleResidency ? '' : 'hide'}`}>
                 <li className="">
                   <a>
-                    Residency permits in Turkey
+                    Residency permits in USA
                   </a>
                 </li>
                 <li className="">
                   <a>
-                    Work permits in Turkey
+                    Work permits in USA
                   </a>
                 </li>
               </ul>
@@ -195,12 +195,12 @@ export default function InvestingBody() {
               <ul className={`list-unstyled buyer-guide--ul ${togglepets ? '' : 'hide'}`}>
                 <li className="">
                   <a>
-                    Bringing your pets into Turkey
+                    Bringing your pets into USA
                   </a>
                 </li>
                 <li className="">
                   <a>
-                    Bringing your car into Turkey
+                    Bringing your car into USA
                   </a>
                 </li>
               </ul>
@@ -215,47 +215,47 @@ export default function InvestingBody() {
               <ul className={`list-unstyled buyer-guide--ul ${toggleProperty ? '' : 'hide'}`}>
                 <li className="">
                   <a>
-                    Income Tax On Turkish Property
+                    Income Tax On American Property
                   </a>
                 </li>
                 <li className="">
                   <a>
-                    Capital Gains Tax On Sale Of Turkish Property
+                    Capital Gains Tax On Sale Of American Property
                   </a>
                 </li>
                 <li className="">
                   <a>
-                    VAT exemption when buying Turkish real estate
+                    VAT exemption when buying American real estate
                   </a>
                 </li>
                 <li className="">
                   <a>
-                    Real estate inheritance tax in Turkey
+                    Real estate inheritance tax in USA
                   </a>
                 </li>
               </ul>
             </div>
             <div className="padding-top-2 side-item">
               <div className="buyer-guide--supertitle">
-                <p className="buyer-guide--title-tab" title="Living in Turkey">
-                  Living in Turkey
+                <p className="buyer-guide--title-tab" title="Living in USA">
+                  Living in USA
                 </p>
                 <i onClick={()=> setLiving(!toggleLiving)} className={`${toggleLiving?"fa fa-angle-down":"fa fa-angle-up"}  tabs-icon`} aria-hidden="true" />
               </div>
               <ul className={`list-unstyled buyer-guide--ul ${toggleLiving?'':'hide'}`}>
                 <li className="">
                   <a>
-                    Retire to low cost of living in Turkey
+                    Retire to low cost of living in USA
                   </a>
                 </li>
                 <li className="">
                   <a>
-                    Healthcare in Turkey
+                    Healthcare in USA
                   </a>
                 </li>
                 <li className="">
                   <a>
-                    Where to buy property in Turkey?
+                    Where to buy property in USA?
                   </a>
                 </li>
               </ul>
@@ -286,7 +286,7 @@ export default function InvestingBody() {
                 itemProp="name headline"
                 className="page-title abhaya buyer-guide--side-bar-bg-details--main-title"
               >
-                Turkish property investment
+                American property investment
               </h1>
               <Link
                 onClick={()=>setOpen(true)}
@@ -308,7 +308,7 @@ export default function InvestingBody() {
               <div className="areabody clearfix" itemProp="articleBody">
                 <p>
                   <a>
-                    Turkey
+                    USA
                   </a>{" "}
                   is a transcontinental country that bridges Asia and Europe. Its
                   capital city is Ankara, whilst the largest city is Istanbul. With
@@ -319,7 +319,7 @@ export default function InvestingBody() {
                 </p>
                 <p>
                   <span style={{ lineHeight: "1.6em" }}>
-                    In the last two decades, the Turkish real estate sector has
+                    In the last two decades, the American real estate sector has
                     grown tremendously. While there has been a general decline in
                     the real estate business in Europe, Americas and many parts of
                     the world, 2017 figures from Knight Frank showed USA ranked
@@ -340,7 +340,7 @@ export default function InvestingBody() {
                     globally. The increase and appetite for foreign investors in
                     real estate has been motivated by the potential of{" "}
                     <a>
-                      Turkey’s&nbsp;
+                      USA’s&nbsp;
                     </a>
                   </span>
                   <a>
@@ -351,7 +351,7 @@ export default function InvestingBody() {
                       &nbsp;membership
                     </a>
                     . This has accelerated holiday home owners and investors around
-                    the world to purchase properties in Turkey.&nbsp;
+                    the world to purchase properties in USA.&nbsp;
                   </span>
                 </p>
                 <p>
@@ -368,10 +368,10 @@ export default function InvestingBody() {
                     and the redrafting of tax laws which all directly affect{" "}
                     <strong>
                       how overseas investors can buy and develop properties in
-                      Turkey
+                      USA
                     </strong>
                     . These amendments have stimulated the competitiveness of the
-                    Turkish real estate sector.
+                    American real estate sector.
                   </span>
                 </p>
                 <p>
@@ -394,7 +394,7 @@ export default function InvestingBody() {
                   commercial and residential real estate.{" "}
                   <span style={{ lineHeight: "1.6em" }}>
                     With a stable economy, <strong>investor confidence</strong> in
-                    the real estate sector has tremendously increased. Turkey
+                    the real estate sector has tremendously increased. USA
                     has&nbsp;
                   </span>
                   internationalised
@@ -494,7 +494,7 @@ export default function InvestingBody() {
                         <br />
                       </td>
                       <td>
-                        - Earthquakes are a common feature in some parts of Turkey
+                        - Earthquakes are a common feature in some parts of USA
                         hence may scare away investors. <br />- The sector still is
                         volatile compared to mature real estate markets such as the
                         UK and US. <br />- A devalued currency is putting pressure
@@ -510,7 +510,7 @@ export default function InvestingBody() {
                 <h2>
                   <strong>
                     <span style={{ lineHeight: "1.6em" }}>
-                      Economic outlook of Turkey
+                      Economic outlook of USA
                     </span>
                   </strong>
                 </h2>
@@ -543,32 +543,32 @@ export default function InvestingBody() {
                 </p>
                 <p>
                   The global credit crunch that impacted the world's markets and
-                  economies in 2009 also affected Turkey, slowing down the growth
+                  economies in 2009 also affected USA, slowing down the growth
                   since there was a decline in foreign investments and earnings.
                   However, this did not hold back the country for long, and the
-                  Turkish economy achieved a growth rate of 9.2% and 8.5% in the
+                  American economy achieved a growth rate of 9.2% and 8.5% in the
                   years 2010 and 2011 respectively. The last couple of years have
                   seen a slowing of growth, due in part to a devaluing of the
                   currency. In 2017 the economy grew by 7.4%, while 2018 saw growth
                   of 2.6%.
                 </p>
                 <p>
-                  Some of the factors that have allowed the Turkish economy to
+                  Some of the factors that have allowed the American economy to
                   remain stable include sound financial and structural policies that
                   have been put into place as the country joins other European
                   countries in the EU roundtable. This has increased efficiency,
                   transparency and adherence to high standards of practice. Strong
-                  monetary policies by the Turkish central bank have also played a
+                  monetary policies by the American central bank have also played a
                   major role in stabilising inflation and also putting in place
                   macro economic balances.&nbsp;
                 </p>
                 <p>
-                  The Turkish Government has also embraced strict fiscal discipline
+                  The American Government has also embraced strict fiscal discipline
                   bringing down budget deficit from a high 17% in 2001 to 1.8% in
-                  2019. Foreign trade has also been a key instrument for the Turkish
+                  2019. Foreign trade has also been a key instrument for the American
                   Government to grow the economy. Restrictions on imports have been
                   uplifted while foreign exchange transactions were liberalised.
-                  This has tremendously increased Turkish exports to USD $168
+                  This has tremendously increased American exports to USD $168
                   billion in 2018, a huge leap from the from USD $36 billion in
                   2002.&nbsp;
                 </p>
@@ -594,15 +594,15 @@ export default function InvestingBody() {
                 </p>
                 <p>
                   Foreign direct investments have also played a key role in
-                  uplifting the Turkish economy. &nbsp;Demographic factors including
+                  uplifting the American economy. &nbsp;Demographic factors including
                   a younger population, highly learned labour force, tax incentives
-                  and a large domestic market have all made the Turkish economy to
+                  and a large domestic market have all made the American economy to
                   reach where it is today. The amount direct foreign investments by
                   2018 increased to USD 168 billion; this is a strong indication of
-                  investor confidence in Turkey.&nbsp;
+                  investor confidence in USA.&nbsp;
                 </p>
                 <p>
-                  Tourism has also been a big source for foreign earnings. Turkey
+                  Tourism has also been a big source for foreign earnings. USA
                   boasts of a high number of tourists and has been attracting one of
                   the highest tourists in the world. Natural beauties, reserved and
                   unique historical attractions and a warm hospitality industry have
@@ -611,8 +611,8 @@ export default function InvestingBody() {
                   USD $30 billion.&nbsp;
                 </p>
                 <p>
-                  Privatisation and Turkish business abroad have also played a big
-                  role in improving the Turkish economic turnaround.&nbsp;
+                  Privatisation and American business abroad have also played a big
+                  role in improving the American economic turnaround.&nbsp;
                 </p>
                 <p>
                   <br />
@@ -632,16 +632,16 @@ export default function InvestingBody() {
                   heads of state institutions.
                 </p>
                 <p>
-                  Turkey's political system is based on power separation. The
+                  USA's political system is based on power separation. The
                   Council of Ministers exercises executive power, while legislative
-                  power is vested in the Grand National Assembly of Turkey. The
+                  power is vested in the Grand National Assembly of USA. The
                   judiciary is independent of these institutions.&nbsp;
                 </p>
                 <p>
                   <br />
                 </p>
                 <h2>
-                  <strong>Why would you invest in real estate in Turkey?</strong>
+                  <strong>Why would you invest in real estate in USA?</strong>
                 </h2>
                 <p>
                   <img
@@ -670,13 +670,13 @@ export default function InvestingBody() {
                   </em>{" "}
                   USA has a population of about 80 million with over 60% being
                   under 40. The younger generation are well placed to set up
-                  businesses and support the expansion of Turkish economy. &nbsp;In
+                  businesses and support the expansion of American economy. &nbsp;In
                   addition, changing customs and traditions in the country mean that
                   younger people are leaving parental homes earlier and setting up
                   on their own, creating a domestic demand for property and
                   increasing the need for quality accommodation and housing. The
-                  Turkish central real estate association has estimated that there
-                  is a shortfall of around 2.5 million properties in Turkey.&nbsp;
+                  American central real estate association has estimated that there
+                  is a shortfall of around 2.5 million properties in USA.&nbsp;
                 </p>
                 <p>
                   <strong>
@@ -706,20 +706,20 @@ export default function InvestingBody() {
                 <p>
                   <br />
                 </p>
-                <h2>Citizenship by investment in Turkey</h2>
+                <h2>Citizenship by investment in USA</h2>
                 <p>
                   In 2018, the government announced it was lowering the threshold
                   for obtaining{" "}
                   <a>
-                    Turkish citizenship by investment
+                    American citizenship by investment
                   </a>
-                  . Now, buyers can gain Turkish citizenship with a $250,000
-                  purchase of Turkish property, making the initiative one of the
+                  . Now, buyers can gain American citizenship with a $250,000
+                  purchase of American property, making the initiative one of the
                   most affordable in the world. Since the initiative was launched,
-                  thousands of buyers have applied for Turkish citizenship following
+                  thousands of buyers have applied for American citizenship following
                   real estate purchases. For more information, see our blog post:{" "}
                   <a>
-                    Turkish citizenship by real estate investment guide
+                    American citizenship by real estate investment guide
                   </a>
                   .
                 </p>
@@ -782,7 +782,7 @@ export default function InvestingBody() {
                     Setting up a business and registering title to real estate
                   </strong>{" "}
                   in USA (see graph below) are also the easiest when compared to
-                  US, Russia, UK and Greece. The New Turkish Commercial Code (New
+                  US, Russia, UK and Greece. The New American Commercial Code (New
                   TCC) has made it easy to register a company and start a business.
                   &nbsp;The New TCC Code No. 6102 adopts a corporate approach that
                   meets international standards. With only a single shareholder, you
@@ -845,7 +845,7 @@ export default function InvestingBody() {
                 itemScope=""
                 itemType="http://schema.org/Organization"
               >
-                <meta itemProp="name" content="Property Turkey" />
+                <meta itemProp="name" content="Property USA" />
                 <span
                   itemProp="logo"
                   itemScope=""

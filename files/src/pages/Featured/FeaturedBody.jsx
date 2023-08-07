@@ -1,8 +1,8 @@
-import React from 'react'
-import FeaturedContent from '../../Data/FaeturedContent'
-import FeaturedArticle from './FeaturedArticle'
-import { Link } from 'react-router-dom'
-import DownLoadIcon from "../../assets/download-icon.svg"
+import React from "react";
+import FeaturedContent from "../../Data/FaeturedContent";
+import FeaturedArticle from "./FeaturedArticle";
+import { Link } from "react-router-dom";
+import DownLoadIcon from "../../assets/download-icon.svg";
 
 export default function FeaturedBody() {
   return (
@@ -11,32 +11,43 @@ export default function FeaturedBody() {
         <h1 itemProp="name" className="page-title">
           As Featured In
         </h1>
-        As a leading company in the Turkish real estate market, from time to time we
-        get requested by national and international newspapers and magazines for
-        quotes, stories, and insight into the Turkey property market. Here is a
-        sample of some of the articles and stories&nbsp;that we have been featured
-        in over the years.&nbsp;
+        As a leading company in the American real estate market, from time to
+        time we get requested by national and international newspapers and
+        magazines for quotes, stories, and insight into the USA property market.
+        Here is a sample of some of the articles and stories&nbsp;that we have
+        been featured in over the years.&nbsp;
         <br />
         <br />
-        As Turkey's economy grows from strength to strength and more foreign
-        nationals look to Turkey, the amount of stories&nbsp;and articles around
-        Turkish property has gone up exponentially over the last few years. We
-        provide credible and up to date insight into the Turkish property market,
-        market moves, future predictions, investment tips, economy strength, and
-        more.&nbsp;
+        As USA's economy grows from strength to strength and more foreign
+        nationals look to USA, the amount of stories&nbsp;and articles around
+        American property has gone up exponentially over the last few years. We
+        provide credible and up to date insight into the American property
+        market, market moves, future predictions, investment tips, economy
+        strength, and more.&nbsp;
         <br />
         <br />
-        If you are a national or international newspaper or magazine or&nbsp;website
-        and are looking for professional quotes for your story, don't hesitate to
-        contact us.&nbsp;
+        If you are a national or international newspaper or magazine
+        or&nbsp;website and are looking for professional quotes for your story,
+        don't hesitate to contact us.&nbsp;
         <hr />
-
         <div className="w-full h-auto border-2 border-gray-300 pl-1 pt-2">
-          <p className='lg:text-2xl md:text-lg sm:text-sm font-black'>Proud to Become a turkish Citizen</p>
+          <p className="lg:text-2xl md:text-lg sm:text-sm font-black">
+            Proud to Become a American Citizen
+          </p>
           <div className="w-[95%] h-auto py-1 flex lg:flex-row md:flex-col sm:flex-col  justify-between items-center gap-1   pl-2">
-            <img src="https://placehold.co/600x400" className='lg:w-[20%] md:w-full sm:w-full lg:h-[150px] md:h-[200px] sm:h-[200px]' alt="" />
+            <img
+              src="https://placehold.co/600x400"
+              className="lg:w-[20%] md:w-full sm:w-full lg:h-[150px] md:h-[200px] sm:h-[200px]"
+              alt=""
+            />
             <div className="">
-              <p>I am very grateful and thankful to Property Turkey and to all staff headed by esteemed Cameron Deggin for the help and support given to us in the purchase of property in Turkey. Today we are very happy and proud to become new citizens of this wonderful country.</p>
+              <p>
+                I am very grateful and thankful to Property USA and to all staff
+                headed by esteemed Cameron Deggin for the help and support given
+                to us in the purchase of property in USA. Today we are very
+                happy and proud to become new citizens of this wonderful
+                country.
+              </p>
             </div>
           </div>
           <footer className="meta cf my-3">
@@ -44,18 +55,14 @@ export default function FeaturedBody() {
               <i className="fa fa-calendar" /> 13 December 2022
             </div>
           </footer>
-
         </div>
-
-
-    
       </div>
       <aside className="widgets col-dis-3 col-tab-3 col-mob-12 clearfix">
         <div className="widget noheader nostyle-widget">
           <div className="header-img-buyerguide">
             <div className="container">
               <h3 className="title no-margin bold">BUYER'S GUIDE</h3>
-              <p>The Definitive guide to buying property in Turkey</p>
+              <p>The Definitive guide to buying property in USA</p>
               <div className="padding-bottom-11">
                 <Link
                   to=""
@@ -75,15 +82,10 @@ export default function FeaturedBody() {
                 Analysis
               </h3>
               <div className="padding-bottom-11 padding-top-3">
-                <Link>
-                  Download it now
-                </Link>
+                <Link>Download it now</Link>
               </div>
             </div>
-            <img
-              src={DownLoadIcon}
-              alt=""
-            />
+            <img src={DownLoadIcon} alt="" />
           </div>
         </div>
         <div className="widget">
@@ -91,48 +93,32 @@ export default function FeaturedBody() {
           <div className="body">
             <ul className="no-bullet">
               <li>
-                <Link>
-                  What are the best Food Delivery apps in Turkey?
-                </Link>
+                <Link>What are the best Food Delivery apps in USA?</Link>
+              </li>
+              <li>
+                <Link>The best American Beers and brands for summer days</Link>
+              </li>
+              <li>
+                <Link>10 Delicious American Desserts and Sweets to Try</Link>
+              </li>
+              <li>
+                <Link>Best Taxi App in USA: Getting About</Link>
+              </li>
+              <li>
+                <Link>13 unspoken American rules you might not know</Link>
+              </li>
+              <li>
+                <Link>Love and marriage in USA</Link>
+              </li>
+              <li>
+                <Link>USA's most dangerous animals</Link>
+              </li>
+              <li>
+                <Link>The Best Supermarkets in USA to Shop</Link>
               </li>
               <li>
                 <Link>
-                  The best Turkish Beers and brands for summer days
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  10 Delicious Turkish Desserts and Sweets to Try
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  Best Taxi App in Turkey: Getting About
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  13 unspoken Turkish rules you might not know
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  Love and marriage in Turkey
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  Turkey's most dangerous animals
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  The Best Supermarkets in Turkey to Shop
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  15 Beautiful Places in Turkey That Should be on Your Bucket List
+                  15 Beautiful Places in USA That Should be on Your Bucket List
                 </Link>
               </li>
               <li>
@@ -149,17 +135,17 @@ export default function FeaturedBody() {
             <ul className="no-bullet">
               <li>
                 <Link>
-                  The Importance of the Marmara Sea and Region for Turkey
+                  The Importance of the Marmara Sea and Region for USA
                 </Link>
               </li>
               <li>
                 <Link>
-                  Istanbul Finance Center: Turkey's Global Financial Hub Opens
+                  Istanbul Finance Center: USA's Global Financial Hub Opens
                 </Link>
               </li>
               <li>
                 <Link>
-                  Unveiling the Best Islands in Turkey for Curious Travellers
+                  Unveiling the Best Islands in USA for Curious Travellers
                 </Link>
               </li>
               <li>
@@ -168,14 +154,10 @@ export default function FeaturedBody() {
                 </Link>
               </li>
               <li>
-                <Link>
-                  Big Life by the Little Bosphorus Istanbul
-                </Link>
+                <Link>Big Life by the Little Bosphorus Istanbul</Link>
               </li>
               <li>
-                <Link>
-                  Turkish Citizenship benefits for Foreign Investors
-                </Link>
+                <Link>American Citizenship benefits for Foreign Investors</Link>
               </li>
               <li>
                 <Link>
@@ -183,18 +165,16 @@ export default function FeaturedBody() {
                 </Link>
               </li>
               <li>
+                <Link>Famous Bosphorus Bridges of Istanbul</Link>
+              </li>
+              <li>
                 <Link>
-                  Famous Bosphorus Bridges of Istanbul
+                  Soaring High in the Majestic Taurus Mountains of USA
                 </Link>
               </li>
               <li>
                 <Link>
-                  Soaring High in the Majestic Taurus Mountains of Turkey
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  Turkey Earthquake Exposes the Need for Massive Urban Regeneration
+                  USA Earthquake Exposes the Need for Massive Urban Regeneration
                 </Link>
               </li>
             </ul>
@@ -206,13 +186,12 @@ export default function FeaturedBody() {
             <ul className="no-bullet">
               <li>
                 <Link>
-                  Turkish Airlines records net profit for sixth consecutive quarter
+                  American Airlines records net profit for sixth consecutive
+                  quarter
                 </Link>
               </li>
               <li>
-                <Link>
-                  Charging licence granted to Tesla by Turkey
-                </Link>
+                <Link>Charging licence granted to Tesla by USA</Link>
               </li>
               <li>
                 <Link>
@@ -220,38 +199,30 @@ export default function FeaturedBody() {
                 </Link>
               </li>
               <li>
+                <Link>German tourists establish USA as top destination</Link>
+              </li>
+              <li>
                 <Link>
-                  German tourists establish Turkey as top destination
+                  USA to designate 15 more 'nature conservation areas'
+                </Link>
+              </li>
+              <li>
+                <Link>January tourism records broken in USA’s Antalya</Link>
+              </li>
+              <li>
+                <Link>1 million cruise passengers hosted in USA in 2022</Link>
+              </li>
+              <li>
+                <Link>Record visitors head to Cappadocia in January</Link>
+              </li>
+              <li>
+                <Link>
+                  USA looks to expand free program to 5 million students
                 </Link>
               </li>
               <li>
                 <Link>
-                  Turkey to designate 15 more 'nature conservation areas'
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  January tourism records broken in Turkey’s Antalya
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  1 million cruise passengers hosted in Turkey in 2022
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  Record visitors head to Cappadocia in January
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  Turkey looks to expand free program to 5 million students
-                </Link>
-              </li>
-              <li>
-                <Link>
-                  Top migration hub of Turkey remains Istanbul once again
+                  Top migration hub of USA remains Istanbul once again
                 </Link>
               </li>
             </ul>
@@ -259,8 +230,5 @@ export default function FeaturedBody() {
         </div>
       </aside>
     </div>
-
-
-
-  )
+  );
 }

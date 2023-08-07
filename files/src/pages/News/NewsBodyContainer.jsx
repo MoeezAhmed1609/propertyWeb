@@ -8,21 +8,21 @@ import PopularPost from "../../ReUseAbleComponent/PopularPost";
 import { Typography } from "@mui/material";
 
 const PopularKeyWord = [
-  "life in turkey",
-  "tourism in turkey",
+  "life in USA",
+  "tourism in USA",
   "istanbul",
-  "moving to turkey",
+  "moving to USA",
 ];
 
 const PostData = [
   {
-    link: "What are the best Food Delivery apps in Turkey?",
+    link: "What are the best Food Delivery apps in USA?",
   },
   {
-    link: "The best Turkish Beers and brands for summer days",
+    link: "The best American Beers and brands for summer days",
   },
   {
-    link: "Turkey's most dangerous animals",
+    link: "USA's most dangerous animals",
   },
 ];
 
@@ -81,7 +81,7 @@ function NewsBodyContainer() {
                           <img
                             data-src="files/economicgrowth_turkey.jpg"
                             className="img-width-height-100 lazyloaded"
-                            alt="Early Days of Erdogan’s Re-election: A Period of Action for Turkey"
+                            alt="Early Days of Erdogan’s Re-election: A Period of Action for USA"
                             src={item.image}
                           />
                         </a>
@@ -92,10 +92,10 @@ function NewsBodyContainer() {
                             <span>
                               <span className="clr-pt-dark">
                                 <a
-                                  href="=Turkish history"
-                                  title="Turkish history"
+                                  href="=American history"
+                                  title="American history"
                                 >
-                                  Turkish history
+                                  American history
                                 </a>{" "}
                               </span>
                               &nbsp;&nbsp;/&nbsp;&nbsp; {item.time}
@@ -152,14 +152,14 @@ function NewsBodyContainer() {
             <div className="container">
               <div className="continue-readingg">
                 <p style={{ fontSize: "18px" }}>
-                  Property Turkey's blog is designed to give you an insight into
-                  all things Turkish, including tips about life in Turkey,
-                  Turkish culture, economic &amp; political matters and how to
+                  Property USA's blog is designed to give you an insight into
+                  all things American, including tips about life in USA,
+                  American culture, economic &amp; political matters and how to
                   get the best out of your home and investment. Showcasing many
-                  case studies of those who invested and/or moved to Turkey and
-                  integrated into the Turkish lifestyle, this blog is your
+                  case studies of those who invested and/or moved to USA and
+                  integrated into the American lifestyle, this blog is your
                   informative guide for all you need to know about making the
-                  big move overseas to Turkey.&nbsp;
+                  big move overseas to USA.&nbsp;
                 </p>
                 <p>
                   <br />
@@ -168,7 +168,7 @@ function NewsBodyContainer() {
                   Focusing on the main hotspots of Bodrum, Antalya, Fethiye,
                   Kalkan, Istanbul, Kas, Side, and more - you can expect us to
                   blog weekly about the latest trends, case studies and news
-                  coming out of the top cities in Turkey. Also expect several
+                  coming out of the top cities in USA. Also expect several
                   investment tips and hot tips for real estate and properties
                   that are hot and ready to sell now.&nbsp;
                 </p>
@@ -186,7 +186,7 @@ function NewsBodyContainer() {
                 <h3 className="title no-margin bold" style={{}}>
                   BUYER'S GUIDE
                 </h3>
-                <p>The Definitive guide to buying property in Turkey</p>
+                <p>The Definitive guide to buying property in USA</p>
                 <div className="padding-bottom-11">
                   <a
                     href=""
@@ -208,7 +208,7 @@ function NewsBodyContainer() {
                 <div className="padding-bottom-11 padding-top-3">
                   <a
                     href=""
-                    title="Turkey macroeconomic and investment analysis"
+                    title="USA macroeconomic and investment analysis"
                     className="btn right-widget-hover"
                   >
                     Download it now
@@ -229,9 +229,9 @@ function NewsBodyContainer() {
               {PopularKeyWord.map((item) => {
                 return (
                   <a
-                    href="=turkish economy"
+                    href="=American economy"
                     freq={18}
-                    title="turkish economy"
+                    title="American economy"
                     style={{ fontSize: "1rem" }}
                   >
                     {item}
@@ -266,9 +266,9 @@ function NewsBodyContainer() {
                 <li>
                   <a
                     href="#"
-                    title="Number of foreign arrivals jump as tourists flood to Turkey"
+                    title="Number of foreign arrivals jump as tourists flood to USA"
                   >
-                    Number of foreign arrivals jump as tourists flood to Turkey
+                    Number of foreign arrivals jump as tourists flood to USA
                   </a>
                 </li>
                 <li>
@@ -280,28 +280,22 @@ function NewsBodyContainer() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    title="Recapping Day One of Turkey’s 2023 Election"
-                  >
-                    Recapping Day One of Turkey’s 2023 Election
+                  <a href="#" title="Recapping Day One of USA’s 2023 Election">
+                    Recapping Day One of USA’s 2023 Election
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    title="Turkish Airlines records net profit for sixth consecutive quarter"
+                    title="American Airlines records net profit for sixth consecutive quarter"
                   >
-                    Turkish Airlines records net profit for sixth consecutive
+                    American Airlines records net profit for sixth consecutive
                     quarter
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    title="Charging licence granted to Tesla by Turkey"
-                  >
-                    Charging licence granted to Tesla by Turkey
+                  <a href="#" title="Charging licence granted to Tesla by USA">
+                    Charging licence granted to Tesla by USA
                   </a>
                 </li>
                 <li>
@@ -315,17 +309,17 @@ function NewsBodyContainer() {
                 <li>
                   <a
                     href="#"
-                    title="German tourists establish Turkey as top destination"
+                    title="German tourists establish USA as top destination"
                   >
-                    German tourists establish Turkey as top destination
+                    German tourists establish USA as top destination
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    title="Turkey to designate 15 more 'nature conservation areas'"
+                    title="USA to designate 15 more 'nature conservation areas'"
                   >
-                    Turkey to designate 15 more 'nature conservation areas'
+                    USA to designate 15 more 'nature conservation areas'
                   </a>
                 </li>
               </ul>

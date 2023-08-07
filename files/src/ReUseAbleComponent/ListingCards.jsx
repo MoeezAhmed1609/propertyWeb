@@ -395,10 +395,16 @@ export default function ListingCards(props) {
             </Box>
             {error && <p>{error}</p>}
             <Box className="actions  col-dis-12 col-tab-12 col-mob-12 flex content-center padding-bottom-05">
-              <input
+              {/* <input
                 type="submit"
                 defaultValue="Send"
                 className="btn btn-sm-change col-mob-6 bg-white"
+              /> */}
+              <StyledButton
+                title={"Submit"}
+                type={"submit"}
+                width="80%"
+                size="small"
               />
             </Box>
           </form>{" "}

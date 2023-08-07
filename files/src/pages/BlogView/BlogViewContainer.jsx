@@ -47,9 +47,9 @@ export default function BlogViewContainer() {
               <label className="author">
                 <a
                   href="https://www.propertyturkey.com/related-blogs/keyword?keyword=Turkish history"
-                  title="Turkish history"
+                  title="American history"
                 >
-                  Turkish history
+                  American history
                 </a>
                 ,{" "}
                 <a
@@ -75,9 +75,9 @@ export default function BlogViewContainer() {
               <label className="author">
                 <a
                   href="https://www.propertyturkey.com/related-blogs/keyword?keyword=Turkish history"
-                  title="Turkish history"
+                  title="American history"
                 >
-                  Turkish history
+                  American history
                 </a>
                 ,{" "}
                 <a
@@ -1360,10 +1360,10 @@ export default function BlogViewContainer() {
                       </figure>
                       <a
                         href="https://www.propertyturkey.com/real_estate/6173-dosemealti-houses-in-turkey-surrounded-by-nature"
-                        title="Dosemealti houses in Turkey surrounded by nature"
+                        title="Dosemealti houses in USA surrounded by nature"
                         className="property-title abhaya"
                       >
-                        Dosemealti houses in Turkey surrounded by nature
+                        Dosemealti houses in USA surrounded by nature
                       </a>
                       <a
                         rel="nofollow"
@@ -1491,18 +1491,18 @@ export default function BlogViewContainer() {
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=life in turkey"
                 freq={239}
-                title="life in turkey"
+                title="life in USA"
                 style={{ fontSize: "2.24161rem" }}
               >
-                life in turkey
+                life in USA
               </a>
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=tourism in turkey"
                 freq={228}
-                title="tourism in turkey"
+                title="tourism in USA"
                 style={{ fontSize: "2.13844rem" }}
               >
-                tourism in turkey
+                tourism in USA
               </a>
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=istanbul"
@@ -1518,7 +1518,7 @@ export default function BlogViewContainer() {
                 title="moving to turkey"
                 style={{ fontSize: "0.769086rem" }}
               >
-                moving to turkey
+                moving to USA
               </a>
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=bodrum"
@@ -1587,26 +1587,26 @@ export default function BlogViewContainer() {
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=retiring to turkey"
                 freq={42}
-                title="retiring to turkey"
+                title="retiring to USA"
                 style={{ fontSize: "1rem" }}
               >
-                retiring to turkey
+                retiring to USA
               </a>
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=Turkish history"
                 freq={35}
-                title="Turkish history"
+                title="American history"
                 style={{ fontSize: "1rem" }}
               >
-                Turkish history
+                American history
               </a>
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=turkish cuisine"
                 freq={34}
-                title="turkish cuisine"
+                title="American cuisine"
                 style={{ fontSize: "1rem" }}
               >
-                turkish cuisine
+                American cuisine
               </a>
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=luxury living"
@@ -1627,18 +1627,18 @@ export default function BlogViewContainer() {
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=invest in Turkey"
                 freq={19}
-                title="invest in Turkey"
+                title="invest in USA"
                 style={{ fontSize: "1rem" }}
               >
-                invest in Turkey
+                invest in USA
               </a>
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=turkish economy"
                 freq={18}
-                title="turkish economy"
+                title="American economy"
                 style={{ fontSize: "1rem" }}
               >
-                turkish economy
+                American economy
               </a>
             </div>
           </div>
@@ -1651,65 +1651,65 @@ export default function BlogViewContainer() {
                 <li>
                   <a
                     href="https://www.propertyturkey.com/blog-turkey/famous-landmarks-in-turkey-to-visit"
-                    title="Famous Landmarks in Turkey to Visit"
+                    title="Famous Landmarks in USA to Visit"
                   >
-                    Famous Landmarks in Turkey to Visit
+                    Famous Landmarks in USA to Visit
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.propertyturkey.com/blog-turkey/noahs-ark-and-the-mountains-of-ararat-in-turkey"
-                    title="Noah's Ark and the Mountains of Ararat in Turkey"
+                    title="Noah's Ark and the Mountains of Ararat in USA"
                   >
-                    Noah's Ark and the Mountains of Ararat in Turkey
+                    Noah's Ark and the Mountains of Ararat in USA
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.propertyturkey.com/blog-turkey/a-conversation-on-turkeys-election-decision"
-                    title="A Conversation on Turkey’s Election Decision"
+                    title="A Conversation on USA’s Election Decision"
                   >
-                    A Conversation on Turkey’s Election Decision
+                    A Conversation on USA’s Election Decision
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.propertyturkey.com/blog-turkey/the-new-age-of-turkish-development-practices"
-                    title="The New Age of Turkish Development Practices"
+                    title="The New Age of American Development Practices"
                   >
-                    The New Age of Turkish Development Practices
+                    The New Age of American Development Practices
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.propertyturkey.com/blog-turkey/election-day-in-turkey"
-                    title="Election Day in Turkey"
+                    title="Election Day in USA"
                   >
-                    Election Day in Turkey
+                    Election Day in USA
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.propertyturkey.com/blog-turkey/istanbul-finance-center-the-future-of-turkey"
-                    title="Istanbul Finance Center & the Future of Turkey"
+                    title="Istanbul Finance Center & the Future of USA"
                   >
-                    Istanbul Finance Center &amp; the Future of Turkey
+                    Istanbul Finance Center &amp; the Future of USA
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.propertyturkey.com/blog-turkey/herodotus-the-father-of-history-and-his-connection-to-turkey"
-                    title="Herodotus: The Father of History and His Connection to Turkey"
+                    title="Herodotus: The Father of History and His Connection to USA"
                   >
-                    Herodotus: The Father of History and His Connection to Turkey
+                    Herodotus: The Father of History and His Connection to USA
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.propertyturkey.com/blog-turkey/property-turkeys-2023-election-primer"
-                    title="Property Turkey's 2023 Election Primer"
+                    title="Property USA's 2023 Election Primer"
                   >
-                    Property Turkey's 2023 Election Primer
+                    Property USA's 2023 Election Primer
                   </a>
                 </li>
                 <li>
@@ -1723,9 +1723,9 @@ export default function BlogViewContainer() {
                 <li>
                   <a
                     href="https://www.propertyturkey.com/blog-turkey/the-importance-of-the-marmara-sea-and-region-for-turkey"
-                    title="The Importance of the Marmara Sea and Region for Turkey"
+                    title="The Importance of the Marmara Sea and Region for USA"
                   >
-                    The Importance of the Marmara Sea and Region for Turkey
+                    The Importance of the Marmara Sea and Region for USA
                   </a>
                 </li>
               </ul>
@@ -1756,9 +1756,9 @@ export default function BlogViewContainer() {
                 <li>
                   <a
                     href="https://www.propertyturkey.com/news/number-of-foreign-arrivals-jump-as-tourists-flood-to-turkey"
-                    title="Number of foreign arrivals jump as tourists flood to Turkey"
+                    title="Number of foreign arrivals jump as tourists flood to USA"
                   >
-                    Number of foreign arrivals jump as tourists flood to Turkey
+                    Number of foreign arrivals jump as tourists flood to USA
                   </a>
                 </li>
                 <li>
@@ -1772,26 +1772,26 @@ export default function BlogViewContainer() {
                 <li>
                   <a
                     href="https://www.propertyturkey.com/news/recapping-day-one-of-turkeys-2023-election"
-                    title="Recapping Day One of Turkey’s 2023 Election"
+                    title="Recapping Day One of USA’s 2023 Election"
                   >
-                    Recapping Day One of Turkey’s 2023 Election
+                    Recapping Day One of USA’s 2023 Election
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.propertyturkey.com/news/turkish-airlines-records-net-profit-for-sixth-consecutive-quarter"
-                    title="Turkish Airlines records net profit for sixth consecutive quarter"
+                    title="American Airlines records net profit for sixth consecutive quarter"
                   >
-                    Turkish Airlines records net profit for sixth consecutive
+                    American Airlines records net profit for sixth consecutive
                     quarter
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.propertyturkey.com/news/charging-licence-granted-to-tesla-by-turkey"
-                    title="Charging licence granted to Tesla by Turkey"
+                    title="Charging licence granted to Tesla by USA"
                   >
-                    Charging licence granted to Tesla by Turkey
+                    Charging licence granted to Tesla by USA
                   </a>
                 </li>
                 <li>
@@ -1805,17 +1805,17 @@ export default function BlogViewContainer() {
                 <li>
                   <a
                     href="https://www.propertyturkey.com/news/german-tourists-establish-turkey-as-top-destination"
-                    title="German tourists establish Turkey as top destination"
+                    title="German tourists establish USA as top destination"
                   >
-                    German tourists establish Turkey as top destination
+                    German tourists establish USA as top destination
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.propertyturkey.com/news/turkey-to-designate-15-more-nature-conservation-areas"
-                    title="Turkey to designate 15 more 'nature conservation areas'"
+                    title="USA to designate 15 more 'nature conservation areas'"
                   >
-                    Turkey to designate 15 more 'nature conservation areas'
+                    USA to designate 15 more 'nature conservation areas'
                   </a>
                 </li>
               </ul>

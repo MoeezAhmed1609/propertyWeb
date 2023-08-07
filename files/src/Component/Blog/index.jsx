@@ -15,30 +15,8 @@ import { onSnapshot, collection, doc, setDoc } from "firebase/firestore";
 import { v4 as uuidv4 } from "uuid";
 import StyledButton from "../../ReUseAbleComponent/StyledButton";
 
-export default function Blog() {
-  // Getting blogs
-  const [blogs, setBlogs] = useState([]);
-  function extractSrcValues(rawHTML) {
-    var srcRegex = /src=["'](.*?)["']/g;
-    var srcValues = [];
-    var match;
-    while ((match = srcRegex.exec(rawHTML)) !== null) {
-      srcValues.push(match[1]);
-    }
-
-    return srcValues[0];
-  }
-  const getBlogs = onSnapshot(collection(db, "Blogs"), (querySnapshot) => {
-    const blogsData = [];
-    querySnapshot.forEach((doc) => {
-      blogsData.push({ id: doc.id, ...doc.data() });
-    });
-    const newBlogData = blogsData.map((item) => {
-      const image = extractSrcValues(item.value);
-      return { ...item, image };
-    });
-    setBlogs(newBlogData);
-  });
+export default function Blog({blogs}) {
+  
   // Subscribe Modal
   const [subscribeModal, setSubscribeModal] = useState(false);
   const style = {
@@ -75,9 +53,6 @@ export default function Blog() {
     await setDoc(doc(collectionRef, data.id), data);
     alert("Subscription Added!");
   };
-  useEffect(() => {
-    getBlogs();
-  }, []);
   return (
     <Box
       sx={{

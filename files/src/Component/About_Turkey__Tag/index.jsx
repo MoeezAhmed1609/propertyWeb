@@ -153,7 +153,7 @@ export default function About_Turkey__Tag() {
                     }`}
                   >
                     <li className="">
-                      <Link title="Turkish Mediterranean Region">
+                      <Link title="American Mediterranean Region">
                         About Sen Francisco Culture
                       </Link>
                     </li>
@@ -239,7 +239,7 @@ export default function About_Turkey__Tag() {
                                             HandleContent.map((item) => {
                                                 return (
                                                     <li className="">
-                                                        <Link title="Turkish Aegean region" to={`/${item.id}`}>
+                                                        <Link title="American Aegean region" to={`/${item.id}`}>
                                                             {item.link}
                                                         </Link>
                                                     </li>
