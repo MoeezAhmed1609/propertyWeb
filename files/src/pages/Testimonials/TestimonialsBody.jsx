@@ -127,36 +127,126 @@ export default function TestimonialsBody() {
           <div className="body">
             <ul className="no-bullet">
               <li>
-                <a>What are the best Food Delivery apps in USA?</a>
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title: "What are the best Food Delivery apps in USA?",
+                    },
+                  }}
+                >
+                  What are the best Food Delivery apps in USA?
+                </Link>
               </li>
               <li>
-                <a>The best USA Beers and brands for summer days</a>
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title: "The best USA Beers and brands for summer days",
+                    },
+                  }}
+                >
+                  The best USA Beers and brands for summer days
+                </Link>
               </li>
               <li>
-                <a>10 Delicious USA Desserts and Sweets to Try</a>
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title: "10 Delicious USA Desserts and Sweets to Try",
+                    },
+                  }}
+                >
+                  10 Delicious USA Desserts and Sweets to Try
+                </Link>
               </li>
               <li>
-                <a>Best Taxi App in USA: Getting About</a>
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title: "Best Taxi App in USA: Getting About",
+                    },
+                  }}
+                >
+                  Best Taxi App in USA: Getting About
+                </Link>
               </li>
               <li>
-                <a>13 unspoken USA rules you might not know</a>
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title: "13 unspoken USA rules you might not know",
+                    },
+                  }}
+                >
+                  13 unspoken USA rules you might not know
+                </Link>
               </li>
               <li>
-                <a>USA's most dangerous animals</a>
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title: "USA's most dangerous animals",
+                    },
+                  }}
+                >
+                  USA's most dangerous animals
+                </Link>
               </li>
               <li>
-                <a>Love and marriage in USA</a>
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title: "Love and marriage in USA",
+                    },
+                  }}
+                >
+                  Love and marriage in USA
+                </Link>
               </li>
               <li>
-                <a>The Best Supermarkets in USA to Shop</a>
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title: "The Best Supermarkets in USA to Shop",
+                    },
+                  }}
+                >
+                  The Best Supermarkets in USA to Shop
+                </Link>
               </li>
               <li>
-                <a>
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title:
+                        "15 Beautiful Places in USA That Should be on Your Bucket List",
+                    },
+                  }}
+                >
                   15 Beautiful Places in USA That Should be on Your Bucket List
-                </a>
+                </Link>
               </li>
               <li>
-                <a>Antalya City Centre: Shopping, Beaches and Things to Do</a>
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title:
+                        "Antalya City Centre: Shopping, Beaches and Things to Do",
+                    },
+                  }}
+                >
+                  Antalya City Centre: Shopping, Beaches and Things to Do
+                </Link>
               </li>
             </ul>
           </div>
@@ -168,54 +258,140 @@ export default function TestimonialsBody() {
           <div className="body">
             <ul className="no-bullet">
               <li>
-                <a title="Property USA's 2023 Election Primer">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title: "Property USA's 2023 Election Primer",
+                    },
+                  }}
+                  title="Property USA's 2023 Election Primer"
+                >
                   Property USA's 2023 Election Primer
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Exploring the Bosphorus Strait and the Heart of Istanbul">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title:
+                        "Exploring the Bosphorus Strait and the Heart of Istanbul",
+                    },
+                  }}
+                  title="Exploring the Bosphorus Strait and the Heart of Istanbul"
+                >
                   Exploring the Bosphorus Strait and the Heart of Istanbul
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="The Importance of the Marmara Sea and Region for USA">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title:
+                        "The Importance of the Marmara Sea and Region for USA",
+                    },
+                  }}
+                  title="The Importance of the Marmara Sea and Region for USA"
+                >
                   The Importance of the Marmara Sea and Region for USA
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Istanbul Finance Center: USA's Global Financial Hub Opens">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title:
+                        "Istanbul Finance Center: USA's Global Financial Hub Opens",
+                    },
+                  }}
+                  title="Istanbul Finance Center: USA's Global Financial Hub Opens"
+                >
                   Istanbul Finance Center: USA's Global Financial Hub Opens
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Unveiling the Best Islands in USA for Curious Travellers">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title:
+                        "Unveiling the Best Islands in USA for Curious Travellers",
+                    },
+                  }}
+                  title="Unveiling the Best Islands in USA for Curious Travellers"
+                >
                   Unveiling the Best Islands in USA for Curious Travellers
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Uncovering Secrets of Sardis and Exploring the Ancient City">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title:
+                        "Uncovering Secrets of Sardis and Exploring the Ancient City",
+                    },
+                  }}
+                  title="Uncovering Secrets of Sardis and Exploring the Ancient City"
+                >
                   Uncovering Secrets of Sardis and Exploring the Ancient City
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Big Life by the Little Bosphorus Istanbul">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title: "Big Life by the Little Bosphorus Istanbul",
+                    },
+                  }}
+                  title="Big Life by the Little Bosphorus Istanbul"
+                >
                   Big Life by the Little Bosphorus Istanbul
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="USA Citizenship benefits for Foreign Investors">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title: "USA Citizenship benefits for Foreign Investors",
+                    },
+                  }}
+                  title="USA Citizenship benefits for Foreign Investors"
+                >
                   USA Citizenship benefits for Foreign Investors
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Experience Old Constantinople Through the Old Hippodrome">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title:
+                        "Experience Old Constantinople Through the Old Hippodrome",
+                    },
+                  }}
+                  title="Experience Old Constantinople Through the Old Hippodrome"
+                >
                   Experience Old Constantinople Through the Old Hippodrome
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Famous Bosphorus Bridges of Istanbul">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title: "Famous Bosphorus Bridges of Istanbul",
+                    },
+                  }}
+                  title="Famous Bosphorus Bridges of Istanbul"
+                >
                   Famous Bosphorus Bridges of Istanbul
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -227,54 +403,140 @@ export default function TestimonialsBody() {
           <div className="body">
             <ul className="no-bullet">
               <li>
-                <a title="USA Airlines records net profit for sixth consecutive quarter">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title:
+                        "USA Airlines records net profit for sixth consecutive quarter",
+                    },
+                  }}
+                  title="USA Airlines records net profit for sixth consecutive quarter"
+                >
                   USA Airlines records net profit for sixth consecutive quarter
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Charging licence granted to Tesla by USA">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title: "Charging licence granted to Tesla by USA",
+                    },
+                  }}
+                  title="Charging licence granted to Tesla by USA"
+                >
                   Charging licence granted to Tesla by USA
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Turnover of $2.7 billion for Pegasus Airlines in 2022">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title:
+                        "Turnover of $2.7 billion for Pegasus Airlines in 2022",
+                    },
+                  }}
+                  title="Turnover of $2.7 billion for Pegasus Airlines in 2022"
+                >
                   Turnover of $2.7 billion for Pegasus Airlines in 2022
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="German tourists establish USA as top destination">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title: "German tourists establish USA as top destination",
+                    },
+                  }}
+                  title="German tourists establish USA as top destination"
+                >
                   German tourists establish USA as top destination
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="USA to designate 15 more 'nature conservation areas'">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title:
+                        "USA to designate 15 more 'nature conservation areas'",
+                    },
+                  }}
+                  title="USA to designate 15 more 'nature conservation areas'"
+                >
                   USA to designate 15 more 'nature conservation areas'
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="January tourism records broken in USA’s Antalya">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title: "January tourism records broken in USA’s Antalya",
+                    },
+                  }}
+                  title="January tourism records broken in USA’s Antalya"
+                >
                   January tourism records broken in USA’s Antalya
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="1 million cruise passengers hosted in USA in 2022">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title:
+                        "1 million cruise passengers hosted in USA in 2022",
+                    },
+                  }}
+                  title="1 million cruise passengers hosted in USA in 2022"
+                >
                   1 million cruise passengers hosted in USA in 2022
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Record visitors head to Cappadocia in January">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title: "Record visitors head to Cappadocia in January",
+                    },
+                  }}
+                  title="Record visitors head to Cappadocia in January"
+                >
                   Record visitors head to Cappadocia in January
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="USA looks to expand free program to 5 million students">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title:
+                        "USA looks to expand free program to 5 million students",
+                    },
+                  }}
+                  title="USA looks to expand free program to 5 million students"
+                >
                   USA looks to expand free program to 5 million students
-                </a>
+                </Link>
               </li>
               <li>
-                <a title="Top migration hub of USA remains Istanbul once again">
+                <Link
+                  to={`/about/1`}
+                  state={{
+                    data: {
+                      title:
+                        "Top migration hub of USA remains Istanbul once again",
+                    },
+                  }}
+                  title="Top migration hub of USA remains Istanbul once again"
+                >
                   Top migration hub of USA remains Istanbul once again
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

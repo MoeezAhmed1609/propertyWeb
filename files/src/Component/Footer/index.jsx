@@ -173,22 +173,22 @@ export default function Footer() {
                       },
                     }}
                   >
-                    Istanbul Investment Tips
+                    San Fransisco Investment Tips
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     title="PropertyUSA TV"
                     to={`/about/1`}
                     state={{
                       data: {
-                        title: "PropertyUSA TV",
+                        title: "",
                       },
                     }}
                   >
                     PropertyUSA TV
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     title="Istanbul Investments Properties"
@@ -276,27 +276,27 @@ export default function Footer() {
             </ul>
             <ul className="list-inline">
               <li className="list-inline-item bg-social-links">
-                <Link target="_blank">
+                <Link>
                   <i class="fa-brands fa-facebook-f"></i>
                 </Link>
               </li>
               <li className="list-inline-item bg-social-links">
-                <Link target="_blank">
+                <Link>
                   {/* <i class="fa fa-twitter " aria-hidden="true"></i> */}
                 </Link>
               </li>
               <li className="list-inline-item bg-social-links">
-                <Link target="_blank">
+                <Link>
                   <i class="fa fa-instagram " aria-hidden="true"></i>
                 </Link>
               </li>
               <li className="list-inline-item bg-social-links">
-                <Link target="_blank">
+                <Link>
                   <i class="fa fa-pinterest-p " aria-hidden="true"></i>
                 </Link>
               </li>
               <li className="list-inline-item bg-social-links">
-                <Link target="_blank">
+                <Link>
                   <i class="fa fa-youtube-play " aria-hidden="true"></i>
                 </Link>
               </li>

@@ -137,13 +137,17 @@ export default function AboutusGuideTag({ title }) {
                     contentEditable="false"
                     draggable="true"
                   >
-                    <iframe
+                    <img
+                      src="https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg"
+                      style={{ height: "40vh" }}
+                    />
+                    {/* <iframe
                       src="https://www.youtube.com/embed/preRes-n9Ew"
                       title="YouTube video player"
                       frameBorder={0}
                       allowFullScreen=""
                       style={{ width: "100%", height: 550 }}
-                    />
+                    /> */}
                   </Typography>
                 </p>
                 <h4>

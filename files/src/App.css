@@ -18774,7 +18774,7 @@ body.property-endpage.real_estate #search-filter {
 }
 
 .hideRefId .search-filter-input-city {
-  width: 40% !important;
+  min-width: 40% !important;
   padding: 0px 5.5rem 0 2.5rem !important
 }
 

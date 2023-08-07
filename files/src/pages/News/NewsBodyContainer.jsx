@@ -228,14 +228,19 @@ function NewsBodyContainer() {
             <div className="body">
               {PopularKeyWord.map((item) => {
                 return (
-                  <a
-                    href="=American economy"
+                  <Link
                     freq={18}
                     title="American economy"
                     style={{ fontSize: "1rem" }}
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: item,
+                      },
+                    }}
                   >
                     {item}
-                  </a>
+                  </Link>
                 );
               })}
             </div>
@@ -248,79 +253,127 @@ function NewsBodyContainer() {
             <div className="body">
               <ul className="no-bullet">
                 <li>
-                  <a
-                    href="#"
-                    title="Inauguration of new metro line in Istanbul"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "What are the best Food Delivery apps in USA?",
+                      },
+                    }}
                   >
-                    Inauguration of new metro line in Istanbul
-                  </a>
+                    What are the best Food Delivery apps in USA?
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    title="High hopes in Pamukkale for tourist arrivals"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "The best USA Beers and brands for summer days",
+                      },
+                    }}
                   >
-                    High hopes in Pamukkale for tourist arrivals
-                  </a>
+                    The best USA Beers and brands for summer days
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    title="Number of foreign arrivals jump as tourists flood to USA"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "10 Delicious USA Desserts and Sweets to Try",
+                      },
+                    }}
                   >
-                    Number of foreign arrivals jump as tourists flood to USA
-                  </a>
+                    10 Delicious USA Desserts and Sweets to Try
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    title="Top 10 busiest airports – Istanbul Airport ranks among them"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "Best Taxi App in USA: Getting About",
+                      },
+                    }}
                   >
-                    Top 10 busiest airports – Istanbul Airport ranks among them
-                  </a>
+                    Best Taxi App in USA: Getting About
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" title="Recapping Day One of USA’s 2023 Election">
-                    Recapping Day One of USA’s 2023 Election
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    title="American Airlines records net profit for sixth consecutive quarter"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "13 unspoken USA rules you might not know",
+                      },
+                    }}
                   >
-                    American Airlines records net profit for sixth consecutive
-                    quarter
-                  </a>
+                    13 unspoken USA rules you might not know
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" title="Charging licence granted to Tesla by USA">
-                    Charging licence granted to Tesla by USA
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    title="Turnover of $2.7 billion for Pegasus Airlines in 2022"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "USA's most dangerous animals",
+                      },
+                    }}
                   >
-                    Turnover of $2.7 billion for Pegasus Airlines in 2022
-                  </a>
+                    USA's most dangerous animals
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    title="German tourists establish USA as top destination"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "Love and marriage in USA",
+                      },
+                    }}
                   >
-                    German tourists establish USA as top destination
-                  </a>
+                    Love and marriage in USA
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    title="USA to designate 15 more 'nature conservation areas'"
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title: "The Best Supermarkets in USA to Shop",
+                      },
+                    }}
                   >
-                    USA to designate 15 more 'nature conservation areas'
-                  </a>
+                    The Best Supermarkets in USA to Shop
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title:
+                          "15 Beautiful Places in USA That Should be on Your Bucket List",
+                      },
+                    }}
+                  >
+                    15 Beautiful Places in USA That Should be on Your Bucket
+                    List
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to={`/about/1`}
+                    state={{
+                      data: {
+                        title:
+                          "Antalya City Centre: Shopping, Beaches and Things to Do",
+                      },
+                    }}
+                  >
+                    Antalya City Centre: Shopping, Beaches and Things to Do
+                  </Link>
                 </li>
               </ul>
             </div>

@@ -72,6 +72,7 @@ export default function RecomendedTurkishProperty() {
 
   const [data, setData] = useState("California");
   const [isOpen, setIsOpen] = useState(false);
+  console.log({ user });
 
   const closeModal = () => {
     setIsOpen(false);
@@ -95,12 +96,17 @@ export default function RecomendedTurkishProperty() {
 
   const HandleSubmitEnquiryForm = async (e) => {
     e.preventDefault();
-    console.log(CarouselID);
-    console.log(user.login.uid);
-    console.log(Name);
-    console.log(Phone);
-    console.log(Email);
-    console.log(Description);
+    console.log({
+      propertyID: CarouselID,
+      id: user.login.uid,
+      name: Name,
+      phone: Phone,
+      Email: Email,
+      desc: Description,
+      purpose: property,
+      Deal: "pending",
+      // Active: Active,
+    });
 
     const docRef = await addDoc(collection(db, "EnquiryForm"), {
       propertyID: CarouselID,
@@ -111,7 +117,7 @@ export default function RecomendedTurkishProperty() {
       desc: Description,
       purpose: property,
       Deal: "pending",
-      Active: Active,
+      // Active: Active,
     });
     console.log("Document written with ID: ", docRef.id);
   };
@@ -386,103 +392,111 @@ export default function RecomendedTurkishProperty() {
               "rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px",
           }}
         >
-          <form
-            onSubmit={HandleSubmitEnquiryForm}
-            className="box white clearfix"
-          >
-            <h3 className="title col-dis-12 col-tab-12 col-mob-12">
-              Property Enquiry
-            </h3>
-            <Box grid="">
-              <Box className="col-dis-12 col-tab-12 col-mob-12">
-                <label className="field col-dis-12 col-tab-6 col-mob-12">
-                  <input
-                    name="first_name"
-                    type="text"
-                    placeholder="your name *"
-                    defaultValue=""
-                    validation=""
-                    onChange={(e) => setName(e.target.value)}
-                  />
-                </label>
-                <Box className="field col-dis-12 col-tab-6 col-mob-12">
-                  <IntlTelInput
-                    containerClassName="intl-tel-input"
-                    inputClassName="form-control"
-                    onPhoneNumberChange={handlePhoneInputChange}
-                    defaultCountry={"us"}
-                  />
+          {user.login ? (
+            <>
+              <form
+                onSubmit={HandleSubmitEnquiryForm}
+                className="box white clearfix"
+              >
+                <h3 className="title col-dis-12 col-tab-12 col-mob-12">
+                  Property Enquiry
+                </h3>
+                <Box grid="">
+                  <Box className="col-dis-12 col-tab-12 col-mob-12">
+                    <label className="field col-dis-12 col-tab-6 col-mob-12">
+                      <input
+                        name="first_name"
+                        type="text"
+                        placeholder="your name *"
+                        defaultValue=""
+                        validation=""
+                        onChange={(e) => setName(e.target.value)}
+                      />
+                    </label>
+                    <Box className="field col-dis-12 col-tab-6 col-mob-12">
+                      <IntlTelInput
+                        containerClassName="intl-tel-input"
+                        inputClassName="form-control"
+                        onPhoneNumberChange={handlePhoneInputChange}
+                        defaultCountry={"us"}
+                      />
+                    </Box>
+                    <label className="field col-dis-12 col-tab-6 col-mob-12">
+                      <input
+                        name="email"
+                        type="text"
+                        placeholder="E-mail"
+                        defaultValue=""
+                        validation="email"
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
+                    </label>
+                    <label className="field col-dis-12 col-tab-6 col-mob-12">
+                      <input
+                        type="text"
+                        placeholder="For Purpose Rent | Buy"
+                        defaultValue=""
+                        onChange={(e) => setForPropertyStatus(e.target.value)}
+                      />
+                    </label>
+                    <label className="field col-dis-12 col-tab-12 col-mob-12">
+                      <textarea
+                        name="msg"
+                        placeholder="Message"
+                        defaultValue={"I'm interested in this property"}
+                        onChange={(e) => setDescription(e.target.value)}
+                      />
+                    </label>
+                  </Box>
                 </Box>
-                <label className="field col-dis-12 col-tab-6 col-mob-12">
+                <Box className="actions  col-dis-12 col-tab-12 col-mob-12 flex content-center padding-bottom-05">
+                  <input name="requestUrl" type="hidden" />
                   <input
-                    name="email"
-                    type="text"
-                    placeholder="E-mail"
-                    defaultValue=""
-                    validation="email"
-                    onChange={(e) => setEmail(e.target.value)}
+                    type="hidden"
+                    id="propertyID"
+                    defaultValue={6173}
+                    name="propertyID[]"
                   />
-                </label>
-                <label className="field col-dis-12 col-tab-6 col-mob-12">
                   <input
                     type="text"
-                    placeholder="For Purpose Rent | Buy"
+                    style={{ display: "none" }}
+                    name="enqID"
                     defaultValue=""
-                    onChange={(e) => setForPropertyStatus(e.target.value)}
                   />
-                </label>
-                <label className="field col-dis-12 col-tab-12 col-mob-12">
-                  <textarea
-                    name="msg"
-                    placeholder="Message"
-                    defaultValue={"I'm interested in this property"}
-                    onChange={(e) => setDescription(e.target.value)}
+                  <StyledButton
+                    title={"Submit"}
+                    width="80%"
+                    size="small"
+                    type={"submit"}
                   />
-                </label>
-              </Box>
-            </Box>
-            <Box className="actions  col-dis-12 col-tab-12 col-mob-12 flex content-center padding-bottom-05">
-              <input name="requestUrl" type="hidden" />
-              <input
-                type="hidden"
-                id="propertyID"
-                defaultValue={6173}
-                name="propertyID[]"
-              />
-              <input
-                type="text"
-                style={{ display: "none" }}
-                name="enqID"
-                defaultValue=""
-              />
-              <StyledButton
-                title={"Submit"}
-                width="80%"
-                size="small"
-                type={"submit"}
-              />
-              {/* <input
+                  {/* <input
                 type="submit"
                 defaultValue="Send"
                 className=" bg-[#5081ff] px-3 text-white rounded-md py-2"
                 onclick=""
               /> */}
-            </Box>
-          </form>{" "}
-          <button
-            type="button"
-            data-fancybox-close=""
-            className="fancybox-button fancybox-close-small"
-            title="Close"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              version={1}
-              viewBox="0 0 24 24"
-            >
-              <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z" />
-            </svg>
-          </button>
+                </Box>
+              </form>
+              <button
+                type="button"
+                data-fancybox-close=""
+                className="fancybox-button fancybox-close-small"
+                title="Close"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version={1}
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z" />
+                </svg>
+              </button>
+            </>
+          ) : (
+            <Typography variant="h6">
+              Please login to access enquiries!
+            </Typography>
+          )}
         </Box>
       </ModalComponent>
     </>
