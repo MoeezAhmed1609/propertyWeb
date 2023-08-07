@@ -631,6 +631,7 @@ export default function Header() {
               <select onChange={(e) => setAccountsPurpose(e.target.value)}>
                 <option value={"Broker"}>Broker</option>
                 <option value={"Buyer"}>Buyer</option>
+                <option value={"Renter"}>Renter</option>
               </select>
             </Box>
 
@@ -659,12 +660,18 @@ export default function Header() {
                 className="w-full h-[40px] bg-[#eee]"
               />
             </Box>
-            <button
+            <StyledButton
+              onClick={RegisterUser}
+              title={"Register"}
+              margin={"8px"}
+              size={"small"}
+            />
+            {/* <button
               onClick={RegisterUser}
               className="w-[90%] p-3 bg-[#5081ff] text-white mt-3"
             >
               Register
-            </button>
+            </button> */}
             <Typography sx={{ marginTop: "8px" }}>
               By creating your Creating You must agree with our Privcy policy
             </Typography>
@@ -794,7 +801,14 @@ export default function Header() {
                 style={{ textAlign: "center", marginBottom: "0" }}
               >
                 Do not have an account?
-                <Link className="clr-pt" to="" style={{ paddingLeft: "4px" }}>
+                <Link
+                  className="clr-pt"
+                  onClick={() => {
+                    setIsModalOpen(false);
+                    setOpen(true);
+                  }}
+                  style={{ paddingLeft: "4px" }}
+                >
                   Signup
                 </Link>
               </p>

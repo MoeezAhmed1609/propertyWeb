@@ -920,8 +920,9 @@ export default function HeaderNav() {
         </li>
         <li
           className={`has-child ${Active ? "active z-50" : ""}`}
-          onMouseOver={() => setActive(true)}
-          onMouseOut={() => setActive(false)}
+          onMouseEnter={() => setActive(true)}
+          onMouseLeave={() => setActive(false)}
+          onClick={() => setActive(false)}
         >
           <Link
             to="/aboutusguide"
@@ -967,6 +968,11 @@ export default function HeaderNav() {
                       title: "Our Services and Fees",
                     },
                   }}
+                  onClick={() => {
+                    window.setTimeout(function () {
+                      setActive(false);
+                    }, 500);
+                  }}
                 >
                   Our Services and Fees
                 </Link>
@@ -979,6 +985,11 @@ export default function HeaderNav() {
                     data: {
                       title: "California",
                     },
+                  }}
+                  onClick={() => {
+                    window.setTimeout(function () {
+                      setActive(false);
+                    }, 500);
                   }}
                 >
                   California
@@ -993,6 +1004,11 @@ export default function HeaderNav() {
                       title: "San Francisco",
                     },
                   }}
+                  onClick={() => {
+                    window.setTimeout(function () {
+                      setActive(false);
+                    }, 500);
+                  }}
                 >
                   San Francisco
                 </Link>
@@ -1005,6 +1021,11 @@ export default function HeaderNav() {
                     data: {
                       title: "Nevada",
                     },
+                  }}
+                  onClick={() => {
+                    window.setTimeout(function () {
+                      setActive(false);
+                    }, 500);
                   }}
                 >
                   Nevada
@@ -1019,6 +1040,11 @@ export default function HeaderNav() {
                       title: "Las Vegas",
                     },
                   }}
+                  onClick={() => {
+                    window.setTimeout(function () {
+                      setActive(false);
+                    }, 500);
+                  }}
                 >
                   Las Vegas
                 </Link>
@@ -1031,6 +1057,11 @@ export default function HeaderNav() {
                     data: {
                       title: "Alaska",
                     },
+                  }}
+                  onClick={() => {
+                    window.setTimeout(function () {
+                      setActive(false);
+                    }, 500);
                   }}
                 >
                   Alaska
