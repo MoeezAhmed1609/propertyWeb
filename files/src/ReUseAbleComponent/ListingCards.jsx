@@ -134,6 +134,7 @@ export default function ListingCards(props) {
       html: <i>You clicked submit button!</i>,
       icon: "success",
     });
+    setIsOpen(false);
   };
 
   const HandleNavigate = (item) => {
@@ -198,7 +199,7 @@ export default function ListingCards(props) {
       <div className="listing-card col-12 col-md-6 col-lg-3 margin-ver-1">
         <div className="property-box  cf hot-property">
           <div className="position-relative">
-            <div className="card-type btn --circle position-abs card-label raleway border-none opacity-73">
+            <div className="card-type btn --circle position-abs card-label raleway border-none opacity-73" style={{ zIndex: 1 }}>
               <span>{props.propertyType}</span>
             </div>
             {props.favorite ? (

@@ -118,13 +118,9 @@ export default function RealStateHeader({
 
   const HandleZipCountry = (item) => {
     setzip_code(item.zip_code);
-    const cityValue = cityToggle.filter(
-      (value) => value.zip_code === item.zip_code
-    );
-    console.log(cityValue[0].city);
-    setcityData(cityValue[0].city);
+    setcityData(item?.County);
   };
-
+  console.log(cityData)
   const [scrollValue, setScrollValue] = useState(0);
   const state = useSelector((state) => state.HideComponent.Hide);
 

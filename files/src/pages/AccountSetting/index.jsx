@@ -154,7 +154,7 @@ export default function AccountSetting() {
         <DIV className="profile-view">
           <DIV className="container-fluid">
             <DIV className="row">
-              <DIV className="col-12 col-md-4">
+              <DIV className="col-12 col-md-5">
                 <DIV className="profile-view--img">
                   <p className="profile-view--img--first">
                     {Auth.displayName ? Auth.displayName : "Something Else"}
@@ -283,7 +283,7 @@ export default function AccountSetting() {
                   </form>
                 </DIV>
               </DIV>
-              <DIV className="col-12 col-md-4">
+              <DIV className="col-12 col-md-3">
                 <DIV className="profile-view--passwordsetting">
                   <p className="first"> Password Settings</p>
                   <Link to="/changepwd">Change Password</Link>
@@ -457,48 +457,48 @@ export default function AccountSetting() {
             </Grid>
             {currentUser?.AccountOptions === "Broker"
               ? brokerEnquiries?.map((item, i) => {
-                  if (item?.Userid === auth?.currentUser?.uid) {
-                    return (
-                      <Grid item xs={12} sm={6} md={4} sx={{ padding: "10px" }}>
-                        <Card
-                          key={i}
-                          sx={{
-                            minWidth: 275,
-                            boxShadow: "none",
-                            border: "1px solid black",
-                          }}
-                        >
-                          <CardContent>
-                            <Typography
-                              variant="h5"
-                              component="div"
-                              sx={{ mb: 1 }}
-                            >
-                              {item?.name}
-                            </Typography>
-                            <Typography>Email: {item?.Email}</Typography>
-                            <Typography>Phone: {item?.phone}</Typography>
-                            <Typography>Description: {item?.desc}</Typography>
-                            <Typography>Purpose: {item?.purpose}</Typography>
-                            <Typography>Deal: {item?.Deal}</Typography>
-                            <Typography>
-                              Properties: {item?.properties?.length}
-                            </Typography>
-                            <Typography>
-                              <ul style={{ padding: "6px" }}>
-                                {item?.properties?.map((p, i) => (
-                                  <li key={i}>{p.Property_Name}</li>
-                                ))}
-                              </ul>
-                            </Typography>
-                          </CardContent>
-                        </Card>
-                      </Grid>
-                    );
-                  }
-                })
+                if (item?.Userid === auth?.currentUser?.uid) {
+                  return (
+                    <Grid item xs={12} sm={6} md={4} sx={{ padding: "10px" }}>
+                      <Card
+                        key={i}
+                        sx={{
+                          minWidth: 275,
+                          boxShadow: "none",
+                          border: "1px solid black",
+                        }}
+                      >
+                        <CardContent>
+                          <Typography
+                            variant="h5"
+                            component="div"
+                            sx={{ mb: 1 }}
+                          >
+                            {item?.name}
+                          </Typography>
+                          <Typography>Email: {item?.Email}</Typography>
+                          <Typography>Phone: {item?.phone}</Typography>
+                          <Typography>Description: {item?.desc}</Typography>
+                          <Typography>Purpose: {item?.purpose}</Typography>
+                          <Typography>Deal: {item?.Deal}</Typography>
+                          <Typography>
+                            Properties: {item?.properties?.length}
+                          </Typography>
+                          <Typography>
+                            <ul style={{ padding: "6px" }}>
+                              {item?.properties?.map((p, i) => (
+                                <li key={i}>{p.Property_Name}</li>
+                              ))}
+                            </ul>
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </Grid>
+                  );
+                }
+              })
               : currentUser?.AccountOptions === "Buyer"
-              ? userEnquiries?.map((item, i) => {
+                ? userEnquiries?.map((item, i) => {
                   if (item?.Userid === auth?.currentUser?.uid) {
                     return (
                       <Grid item xs={12} sm={6} md={4} sx={{ padding: "10px" }}>
@@ -532,7 +532,7 @@ export default function AccountSetting() {
                     );
                   }
                 })
-              : null}
+                : null}
 
             {/* Continue from buyer enquiry submit */}
           </Grid>

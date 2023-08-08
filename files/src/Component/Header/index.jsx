@@ -131,6 +131,9 @@ export default function Header() {
         const user = userCredential.user;
         dispatch(AuthAction(user));
         console.log(user);
+        alert("Login Successfully");
+        setIsModalOpen(false)
+        window.location.replace('/')
       })
       .catch((error) => {
         const errorCode = error.code;
