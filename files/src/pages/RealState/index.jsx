@@ -82,6 +82,16 @@ export default function RealState() {
   const [minPriceInputValue, setminPriceInputValue] = useState(0);
   const [maxPriceInputValue, setmaxPriceInputValue] = useState(0);
 
+  function removeCurrencySymbols(amount) {
+    let a = amount.replace(/\$/g, "");
+    if (a.charAt(a.length - 1).toLowerCase() === "k") {
+      a = a.slice(0, -1);
+    }
+    const numericAmount = parseFloat(a) + "000";
+
+    return isNaN(numericAmount) ? 0 : numericAmount;
+  }
+
   useEffect(() => {
     if (localStorage?.cityData && cityData === "") {
       setcityData(localStorage.cityData);
@@ -93,10 +103,14 @@ export default function RealState() {
       setBedroomData(localStorage.BedroomData);
     }
     if (localStorage?.minPriceInputValue && minPriceInputValue === 0) {
-      setminPriceInputValue(localStorage.minPriceInputValue);
+      setminPriceInputValue(
+        removeCurrencySymbols(localStorage.minPriceInputValue)
+      );
     }
     if (localStorage?.maxPriceInputValue && maxPriceInputValue === 0) {
-      setmaxPriceInputValue(localStorage.maxPriceInputValue);
+      setmaxPriceInputValue(
+        removeCurrencySymbols(localStorage.maxPriceInputValue)
+      );
     }
   }, []);
   console.log(localStorage);

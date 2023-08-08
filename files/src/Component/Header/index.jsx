@@ -111,22 +111,15 @@ export default function Header() {
           Mobile,
           AccountOptions,
           uid: user.uid,
-          subscription:
-            AccountOptions === "Broker"
-              ? {
-                  expires: Date.today().toString("yyyy-MM-d"),
-                  paid: 0,
-                  paidOn: undefined,
-                }
-              : null,
         });
         alert("Register Successfully");
-        window.location.reload();
+        setOpen(false)
+        setIsModalOpen(true)
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        // ..
+        console.log(error)
       });
   };
   console.log(AccountOptions);
@@ -479,9 +472,8 @@ export default function Header() {
           </Box>
         </Box>
         <Box
-          className={`elastic-search-form searchWrapper ${
-            searchModelToggle ? "open" : ""
-          }`}
+          className={`elastic-search-form searchWrapper ${searchModelToggle ? "open" : ""
+            }`}
         >
           <Box
             sx={{
@@ -493,10 +485,10 @@ export default function Header() {
               alignItems: "center",
               position: "relative",
             }}
-            // onMouseLeave={() =>
-            //   window.setTimeout(() => setsearchModelToggle(false), 1500)
-            // }
-            // onMouseEnter={() => setsearchModelToggle(true)}
+          // onMouseLeave={() =>
+          //   window.setTimeout(() => setsearchModelToggle(false), 1500)
+          // }
+          // onMouseEnter={() => setsearchModelToggle(true)}
           >
             <TextField
               placeholder="Search property by city name..."

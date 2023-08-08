@@ -164,6 +164,25 @@ export default function RealStateHeader({
     setminPrice(false);
   };
 
+  function removeCurrencySymbols(amount) {
+    let a = amount.replace(/\$/g, "");
+    if (a.charAt(a.length - 1).toLowerCase() === "k") {
+      a = a.slice(0, -1);
+    }
+    const numericAmount = parseFloat(a) + "000";
+
+    return isNaN(numericAmount) ? 0 : numericAmount;
+  }
+  const handleMinPriceInput = (price) => {
+    let p = removeCurrencySymbols(price);
+    setminPriceInputValue(p);
+    setMiniPrice(p);
+  };
+  const handleMaxPriceInput = (price) => {
+    let p = removeCurrencySymbols(price);
+    setmaxPriceInputValue(p);
+    setMaxiPrice(p);
+  };
   return (
     <div
       id="search-filter"
@@ -199,7 +218,6 @@ export default function RealStateHeader({
               linktype="location"
               onClick={HandleOpenLocation}
               onMouseLeave={() => setOpenLocation(false)}
-              
             >
               <Image className="search-icon" src={LocationGold} />
               <div className="filter-type-dropdown-wrap">
@@ -237,12 +255,14 @@ export default function RealStateHeader({
                 >
                   City
                 </p>
-                <p className="absolute -bottom-2" style={{fontSize: '12px'}}>{cityData}</p>
+                <p className="absolute -bottom-2" style={{ fontSize: "12px" }}>
+                  {cityData}
+                </p>
                 {cityData && (
                   <RxCross2
                     onClick={HandlecloseCity}
                     color={"#5018ff"}
-                    style={{fontSize: '13px', marginTop: '-4px'}}
+                    style={{ fontSize: "13px", marginTop: "-4px" }}
                     className="absolute right-2 top-3  text-2xl font-black"
                   />
                 )}
@@ -428,10 +448,7 @@ export default function RealStateHeader({
                           return (
                             <label
                               className="checkbox-container"
-                              onClick={() => {
-                                setminPriceInputValue(item.dollar);
-                                setMiniPrice(item.dollar);
-                              }}
+                              onClick={() => handleMinPriceInput(item.dollar)}
                             >
                               {item.dollar}
                               <input
@@ -460,10 +477,7 @@ export default function RealStateHeader({
                           return (
                             <label
                               className="checkbox-container"
-                              onClick={() => {
-                                setmaxPriceInputValue(item.dollar);
-                                setMaxiPrice(item.dollar);
-                              }}
+                              onClick={() => handleMaxPriceInput(item.dollar)}
                             >
                               {item.dollar}
                               <input

@@ -27,8 +27,10 @@ import {
   where,
   query,
   onSnapshot,
+  setDoc,
 } from "firebase/firestore";
 import axios from "axios";
+import { v4 } from "uuid";
 
 const steps = ["Broker Details", "Payment Details", "Result"];
 const Stripe = () => {
@@ -73,63 +75,84 @@ const Stripe = () => {
   const [comment, setComment] = useState("");
   const [success, setSuccess] = useState(false);
 
+  // Getting enquiries from local host
+  const enquiries = JSON.parse(window.localStorage.getItem("enquiries"));
+
   // Submit Function
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { error, paymentMethod } = await stripe.createPaymentMethod({
-      type: "card",
-      card: elements.getElement(CardElement),
-    });
-    if (!error) {
-      try {
-        const { id } = paymentMethod;
-        const response = await axios.post("/payment", {
-          amount: 5 * enquiries?.length,
-          id,
-        });
-        if (response.data.success) {
-          setSuccess(true);
-        }
-      } catch (error) {
-        console.log("Payment error: " + error);
-      }
-    } else {
-      console.log("Payment Error: " + error.message);
-    }
+    // const { error, paymentMethod } = await stripe.createPaymentMethod({
+    //   type: "card",
+    //   card: elements.getElement(CardElement),
+    // });
+    // if (!error) {
+    //   try {
+    //     const { id } = paymentMethod;
+    //     const response = await axios.post("/payment", {
+    //       amount: 5 * enquiries?.length,
+    //       id,
+    //     });
+    //     if (response.data.success) {
+    //       setSuccess(true);
+    //     }
+    //   } catch (error) {
+    //     console.log("Payment error: " + error);
+    //   }
+    // } else {
+    //   console.log("Payment Error: " + error.message);
+    // }
     // Subscription Data
-    const expires = Date.today().addMonths(1).toString("yyyy-MM-dd");
-    enquiries?.map(async (item) => {
-      await addDoc(collection(db, "BrokerSubscription"), {
-        name,
-        email,
-        uid: currentUser?.uid,
-        expires,
-        property: item,
-      });
-      // Update is Active property doc
-      const q = query(
-        collection(db, "properties"),
-        where("_id", "==", item._id)
-      );
-      const unsubscribe = onSnapshot(q, (querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-          doc.ref.update({
-            isActive: false,
-          });
-        });
-      });
+    // const expires = Date.today().addMonths(1).toString("yyyy-MM-dd");
+    const _id = v4();
+    console.log({
+      Deal: "pending",
+      Email: email,
+      Userid: auth?.currentUser?.uid,
+      _id,
+      desc: comment,
+      name,
+      phone,
+      properties: enquiries,
     });
+    await setDoc(doc(db, "BrokerEnquiry", _id), {
+      Deal: "pending",
+      Email: email,
+      Userid: auth?.currentUser?.uid,
+      _id,
+      desc: comment,
+      name,
+      phone,
+      properties: enquiries,
+    });
+    window.localStorage.removeItem("enquiries");
+    // await setDoc(doc(db, "BrokerEnquiry", currentUser?.uid), {
+    //   name,
+    //   email,
+    //   uid: currentUser?.uid,
+    //   expires,
+    //   property: enquiries,
+    // });
+    // Update is Active property doc
+    // const q = query(
+    //   collection(db, "properties"),
+    //   where("_id", "==", item._id)
+    // );
+    // const unsubscribe = onSnapshot(q, (querySnapshot) => {
+    //   querySnapshot.forEach((doc) => {
+    //     doc.ref.update({
+    //       isActive: false,
+    //     });
+    //   });
+    // });
     // Continue from testing and updating
     MySwal.fire({
       title: <strong>Successfully Subscribed!</strong>,
       html: <i>You clicked submit!</i>,
       icon: "success",
     });
+    window.location.replace("/");
   };
 
-  // Getting enquiries from local host
-  const enquiries = JSON.parse(window.localStorage.getItem("enquiries"));
-  console.log(enquiries);
   return (
     <Box
       sx={{
@@ -245,7 +268,7 @@ const Stripe = () => {
             >
               <ElementsConsumer>
                 {({ elements, stripe }) => (
-                  <form onSubmit={(e) => handleSubmit(e)}>
+                  <form>
                     {enquiries?.map((item, i, arr) => {
                       return (
                         <Box
@@ -287,7 +310,7 @@ const Stripe = () => {
                     <CardElement />
                     <br />
                     <Button
-                      onClick={handleSubmit}
+                      onClick={(e) => handleSubmit(e)}
                       variant="outlined"
                       fullWidth
                       disabled={!stripe}

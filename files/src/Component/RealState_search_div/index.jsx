@@ -401,7 +401,7 @@ const Data = [
 
   {
     title: "Where to invest in American real estate?",
-      desc: "With an average annual GDP growth in excess of 8% for 2010 - 2012 period, USA has posted exceptional economic performance compared to the EU zone and indeed to BRICs (Brazil, Russia, India, China). In 2011 and 2012 USA's economic expansion was only second to China. IMF estimates that USA will yet again outperform most BRICs countries and certainly the entire Euro zone in 2013 - 2017 period with an average annual expansion of 5%+ projected. American real estate industry is currently one of the major growth sectors within USA. With a youth population of over 60% of entire 76 million and increasing wealth in the country, domestic demand for the American real estate industry is fast climbing. American real estate agents association estimates that by year 2015 there will be a shortage of around 2 million quality housing in USA just to accommodate domestic demand, this is not even counting the booming tourism sector, 6th most visited country in the world in 2011, which also puts a heavy demand on coastal hotel, villa and apartment projects. In 2011, property market in USA grew by some 18% compared to year before. Considering that at the same period Greece, Spain and Portugal came close to announcing bankruptcy underlines the viability of owning property in USA.",
+    desc: "With an average annual GDP growth in excess of 8% for 2010 - 2012 period, USA has posted exceptional economic performance compared to the EU zone and indeed to BRICs (Brazil, Russia, India, China). In 2011 and 2012 USA's economic expansion was only second to China. IMF estimates that USA will yet again outperform most BRICs countries and certainly the entire Euro zone in 2013 - 2017 period with an average annual expansion of 5%+ projected. American real estate industry is currently one of the major growth sectors within USA. With a youth population of over 60% of entire 76 million and increasing wealth in the country, domestic demand for the American real estate industry is fast climbing. American real estate agents association estimates that by year 2015 there will be a shortage of around 2 million quality housing in USA just to accommodate domestic demand, this is not even counting the booming tourism sector, 6th most visited country in the world in 2011, which also puts a heavy demand on coastal hotel, villa and apartment projects. In 2011, property market in USA grew by some 18% compared to year before. Considering that at the same period Greece, Spain and Portugal came close to announcing bankruptcy underlines the viability of owning property in USA.",
   },
 ];
 
@@ -447,49 +447,41 @@ const RealState_search_div = ({
       setProperties(cities);
     });
   };
-
+  // console.log({});
   // Pagination
   const [page, setPage] = useState(1);
   const perPage = 8;
 
-  function removeCurrencySymbols(amount) {
-    if (typeof minPriceInputValue === "number") return;
-    if (typeof maxPriceInputValue === "number") return;
-    amount = amount.replace(/^\$/, "");
-    if (amount.charAt(amount.length - 1).toLowerCase() === "k") {
-      amount = amount.slice(0, -1);
-    }
-    const numericAmount = parseFloat(amount) + "00";
-
-    return isNaN(numericAmount) ? 0 : numericAmount;
-  }
-
   useEffect(() => {
     PropertiesData();
   }, []);
-
   const properties = Properties?.filter((item) =>
     item.County?.toLowerCase()?.includes(cityData?.toLowerCase())
   )
     .filter((item) =>
       item.Property_Type?.toLowerCase()?.includes(typeData?.toLowerCase())
     )
-    .filter((item) =>
-      minPriceInputValue === 0
-        ? Number(item.Property_Price) >= minPriceInputValue
-        : Number(item.Property_Price) <=
-          removeCurrencySymbols(minPriceInputValue)
+    .filter(
+      (item) =>
+        // minPriceInputValue === 0
+        //   ? Number(item.Property_Price) <= minPriceInputValue
+        //   :
+        Number(item.Property_Price) >= minPriceInputValue
     )
     .filter((item) =>
       maxPriceInputValue === 0
         ? Number(item.Property_Price) >= maxPriceInputValue
-        : Number(item.Property_Price) <=
-          removeCurrencySymbols(maxPriceInputValue)
+        : Number(item.Property_Price) <= maxPriceInputValue
     )
     .filter((item) =>
       item.property_BedRoom?.toLowerCase()?.includes(BedroomData?.toLowerCase())
     );
-  console.log(properties);
+  // console.log(
+  //   Properties.filter(
+  //     (item) =>
+  //       removeCurrencySymbols(minPriceInputValue) <= Number(item.Property_Price)
+  //   )
+  // );
 
   return (
     <section id="mainProperties" className="margin-top-2 mt-1-sm cardListing ">
