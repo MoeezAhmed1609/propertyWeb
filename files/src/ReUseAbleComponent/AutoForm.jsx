@@ -11,22 +11,22 @@ export default function AutoForm() {
     const [Name, setName] = useState();
     const [Email, setEmail] = useState();
     const [Phone, setPhone] = useState();
-    const [Interest,setInterest] = useState();
+    const [Interest, setInterest] = useState();
 
     const handlePhoneInputChange = (telNumber, selectedCountry) => {
         setPhone(selectedCountry);
         console.log(Phone)
     };
 
-    const HandleSubmit = async(e) => {
+    const HandleSubmit = async (e) => {
         e.preventDefault();
         const docRef = await addDoc(collection(db, "Area_of_Interest"), {
-            Name:Name,
-            Email:Email,
-            Phone:Phone,
+            Name: Name,
+            Email: Email,
+            Phone: Phone,
             Interest
-          });
-          console.log("Document written with ID: ", docRef.id);
+        });
+        console.log("Document written with ID: ", docRef.id);
     }
 
 
@@ -52,7 +52,7 @@ export default function AutoForm() {
                     placeholder="Name"
                     name="name"
                     type="text"
-                    onChange={(e)=>setName(e.target.value)}
+                    onChange={(e) => setName(e.target.value)}
                 />
             </label>
             <label className="field">
@@ -62,7 +62,7 @@ export default function AutoForm() {
                     validation="email"
                     placeholder="E-mail"
                     name="email"
-                    onClick={(e)=>setEmail(e.target.value)}
+                    onClick={(e) => setEmail(e.target.value)}
                 />
             </label>
             <div className="field">
@@ -71,6 +71,8 @@ export default function AutoForm() {
                     inputClassName="form-control"
                     defaultCountry={'us'}
                     onPhoneNumberChange={handlePhoneInputChange}
+                    value={Phone}
+                    setValue={setPhone}
                 />
             </div>
             <label className="field">
@@ -82,7 +84,7 @@ export default function AutoForm() {
                     name="message"
                     cols={50}
                     defaultValue={""}
-                    onChange={(e)=>setInterest(e.target.value)}
+                    onChange={(e) => setInterest(e.target.value)}
                 />
             </label>
             <br />

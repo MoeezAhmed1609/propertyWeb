@@ -291,6 +291,7 @@ export default function Header() {
     } else window.location.reload();
   };
 
+
   return (
     <>
       <header
@@ -374,11 +375,11 @@ export default function Header() {
                     alt="Property USA"
                   />
                 </Link>
-                <Link
+                {/* <Link
                   title="Property USA"
                   className="flex items-center content-center flex-direction-column pos-logo-lg"
                   id="mobileLogo"
-                ></Link>
+                ></Link> */}
                 <Link
                   onClick={handleNavButtonClick}
                   className="navbutton  tab-inline-block mob-inline-block mobile burgermenu position-abs"
@@ -386,16 +387,16 @@ export default function Header() {
                 >
                   <AiOutlineMenu size={30} color="#fff" />
                 </Link>
-                <Box className="elastic-search d-mobile" id="headerSearchIcon">
-                  <AiOutlineSearch size={30} />
+                <Box className="elastic-search" id="headerSearchIcon" sx={{ alignItems: 'center', display: { xs: 'flex', md: 'none' } }}>
+                  <AiOutlineSearch style={{ fontSize: '24px' }} />
                 </Box>
               </Box>
               {/* Navigation bar */}
-              <HeaderNav />
+              <HeaderNav user={userAuth} username={username} />
               {userAuth ? (
-                <Box className="user login fl-dis-right  fl-tab-right fl-mob-right">
+                <Box sx={{ display: { xs: 'none', sm: "block" } }} className="user login fl-dis-right  fl-tab-right fl-mob-right">
                   <Link className="profile-link">
-                    {username} <i className="fa fa-angle-down" />
+                    {username} <i className="fa fa-angle-down" style={{ fontSize: '15px' }} />
                   </Link>
                   <Box className="usermenu fl-dis-right  fl-tab-right">
                     <Box className="container padding-top-1">
@@ -422,7 +423,9 @@ export default function Header() {
                               Saved Homes
                             </span>
                           </Box>
-                          <Link to="/setting">View All</Link>
+                          <Link to="/setting" state={{
+                            tab: 3,
+                          }}>View All</Link>
                         </Box>
                       </Box>
                       <hr />
@@ -435,7 +438,9 @@ export default function Header() {
                             />
                             <span>Saved Searches</span>
                           </Box>
-                          <Link to="/setting">View All</Link>
+                          <Link to="/setting" state={{
+                            tab: 5,
+                          }}>View All</Link>
                         </Box>
                       </Box>
                     </Box>
@@ -443,7 +448,9 @@ export default function Header() {
                       <Box className="flex content-space-between container padding-1">
                         <Box>
                           <BiCog className="font-13 clr-pt-darkred" />
-                          <Link to="/setting" className="font-13">
+                          <Link to="/setting" state={{
+                            tab: 1,
+                          }} className="font-13">
                             Account Settings
                           </Link>
                         </Box>
@@ -609,6 +616,7 @@ export default function Header() {
                 onChange={(e) => setName(e.target.value)}
                 type="text"
                 className="w-full h-[40px] bg-[#eee]"
+                required={true}
               />
             </Box>
 
@@ -618,12 +626,13 @@ export default function Header() {
                 type="email"
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full h-[40px] bg-[#eee]"
+                required
               />
             </Box>
 
             <Box className="w-[90%] h-auto  flex flex-col ">
               <label>Accounts options</label>
-              <select onChange={(e) => setAccountsPurpose(e.target.value)}>
+              <select onChange={(e) => setAccountsPurpose(e.target.value)} style={{ WebkitAppearance: "listbox" }}>
                 <option value={"Broker"}>Broker</option>
                 <option value={"Buyer"}>Buyer</option>
                 <option value={"Renter"}>Renter</option>
@@ -636,6 +645,7 @@ export default function Header() {
                 type="number"
                 onChange={(e) => setMobile(e.target.value)}
                 className="w-full h-[40px] bg-[#eee]"
+                required
               />
             </Box>
 
@@ -645,6 +655,7 @@ export default function Header() {
                 type="password"
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full h-[40px] bg-[#eee]"
+                required
               />
             </Box>
             <Box className="w-[90%] h-auto  flex flex-col ">
@@ -653,6 +664,7 @@ export default function Header() {
                 type="password"
                 onChange={(e) => setconfirmpasswordPassword(e.target.value)}
                 className="w-full h-[40px] bg-[#eee]"
+                required
               />
             </Box>
             <StyledButton
@@ -660,6 +672,8 @@ export default function Header() {
               title={"Register"}
               margin={"8px"}
               size={"small"}
+              validation={!Name || !Email || !AccountOptions || !Mobile || !password || !confirmpassword}
+              type={'submit'}
             />
             {/* <button
               onClick={RegisterUser}
@@ -747,6 +761,7 @@ export default function Header() {
                   onChange={(e) => setEmail(e.target.value)}
                   type="email"
                   sx={{ width: "90%", margin: "8px 0" }}
+                  required
                 />
                 {/* <Box className="form-field">
                   <input
@@ -762,6 +777,7 @@ export default function Header() {
                   onChange={(e) => setPassword(e.target.value)}
                   type="password"
                   sx={{ width: "90%", margin: "8px 0" }}
+                  required
                 />
                 {/* <Box className="form-field">
                   <input name="remember" type="checkbox" defaultValue={1} />{" "}
@@ -777,6 +793,8 @@ export default function Header() {
                   title={"Submit"}
                   onClick={AuthRegister}
                   margin={"8px"}
+                  type={'submit'}
+                  validation={!Email || !password}
                 />
                 {/* <button
                   className="btn btn-block bg-pt crl-white margin-ver-1"

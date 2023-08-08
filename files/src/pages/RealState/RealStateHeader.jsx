@@ -142,6 +142,7 @@ export default function RealStateHeader({
 
   const HandlecloseCity = () => {
     setcityData("");
+    setzip_code("")
     dispatch(PropertyFilter(false));
   };
   const HandleTypeData = (item) => {
@@ -182,9 +183,8 @@ export default function RealStateHeader({
   return (
     <div
       id="search-filter"
-      className={`showRefId ${
-        scroll && scrollValue > 120 ? `${state ? "" : "fixed"}` : ""
-      } `}
+      className={`showRefId ${scroll && scrollValue > 120 ? `${state ? "" : "fixed"}` : ""
+        } `}
     >
       {searchModelToggle && (
         <IconButton
@@ -208,9 +208,8 @@ export default function RealStateHeader({
           <Link href="#" className="toggle-search-filters fa fa-arrow-right" />
           <div className="search-input-wrap flex wrappping-hidden  ">
             <div
-              className={`${
-                openLocation ? "open" : ""
-              } search-filter-input search-filter-input-city originValue cursor-pointer`}
+              className={`${openLocation ? "open" : ""
+                } search-filter-input search-filter-input-city originValue cursor-pointer`}
               linktype="location"
               onClick={HandleOpenLocation}
               onMouseLeave={() => setOpenLocation(false)}
@@ -245,9 +244,8 @@ export default function RealStateHeader({
               </div>
               <span className="search-filter-input-title relative h-[40px]  text-mdd-center">
                 <p
-                  className={`absolute ${
-                    cityData ? "text-sm top-1" : "text-md top-3"
-                  } `}
+                  className={`absolute ${cityData ? "text-sm top-1" : "text-md top-3"
+                    } `}
                 >
                   City
                 </p>
@@ -264,11 +262,10 @@ export default function RealStateHeader({
                 )}
               </span>
               <i
-                className={`${
-                  openLocation
+                className={`${openLocation
                     ? "fa-solid fa-angle-up"
                     : "fa-solid fa-angle-down"
-                }  search-filter-input-icon pp-0`}
+                  }  search-filter-input-icon pp-0`}
               />
 
               <div className="search-filter-input-dropdown anchor">
@@ -290,9 +287,8 @@ export default function RealStateHeader({
             <div
               onClick={HandleOpenType}
               onMouseLeave={() => setOpenopenType(false)}
-              className={` ${
-                openType ? "open" : ""
-              } search-filter-input originValue cursor-pointer`}
+              className={` ${openType ? "open" : ""
+                } search-filter-input originValue cursor-pointer`}
               linktype="type"
             >
               <div className="filter-type-dropdown-wrap">
@@ -328,9 +324,8 @@ export default function RealStateHeader({
               />
               <span className="search-filter-input-title h-[40px] relative text-mdd-center">
                 <p
-                  className={`absolute ${
-                    typeData ? "text-sm top-1" : "text-lg top-3"
-                  }`}
+                  className={`absolute ${typeData ? "text-sm top-1" : "text-lg top-3"
+                    }`}
                 >
                   Type
                 </p>
@@ -345,9 +340,8 @@ export default function RealStateHeader({
                 )}
               </span>
               <i
-                className={`${
-                  openType ? "fa-solid fa-angle-up" : "fa-solid fa-angle-down"
-                } search-filter-input-icon`}
+                className={`${openType ? "fa-solid fa-angle-up" : "fa-solid fa-angle-down"
+                  } search-filter-input-icon`}
               />
               <div className="search-filter-input-dropdown  anchor">
                 {TypeDataToggle.map((item) => {
@@ -367,9 +361,8 @@ export default function RealStateHeader({
             </div>
             {/*---------------------------------------------------------------------------------------------------------------------------*/}
             <div
-              className={`search-filter-input d-desk price-toggle OriginValue cursor-pointer ${
-                openPrice ? "open" : ""
-              }`}
+              className={`search-filter-input d-desk price-toggle OriginValue cursor-pointer ${openPrice ? "open" : ""
+                }`}
               id="price-toggle"
             >
               <span
@@ -378,9 +371,8 @@ export default function RealStateHeader({
                 onMouseLeave={() => setOpenPrice(false)}
               >
                 <p
-                  className={`absolute ${
-                    minPriceInputValue ? "top-1 text-sm" : "top-3 text-md"
-                  }`}
+                  className={`absolute ${minPriceInputValue ? "top-1 text-sm" : "top-3 text-md"
+                    }`}
                 >
                   Price
                 </p>
@@ -405,9 +397,8 @@ export default function RealStateHeader({
                 </div>
               </span>
               <i
-                className={`${
-                  openPrice ? "fa-solid fa-angle-up" : "fa-solid fa-angle-down"
-                } search-filter-input-icon`}
+                className={`${openPrice ? "fa-solid fa-angle-up" : "fa-solid fa-angle-down"
+                  } search-filter-input-icon`}
                 onClick={HandlePriceToggle}
               />
               <div className="filter-type-dropdown-wrap price">
@@ -756,9 +747,8 @@ export default function RealStateHeader({
             </div>
             {/*-----------------------------------------B E D R O O M S-------------------------------------------*/}
             <div
-              className={`search-filter-input  bedrooms hideMobile cursor-pointer ${
-                openBedroom ? "open" : ""
-              }`}
+              className={`search-filter-input  bedrooms hideMobile cursor-pointer ${openBedroom ? "open" : ""
+                }`}
               linktype="bedrooms"
               id="bedroom-toggle"
               onClick={HandleBedroomToggle}
@@ -770,9 +760,8 @@ export default function RealStateHeader({
               />
               <span className="search-filter-input-title relative h-[40px] text-mdd-center">
                 <p
-                  className={`absolute ${
-                    BedroomData ? "text-sm top-1" : "text-lg top-3"
-                  }`}
+                  className={`absolute ${BedroomData ? "text-sm top-1" : "text-lg top-3"
+                    }`}
                 >
                   {" "}
                   Bedrooms
@@ -788,11 +777,10 @@ export default function RealStateHeader({
                 )}
               </span>
               <i
-                className={`${
-                  openBedroom
+                className={`${openBedroom
                     ? "fa-solid fa-angle-up"
                     : "fa-solid fa-angle-down"
-                } search-filter-input-icon`}
+                  } search-filter-input-icon`}
               />
               <div className="filter-type-dropdown-wrap">
                 <div className="filter-type-dropdown">
@@ -1074,9 +1062,8 @@ export default function RealStateHeader({
               </div>
             </div>
             <div
-              className={`search-filter-input  bedrooms hideMobile cursor-pointer ${
-                HandleZipCode ? "open" : ""
-              }`}
+              className={`search-filter-input  bedrooms hideMobile cursor-pointer ${HandleZipCode ? "open" : ""
+                }`}
               linktype="bedrooms"
               id="bedroom-toggle"
               onClick={HandleZip}
@@ -1088,9 +1075,8 @@ export default function RealStateHeader({
               />
               <span className="search-filter-input-title relative h-[40px] text-mdd-center">
                 <p
-                  className={`absolute ${
-                    zip_code ? "text-sm top-1" : "text-lg top-3"
-                  }`}
+                  className={`absolute ${zip_code ? "text-sm top-1" : "text-lg top-3"
+                    }`}
                 >
                   {" "}
                   Zip Code
@@ -1099,18 +1085,17 @@ export default function RealStateHeader({
 
                 {zip_code && (
                   <RxCross2
-                    onClick={() => setzip_code("")}
+                    onClick={() => { setzip_code(""); setcityData("") }}
                     color={"#5018ff"}
                     className="absolute right-2 top-3  text-2xl font-black"
                   />
                 )}
               </span>
               <i
-                className={`${
-                  openBedroom
+                className={`${openBedroom
                     ? "fa-solid fa-angle-up"
                     : "fa-solid fa-angle-down"
-                } search-filter-input-icon`}
+                  } search-filter-input-icon`}
               />
               <div className="filter-type-dropdown-wrap h-[300px] overflow-y-auto">
                 <div className="filter-type-dropdown">
@@ -1223,7 +1208,7 @@ export default function RealStateHeader({
               // </button>
               <StyledButton
                 title={"Search"}
-                // onClick={() => handleSearchClick()}
+              // onClick={() => handleSearchClick()}
               />
 
               // <button

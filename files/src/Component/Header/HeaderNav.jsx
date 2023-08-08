@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { AboutTurkeyNavHandle } from "../../Redux/Action/AboutTurkeyNavHandle";
 import { FiChevronUp, FiChevronDown } from "react-icons/fi";
 
-export default function HeaderNav() {
+export default function HeaderNav({ user, username }) {
   const handleNavRemoveButtonClick = (e) => {
     e.preventDefault();
     $("nav").removeClass("open");
@@ -1085,15 +1085,23 @@ export default function HeaderNav() {
         <li className="bold">
           {/* <Link to="propertyTurkey"><strong>Property USA TV</strong></Link> */}
         </li>
-        <div className="showMb-hideDt auth header-right order-1 flex">
-          <button className="login fl-dis-right  fl-tab-right fl-mob-right">
-            Login
-          </button>
-          <Link className="login fl-dis-right  fl-tab-right fl-mob-right ">
-            Register
-          </Link>
-        </div>
-        <div className="header-phone-items order-3 showMb-hideDt ">
+        {user ? (
+          <div className="showMb-hideDt auth header-right order-1 flex">
+            <Link className="profile-link" to='/setting'>
+              {username}
+            </Link>
+          </div>
+        ) : (
+          <div className="showMb-hideDt auth header-right order-1 flex">
+            <button className="login fl-dis-right  fl-tab-right fl-mob-right">
+              Login
+            </button>
+            <Link className="login fl-dis-right  fl-tab-right fl-mob-right ">
+              Register
+            </Link>
+          </div>
+        )}
+        {/* <div className="header-phone-items order-3 showMb-hideDt ">
           <Link to="" className="active" title="English">
             EN
           </Link>
@@ -1142,7 +1150,7 @@ export default function HeaderNav() {
           >
             <i className="fa fa-try" />
           </Link>
-        </div>
+        </div> */}
       </nav>
     </>
   );

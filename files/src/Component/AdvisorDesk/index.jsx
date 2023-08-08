@@ -21,7 +21,6 @@ export default function AdvisorDesk() {
   const [Phone, setPhone] = useState();
 
   const onSubmit = async (data) => {
-    console.log(Phone);
     const docRef = await addDoc(collection(db, "AdvisorDesk"), {
       ...data,
       Phone,
@@ -64,6 +63,7 @@ export default function AdvisorDesk() {
                         className="typeahead validatehomeform"
                         placeholder="Enter city, address, zip"
                         {...register("address")}
+                        required
                       />
                     </div>
                     <div className="form-field field margin-top-2">
@@ -78,6 +78,7 @@ export default function AdvisorDesk() {
                         placeholder="E-mail"
                         name="email"
                         {...register("Email")}
+                        required
                       />
                       <span className="validationError">
                         Please enter valid email
@@ -115,6 +116,7 @@ export default function AdvisorDesk() {
                         name="name"
                         type="text"
                         {...register("Name")}
+                        required
                       />
                     </div>
                     <div className="form-field field">
@@ -126,6 +128,8 @@ export default function AdvisorDesk() {
                             inputClassName="form-control"
                             defaultCountry={"us"}
                             onPhoneNumberChange={handlePhoneInputChange}
+                            value={Phone}
+                            setValue={setPhone}
                           />
                         </div>
                         <input
@@ -135,6 +139,7 @@ export default function AdvisorDesk() {
                           className="input-tel"
                           name="phone"
                           type="text"
+                          required
                           autoComplete="off"
                         />
                       </div>
@@ -149,6 +154,7 @@ export default function AdvisorDesk() {
                         name="message"
                         cols={50}
                         defaultValue={""}
+                        required
                         {...register("Message")}
                       />
                     </div>

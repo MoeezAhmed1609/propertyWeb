@@ -69,6 +69,7 @@ export default function BecomePartnerBody() {
                       containerClassName="intl-tel-input"
                       inputClassName="form-control"
                       defaultCountry={"pk"}
+                    
                     />
                   </label>
                 </div>

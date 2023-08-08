@@ -15,8 +15,8 @@ import { onSnapshot, collection, doc, setDoc } from "firebase/firestore";
 import { v4 as uuidv4 } from "uuid";
 import StyledButton from "../../ReUseAbleComponent/StyledButton";
 
-export default function Blog({blogs}) {
-  
+export default function Blog({ blogs }) {
+
   // Subscribe Modal
   const [subscribeModal, setSubscribeModal] = useState(false);
   const style = {
@@ -216,12 +216,12 @@ export default function Blog({blogs}) {
                         <label for="fullName" className="subscribe-modal-input">
                           Full Name:
                         </label>
-                        <input id="fullName" name="fullName" type="text" />
+                        <input id="fullName" name="fullName" type="text" required />
                         <br />
                         <label for="email" className="subscribe-modal-input">
                           Email:
                         </label>
-                        <input id="email" name="email" type="text" />
+                        <input id="email" name="email" type="text" required />
                         <br />
                         <label
                           for="telephone"
@@ -229,12 +229,12 @@ export default function Blog({blogs}) {
                         >
                           Telephone:
                         </label>
-                        <input id="telephone" name="telephone" type="text" />
+                        <input id="telephone" required name="telephone" type="text" />
                         <br />
                         <label for="notes" className="subscribe-modal-input">
                           Notes:
                         </label>
-                        <input id="notes" name="notes" type="text" />
+                        <input id="notes" name="notes" required type="text" />
                         <br />
                         <br />
                         <div className="subscribe-modal-check">

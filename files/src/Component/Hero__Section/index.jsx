@@ -195,13 +195,9 @@ export default function HeroSection() {
     setmaximumPriceValue(item.dollar);
   };
 
-  const handleValue = (item, index) => {
+  const handleValue = (item) => {
     setHandleZipInput(item.zip_code);
-    const cityValue = cityToggle.filter(
-      (value) => value.zip_code === item.zip_code
-    );
-    console.log(cityValue[0].County);
-    setCityData(cityValue[0].County);
+    setCityData(item.County);
   };
 
   // Saving in LocalStorage
@@ -226,9 +222,8 @@ export default function HeroSection() {
         }}
       >
         <Box
-          className={`tab-pane home-tab fade ${
-            tabOneActive ? "" : "show active"
-          }`}
+          className={`tab-pane home-tab fade ${tabOneActive ? "" : "show active"
+            }`}
           id="tab-1"
         >
           <Box className="d-block d-lg-flex flex-column align-items-center gap-3">
@@ -387,11 +382,11 @@ export default function HeroSection() {
                   <Box
                     className="col-lg-2 col-md-4 col-12 mb-4"
                     onClick={LocationToggle}
+                    onMouseLeave={() => setLocationToggle(true)}
                   >
                     <Box
-                      className={`${
-                        locationtoggle ? "hasValue" : "open"
-                      } search-filter-input search-tab-input search-location-input originValue`}
+                      className={`${locationtoggle ? "hasValue" : "open"
+                        } search-filter-input search-tab-input search-location-input originValue`}
                       linktype="location"
                     >
                       <Box className="filter-type-dropdown-wrap max-h-[400px] overflow-y-auto">
@@ -405,6 +400,7 @@ export default function HeroSection() {
                                   onChange={() => {
                                     ZipCodehandler(item);
                                     setCity(item.County);
+                                    setCityData(item.County)
                                   }}
                                 >
                                   <p> {item.County}</p>
@@ -428,9 +424,8 @@ export default function HeroSection() {
                       </Box>
                       <span className="search-filter-input-title relative h-[40px]  search-tab-input-title bold py-3 text-center px-0">
                         <p
-                          className={`block mb-0 font-black absolute ${
-                            CityData ? "text-sm top-1" : "text-lg top-3"
-                          }`}
+                          className={`block mb-0 font-black absolute ${CityData ? "text-sm top-1" : "text-lg top-3"
+                            }`}
                         >
                           {locationToggleName}
                         </p>
@@ -474,12 +469,13 @@ export default function HeroSection() {
                   <ColumnBox
                     onClick={TypeToggle}
                     className="col-lg-2 col-md-4 col-12 mb-4"
+
                   >
                     <div
-                      className={`search-filter-input search-tab-input originValue ${
-                        Typetogglebtn ? "" : "open"
-                      }`}
+                      className={`search-filter-input search-tab-input originValue ${Typetogglebtn ? "" : "open"
+                        }`}
                       linktype="type"
+                      onMouseLeave={TypeToggle}
                     >
                       <div className="filter-type-dropdown-wrap">
                         <div className="filter-type-dropdown">
@@ -515,9 +511,8 @@ export default function HeroSection() {
                       </div>
                       <span className="search-filter-input-title relative text-center h-[40px] search-tab-input-title fs-5 fw-bold px-0">
                         <p
-                          className={`absolute top-3 ${
-                            TypeData ? "text-sm" : "text-md"
-                          }`}
+                          className={`absolute top-3 ${TypeData ? "text-sm" : "text-md"
+                            }`}
                         >
                           Type
                         </p>
@@ -558,18 +553,17 @@ export default function HeroSection() {
                     onClick={PricesToggle}
                   >
                     <Box
-                      className={`${
-                        PriceToggle ? "" : "open"
-                      } h-[45px] py-3 originValue search-filter-input search-tab-input d-lg-flex price-toggle`}
+                      className={`${PriceToggle ? "" : "open"
+                        } h-[45px] py-3 originValue search-filter-input search-tab-input d-lg-flex price-toggle`}
                       id="price-toggle"
+                      onMouseLeave={PricesToggle}
                     >
                       <span className="search-filter-input-title relative search-tab-input-title fs-5 fw-bold px-0">
                         <p
-                          className={`absolute ${
-                            minimumPriceValue || maximumPriceValue
-                              ? "text-sm -top-3 font-bold"
-                              : "text-xl -top-3 font-bold"
-                          } `}
+                          className={`absolute ${minimumPriceValue || maximumPriceValue
+                            ? "text-sm -top-3 font-bold"
+                            : "text-xl -top-3 font-bold"
+                            } `}
                         >
                           Price
                         </p>
@@ -650,9 +644,8 @@ export default function HeroSection() {
                                 onClick={HandleMaxPrice}
                               />
                               <ul
-                                className={`maxPriceValues ${
-                                  maximumPrice ? "open" : ""
-                                }`}
+                                className={`maxPriceValues ${maximumPrice ? "open" : ""
+                                  }`}
                               >
                                 {PriceData.map((item) => {
                                   return (
@@ -980,17 +973,16 @@ export default function HeroSection() {
                     className="col-lg-2 col-md-4 col-12 mb-4"
                   >
                     <Box
-                      className={`${
-                        BedRom ? "" : "open"
-                      } h-[45px] search-filter-input search-tab-input bedrooms`}
+                      className={`${BedRom ? "" : "open"
+                        } h-[45px] search-filter-input search-tab-input bedrooms`}
                       linktype="bedrooms"
                       id="bedroom-toggle"
+                      onMouseLeave={BedToggle}
                     >
                       <span className="search-filter-input-title relative text-center h-[40px] search-tab-input-title fs-5 fw-bold px-0">
                         <p
-                          className={`absolute top-3 ${
-                            BedroomData ? "text-sm" : "text-md"
-                          }`}
+                          className={`absolute top-3 ${BedroomData ? "text-sm" : "text-md"
+                            }`}
                         >
                           Bedroom
                         </p>
@@ -1057,19 +1049,18 @@ export default function HeroSection() {
                   <Box
                     onClick={HandleZipCode}
                     className="col-lg-2 col-md-4 col-12 mb-4 cursor-pointer"
+                    onMouseLeave={HandleZipCode}
                   >
                     <Box
-                      className={`${
-                        HandleZip ? "" : "open"
-                      } h-[45px] search-filter-input search-tab-input bedrooms`}
+                      className={`${HandleZip ? "" : "open"
+                        } h-[45px] search-filter-input search-tab-input bedrooms`}
                       linktype="bedrooms"
                       id="bedroom-toggle"
                     >
                       <span className="search-filter-input-title relative text-center h-[40px] search-tab-input-title fs-5 fw-bold px-0">
                         <p
-                          className={`absolute ${
-                            HandleZipInput ? "top-1 text-sm" : "top-3 text-lg"
-                          }`}
+                          className={`absolute ${HandleZipInput ? "top-1 text-sm" : "top-3 text-lg"
+                            }`}
                         >
                           Zip Code
                         </p>
@@ -1133,7 +1124,7 @@ export default function HeroSection() {
                     </Box>
                   </Box>
                   <Box className="col-lg-2 col-md-4 col-12 mb-4">
-                    <StyledButton title={'Search'} onClick={() => handleSearchClick()}  />
+                    <StyledButton title={'Search'} onClick={() => handleSearchClick()} />
                     {/* <Link
                       id="createSearchData"
                       className="bg-pt-dark-red createSearchData"

@@ -455,6 +455,7 @@ export default function AboutusGuideTag({ title }) {
                     validation=""
                     name="firstName"
                     type="text"
+                    required
                   />
                 </Box>
                 <Box className="form-field">
@@ -464,6 +465,7 @@ export default function AboutusGuideTag({ title }) {
                     validation="email"
                     name="email"
                     type="email"
+                    required
                   />
                 </Box>
                 <Box className="form-field">
@@ -487,6 +489,7 @@ export default function AboutusGuideTag({ title }) {
                       name="mobile"
                       type="text"
                       autoComplete="off"
+                      required
                     />
                   </Box>
                 </Box>
@@ -498,6 +501,7 @@ export default function AboutusGuideTag({ title }) {
                     name="password"
                     type="password"
                     defaultValue=""
+                    required
                   />
                 </Box>
                 <Box className="form-field hide">
@@ -539,11 +543,11 @@ export default function AboutusGuideTag({ title }) {
               <form action="/subscribe-to-media" method="post">
                 <label htmlFor="email">
                   Full Name :
-                  <input type="text" name="full_name" id="email" />
+                  <input type="text" name="full_name" id="email" required />
                 </label>
                 <label htmlFor="email">
                   Email :
-                  <input type="email" name="email" id="email" />
+                  <input type="email" name="email" id="email" required />
                 </label>
                 <label htmlFor="email">
                   Telephone :
@@ -567,12 +571,13 @@ export default function AboutusGuideTag({ title }) {
                       id="phone"
                       autoComplete="off"
                       placeholder="+92 301 2345678"
+                      required
                     />
                   </Box>
                 </label>
                 <label htmlFor="email">
                   Notes :
-                  <input type="text" name="notes" id="notes" />
+                  <input type="text" name="notes" id="notes" required />
                 </label>
                 <input name="requestUrl" type="hidden" defaultValue="/" />
                 <label htmlFor="to_news">
@@ -634,6 +639,7 @@ export default function AboutusGuideTag({ title }) {
                         display: "none",
                       }}
                       defaultValue={""}
+                      required
                     />
                   </Box>
                   <iframe title="Beautifull" style={{ display: "none" }} />

@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import React, { useState } from "react";
-import { db } from "../../Config";
+import { auth, db } from "../../Config";
 import { useSelector } from "react-redux";
 import { addDoc, collection } from "firebase/firestore";
 import ContactIcon from "../../assets/contact-form-icon.svg";
@@ -24,18 +24,25 @@ export default function ConnecPt() {
   const HandleAddConnectPt = async () => {
     console.log(user.uid);
 
-    if (!user.uid) {
-      return toast("Please Login First !! ");
+    if (!auth.currentUser.uid) {
+      return toast("Please Login First ! ");
+    }
+    if (!Name || !Email || !Phone) {
+      return toast("Please fill all feilds ! ");
     }
 
     const docRef = await addDoc(collection(db, "ConnectPt"), {
-      ID: user.login.uid,
+      ID: auth.currentUser.uid,
       name: Name,
       email: Email,
       phone: Phone,
-    });
-    console.log("Document written with ID: ", docRef.id);
-    toast("Successfull Send a Message ");
+    }).then(() => {
+      toast("Successfull message send!");
+      setName('')
+      setEmail("")
+      setPhone("")
+    })
+
   };
 
   const HandleCountries = (e) => {
@@ -82,6 +89,8 @@ export default function ConnecPt() {
                 name="name"
                 placeholder="Name"
                 onChange={(e) => setName(e.target.value)}
+                value={Name}
+                required
               />
             </div>
           </div>
@@ -93,6 +102,8 @@ export default function ConnecPt() {
                 onChange={HandleCountries}
                 onPhoneNumberChange={handlePhoneInputChange}
                 defaultCountry={"us"}
+                value={Phone}
+                setValue={setPhone}
               />
             </div>
           </div>
@@ -104,11 +115,13 @@ export default function ConnecPt() {
                 name="email"
                 placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
+                value={Email}
+                required
               />
             </div>
           </div>
           <div className="col-lg col-12 mb-4">
-            <StyledButton title={"Contact"}  />
+            <StyledButton title={"Contact"} onClick={HandleAddConnectPt} type={'submit'} />
             {/* <button
               className="bg-pt-dark-red border-0 w-100 h-100 d-flex align-items-center justify-content-center"
               style={{ padding: "10px 0" }}

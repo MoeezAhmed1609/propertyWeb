@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { UserTabInfo } from "../../Redux/Action/UserTabInfo"
 
-export default function UsersInfoTab() {
-    const [TabNumber, setTabNumber] = useState(1);
+export default function UsersInfoTab({ setTabNumber, TabNumber }) {
+
     const dispatch = useDispatch();
 
     const HandleTabChange = (number) => {

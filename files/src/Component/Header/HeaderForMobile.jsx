@@ -10,33 +10,33 @@ export default function HeaderForMobile() {
                 <div className="wrap-dis-85 flex  content-end items-center hideMb-showDt">
                     <div className="header-phone-items order-3">
                         <a
-                            
+
                             className="active"
                             title="English"
                         >
                             EN
                         </a>
                         <a
-                            
+
                             title="Russian"
                             className=""
                         >
                             RU
                         </a>
-                        <a  title="Arabic">
+                        <a title="Arabic">
                             AR
                         </a>
-                        <a  title="German">
+                        <a title="German">
                             DE
                         </a>
-                        <a  title="Chinese">
+                        <a title="Chinese">
                             中文
                         </a>
-                        <a  title="Farsi">
+                        <a title="Farsi">
                             FA
                         </a>
                     </div>
-                    <a  className="flex">
+                    <a className="flex">
                         <img
                             src="https://www.propertyturkey.com/front/image/images2019/Images/partner-button-01.svg"
                             width={95}
@@ -47,7 +47,7 @@ export default function HeaderForMobile() {
                     <div className="currencyy order-2">
                         <a
                             rel="nofollow"
-                            
+
                             className=""
                             title="Sterling Pound  "
                         >
@@ -55,14 +55,14 @@ export default function HeaderForMobile() {
                         </a>
                         <a
                             rel="nofollow"
-                            
+
                             className=""
                             title="Euro "
                         >
                             <i className="fa fa-eur" />
                         </a>
                         <Link
-                      
+
                             className="active"
                             title="Dollar "
                         >
@@ -70,7 +70,7 @@ export default function HeaderForMobile() {
                         </Link>
                         <a
                             rel="nofollow"
-                            
+
                             className=""
                             title="Turkish Lira "
                         >
@@ -85,7 +85,7 @@ export default function HeaderForMobile() {
                     <div className="flex  items-center content-start position-relative mt-15 content-space-between">
                         <div className="logo">
                             <a
-                                
+
                                 title="Property Turkey"
                                 className="logoImg flex items-center content-center flex-direction-column pos-logo-lg"
                                 id="desktopLogo"
@@ -95,13 +95,13 @@ export default function HeaderForMobile() {
                                     alt="Property Turkey"
                                 />
                             </a>
-                           
+
                             {/* <div class="info-slogan">
               <img src="https://www.propertyturkey.com/front/image/1.png" alt="for life and investment" />
           </div> */}
                             <a
                                 className="navbutton  tab-inline-block mob-inline-block mobile burgermenu position-abs"
-                                
+
                             >
                                 <img src="https://www.propertyturkey.com/front/image/images2019/Icons/burger-menu.svg" />
                             </a>
@@ -120,7 +120,7 @@ export default function HeaderForMobile() {
                                 rel="nofollow"
                                 data-fancybox=""
                                 data-src="#logins"
-                                
+
                             >
                                 Login
                             </a>
@@ -130,7 +130,7 @@ export default function HeaderForMobile() {
                                 rel="nofollow"
                                 data-fancybox=""
                                 data-src="#registers"
-                                
+
                             >
                                 Register
                             </a>

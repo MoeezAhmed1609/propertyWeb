@@ -226,6 +226,8 @@ const PropertyCard = ({ property }) => {
                           inputClassName="form-control"
                           defaultCountry={"us"}
                           onPhoneNumberChange={handlePhoneInputChange}
+                          value={Phone}
+                          setValue={setPhone}
                         />
                       </Box>
                       <label className="field col-dis-12 col-tab-6 col-mob-12">

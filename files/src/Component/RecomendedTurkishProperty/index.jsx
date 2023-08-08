@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./index.css";
@@ -32,6 +31,7 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import KingBedOutlinedIcon from "@mui/icons-material/KingBedOutlined";
 import BathtubOutlinedIcon from "@mui/icons-material/BathtubOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import { toast } from "react-toastify";
 
 const responsive = {
   superLargeDesktop: {
@@ -56,13 +56,13 @@ const responsive = {
 export default function RecomendedTurkishProperty() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [CarouselID, setCarouselID] = useState();
-  const [Name, setName] = useState();
-  const [Phone, setPhone] = useState();
-  const [Email, setEmail] = useState();
+  const [Name, setName] = useState("");
+  const [Phone, setPhone] = useState("1");
+  const [Email, setEmail] = useState("");
   const [Description, setDescription] = useState("");
   const [navigateProperty, setnavigateProperty] = useState(false);
-  const [property, setForPropertyStatus] = useState();
-  const [Active, setActive] = useState();
+  const [property, setForPropertyStatus] = useState("");
+  const [Active, setActive] = useState("");
   const user = useSelector((state) => state.AuthReducer);
   const states = useSelector((state) => state.AboutTurkey.Nav);
   const { propertiesData, isContinue } = useProperties("/properties");
@@ -118,8 +118,11 @@ export default function RecomendedTurkishProperty() {
       purpose: property,
       Deal: "pending",
       // Active: Active,
-    });
-    console.log("Document written with ID: ", docRef.id);
+    }).then(() => {
+      console.log("Document written with ID: ", docRef.id);
+      closeModal()
+      toast("Form submitted successfully!")
+    })
   };
 
   const navigate = useNavigate();
@@ -414,11 +417,13 @@ export default function RecomendedTurkishProperty() {
                       />
                     </label>
                     <Box className="field col-dis-12 col-tab-6 col-mob-12">
-                      <IntlTelInput
-                        containerClassName="intl-tel-input"
+                      <PhoneComponent
+                        containerClassName="intl-tel-input "
                         inputClassName="form-control"
-                        onPhoneNumberChange={handlePhoneInputChange}
                         defaultCountry={"us"}
+                        onPhoneNumberChange={handlePhoneInputChange}
+                        value={Phone}
+                        setValue={setPhone}
                       />
                     </Box>
                     <label className="field col-dis-12 col-tab-6 col-mob-12">

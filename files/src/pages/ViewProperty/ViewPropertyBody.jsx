@@ -22,6 +22,7 @@ import { AiOutlineEuroCircle } from "react-icons/ai";
 import QuestionMark from "../../assets/ViewProperty/questionmark.svg";
 
 export default function ViewPropertyBody() {
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [CarouselID, setCarouselID] = useState();
   const [Name, setName] = useState();
@@ -57,6 +58,11 @@ export default function ViewPropertyBody() {
       desc: Description,
     });
     console.log("Document written with ID: ", docRef.id);
+  };
+
+  const handlePhoneInputChange = (telNumber, selectedCountry) => {
+    setPhone(selectedCountry);
+    console.log(telNumber, selectedCountry);
   };
 
   return (
@@ -436,7 +442,7 @@ export default function ViewPropertyBody() {
                     key={item.id}
                     style={{ width: 300 }}
                     className="property-box  cf hot-property gap-10"
-                    // onCLick={() => navigate("/viewproperty")}
+                  // onCLick={() => navigate("/viewproperty")}
                   >
                     <Link itemProp="additionalType" to="/viewproperty" />
                     <Box className={`position-relative `}>
@@ -1135,6 +1141,9 @@ export default function ViewPropertyBody() {
                     containerClassName="intl-tel-input"
                     inputClassName="form-control"
                     defaultCountry={"us"}
+                    onPhoneNumberChange={handlePhoneInputChange}
+                    value={Phone}
+                    setValue={setPhone}
                   />
                 </Box>
                 <label className="field col-dis-12 col-tab-6 col-mob-12">

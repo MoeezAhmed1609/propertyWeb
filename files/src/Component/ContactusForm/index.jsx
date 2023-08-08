@@ -13,11 +13,11 @@ import StyledButton from "../../ReUseAbleComponent/StyledButton";
 
 export default function ContactusForm() {
   const user = useSelector((state) => state.AuthReducer.login);
-  const [Name, setName] = useState();
-  const [Phone, setPhone] = useState();
-  const [Email, setEmail] = useState();
-  const [Message, setMessage] = useState();
-  const [selectedValue, setSelectedValue] = useState("");
+  const [Name, setName] = useState("");
+  const [Phone, setPhone] = useState("");
+  const [Email, setEmail] = useState("");
+  const [Message, setMessage] = useState("");
+  const [selectedValue, setSelectedValue] = useState("Support");
   const [error, seterror] = useState("");
 
   const {
@@ -30,8 +30,14 @@ export default function ContactusForm() {
   useEffect(() => {
     console.log(user);
   }, []);
+  console.log({ Name, Phone, selectedValue });
+  // console.log(Phone);
+  // console.log(Email);
+  // console.log(selectedValue);
 
   const HandleSubmit = async (e) => {
+    e.preventDefault();
+
     // Add a new document with a generated id.
     if (user.uid === null) {
       return toast("Please Login First");
@@ -40,11 +46,7 @@ export default function ContactusForm() {
     if (Name === "" || Phone === "" || Email === "" || selectedValue === "") {
       return toast("Filled All the fields to proceed further");
     }
-    e.preventDefault();
-    console.log(Name);
-    console.log(Phone);
-    console.log(Email);
-    console.log(selectedValue);
+
     const docRef = await addDoc(collection(db, "Contact__Form"), {
       id: user.uid,
       name: Name,
@@ -52,10 +54,16 @@ export default function ContactusForm() {
       Email,
       Subject: selectedValue,
       Message,
-    });
-    console.log("Document written with ID: ", docRef.id);
+    }).then(() => {
+      setName("")
+      setPhone("")
+      setEmail("")
+      setMessage("")
+      console.log("Document written with ID: ", docRef.id);
+      toast("Form Submitted Successfully");
+      window.location.reload()
+    })
 
-    toast("Form Submitted Successfully");
   };
 
   const isValidEmail = (email) => {
@@ -74,7 +82,7 @@ export default function ContactusForm() {
 
   const handlePhoneInputChange = (telNumber, selectedCountry) => {
     setPhone(selectedCountry);
-    console.log(Phone);
+    console.log(telNumber, selectedCountry);
   };
 
   const onSubmit = (data) => console.log(data);
@@ -100,6 +108,8 @@ export default function ContactusForm() {
               name="full_name"
               type="text"
               onChange={(e) => setName(e.target.value)}
+              value={Name}
+              required
             />
           </label>
           <div className="field margin-ver-05">
@@ -109,6 +119,8 @@ export default function ContactusForm() {
               inputClassName="form-control"
               defaultCountry={"us"}
               onPhoneNumberChange={handlePhoneInputChange}
+              value={Phone}
+              setValue={setPhone}
             />
           </div>
           <label className="field">
@@ -118,6 +130,7 @@ export default function ContactusForm() {
               onChange={(e) => HandleEmailCheck(e.target.value)}
               type="email"
               validation="email"
+              required
             />
           </label>
           <label className="field">
@@ -139,6 +152,7 @@ export default function ContactusForm() {
               onChange={(e) => setMessage(e.target.value)}
               name="msg"
               rows={4}
+              required
               style={{ height: "170px" }}
             />
           </label>

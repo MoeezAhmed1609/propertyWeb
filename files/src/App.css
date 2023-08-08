@@ -14112,7 +14112,7 @@ input[type='button'].btn-block {
 
 @media (max-width: 1000px) {
   .d-mobile {
-    display: block !important
+    display: block !important;
   }
 
   .d-desk {
@@ -16348,7 +16348,7 @@ header .elastic-search-form span.close {
 }
 
 header .header-top {
-  padding-top: 2rem;
+  padding: 10px;
   box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.16);
   position: relative
 }
@@ -16755,7 +16755,7 @@ header .main-header .burgermenu {
   header nav .level-4 {
     display: none;
     position: absolute;
-    top: 0;
+    top: 100%;
     left: 10%;
     width: 105%;
     background: #fff;

@@ -9,6 +9,7 @@ import withReactContent from "sweetalert2-react-content";
 import Swal from "sweetalert2";
 import { Box, Grid, Typography, Card, CardContent } from "@mui/material";
 import { auth, db } from "../../Config";
+import { useLocation } from "react-router-dom";
 import {
   collection,
   onSnapshot,
@@ -144,12 +145,16 @@ export default function AccountSetting() {
     PropertiesData();
   }, []);
 
+  // Tabs
+  const location = useLocation();
+  const [TabNumber, setTabNumber] = useState(location?.state?.tab || 1);
+
   return (
     <>
-      <UsersInfoTab />
+      <UsersInfoTab TabNumber={TabNumber} setTabNumber={setTabNumber} />
       <DIV
         id="tab-1"
-        className={`tab-content ${state.Tab === 1 ? "current" : ""}`}
+        className={`tab-content ${TabNumber === 1 ? "current" : ""}`}
       >
         <DIV className="profile-view">
           <DIV className="container-fluid">
@@ -295,7 +300,7 @@ export default function AccountSetting() {
       </DIV>
       <DIV
         id="tab-2"
-        className={`tab-content ${state.Tab === 2 ? "current" : ""}`}
+        className={`tab-content ${TabNumber === 2 ? "current" : ""}`}
       >
         {currentUser?.AccountOptions === "Broker" && enquiries?.length > 0 ? (
           <div
@@ -540,7 +545,7 @@ export default function AccountSetting() {
       </DIV>
       <DIV
         id="tab-3"
-        className={`tab-content ${state.Tab === 3 ? "current" : ""}`}
+        className={`tab-content ${TabNumber === 3 ? "current" : ""}`}
       >
         <div className="wrap-dis-9 wrap-tab-9 wrap-mob-9 clearfix mt-3">
           <div className="row cardRow">
@@ -592,7 +597,7 @@ export default function AccountSetting() {
       </DIV>
       <DIV
         id="tab-4"
-        className={`tab-content ${state.Tab === 4 ? "current" : ""}`}
+        className={`tab-content ${TabNumber === 4 ? "current" : ""}`}
       >
         <Grid
           container
@@ -616,7 +621,7 @@ export default function AccountSetting() {
       </DIV>
       <DIV
         id="tab-5"
-        className={`tab-content ${state.Tab === 5 ? "current" : ""}`}
+        className={`tab-content ${TabNumber === 5 ? "current" : ""}`}
       >
         <p>This is Tab 5</p>
       </DIV>
