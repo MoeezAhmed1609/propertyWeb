@@ -11,7 +11,7 @@ import AdvisorDesk from "../../Component/AdvisorDesk";
 import HeroSection from "../../Component/Hero__Section";
 import RecomendedTurkishProperty from "../../Component/RecomendedTurkishProperty";
 import FeaturedComponent from "../../Component/FeaturedComponent";
-import { onSnapshot, collection } from "firebase/firestore";
+import { onSnapshot, collection, query, getDocs } from "firebase/firestore";
 import { db } from "../../Config";
 
 export default function Home() {
@@ -27,21 +27,36 @@ export default function Home() {
 
     return srcValues[0];
   }
-  const getBlogs = onSnapshot(collection(db, "Blogs"), (querySnapshot) => {
-    const blogsData = [];
+  // const getBlogs = onSnapshot(collection(db, "Blogs"), (querySnapshot) => {
+  //   const blogsData = [];
+  //   querySnapshot.forEach((doc) => {
+  //     blogsData.push({ id: doc.id, ...doc.data() });
+  //   });
+  //   const newBlogData = blogsData.map((item) => {
+  //     const image = extractSrcValues(item.value);
+  //     return { ...item, image };
+  //   });
+  //   setBlogs(newBlogData);
+  // });
+  const HandleBlogData = async () => {
+    const q = query(collection(db, "Blogs"));
+    const blogData = [];
+    const querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => {
-      blogsData.push({ id: doc.id, ...doc.data() });
+      blogData.push({ id: doc.id, ...doc.data() });
+      console.log({ id: doc.id, ...doc.data() });
     });
-    const newBlogData = blogsData.map((item) => {
+    const newBlogData = blogData.map((item) => {
       const image = extractSrcValues(item.value);
       return { ...item, image };
     });
+    console.log(newBlogData);
     setBlogs(newBlogData);
-  });
+  };
   useEffect(() => {
-    getBlogs();
+    HandleBlogData();
   }, []);
-  console.log({blogs})
+  console.log({ blogs })
   return (
     <div>
       <HeroSection />
