@@ -40,7 +40,8 @@ export default function Home() {
   });
   useEffect(() => {
     getBlogs();
-  }, [blogs, getBlogs]);
+  }, []);
+  console.log({blogs})
   return (
     <div>
       <HeroSection />

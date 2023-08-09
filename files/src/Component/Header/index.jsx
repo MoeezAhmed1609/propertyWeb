@@ -8,12 +8,14 @@ import Modals from "@mui/material/Modal";
 import "datejs";
 import CloseIcon from "@mui/icons-material/Close";
 import { cityToggle } from "../../Data/CityToggle";
+import { toast } from "react-toastify";
 import {
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
+  FacebookAuthProvider
 } from "firebase/auth";
 import { auth, db } from "../../Config";
 import { doc, setDoc } from "firebase/firestore";
@@ -174,6 +176,29 @@ export default function Header() {
         // The AuthCredential type that was used.
         const credential = GoogleAuthProvider.credentialFromError(error);
         // ...
+      });
+  };
+
+  const loginWithFacebook = () => {
+    const provider = new FacebookAuthProvider();
+    signInWithPopup(auth, provider)
+      .then((res) => {
+        toast('Login successful!');
+        // const user = res.user;
+        // const userName = user.displayName;
+        // const userProfilePicture = user.photoURL;
+
+        // console.log('User Name:', userName);
+        // console.log('Profile Picture:', userProfilePicture);
+        const user = res.user;
+        dispatch(AuthAction(user));
+        setIsModalOpen(false)
+
+      }, 500)
+      .catch((err) => {
+        toast.error('Login with Facebook failed. Please try again.', err);
+
+        console.log(err.message);
       });
   };
 
@@ -734,6 +759,7 @@ export default function Header() {
                 to=""
                 className="ion-social-facebook w-75"
                 style={{ marginBottom: "10px" }}
+                onClick={loginWithFacebook}
               >
                 <span>
                   <i className="fa fa-facebook" aria-hidden="true" /> Continue

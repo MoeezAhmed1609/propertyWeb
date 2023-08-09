@@ -87,7 +87,7 @@ export default function Blog({ blogs }) {
             </Typography>
           </Grid>
           <Grid container>
-            {blogs?.slice(0, 4)?.map((blog, i) => (
+            {blogs.slice(0, 4)?.map((blog, i) => (
               <Grid
                 item
                 xs={12}

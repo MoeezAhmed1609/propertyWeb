@@ -475,7 +475,7 @@ export default function HeroSection() {
                       className={`search-filter-input search-tab-input originValue ${Typetogglebtn ? "" : "open"
                         }`}
                       linktype="type"
-                      onMouseLeave={TypeToggle}
+                      onMouseLeave={() => setTypetoggle(true)}
                     >
                       <div className="filter-type-dropdown-wrap">
                         <div className="filter-type-dropdown">
@@ -556,7 +556,7 @@ export default function HeroSection() {
                       className={`${PriceToggle ? "" : "open"
                         } h-[45px] py-3 originValue search-filter-input search-tab-input d-lg-flex price-toggle`}
                       id="price-toggle"
-                      onMouseLeave={PricesToggle}
+                      onMouseLeave={() => setPriceToggle(true)}
                     >
                       <span className="search-filter-input-title relative search-tab-input-title fs-5 fw-bold px-0">
                         <p
@@ -977,7 +977,7 @@ export default function HeroSection() {
                         } h-[45px] search-filter-input search-tab-input bedrooms`}
                       linktype="bedrooms"
                       id="bedroom-toggle"
-                      onMouseLeave={BedToggle}
+                      onMouseLeave={() => setBedRom(true)}
                     >
                       <span className="search-filter-input-title relative text-center h-[40px] search-tab-input-title fs-5 fw-bold px-0">
                         <p
@@ -1049,7 +1049,7 @@ export default function HeroSection() {
                   <Box
                     onClick={HandleZipCode}
                     className="col-lg-2 col-md-4 col-12 mb-4 cursor-pointer"
-                    onMouseLeave={HandleZipCode}
+                    onMouseLeave={() => setHandleZip(true)}
                   >
                     <Box
                       className={`${HandleZip ? "" : "open"
