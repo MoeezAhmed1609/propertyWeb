@@ -64,6 +64,7 @@ export default function HeroSection() {
   const [bedroom, setBedroom] = useState("");
   const [miniPrice, setMiniPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(0);
+  const navigate = useNavigate();
 
   const handleSearchClick = () => {
     const data = {
@@ -74,10 +75,8 @@ export default function HeroSection() {
       maxPriceInputValue: maxPrice,
     };
     window.localStorage.setItem("search", JSON.stringify(data));
-    window.location.replace("/realState");
   };
 
-  const navigate = useNavigate();
 
   const states = useSelector((state) => state.AboutTurkey.Nav);
 
@@ -203,7 +202,6 @@ export default function HeroSection() {
   // Saving in LocalStorage
   const handleLocalStorage = (data) => {
     window.localStorage.setItem("search", JSON.stringify(data));
-    window.location.replace('/realState')
   };
 
   return (
@@ -368,6 +366,7 @@ export default function HeroSection() {
                         <Link
                           className="text-pt-dark-red fs-6"
                           onClick={() => handleLocalStorage(item?.data)}
+                          to={'/realState'}
                         >
                           <span>{item.title}</span>
                           <em className="fa fa-arrow-right ms-2" />

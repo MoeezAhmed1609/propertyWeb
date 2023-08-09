@@ -31,6 +31,7 @@ import {
 } from "firebase/firestore";
 import axios from "axios";
 import { v4 } from "uuid";
+import { useNavigate } from "react-router-dom";
 
 const steps = ["Broker Details", "Payment Details", "Result"];
 const Stripe = () => {
@@ -74,6 +75,7 @@ const Stripe = () => {
   const [phone, setPhone] = useState("");
   const [comment, setComment] = useState("");
   const [success, setSuccess] = useState(false);
+  const navigate = useNavigate();
 
   // Getting enquiries from local host
   const enquiries = JSON.parse(window.localStorage.getItem("enquiries"));

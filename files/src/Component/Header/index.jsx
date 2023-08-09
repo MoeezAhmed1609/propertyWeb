@@ -1,5 +1,5 @@
 import "./Header.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import $ from "jquery";
 import Box from "@mui/material/Box";
@@ -65,6 +65,7 @@ const loginStyle = {
 };
 
 export default function Header() {
+  const navigate = useNavigate()
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -312,7 +313,7 @@ export default function Header() {
     };
     window.localStorage.setItem("search", JSON.stringify(data));
     if (location.pathname !== "/realState") {
-      window.location.replace("/realState");
+      window.location.replace('/realState')
     } else window.location.reload();
   };
 

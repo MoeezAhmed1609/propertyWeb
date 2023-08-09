@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "../../ReUseAbleComponent/Image";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import LocationGold from "../../assets/location-gold-filled.svg";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import {
@@ -54,6 +54,7 @@ export default function RealStateHeader({
   const [bedroom, setBedroom] = useState("");
   const [miniPrice, setMiniPrice] = useState(0);
   const [maxiPrice, setMaxiPrice] = useState(0);
+  const navigate = useNavigate();
   const handleSearchClick = () => {
     const data = {
       cityData: city,
@@ -263,8 +264,8 @@ export default function RealStateHeader({
               </span>
               <i
                 className={`${openLocation
-                    ? "fa-solid fa-angle-up"
-                    : "fa-solid fa-angle-down"
+                  ? "fa-solid fa-angle-up"
+                  : "fa-solid fa-angle-down"
                   }  search-filter-input-icon pp-0`}
               />
 
@@ -778,8 +779,8 @@ export default function RealStateHeader({
               </span>
               <i
                 className={`${openBedroom
-                    ? "fa-solid fa-angle-up"
-                    : "fa-solid fa-angle-down"
+                  ? "fa-solid fa-angle-up"
+                  : "fa-solid fa-angle-down"
                   } search-filter-input-icon`}
               />
               <div className="filter-type-dropdown-wrap">
@@ -1093,8 +1094,8 @@ export default function RealStateHeader({
               </span>
               <i
                 className={`${openBedroom
-                    ? "fa-solid fa-angle-up"
-                    : "fa-solid fa-angle-down"
+                  ? "fa-solid fa-angle-up"
+                  : "fa-solid fa-angle-down"
                   } search-filter-input-icon`}
               />
               <div className="filter-type-dropdown-wrap h-[300px] overflow-y-auto">

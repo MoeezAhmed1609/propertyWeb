@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import UsersInfoTab from "../../Component/UsersInfoTab";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { DIV } from "../../ReUseAbleComponent/FormComponent";
 import ModalComponent from "../../ReUseAbleComponent/ModalComponent";
 import PhoneComponent from "../../ReUseAbleComponent/PhoneComponent";
@@ -103,6 +103,7 @@ export default function AccountSetting() {
   }, []);
 
   console.log(currentUser);
+  const navigate = useNavigate();
 
   const HandleSubmitEnquiryForm = async (e) => {
     e.preventDefault();

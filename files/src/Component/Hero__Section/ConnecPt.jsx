@@ -9,8 +9,10 @@ import withReactContent from "sweetalert2-react-content";
 import Swal from "sweetalert2";
 import { toast } from "react-toastify";
 import StyledButton from "../../ReUseAbleComponent/StyledButton";
+import { useNavigate } from "react-router-dom";
 
 export default function ConnecPt() {
+  const navigate = useNavigate()
   const user = useSelector((state) => state.AuthReducer);
 
   const [Name, setName] = useState("");
@@ -121,7 +123,8 @@ export default function ConnecPt() {
             </div>
           </div>
           <div className="col-lg col-12 mb-4">
-            <StyledButton title={"Contact"} onClick={HandleAddConnectPt} type={'submit'} />
+            <StyledButton title={"Contact"} onClick={HandleAddConnectPt} type={"submit"} />
+
             {/* <button
               className="bg-pt-dark-red border-0 w-100 h-100 d-flex align-items-center justify-content-center"
               style={{ padding: "10px 0" }}
