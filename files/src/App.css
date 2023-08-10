@@ -16816,8 +16816,11 @@ header .main-header .burgermenu {
 
   .login-register-desktop-xl {
     width: 10.9%;
-    align-self: baseline;
-    height: 49px
+    /* align-self: baseline; */
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -17015,7 +17018,7 @@ header .main-header .burgermenu {
   }
 
   header .main-header nav {
-    width: 75% !important
+    width: 73% !important
   }
 }
 
@@ -20241,9 +20244,9 @@ section>.meta span {
   top: 53px !important
 }
 
-.widget-blogendpage .widget {
+/* .widget-blogendpage .widget {
   margin: 3rem 0 !important
-}
+} */
 
 @media (max-width: 700px) {
   .endpage-title-actions h3 {

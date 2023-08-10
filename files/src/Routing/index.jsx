@@ -66,7 +66,7 @@ export default function Routing() {
         <Route path="/downloadGuid" element={<DownloadGuide />} />
         <Route path="/featured" element={<Featured />} />
         <Route path="/singlefeatured" element={<Singlefeatured />} />
-        <Route path="/becomepartner" element={<BecomePartner />} />
+        {/* <Route path="/becomepartner" element={<BecomePartner />} /> */}
         <Route path="/aboutus/:id" element={<Team />} />
         <Route path="/car" element={<Carousel />} />
         <Route path="/setting" element={<AccountSetting />} />

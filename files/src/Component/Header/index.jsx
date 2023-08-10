@@ -312,9 +312,8 @@ export default function Header() {
       maxPriceInputValue: 0,
     };
     window.localStorage.setItem("search", JSON.stringify(data));
-    if (location.pathname !== "/realState") {
-      window.location.replace('/realState')
-    } else window.location.reload();
+    // window.location.replace('/realState')
+    navigate('/realState', { replace: true })
   };
 
 
@@ -326,7 +325,7 @@ export default function Header() {
       >
         {/* Not Active yet */}
         <Box className="header-top">
-          <Box className="wrap-dis-85 flex  content-end items-center hideMb-showDt">
+          {/* <Box className="wrap-dis-85 flex  content-end items-center hideMb-showDt">
             {/* <Box className="header-phone-items order-3">
               <Link to="/" className="active" title="English">EN</Link>
               <Link to="/" title="Russian" className>RU</Link>
@@ -334,16 +333,16 @@ export default function Header() {
               <Link to="/" title="German">DE</Link>
               <Link to="/" title="Chinese">中文</Link>
               <Link to="/" title="Farsi">FA</Link>
-            </Box> */}
-            <Link to="/becomepartner" className="flex">
+            </Box> */
+            /* <Link to="/becomepartner" className="flex">
               <img
                 src={PartnertSvg}
                 alt=""
                 width={95}
                 className="img-fluid w-[70px] h-[70px] "
               />
-            </Link>
-            {/* <Box className="currencyy order-2">
+            </Link> */
+            /* <Box className="currencyy order-2">
               <Link
                 rel="nofollow"
                 to="/change-currency/3"
@@ -375,7 +374,7 @@ export default function Header() {
               >
                 <i className="fa fa-try" />
               </Link>
-            </Box> */}
+            </Box>
 
             <Box className="elastic-search d-desk">
               <AiOutlineSearch
@@ -384,7 +383,7 @@ export default function Header() {
                 style={{ fontSize: "20px" }}
               />
             </Box>
-          </Box>
+          </Box> */}
 
           <Box className="main-header">
             <Box className="flex  items-center content-start position-relative mt-15 content-space-between">
@@ -392,13 +391,15 @@ export default function Header() {
                 <Link
                   to="/"
                   title="Property USA"
-                  className="logoImg flex items-center content-center flex-direction-column pos-logo-lg"
+                  // className="logoImg flex items-center content-center flex-direction-column pos-logo-lg"
                   id="desktopLogo"
+                // style={{ marginTop: '20px' }}
                 >
                   <img
-                    className="w-[300px] h-[100px] Desktop_Logo"
+                    // className="Desktop_Logo"
                     src={PTHEADERLOGO}
                     alt="Property USA"
+                    style={{ height: '12vh' }}
                   />
                 </Link>
                 {/* <Link
@@ -414,7 +415,11 @@ export default function Header() {
                   <AiOutlineMenu size={30} color="#fff" />
                 </Link>
                 <Box className="elastic-search" id="headerSearchIcon" sx={{ alignItems: 'center', display: { xs: 'flex', md: 'none' } }}>
-                  <AiOutlineSearch style={{ fontSize: '24px' }} />
+                  <AiOutlineSearch
+                    onClick={() => setsearchModelToggle(true)}
+                    aria-hidden="true"
+                    style={{ fontSize: "20px" }}
+                  />
                 </Box>
               </Box>
               {/* Navigation bar */}
@@ -489,7 +494,8 @@ export default function Header() {
                   </Box>
                 </Box>
               ) : (
-                <Box className="auth header-right order-1 login-register-desktop-xl d-desk">
+                <Box className="auth header-right order-1 login-register-desktop-xl" sx={{ display: { xs: 'none', sm: "flex" } }}>
+
                   <Link
                     onClick={showModal}
                     className="login fl-dis-right  fl-tab-right fl-mob-right"
@@ -502,6 +508,13 @@ export default function Header() {
                   >
                     Register
                   </Link>
+                  <Box className="elastic-search d-desk">
+                    <AiOutlineSearch
+                      onClick={() => setsearchModelToggle(true)}
+                      aria-hidden="true"
+                      style={{ fontSize: "20px" }}
+                    />
+                  </Box>
                 </Box>
               )}
             </Box>
@@ -566,19 +579,21 @@ export default function Header() {
                         searchQuery?.toLowerCase()
                       )
                     )
-                    .map((item, i, arr) => {
+                    .map((item, i) => {
                       return (
                         <Typography
-                          key={i}
                           variant="h6"
                           sx={{
                             padding: "6px",
                             cursor: "pointer",
-                            color: "black",
+
                           }}
+                          key={i}
                           onClick={() => handleSearchClick(item.County)}
                         >
+                          {/* <Link to='/realState' style={{ color: "black", }} > */}
                           {item.County}
+                          {/* </Link> */}
                         </Typography>
                       );
                     })}
