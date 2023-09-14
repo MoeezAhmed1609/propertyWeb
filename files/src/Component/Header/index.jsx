@@ -15,7 +15,9 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
-  FacebookAuthProvider
+  FacebookAuthProvider,
+  getAuth,
+  sendPasswordResetEmail
 } from "firebase/auth";
 import { auth, db } from "../../Config";
 import { doc, setDoc } from "firebase/firestore";
@@ -26,14 +28,14 @@ import HeaderNav from "./HeaderNav";
 import PartnertSvg from "../../assets/partner-button-01.svg";
 import Image from "../../ReUseAbleComponent/Image";
 import Logo from "../../assets/pt-header-logo.svg";
-import PTHEADERLOGO from "../../assets/pt_new_logo.svg";
+import PTHEADERLOGO from "../../assets/property-logo.jpg";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 import { BiCog } from "react-icons/bi";
 import { FaSignOutAlt } from "react-icons/fa";
 import GoogleLogo from "../../assets/google-icon-removebg-preview.png";
-import { IconButton, TextField, Chip, Divider } from "@mui/material";
+import { IconButton, TextField, Chip, Divider, Grid } from "@mui/material";
 import RealStateHeader from "../../pages/RealState/RealStateHeader";
 import StyledButton from "../../ReUseAbleComponent/StyledButton";
 
@@ -42,13 +44,14 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
-  height: "85vh !important",
+  width: { xs: '96vw', sm: '75vw', md: '60vw' },
+  height: { xs: "90vh !important", sm: "85vh !important" },
   overflowY: "auto",
   bgcolor: "background.paper",
   // border: "2px solid #000",
   boxShadow: 24,
   p: 4,
+  borderRadius: "10px"
 };
 const loginStyle = {
   position: "absolute",
@@ -62,6 +65,19 @@ const loginStyle = {
   // border: "2px solid #000",
   boxShadow: 24,
   p: 2,
+  borderRadius: "10px"
+};
+const forgetStyle = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 340,
+  // height: "90vh !important",
+  bgcolor: "background.paper",
+  boxShadow: 24,
+  p: 2,
+  borderRadius: "10px"
 };
 
 export default function Header() {
@@ -86,6 +102,7 @@ export default function Header() {
   const [searchModelToggle, setsearchModelToggle] = useState(false);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [forgetOpen, setForgetOpen] = useState(false)
   const showModal = () => {
     setIsModalOpen(true);
   };
@@ -98,16 +115,18 @@ export default function Header() {
 
   const RegisterUser = (e) => {
     e.preventDefault();
-    console.log(Name);
-    console.log(Email);
-    console.log(Mobile);
-    console.log(AccountOptions);
-
+    if (!Name || !Email || !Mobile || !AccountOptions || !password || !confirmpassword) {
+      toast('Fill all feilds')
+      return
+    }
+    if (confirmpassword !== password) {
+      toast('Confirm password does dont match!')
+      return
+    }
     createUserWithEmailAndPassword(auth, Email, password)
       .then(async (userCredential) => {
         // Signed in
         const user = userCredential.user;
-
         await setDoc(doc(db, "Users", user.uid), {
           name: Name,
           Email,
@@ -115,32 +134,35 @@ export default function Header() {
           AccountOptions,
           uid: user.uid,
         });
-        alert("Register Successfully");
+        toast("Register Successfully");
         setOpen(false)
         setIsModalOpen(true)
       })
       .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(error)
+        if (error) {
+          toast("Invalid or duplicate email!")
+          return
+        }
       });
   };
-  console.log(AccountOptions);
   const AuthRegister = () => {
-    console.log(Name);
-    console.log(Email);
+    if (!Email || !password) {
+      toast("Email & password required!")
+      return
+    }
     signInWithEmailAndPassword(auth, Email, password)
       .then(async (userCredential) => {
         const user = userCredential.user;
         dispatch(AuthAction(user));
         console.log(user);
-        alert("Login Successfully");
+        toast("Login Successfully");
         setIsModalOpen(false)
-        window.location.replace('/')
       })
       .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
+        if (error) {
+          toast("Wrong email or password!")
+          return
+        }
       });
   };
 
@@ -165,18 +187,16 @@ export default function Header() {
         // The signed-in user info.
         const user = result.user;
         dispatch(AuthAction(user));
+        toast("Google login successfull!")
         setIsModalOpen(false);
         // ...
       })
       .catch((error) => {
-        // Handle Errors here.
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        // The email of the user's account used.
-        const email = error.customData.email;
-        // The AuthCredential type that was used.
         const credential = GoogleAuthProvider.credentialFromError(error);
-        // ...
+        if (error) {
+          toast("Google login failed!")
+          return
+        }
       });
   };
 
@@ -197,11 +217,32 @@ export default function Header() {
 
       }, 500)
       .catch((err) => {
-        toast.error('Login with Facebook failed. Please try again.', err);
-
+        toast.error('Login with Facebook failed. Please try again.');
         console.log(err.message);
       });
   };
+
+  // Forget password
+  const auth = getAuth()
+  const handleForgetPassword = () => {
+    if (!Email) {
+      toast('Enter your email!')
+      return
+    }
+    sendPasswordResetEmail(auth, Email)
+      .then(() => {
+        toast(`Password reset email send to: ${Email}`)
+        setForgetOpen(false)
+      })
+      .catch((error) => {
+        if (error) {
+          toast("Invalid email!")
+          console.log(error)
+          return
+        }
+      });
+  }
+
 
   const [isWideScreen, setIsWideScreen] = useState(false);
   const [isNarrowScreen, setIsNarrowScreen] = useState(false);
@@ -313,6 +354,7 @@ export default function Header() {
     };
     window.localStorage.setItem("search", JSON.stringify(data));
     // window.location.replace('/realState')
+    setsearchModelToggle(false)
     navigate('/realState', { replace: true })
   };
 
@@ -390,7 +432,7 @@ export default function Header() {
               <Box className="logo">
                 <Link
                   to="/"
-                  title="Property USA"
+                  title="Property San Francisco"
                   // className="logoImg flex items-center content-center flex-direction-column pos-logo-lg"
                   id="desktopLogo"
                 // style={{ marginTop: '20px' }}
@@ -398,12 +440,12 @@ export default function Header() {
                   <img
                     // className="Desktop_Logo"
                     src={PTHEADERLOGO}
-                    alt="Property USA"
+                    alt="Property San Francisco"
                     style={{ height: '12vh' }}
                   />
                 </Link>
                 {/* <Link
-                  title="Property USA"
+                  title="Property San Francisco"
                   className="flex items-center content-center flex-direction-column pos-logo-lg"
                   id="mobileLogo"
                 ></Link> */}
@@ -425,10 +467,17 @@ export default function Header() {
               {/* Navigation bar */}
               <HeaderNav user={userAuth} username={username} />
               {userAuth ? (
-                <Box sx={{ display: { xs: 'none', sm: "block" } }} className="user login fl-dis-right  fl-tab-right fl-mob-right">
+                <Box sx={{ display: { xs: 'none', sm: "flex" } }} className="user login fl-dis-right  fl-tab-right fl-mob-right">
                   <Link className="profile-link">
                     {username} <i className="fa fa-angle-down" style={{ fontSize: '15px' }} />
                   </Link>
+                  <Box className="elastic-search d-desk">
+                    <AiOutlineSearch
+                      onClick={() => setsearchModelToggle(true)}
+                      aria-hidden="true"
+                      style={{ fontSize: "20px" }}
+                    />
+                  </Box>
                   <Box className="usermenu fl-dis-right  fl-tab-right">
                     <Box className="container padding-top-1">
                       <Box className="dropdown-header flex items-center">
@@ -438,7 +487,7 @@ export default function Header() {
                       <Box className="addyourhome">
                         <p>
                           Whatever your reasons for selling your property in
-                          USA. you certainly will want to achieve a handsome
+                          San Francisco. you certainly will want to achieve a handsome
                           price with minimum imposition on your time.
                         </p>
                         <Box className="text-right">
@@ -495,7 +544,6 @@ export default function Header() {
                 </Box>
               ) : (
                 <Box className="auth header-right order-1 login-register-desktop-xl" sx={{ display: { xs: 'none', sm: "flex" } }}>
-
                   <Link
                     onClick={showModal}
                     className="login fl-dis-right  fl-tab-right fl-mob-right"
@@ -633,6 +681,7 @@ export default function Header() {
         </Box>
       </header>
 
+      {/* Register Modal */}
       <Modals
         open={open}
         onClose={handleClose}
@@ -640,7 +689,102 @@ export default function Header() {
         aria-describedby="Modals-Modals-description"
       >
         <Box sx={style}>
-          <Box className="w-full overflow-y-auto flex flex-col justify-center items-center">
+
+          <Grid container>
+            <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }} >
+              <img src={Logo} alt="" style={{ height: "30px" }} />
+            </Grid>
+            <Grid item xs={12}>
+              <Typography
+                className="margin-bottom-1 margin-top-1 text blink"
+                sx={{ textAlign: "center" }}
+                variant="h4"
+              >
+                Sign up to Save Properties
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={6} sx={{ padding: '0 6px' }}>
+              <label>Name</label>
+              <input
+                onChange={(e) => setName(e.target.value)}
+                type="text"
+                className="w-full h-[40px] bg-[#eee]"
+                required={true}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6} sx={{ padding: '0 6px' }}>
+              <label>E-Mail</label>
+              <input
+                type="email"
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full h-[40px] bg-[#eee]"
+                required
+              />
+            </Grid>
+            <Grid item xs={12} sm={6} sx={{ padding: '0 6px' }}>
+              <label>Accounts options</label>
+              <select onChange={(e) => setAccountsPurpose(e.target.value)} style={{ WebkitAppearance: "listbox" }}>
+                <option value={"Broker"}>Broker</option>
+                <option value={"Buyer"}>Buyer</option>
+                <option value={"Renter"}>Renter</option>
+              </select>
+            </Grid>
+            <Grid item xs={12} sm={6} sx={{ padding: '0 6px' }}>
+              <label>Mobile</label>
+              <input
+                type="number"
+                onChange={(e) => setMobile(e.target.value)}
+                className="w-full h-[40px] bg-[#eee]"
+                required
+              />
+            </Grid>
+            <Grid item xs={12} sm={6} sx={{ padding: '0 6px' }}>
+              <label>Password</label>
+              <input
+                type="password"
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full h-[40px] bg-[#eee]"
+                required
+              />
+            </Grid>
+            <Grid item xs={12} sm={6} sx={{ padding: '0 6px' }}>
+              <label>Confirm Password</label>
+              <input
+                type="password"
+                onChange={(e) => setconfirmpasswordPassword(e.target.value)}
+                className="w-full h-[40px] bg-[#eee]"
+                required
+              />
+            </Grid>
+            <Grid item xs={12} sx={{ padding: '0 6px' }}>
+              <StyledButton
+                onClick={RegisterUser}
+                title={"Register"}
+                margin={"15px 0"}
+                // size={"small"}
+                // validation={!Name || !Email || !AccountOptions || !Mobile || !password || !confirmpassword}
+                type={'submit'}
+              />
+              <p
+                className="text-left"
+                style={{ textAlign: "center", marginBottom: "0", marginTop: '8px' }}
+              >
+                Already have an account?
+                <Link
+                  className="clr-pt"
+                  onClick={() => {
+                    setOpen(false);
+                    setIsModalOpen(true);
+                  }}
+                  style={{ paddingLeft: "4px" }}
+                >
+                  Login
+                </Link>
+              </p>
+            </Grid>
+          </Grid>
+
+          {/* <Box className="w-full overflow-y-auto flex flex-col justify-center items-center">
             <Box className=" ">
               <img src={Logo} alt="" style={{ height: "30px" }} />
             </Box>
@@ -721,14 +865,15 @@ export default function Header() {
               className="w-[90%] p-3 bg-[#5081ff] text-white mt-3"
             >
               Register
-            </button> */}
+            </button> 
             <Typography sx={{ marginTop: "8px" }}>
               By creating your Creating You must agree with our Privcy policy
             </Typography>
-          </Box>
+          </Box> */}
         </Box>
       </Modals>
 
+      {/* Login Modal */}
       <Modals
         open={isModalOpen}
         onClose={() => setIsModalOpen(false)}
@@ -748,7 +893,7 @@ export default function Header() {
                 <Image
                   src={PTHEADERLOGO}
                   style={{ height: "60px" }}
-                  alt="Property USA"
+                  alt="Property San Francisco"
                 />
               </Box>
               {/* <h3 style={{ margin: "8px 0" }}>Sign in to Save Properties</h3> */}
@@ -836,20 +981,13 @@ export default function Header() {
                   onClick={AuthRegister}
                   margin={"8px"}
                   type={'submit'}
-                  validation={!Email || !password}
                 />
-                {/* <button
-                  className="btn btn-block bg-pt crl-white margin-ver-1"
-                  onClick={AuthRegister}
-                >
-                  Submit
-                </button> */}
               </Box>
               <Box
                 className="text-left padding-bottom-05"
                 sx={{ textAlign: "center" }}
               >
-                <Link to="">Forget Password</Link>
+                <Link onClick={() => setForgetOpen(true)}>Forget Password</Link>
               </Box>
               <p
                 className="text-left"
@@ -869,6 +1007,65 @@ export default function Header() {
               </p>
             </Box>
           </Box>
+        </Box>
+      </Modals>
+
+      {/* Forget password modal */}
+      <Modals
+        open={forgetOpen}
+        onClose={() => setForgetOpen(false)}
+        aria-labelledby="Modals-Modals-title"
+        aria-describedby="Modals-Modals-description"
+      >
+        <Box sx={forgetStyle}>
+          <Grid container>
+            <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }} >
+              <img src={Logo} alt="" style={{ height: "30px" }} />
+            </Grid>
+            <Grid item xs={12}>
+              <Typography
+                className="margin-bottom-1 margin-top-1 text blink"
+                sx={{ textAlign: "center" }}
+                variant="h5"
+              >
+                Reset Password
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sx={{ padding: '0 6px' }}>
+              <label>E-Mail</label>
+              <input
+                type="email"
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full h-[40px] bg-[#eee]"
+                required
+              />
+            </Grid>
+            <Grid item xs={12} sx={{ padding: '0 6px' }}>
+              <StyledButton
+                onClick={handleForgetPassword}
+                title={"Get Email"}
+                margin={"15px 0"}
+                size={"small"}
+                type={'submit'}
+              />
+              <p
+                className="text-left"
+                style={{ textAlign: "center", marginBottom: "0", marginTop: '8px' }}
+              >
+                Already have an account?
+                <Link
+                  className="clr-pt"
+                  onClick={() => {
+                    setOpen(false);
+                    setIsModalOpen(true);
+                  }}
+                  style={{ paddingLeft: "4px" }}
+                >
+                  Login
+                </Link>
+              </p>
+            </Grid>
+          </Grid>
         </Box>
       </Modals>
     </>

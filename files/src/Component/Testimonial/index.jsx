@@ -60,7 +60,7 @@ export default function Testimonial() {
             ></iframe>
             <Box className="card-body text-center" id="insertbefore-youtube-1">
               <h2 className="title-lined abhaya bold clr-pt-darkgrey font-26">
-                Property USA Culture
+                Property San Francisco Culture
               </h2>
               <p className="card-text featuredin-title">
                 Tap into our unique

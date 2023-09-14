@@ -51,7 +51,7 @@ export default function Routing() {
         <Route path="/" element={<Home />} />
         <Route path="/realState" element={<RealState />} />
         <Route path="/turkishCitizen" element={<CitizenShip />} />
-        <Route path="/USA" element={<AboutTurkey />} />
+        <Route path="/San Francisco" element={<AboutTurkey />} />
         <Route path="/:id/" element={<AboutTurkeyCityInfo />} />
         <Route path="/buyer" element={<BuyerGuidetag />} />
         <Route path="/aboutusguide" element={<AboutUsGuide />} />

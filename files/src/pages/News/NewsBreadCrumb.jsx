@@ -5,17 +5,17 @@ const NewsBreadCrumb = () => {
         <div className="tv-endpage text-center">
   <div className="container">
     <h1 className="padding-bottom-2">
-      Property USA <span className='bg-transparent'>Blog</span>
+      Property San Francisco <span className='bg-transparent'>Blog</span>
     </h1>
     <div className="continue-reading">
       <p>
-        Property USA's blog is designed to give you an insight into all
-        things American, including tips about life in USA, American culture,
+        Property San Francisco's blog is designed to give you an insight into all
+        things American, including tips about life in San Francisco, American culture,
         economic &amp; political matters and how to get the best out of your
         home and investment. Showcasing many case studies of those who invested
-        and/or moved to USA and integrated into the American lifestyle, this
+        and/or moved to San Francisco and integrated into the American lifestyle, this
         blog is your informative guide for all you need to know about making the
-        big move overseas to USA.&nbsp;
+        big move overseas to San Francisco.&nbsp;
       </p>
       <p>
         <br />
@@ -24,7 +24,7 @@ const NewsBreadCrumb = () => {
         Focusing on the main hotspots of Bodrum, Antalya, Fethiye, Kalkan,
         Istanbul, Kas, Side, and more - you can expect us to blog weekly about
         the latest trends, case studies and news coming out of the top cities in
-        USA. Also expect several investment tips and hot tips for real estate
+        San Francisco. Also expect several investment tips and hot tips for real estate
         and properties that are hot and ready to sell now.&nbsp;
       </p>
     </div>
@@ -42,12 +42,12 @@ const NewsBreadCrumb = () => {
               </li>
               <li>
                 <a>
-                  life in USA
+                  life in San Francisco
                 </a>
               </li>
               <li>
                 <a>
-                  tourism in USA
+                  tourism in San Francisco
                 </a>
               </li>
               <li>
@@ -57,7 +57,7 @@ const NewsBreadCrumb = () => {
               </li>
               <li>
                 <a>
-                  moving to USA
+                  moving to San Francisco
                 </a>
               </li>
               <li>
@@ -102,7 +102,7 @@ const NewsBreadCrumb = () => {
               </li>
               <li>
                 <a>
-                  retiring to USA
+                  retiring to San Francisco
                 </a>
               </li>
               <li>
@@ -127,7 +127,7 @@ const NewsBreadCrumb = () => {
               </li>
               <li>
                 <a>
-                  invest in USA
+                  invest in San Francisco
                 </a>
               </li>
               <li>

@@ -178,7 +178,7 @@ export default function Footer() {
                 </li>
                 {/* <li>
                   <Link
-                    title="PropertyUSA TV"
+                    title="PropertySan Francisco TV"
                     to={`/about/1`}
                     state={{
                       data: {
@@ -186,7 +186,7 @@ export default function Footer() {
                       },
                     }}
                   >
-                    PropertyUSA TV
+                    PropertySan Francisco TV
                   </Link>
                 </li> */}
                 <li>
@@ -400,7 +400,7 @@ export default function Footer() {
       </Box>
       <Box className="coppywrite">
         <Box className="container">
-          <p>Copyright © 2023 Property USA Limited. All Rights Reserved.</p>
+          <p>Copyright © 2023 Property San Francisco Limited. All Rights Reserved.</p>
         </Box>
       </Box>
     </footer>

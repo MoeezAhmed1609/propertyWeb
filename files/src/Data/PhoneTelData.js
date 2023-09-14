@@ -710,7 +710,7 @@ export const PhoneTelData = [{
     "countryName": "Tunisia (‫تونس‬‎)",
     "dialCode": "+216"
 }, {
-    "countryName": "USA (Türkiye)",
+    "countryName": "San Francisco (Türkiye)",
     "dialCode": "+90"
 }, {
     "countryName": "Turkmenistan",

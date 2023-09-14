@@ -177,365 +177,353 @@ export const countyCity = [
 
 export const cityToggle = [
     {
-        "County": "California",
-        "zip_code": 94576,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "San Francisco",
-        "zip_code": 94599,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
         "County": "Alameda",
         "zip_code": 94501,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Alpine",
-        "zip_code": 96101,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Amador",
-        "zip_code": 95601,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Butte",
-        "zip_code": 95910,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Calaveras",
-        "zip_code": 95220,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Colusa",
-        "zip_code": 95912,
-        "state": "California",
+        "state": "San Francisco",
         "id": uuidv4()
     },
     {
         "County": "Contra Costa",
-        "zip_code": 94509,
-        "state": "California",
+        "zip_code": 96101,
+        "state": "San Francisco",
         "id": uuidv4()
     },
     {
-        "County": "Del Norte",
-        "zip_code": 95531,
-        "state": "California",
+        "County": "Marin County",
+        "zip_code": 95601,
+        "state": "San Francisco",
         "id": uuidv4()
     },
     {
-        "County": "El Dorado",
-        "zip_code": 95602,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Fresno",
-        "zip_code": 93650,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Glenn",
-        "zip_code": 95934,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Humboldt",
-        "zip_code": 95501,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Imperial",
-        "zip_code": 92243,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Inyo",
-        "zip_code": 93512,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Kern",
-        "zip_code": 93301,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Kings",
-        "zip_code": 93231,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Lake",
-        "zip_code": 95458,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Lassen",
-        "zip_code": 96107,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Los Angeles",
-        "zip_code": 90001,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Madera",
-        "zip_code": 93637,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Marin",
-        "zip_code": 94901,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Mariposa",
-        "zip_code": 95313,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Mendocino",
-        "zip_code": 95482,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Merced",
-        "zip_code": 95340,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Modoc",
-        "zip_code": 93546,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Mono",
-        "zip_code": 93940,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Monterey",
-        "zip_code": 94558,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Napa",
-        "zip_code": 95959,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Nevada",
-        "zip_code": 92602,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Orange",
-        "zip_code": 95631,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Placer",
-        "zip_code": 95923,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Plumas",
-        "zip_code": 92501,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Riverside",
-        "zip_code": 95814,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Sacramento",
-        "zip_code": 95043,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "San Benito",
-        "zip_code": 92401,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "San Bernardino",
-        "zip_code": 92101,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "San Diego",
-        "zip_code": 94102,
-        "state": "California",
+        "County": "Napa County",
+        "zip_code": 95910,
+        "state": "San Francisco",
         "id": uuidv4()
     },
     {
         "County": "San Francisco",
-        "zip_code": 95202,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "San Joaquin",
-        "zip_code": 93401,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "San Luis Obispo",
-        "zip_code": 94401,
-        "state": "California",
+        "zip_code": 95220,
+        "state": "San Francisco",
         "id": uuidv4()
     },
     {
         "County": "San Mateo",
-        "zip_code": 93101,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Santa Barbara",
-        "zip_code": 95050,
-        "state": "California",
+        "zip_code": 95912,
+        "state": "San Francisco",
         "id": uuidv4()
     },
     {
         "County": "Santa Clara",
-        "zip_code": 95060,
-        "state": "California",
+        "zip_code": 94509,
+        "state": "San Francisco",
         "id": uuidv4()
     },
     {
         "County": "Santa Cruz",
-        "zip_code": 96001,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Shasta",
-        "zip_code": 96124,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Sierra",
-        "zip_code": 96094,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Siskiyou",
-        "zip_code": 95690,
-        "state": "California",
+        "zip_code": 95531,
+        "state": "San Francisco",
         "id": uuidv4()
     },
     {
         "County": "Solano",
-        "zip_code": 95476,
-        "state": "California",
+        "zip_code": 95602,
+        "state": "San Francisco",
         "id": uuidv4()
     },
     {
         "County": "Sonoma",
-        "zip_code": 95350,
-        "state": "California",
+        "zip_code": 93650,
+        "state": "San Francisco",
         "id": uuidv4()
     },
-    {
-        "County": "Stanislaus",
-        "zip_code": 95982,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Sutter",
-        "zip_code": 96080,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Tehama",
-        "zip_code": 93561,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Trinity",
-        "zip_code": 95692,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Tulare",
-        "zip_code": 93001,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Tuolumne",
-        "zip_code": 95697,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Ventura",
-        "zip_code": 95965,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Yolo",
-        "zip_code": 95697,
-        "state": "California",
-        "id": uuidv4()
-    },
-    {
-        "County": "Yuba",
-        "zip_code": 95965,
-        "state": "California",
-        "id": uuidv4()
-    }
+    // {
+    //     "County": "Glenn",
+    //     "zip_code": 95934,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Humboldt",
+    //     "zip_code": 95501,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Imperial",
+    //     "zip_code": 92243,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Inyo",
+    //     "zip_code": 93512,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Kern",
+    //     "zip_code": 93301,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Kings",
+    //     "zip_code": 93231,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Lake",
+    //     "zip_code": 95458,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Lassen",
+    //     "zip_code": 96107,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Los Angeles",
+    //     "zip_code": 90001,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Madera",
+    //     "zip_code": 93637,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Marin",
+    //     "zip_code": 94901,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Mariposa",
+    //     "zip_code": 95313,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Mendocino",
+    //     "zip_code": 95482,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Merced",
+    //     "zip_code": 95340,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Modoc",
+    //     "zip_code": 93546,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Mono",
+    //     "zip_code": 93940,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Monterey",
+    //     "zip_code": 94558,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Napa",
+    //     "zip_code": 95959,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Nevada",
+    //     "zip_code": 92602,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Orange",
+    //     "zip_code": 95631,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Placer",
+    //     "zip_code": 95923,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Plumas",
+    //     "zip_code": 92501,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Riverside",
+    //     "zip_code": 95814,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Sacramento",
+    //     "zip_code": 95043,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "San Benito",
+    //     "zip_code": 92401,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "San Bernardino",
+    //     "zip_code": 92101,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "San Diego",
+    //     "zip_code": 94102,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "San Francisco",
+    //     "zip_code": 95202,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "San Joaquin",
+    //     "zip_code": 93401,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "San Luis Obispo",
+    //     "zip_code": 94401,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "San Mateo",
+    //     "zip_code": 93101,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Santa Barbara",
+    //     "zip_code": 95050,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Santa Clara",
+    //     "zip_code": 95060,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Santa Cruz",
+    //     "zip_code": 96001,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Shasta",
+    //     "zip_code": 96124,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Sierra",
+    //     "zip_code": 96094,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Siskiyou",
+    //     "zip_code": 95690,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Solano",
+    //     "zip_code": 95476,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Sonoma",
+    //     "zip_code": 95350,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Stanislaus",
+    //     "zip_code": 95982,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Sutter",
+    //     "zip_code": 96080,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Tehama",
+    //     "zip_code": 93561,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Trinity",
+    //     "zip_code": 95692,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Tulare",
+    //     "zip_code": 93001,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Tuolumne",
+    //     "zip_code": 95697,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Ventura",
+    //     "zip_code": 95965,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Yolo",
+    //     "zip_code": 95697,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // },
+    // {
+    //     "County": "Yuba",
+    //     "zip_code": 95965,
+    //     "state": "San Francisco",
+    //     "id": uuidv4()
+    // }
 ]
 
 export const TypeDataToggle = [

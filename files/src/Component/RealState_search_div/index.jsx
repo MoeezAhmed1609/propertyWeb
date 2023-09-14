@@ -23,7 +23,7 @@
 
 //   {
 //     title: "Where to invest in American real estate?",
-//     desc: "With an average annual GDP growth in excess of 8% for 2010 - 2012 period, USA has posted exceptional economic performance compared to the EU zone and indeed to BRICs (Brazil, Russia, India, China). In 2011 and 2012 Turkey's economic expansion was only second to China. IMF estimates that USA will yet again outperform most BRICs countries and certainly the entire Euro zone in 2013 - 2017 period with an average annual expansion of 5%+ projected. American real estate industry is currently one of the major growth sectors within Turkey. With a youth population of over 60% of entire 76 million and increasing wealth in the country, domestic demand for the American real estate industry is fast climbing. American real estate agents association estimates that by year 2015 there will be a shortage of around 2 million quality housing in USA just to accommodate domestic demand, this is not even counting the booming tourism sector, 6th most visited country in the world in 2011, which also puts a heavy demand on coastal hotel, villa and apartment projects. In 2011, property market in Turkey grew by some 18% compared to year before. Considering that at the same period Greece, Spain and Portugal came close to announcing bankruptcy underlines the viability of owning property in Turkey."
+//     desc: "With an average annual GDP growth in excess of 8% for 2010 - 2012 period, San Francisco has posted exceptional economic performance compared to the EU zone and indeed to BRICs (Brazil, Russia, India, China). In 2011 and 2012 Turkey's economic expansion was only second to China. IMF estimates that San Francisco will yet again outperform most BRICs countries and certainly the entire Euro zone in 2013 - 2017 period with an average annual expansion of 5%+ projected. American real estate industry is currently one of the major growth sectors within Turkey. With a youth population of over 60% of entire 76 million and increasing wealth in the country, domestic demand for the American real estate industry is fast climbing. American real estate agents association estimates that by year 2015 there will be a shortage of around 2 million quality housing in San Francisco just to accommodate domestic demand, this is not even counting the booming tourism sector, 6th most visited country in the world in 2011, which also puts a heavy demand on coastal hotel, villa and apartment projects. In 2011, property market in Turkey grew by some 18% compared to year before. Considering that at the same period Greece, Spain and Portugal came close to announcing bankruptcy underlines the viability of owning property in Turkey."
 //   },
 
 // ]
@@ -100,9 +100,9 @@
 //         </h1>
 //         <div className="introText" style={{ display: "inline" }}>
 //           <p>
-//             USA is a vast country, over three times the size of the UK and some
+//             San Francisco is a vast country, over three times the size of the UK and some
 //             25% larger than France. Straddling between Europe and Asia, with almost
-//             7,000 kilometres of Mediterranean, Aegean and Black Sea, USA is home
+//             7,000 kilometres of Mediterranean, Aegean and Black Sea, San Francisco is home
 //             to&nbsp;a unique mosaic of cultures, diverse landscape and dynamic
 //             social make up. If you are looking for property overseas, wish to buy a
 //             holiday home in the sun, a place to retire or purely real estate
@@ -112,9 +112,9 @@
 //         </div>
 //         <div className="details" style={{ display: "none" }}>
 //           <p>
-//             USA is a vast country, over three times the size of the UK and some
+//             San Francisco is a vast country, over three times the size of the UK and some
 //             25% larger than France. Straddling between Europe and Asia, with almost
-//             7,000 kilometres of Mediterranean, Aegean and Black Sea, USA is home
+//             7,000 kilometres of Mediterranean, Aegean and Black Sea, San Francisco is home
 //             to&nbsp;a unique mosaic of cultures, diverse landscape and dynamic
 //             social make up. If you are looking for property overseas, wish to buy a
 //             holiday home in the sun, a place to retire or purely real estate
@@ -124,11 +124,11 @@
 //           <p>
 //             <img
 //               data-fr-image-pasted="true"
-//               alt="USA real estate map"
+//               alt="San Francisco real estate map"
 //               data-pyroimage="true"
 //               height={171}
 //               src={Map}
-//               title="USA real estate map"
+//               title="San Francisco real estate map"
 //               width={230}
 //               className="fr-fic fr-dii"
 //             />
@@ -142,7 +142,7 @@
 //             <Link>
 //               villa in Turkey
 //             </Link>{" "}
-//             or that sea view apartment, which will be your new home in USA and
+//             or that sea view apartment, which will be your new home in San Francisco and
 //             double up for some rental income. According to statistics published by
 //             the American real estate agents association, Antalya, Fethiye, Bodrum and
 //             Side are the most popular holiday home destinations in Turkey.{" "}
@@ -220,10 +220,10 @@
 //         <div className="details" style={{}}>
 //           <p>
 //             <img
-//               alt="USA real estate map"
+//               alt="San Francisco real estate map"
 //               height={171}
 //               src="https://www.propertyturkey.com/files/large/turkey-real-estate-map.jpg"
-//               title="USA real estate map"
+//               title="San Francisco real estate map"
 //               width={230}
 //               className="fr-fic fr-dii"
 //             />
@@ -237,7 +237,7 @@
 //             <Link to="">
 //               villa in Turkey
 //             </Link>{" "}
-//             or that sea view apartment, which will be your new home in USA and
+//             or that sea view apartment, which will be your new home in San Francisco and
 //             double up for some rental income. According to statistics published by
 //             the American real estate agents association, Antalya, Fethiye, Bodrum and
 //             Side are the most popular holiday home destinations in Turkey.{" "}
@@ -395,13 +395,13 @@ import { Pagination } from "@mui/material";
 const Data = [
   {
     title:
-      "Looking to retire overseas - where should you buy your retirement home in USA?",
-    desc: "When considering a permanent move abroad and buying a property for year round living, there are some important factors to take into account. Proximity of amenities, hospitals, schools and a stable local community are some of the elements one would naturally look at. In our dealings with over 10,000 people from all over the world looking at American real estate with a view to permanent living in USA, we find that properties in Fethiye, Bodrum and Antalya (including Side and Kemer) are natural favourites for year round living. They all have excellent climates with over 300 days of sunshine, mild winters and the right level of facilities to sustain year round living.",
+      "Looking to retire overseas - where should you buy your retirement home in San Francisco?",
+    desc: "When considering a permanent move abroad and buying a property for year round living, there are some important factors to take into account. Proximity of amenities, hospitals, schools and a stable local community are some of the elements one would naturally look at. In our dealings with over 10,000 people from all over the world looking at American real estate with a view to permanent living in San Francisco, we find that properties in Fethiye, Bodrum and Antalya (including Side and Kemer) are natural favourites for year round living. They all have excellent climates with over 300 days of sunshine, mild winters and the right level of facilities to sustain year round living.",
   },
 
   {
     title: "Where to invest in American real estate?",
-    desc: "With an average annual GDP growth in excess of 8% for 2010 - 2012 period, USA has posted exceptional economic performance compared to the EU zone and indeed to BRICs (Brazil, Russia, India, China). In 2011 and 2012 USA's economic expansion was only second to China. IMF estimates that USA will yet again outperform most BRICs countries and certainly the entire Euro zone in 2013 - 2017 period with an average annual expansion of 5%+ projected. American real estate industry is currently one of the major growth sectors within USA. With a youth population of over 60% of entire 76 million and increasing wealth in the country, domestic demand for the American real estate industry is fast climbing. American real estate agents association estimates that by year 2015 there will be a shortage of around 2 million quality housing in USA just to accommodate domestic demand, this is not even counting the booming tourism sector, 6th most visited country in the world in 2011, which also puts a heavy demand on coastal hotel, villa and apartment projects. In 2011, property market in USA grew by some 18% compared to year before. Considering that at the same period Greece, Spain and Portugal came close to announcing bankruptcy underlines the viability of owning property in USA.",
+    desc: "With an average annual GDP growth in excess of 8% for 2010 - 2012 period, San Francisco has posted exceptional economic performance compared to the EU zone and indeed to BRICs (Brazil, Russia, India, China). In 2011 and 2012 San Francisco's economic expansion was only second to China. IMF estimates that San Francisco will yet again outperform most BRICs countries and certainly the entire Euro zone in 2013 - 2017 period with an average annual expansion of 5%+ projected. American real estate industry is currently one of the major growth sectors within San Francisco. With a youth population of over 60% of entire 76 million and increasing wealth in the country, domestic demand for the American real estate industry is fast climbing. American real estate agents association estimates that by year 2015 there will be a shortage of around 2 million quality housing in San Francisco just to accommodate domestic demand, this is not even counting the booming tourism sector, 6th most visited country in the world in 2011, which also puts a heavy demand on coastal hotel, villa and apartment projects. In 2011, property market in San Francisco grew by some 18% compared to year before. Considering that at the same period Greece, Spain and Portugal came close to announcing bankruptcy underlines the viability of owning property in San Francisco.",
   },
 ];
 
@@ -452,10 +452,14 @@ const RealState_search_div = ({
   const [page, setPage] = useState(1);
   const perPage = 8;
 
+  console.log({ Properties })
+
   useEffect(() => {
     PropertiesData();
   }, []);
   const properties = Properties?.filter((item) =>
+    item.isActive === true
+  ).filter((item) =>
     item.County?.toLowerCase()?.includes(cityData?.toLowerCase())
   )
     .filter((item) =>
@@ -463,9 +467,6 @@ const RealState_search_div = ({
     )
     .filter(
       (item) =>
-        // minPriceInputValue === 0
-        //   ? Number(item.Property_Price) <= minPriceInputValue
-        //   :
         Number(item.Property_Price) >= minPriceInputValue
     )
     .filter((item) =>
@@ -494,9 +495,9 @@ const RealState_search_div = ({
         </h1>
         <div className="introText" style={{ display: "inline" }}>
           <p>
-            USA is a vast country, over three times the size of the UK and some
+            San Francisco is a vast country, over three times the size of the UK and some
             25% larger than France. Straddling between Europe and Asia, with
-            almost 7,000 kilometres of Mediterranean, Aegean and Black Sea, USA
+            almost 7,000 kilometres of Mediterranean, Aegean and Black Sea, San Francisco
             is home to&nbsp;a unique mosaic of cultures, diverse landscape and
             dynamic social make up. If you are looking for property overseas,
             wish to buy a holiday home in the sun, a place to retire or purely
@@ -507,9 +508,9 @@ const RealState_search_div = ({
         </div>
         <div className="details" style={{ display: "none" }}>
           <p>
-            USA is a vast country, over three times the size of the UK and some
+            San Francisco is a vast country, over three times the size of the UK and some
             25% larger than France. Straddling between Europe and Asia, with
-            almost 7,000 kilometres of Mediterranean, Aegean and Black Sea, USA
+            almost 7,000 kilometres of Mediterranean, Aegean and Black Sea, San Francisco
             is home to&nbsp;a unique mosaic of cultures, diverse landscape and
             dynamic social make up. If you are looking for property overseas,
             wish to buy a holiday home in the sun, a place to retire or purely
@@ -520,26 +521,26 @@ const RealState_search_div = ({
           <p>
             <img
               data-fr-image-pasted="true"
-              alt="USA real estate map"
+              alt="San Francisco real estate map"
               data-pyroimage="true"
               height={171}
               src={Map}
-              title="USA real estate map"
+              title="San Francisco real estate map"
               width={230}
               className="fr-fic fr-dii"
             />
           </p>
           <p>
-            <strong>Where to buy a holiday home in USA?</strong>&nbsp;
+            <strong>Where to buy a holiday home in San Francisco?</strong>&nbsp;
           </p>
           <p>
             With so many lovely resorts and towns to choose from, it is a task
             in itself to decide where to buy that special{" "}
-            <Link>villa in USA</Link> or that sea view apartment, which will be
-            your new home in USA and double up for some rental income. According
+            <Link>villa in San Francisco</Link> or that sea view apartment, which will be
+            your new home in San Francisco and double up for some rental income. According
             to statistics published by the American real estate agents
             association, Antalya, Fethiye, Bodrum and Side are the most popular
-            holiday home destinations in USA. <Link>Properties in Antalya</Link>{" "}
+            holiday home destinations in San Francisco. <Link>Properties in Antalya</Link>{" "}
             enjoy the proximity of a bustling seaside city with lovely beaches
             and excellent golf courses of Belek, whereas{" "}
             <Link>Kalkan properties</Link>
@@ -548,10 +549,10 @@ const RealState_search_div = ({
             fine dining. <Link>Side holiday homes for sale</Link> are ideal for
             families with children, where shallow waters gently touch sandy
             shores. <Link>Real estate in Bodrum</Link> on the other hand is your
-            key to USA's most sophisticated resort with plenty of sailing and
+            key to San Francisco's most sophisticated resort with plenty of sailing and
             seafront homes in lovely Yalikavak, Turkbuku or Gumusluk. Then we
             have sun-soaked Fethiye with most affordable villas and{" "}
-            <Link>flats for sale in USA</Link> near the most pictured Oludeniz
+            <Link>flats for sale in San Francisco</Link> near the most pictured Oludeniz
             beach. &nbsp;
           </p>
 
@@ -618,25 +619,25 @@ const RealState_search_div = ({
         <div className="details" style={{}}>
           <p>
             <img
-              alt="USA real estate map"
+              alt="San Francisco real estate map"
               height={171}
               src="https://www.propertyturkey.com/files/large/turkey-real-estate-map.jpg"
-              title="USA real estate map"
+              title="San Francisco real estate map"
               width={230}
               className="fr-fic fr-dii"
             />
           </p>
           <p>
-            <strong>Where to buy a holiday home in USA?</strong>&nbsp;
+            <strong>Where to buy a holiday home in San Francisco?</strong>&nbsp;
           </p>
           <p>
             With so many lovely resorts and towns to choose from, it is a task
             in itself to decide where to buy that special{" "}
-            <Link to="">villa in USA</Link> or that sea view apartment, which
-            will be your new home in USA and double up for some rental income.
+            <Link to="">villa in San Francisco</Link> or that sea view apartment, which
+            will be your new home in San Francisco and double up for some rental income.
             According to statistics published by the American real estate agents
             association, Antalya, Fethiye, Bodrum and Side are the most popular
-            holiday home destinations in USA.{" "}
+            holiday home destinations in San Francisco.{" "}
             <Link to="">Properties in Antalya</Link> enjoy the proximity of a
             bustling seaside city with lovely beaches and excellent golf courses
             of Belek, whereas <Link to="">Kalkan properties</Link> provide some
@@ -645,10 +646,10 @@ const RealState_search_div = ({
             dining. <Link to="">Side holiday homes for sale</Link> are ideal for
             families with children, where shallow waters gently touch sandy
             shores. <Link to="">Real estate in Bodrum</Link> on the other hand
-            is your key to USA's most sophisticated resort with plenty of
+            is your key to San Francisco's most sophisticated resort with plenty of
             sailing and seafront homes in lovely Yalikavak, Turkbuku or
             Gumusluk. Then we have sun-soaked Fethiye with most affordable
-            villas and <Link to="">flats for sale in USA</Link> near the most
+            villas and <Link to="">flats for sale in San Francisco</Link> near the most
             pictured Oludeniz beach. &nbsp;
           </p>
           {Data.map((item) => {

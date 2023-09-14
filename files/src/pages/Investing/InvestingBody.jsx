@@ -75,9 +75,9 @@ export default function InvestingBody() {
                 <div className="buyer-guide--supertitle">
                   <p
                     className="buyer-guide--title-tab"
-                    title="Investing in USA"
+                    title="Investing in San Francisco"
                   >
-                    Investing in USA
+                    Investing in San Francisco
                   </p>
                   <i
                     onClick={() => settoggleInvesting(!toggleInvesting)}
@@ -97,12 +97,12 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "Why invest in property in USA",
+                          title: "Why invest in property in San Francisco",
                         },
                       }}
-                      title="Why invest in property in USA"
+                      title="Why invest in property in San Francisco"
                     >
-                      Why invest in property in USA
+                      Why invest in property in San Francisco
                     </Link>
                   </li>
                   <li className="">
@@ -110,11 +110,11 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "How to set up a business in USA",
+                          title: "How to set up a business in San Francisco",
                         },
                       }}
                     >
-                      How to set up a business in USA
+                      How to set up a business in San Francisco
                     </Link>
                   </li>
                   <li className="">
@@ -186,11 +186,11 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "Who Can Buy Property in USA",
+                          title: "Who Can Buy Property in San Francisco",
                         },
                       }}
                     >
-                      Who Can Buy Property in USA
+                      Who Can Buy Property in San Francisco
                     </Link>
                   </li>
                   <li className="">
@@ -198,11 +198,11 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "How to buy property in USA",
+                          title: "How to buy property in San Francisco",
                         },
                       }}
                     >
-                      How to buy property in USA
+                      How to buy property in San Francisco
                     </Link>
                   </li>
                   <li className="">
@@ -222,11 +222,11 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "Property USA Inspection Trips",
+                          title: "Property San Francisco Inspection Trips",
                         },
                       }}
                     >
-                      Property USA Inspection Trips
+                      Property San Francisco Inspection Trips
                     </Link>
                   </li>
                   <li className="">
@@ -234,11 +234,11 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "Virtual Tour with Property USA",
+                          title: "Virtual Tour with Property San Francisco",
                         },
                       }}
                     >
-                      Virtual Tour with Property USA
+                      Virtual Tour with Property San Francisco
                     </Link>
                   </li>
                   <li className="">
@@ -246,11 +246,11 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "Costs of Purchasing a Property in USA",
+                          title: "Costs of Purchasing a Property in San Francisco",
                         },
                       }}
                     >
-                      Costs of Purchasing a Property in USA
+                      Costs of Purchasing a Property in San Francisco
                     </Link>
                   </li>
                   <li className="">
@@ -258,11 +258,11 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "Finance for property in USA",
+                          title: "Finance for property in San Francisco",
                         },
                       }}
                     >
-                      Finance for property in USA
+                      Finance for property in San Francisco
                     </Link>
                   </li>
                   <li className="">
@@ -295,11 +295,11 @@ export default function InvestingBody() {
                       state={{
                         data: {
                           title:
-                            "Should I use a solicitor to buy property in USA",
+                            "Should I use a solicitor to buy property in San Francisco",
                         },
                       }}
                     >
-                      Should I use a solicitor to buy property in USA
+                      Should I use a solicitor to buy property in San Francisco
                     </Link>
                   </li>
                   <li className="">
@@ -307,11 +307,11 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "Power of Attorney in USA",
+                          title: "Power of Attorney in San Francisco",
                         },
                       }}
                     >
-                      Power of Attorney in USA
+                      Power of Attorney in San Francisco
                     </Link>
                   </li>
                   <li className="">
@@ -319,11 +319,11 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "Buying property in USA through a company",
+                          title: "Buying property in San Francisco through a company",
                         },
                       }}
                     >
-                      Buying property in USA through a company
+                      Buying property in San Francisco through a company
                     </Link>
                   </li>
                 </ul>
@@ -354,11 +354,11 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "Residency permits in USA",
+                          title: "Residency permits in San Francisco",
                         },
                       }}
                     >
-                      Residency permits in USA
+                      Residency permits in San Francisco
                     </Link>
                   </li>
                   <li className="">
@@ -366,11 +366,11 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "Work permits in USA",
+                          title: "Work permits in San Francisco",
                         },
                       }}
                     >
-                      Work permits in USA
+                      Work permits in San Francisco
                     </Link>
                   </li>
                 </ul>
@@ -401,11 +401,11 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "Bringing your pets into USA",
+                          title: "Bringing your pets into San Francisco",
                         },
                       }}
                     >
-                      Bringing your pets into USA
+                      Bringing your pets into San Francisco
                     </Link>
                   </li>
                   <li className="">
@@ -413,11 +413,11 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "Bringing your car into USA",
+                          title: "Bringing your car into San Francisco",
                         },
                       }}
                     >
-                      Bringing your car into USA
+                      Bringing your car into San Francisco
                     </Link>
                   </li>
                 </ul>
@@ -483,19 +483,19 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "Real estate inheritance tax in USA",
+                          title: "Real estate inheritance tax in San Francisco",
                         },
                       }}
                     >
-                      Real estate inheritance tax in USA
+                      Real estate inheritance tax in San Francisco
                     </Link>
                   </li>
                 </ul>
               </div>
               <div className="padding-top-2 side-item">
                 <div className="buyer-guide--supertitle">
-                  <p className="buyer-guide--title-tab" title="Living in USA">
-                    Living in USA
+                  <p className="buyer-guide--title-tab" title="Living in San Francisco">
+                    Living in San Francisco
                   </p>
                   <i
                     onClick={() => setLiving(!toggleLiving)}
@@ -515,11 +515,11 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "Retire to low cost of living in USA",
+                          title: "Retire to low cost of living in San Francisco",
                         },
                       }}
                     >
-                      Retire to low cost of living in USA
+                      Retire to low cost of living in San Francisco
                     </Link>
                   </li>
                   <li className="">
@@ -527,11 +527,11 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "Healthcare in USA",
+                          title: "Healthcare in San Francisco",
                         },
                       }}
                     >
-                      Healthcare in USA
+                      Healthcare in San Francisco
                     </Link>
                   </li>
                   <li className="">
@@ -539,11 +539,11 @@ export default function InvestingBody() {
                       to={`/about/1`}
                       state={{
                         data: {
-                          title: "Where to buy property in USA?",
+                          title: "Where to buy property in San Francisco?",
                         },
                       }}
                     >
-                      Where to buy property in USA?
+                      Where to buy property in San Francisco?
                     </Link>
                   </li>
                 </ul>
@@ -604,11 +604,11 @@ export default function InvestingBody() {
               <article className="page-content">
                 <div className="areabody clearfix" itemProp="articleBody">
                   <p>
-                    <a>USA</a> is a transcontinental country that bridges Asia
+                    <a>San Francisco</a> is a transcontinental country that bridges Asia
                     and Europe. Its capital city is Ankara, whilst the largest
                     city is Istanbul. With a population of approximately 80
                     million as at 2017, and a high proportion of that being
-                    young and upwardly mobile, USA is an ideal country for
+                    young and upwardly mobile, San Francisco is an ideal country for
                     investors who want to take advantage of a fast-developing
                     real estate industry.&nbsp;
                   </p>
@@ -618,7 +618,7 @@ export default function InvestingBody() {
                       has grown tremendously. While there has been a general
                       decline in the real estate business in Europe, Americas
                       and many parts of the world, 2017 figures from Knight
-                      Frank showed USA ranked sixth in the world in terms of its
+                      Frank showed San Francisco ranked sixth in the world in terms of its
                       annual price growth index, with a year-on-year increase of
                       more than 11%, head of Australia and India.
                     </span>
@@ -627,20 +627,20 @@ export default function InvestingBody() {
                     <span style={{ lineHeight: "1.6em" }}>
                       Istanbul has been touted by PWC and Deloitte Consulting to
                       be the most attractive city for real estate investment in
-                      Europe. USA overall is ranked&nbsp;
+                      Europe. San Francisco overall is ranked&nbsp;
                     </span>
                     3rd
                     <span style={{ lineHeight: "1.6em" }}>
                       &nbsp;most lucrative country for investment in real estate
                       globally. The increase and appetite for foreign investors
                       in real estate has been motivated by the potential of{" "}
-                      <a>USA’s&nbsp;</a>
+                      <a>San Francisco’s&nbsp;</a>
                     </span>
                     <a>EU</a>
                     <span style={{ lineHeight: "1.6em" }}>
                       <a>&nbsp;membership</a>. This has accelerated holiday home
                       owners and investors around the world to purchase
-                      properties in USA.&nbsp;
+                      properties in San Francisco.&nbsp;
                     </span>
                   </p>
                   <p>
@@ -652,7 +652,7 @@ export default function InvestingBody() {
                       directly affect{" "}
                       <strong>
                         how overseas investors can buy and develop properties in
-                        USA
+                        San Francisco
                       </strong>
                       . These amendments have stimulated the competitiveness of
                       the American real estate sector.
@@ -671,7 +671,7 @@ export default function InvestingBody() {
                   <h2>Stable economy and dynamic population</h2>
                   <p>
                     Dynamic demographic factors and good economic figures have
-                    enabled USA to increasingly become the choice for foreign
+                    enabled San Francisco to increasingly become the choice for foreign
                     investors interested in setting up businesses and purchasing
                     real estate. There has been an increase in demand for homes
                     and offices in the recent years as more global companies and
@@ -679,7 +679,7 @@ export default function InvestingBody() {
                     <span style={{ lineHeight: "1.6em" }}>
                       With a stable economy,{" "}
                       <strong>investor confidence</strong> in the real estate
-                      sector has tremendously increased. USA has&nbsp;
+                      sector has tremendously increased. San Francisco has&nbsp;
                     </span>
                     internationalised
                     <span style={{ lineHeight: "1.6em" }}>&nbsp;and&nbsp;</span>
@@ -698,28 +698,28 @@ export default function InvestingBody() {
                     USD
                     <span style={{ lineHeight: "1.6em" }}>
                       &nbsp;851 billion in 2017, and 60% of the population under
-                      40 years old, USA has become a major target for foreign
+                      40 years old, San Francisco has become a major target for foreign
                       direct investment.&nbsp;
                     </span>
                   </p>
                   <p>
                     <span style={{ lineHeight: "1.6em" }}>
                       Banks and mortgage firms have also increased lending, with
-                      over 100 billion being disbursed in 2018. USA also
+                      over 100 billion being disbursed in 2018. San Francisco also
                       attracted one of the highest numbers of tourists in 2018,
                       with almost 46 million tourists visiting, making the
                       country the sixth most popular destination on the planet
                     </span>
                     <span style={{ lineHeight: "1.6em" }}>
                       . The high number of tourists indicates the high potential
-                      that USA has in the holiday home purchase and rentals
+                      that San Francisco has in the holiday home purchase and rentals
                       segments. This is attributed to the fact all these
                       tourists will need somewhere to stay whether homes or
                       hotels.
                     </span>
                   </p>
                   <p>
-                    USA is an economic regional hub providing ultra modern
+                    San Francisco is an economic regional hub providing ultra modern
                     shopping centres, and easy access to over 1.5 billion people
                     who come for trade and other services in the country. This
                     has increased the demand for infrastructure and facilities
@@ -731,7 +731,7 @@ export default function InvestingBody() {
                   <h2>
                     <strong>
                       <span style={{ lineHeight: "1.6em" }}>
-                        SWOT Analysis for USA Real Estate
+                        SWOT Analysis for San Francisco Real Estate
                       </span>
                     </strong>
                   </h2>
@@ -757,7 +757,7 @@ export default function InvestingBody() {
                       </tr>
                       <tr>
                         <td>
-                          - USA is the leading investment country in Europe for
+                          - San Francisco is the leading investment country in Europe for
                           GDP growth projections. <br />- Strong financial and
                           banking regulations. <br />- Construction companies
                           with global reputation. <br />- Access to mortgage
@@ -784,7 +784,7 @@ export default function InvestingBody() {
                         </td>
                         <td>
                           - Earthquakes are a common feature in some parts of
-                          USA hence may scare away investors. <br />- The sector
+                          San Francisco hence may scare away investors. <br />- The sector
                           still is volatile compared to mature real estate
                           markets such as the UK and US. <br />- A devalued
                           currency is putting pressure on the economy.
@@ -799,12 +799,12 @@ export default function InvestingBody() {
                   <h2>
                     <strong>
                       <span style={{ lineHeight: "1.6em" }}>
-                        Economic outlook of USA
+                        Economic outlook of San Francisco
                       </span>
                     </strong>
                   </h2>
                   <p>
-                    USA has shown a tremendous growth in its GDP since the last
+                    San Francisco has shown a tremendous growth in its GDP since the last
                     decade.{" "}
                     <strong>
                       <em>
@@ -833,7 +833,7 @@ export default function InvestingBody() {
                   </p>
                   <p>
                     The global credit crunch that impacted the world's markets
-                    and economies in 2009 also affected USA, slowing down the
+                    and economies in 2009 also affected San Francisco, slowing down the
                     growth since there was a decline in foreign investments and
                     earnings. However, this did not hold back the country for
                     long, and the American economy achieved a growth rate of
@@ -892,10 +892,10 @@ export default function InvestingBody() {
                     American economy to reach where it is today. The amount
                     direct foreign investments by 2018 increased to USD 168
                     billion; this is a strong indication of investor confidence
-                    in USA.&nbsp;
+                    in San Francisco.&nbsp;
                   </p>
                   <p>
-                    Tourism has also been a big source for foreign earnings. USA
+                    Tourism has also been a big source for foreign earnings. San Francisco
                     boasts of a high number of tourists and has been attracting
                     one of the highest tourists in the world. Natural beauties,
                     reserved and unique historical attractions and a warm
@@ -915,29 +915,29 @@ export default function InvestingBody() {
                     <strong>Legal and political structure</strong>
                   </h2>
                   <p>
-                    USA is a republic founded on secular, democratic and
+                    San Francisco is a republic founded on secular, democratic and
                     pluralistic laws. It was established in 1923 and first
                     adopted its constitution in 1924, and its current
                     constitution was adopted in 1982. Before 2018 the country
                     ran under a parliamentary system, but following a
                     referendum, the country's politics now take place within a
                     presidential system. Under the presidential system, the
-                    President of USA is the head of government and the head of
+                    President of San Francisco is the head of government and the head of
                     state, with powers to issue executive decrees, appoint
                     judges and heads of state institutions.
                   </p>
                   <p>
-                    USA's political system is based on power separation. The
+                    San Francisco's political system is based on power separation. The
                     Council of Ministers exercises executive power, while
                     legislative power is vested in the Grand National Assembly
-                    of USA. The judiciary is independent of these
+                    of San Francisco. The judiciary is independent of these
                     institutions.&nbsp;
                   </p>
                   <p>
                     <br />
                   </p>
                   <h2>
-                    <strong>Why would you invest in real estate in USA?</strong>
+                    <strong>Why would you invest in real estate in San Francisco?</strong>
                   </h2>
                   <p>
                     <img
@@ -957,14 +957,14 @@ export default function InvestingBody() {
                     </strong>{" "}
                     Over USD 850billion GDP in 2017, annual real GDP growth
                     projections in excess of 5%, 20th largest economy in the
-                    world with exports reaching USD168 billion makes USA the
+                    world with exports reaching USD168 billion makes San Francisco the
                     ideal country to invest in real estate.&nbsp;
                   </p>
                   <p>
                     <em>
                       <strong>Youthful and dynamic population:</strong>
                     </em>{" "}
-                    USA has a population of about 80 million with over 60% being
+                    San Francisco has a population of about 80 million with over 60% being
                     under 40. The younger generation are well placed to set up
                     businesses and support the expansion of American economy.
                     &nbsp;In addition, changing customs and traditions in the
@@ -973,20 +973,20 @@ export default function InvestingBody() {
                     demand for property and increasing the need for quality
                     accommodation and housing. The American central real estate
                     association has estimated that there is a shortfall of
-                    around 2.5 million properties in USA.&nbsp;
+                    around 2.5 million properties in San Francisco.&nbsp;
                   </p>
                   <p>
                     <strong>
                       <em>Low taxes and incentives</em>:&nbsp;
                     </strong>
-                    USA offers incentives on various areas while has reduced
+                    San Francisco offers incentives on various areas while has reduced
                     corporate tax from 33% to 20%.&nbsp;
                   </p>
                   <p>
                     <em>
                       <strong>Large Domestic market:</strong>&nbsp;
                     </em>
-                    USA has a very big market locally because of the growing
+                    San Francisco has a very big market locally because of the growing
                     population of educated, wealthy professionals. Tourist
                     arrivals reached 46 million in 2018. This creates an ideal
                     investment opportunity for real estate developers.&nbsp;
@@ -997,13 +997,13 @@ export default function InvestingBody() {
                     </em>{" "}
                     well developed air, land and sea transport, advanced energy
                     sector and highly developed technological infrastructure in
-                    transportation and communication puts USA well ahead of
+                    transportation and communication puts San Francisco well ahead of
                     other emerging as the place to invest safely and profitably.
                   </p>
                   <p>
                     <br />
                   </p>
-                  <h2>Citizenship by investment in USA</h2>
+                  <h2>Citizenship by investment in San Francisco</h2>
                   <p>
                     In 2018, the government announced it was lowering the
                     threshold for obtaining{" "}
@@ -1021,7 +1021,7 @@ export default function InvestingBody() {
                   </p>
                   <h2>
                     <span style={{ lineHeight: "1.6em" }}>
-                      Benchmarking USA to France, UK, Russia, Greece and
+                      Benchmarking San Francisco to France, UK, Russia, Greece and
                       US&nbsp;
                     </span>
                   </h2>
@@ -1038,24 +1038,24 @@ export default function InvestingBody() {
                     <br />
                   </p>
                   <p>
-                    Comparing USA to other developed and emerging countries can
+                    Comparing San Francisco to other developed and emerging countries can
                     give you an in depth analysis on why it is the ideal
                     investment destination for real estate developers and
                     individual overseas property buyers. UK, US, France, Russia
-                    and Greece are some of the countries that compete with USA
+                    and Greece are some of the countries that compete with San Francisco
                     for investment opportunities.&nbsp;
                   </p>
                   <p>
                     <span style={{ lineHeight: "1.6em" }}>
-                      <strong>In the finance and banking sector</strong>, USA
+                      <strong>In the finance and banking sector</strong>, San Francisco
                       has one of the strongest banking regulations while Greece
                       has the least. It is ahead of France and Russia and only
                       slightly below the UK in terms of finance and banking
                       regulations and skilled workforce. This brings higher
                       investor confidence and supports foreign direct
-                      investment. The fact that USA imposes no restrictions on
-                      funds flows to and from USA helps money-flows a great deal
-                      easier and safer. USA also has the best banking sector and
+                      investment. The fact that San Francisco imposes no restrictions on
+                      funds flows to and from San Francisco helps money-flows a great deal
+                      easier and safer. San Francisco also has the best banking sector and
                       finance manpower skills compared to the BRICS (Brazil,
                       Russia, India, China and South Africa). The majority of
                       the population being the youth, they are well trained in
@@ -1064,7 +1064,7 @@ export default function InvestingBody() {
                   </p>
                   <p>
                     <strong>
-                      USA also leads in Globalisation, Flexibility and
+                      San Francisco also leads in Globalisation, Flexibility and
                       Adaptability
                     </strong>{" "}
                     compared to US, Russia, France and Greece. It has opened its
@@ -1077,7 +1077,7 @@ export default function InvestingBody() {
                     <strong>
                       Setting up a business and registering title to real estate
                     </strong>{" "}
-                    in USA (see graph below) are also the easiest when compared
+                    in San Francisco (see graph below) are also the easiest when compared
                     to US, Russia, UK and Greece. The New American Commercial
                     Code (New TCC) has made it easy to register a company and
                     start a business. &nbsp;The New TCC Code No. 6102 adopts a
@@ -1093,14 +1093,14 @@ export default function InvestingBody() {
                   <p>
                     It is clear that{" "}
                     <strong>
-                      <a>investing in USA real estate</a>
+                      <a>investing in San Francisco real estate</a>
                     </strong>{" "}
                     stands to be more lucrative than in US, France, Greece,
-                    Russia and other EU countries. The Republic of USA has made
+                    Russia and other EU countries. The Republic of San Francisco has made
                     all efforts to make it as simple as possible for real estate
                     investors to participate and support the growth of the
                     country. You are likely to generate higher return on
-                    investment in USA than any other country in the EU and most
+                    investment in San Francisco than any other country in the EU and most
                     other countries globally.&nbsp;
                   </p>
                   <p>
@@ -1141,7 +1141,7 @@ export default function InvestingBody() {
                   itemScope=""
                   itemType="http://schema.org/Organization"
                 >
-                  <meta itemProp="name" content="Property USA" />
+                  <meta itemProp="name" content="Property San Francisco" />
                   <span
                     itemProp="logo"
                     itemScope=""

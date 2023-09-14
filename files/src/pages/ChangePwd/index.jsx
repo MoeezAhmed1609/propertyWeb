@@ -129,12 +129,12 @@ export default function ChangePwd() {
           </li>
           <li>
             <a href="#" className="no-wrap">
-              <i className="fa fa-angle-right" /> Who Can Buy Property in USA
+              <i className="fa fa-angle-right" /> Who Can Buy Property in San Francisco
             </a>
           </li>
           <li>
             <a href="#" className="no-wrap">
-              <i className="fa fa-angle-right" /> How to buy property in USA
+              <i className="fa fa-angle-right" /> How to buy property in San Francisco
             </a>
           </li>
           <li>
@@ -145,14 +145,14 @@ export default function ChangePwd() {
           </li>
           <li>
             <a href="#" className="no-wrap">
-              <i className="fa fa-angle-right" /> Property USA Inspection
+              <i className="fa fa-angle-right" /> Property San Francisco Inspection
               Trips
             </a>
           </li>
           <li>
             <a href="#" className="no-wrap">
               <i className="fa fa-angle-right" /> Costs of Purchasing a Property
-              in USA
+              in San Francisco
             </a>
           </li>
           <li>
@@ -163,23 +163,23 @@ export default function ChangePwd() {
           </li>
           <li>
             <a href="#" className="no-wrap">
-              <i className="fa fa-angle-right" /> Finance for property in USA
+              <i className="fa fa-angle-right" /> Finance for property in San Francisco
             </a>
           </li>
           <li>
             <a href="#" className="no-wrap">
               <i className="fa fa-angle-right" /> Should I use a solicitor to
-              buy property in USA
+              buy property in San Francisco
             </a>
           </li>
           <li>
             <a href="#" className="no-wrap">
-              <i className="fa fa-angle-right" /> Power of Attorney in USA
+              <i className="fa fa-angle-right" /> Power of Attorney in San Francisco
             </a>
           </li>
           <li>
             <a href="#" className="no-wrap">
-              <i className="fa fa-angle-right" /> Buying property in USA
+              <i className="fa fa-angle-right" /> Buying property in San Francisco
               through a company
             </a>
           </li>

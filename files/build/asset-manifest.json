@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ad3998a2.css",
-    "main.js": "/static/js/main.843d957a.js",
+    "main.css": "/static/css/main.c49efc7a.css",
+    "main.js": "/static/js/main.66680e4b.js",
     "static/js/765.50f82f6f.chunk.js": "/static/js/765.50f82f6f.chunk.js",
     "static/media/Feature.jpg": "/static/media/Feature.309af511116035f843a4.jpg",
     "static/media/offices_1.png": "/static/media/offices_1.e9815002854fcfc4171f.png",
@@ -13,6 +13,7 @@
     "static/media/galata-tower-istanbul_1678985700.jpg": "/static/media/galata-tower-istanbul_1678985700.6d1d2f48746952eccf68.jpg",
     "static/media/middleman_1.png": "/static/media/middleman_1.657e893dea4747c20c77.png",
     "static/media/cameron-contact-header.png": "/static/media/cameron-contact-header.24f02eebb2dbecf555c7.png",
+    "static/media/property-logo.jpg": "/static/media/property-logo.1760c016dd8ef9111b33.jpg",
     "static/media/istanbul-at-night_1678806152.jpg": "/static/media/istanbul-at-night_1678806152.c1101f6f5fce583fe06b.jpg",
     "static/media/antalya-duden-waterfalls-turkey_1677949063.jpg": "/static/media/antalya-duden-waterfalls-turkey_1677949063.7291d3c2801f9472f6a8.jpg",
     "static/media/virtual_property_tour_in_turkey.jpg": "/static/media/virtual_property_tour_in_turkey.4a68fe464511bdd3d897.jpg",
@@ -32,7 +33,6 @@
     "static/media/pt-brochure-download.jpg": "/static/media/pt-brochure-download.464c6a8631a08c91eea9.jpg",
     "static/media/flags.png": "/static/media/flags.ae53191452bb217f0fa6.png",
     "static/media/pt-header-logo.svg": "/static/media/pt-header-logo.f649c38364138f6b9bcfc08b6fb8e1b5.svg",
-    "static/media/pt_new_logo.svg": "/static/media/pt_new_logo.b4246d3da27fefcf7e386c7d95428435.svg",
     "static/media/instagram.png": "/static/media/instagram.75e0546a6b5abe4c0506.png",
     "static/media/partner-button-01.svg": "/static/media/partner-button-01.8ad0fd4303a624cc76b5ea8062f9833d.svg",
     "static/media/antalya_icon.svg": "/static/media/antalya_icon.30dbe20536e7f4da86859a636c19a357.svg",
@@ -65,12 +65,12 @@
     "static/media/share-alt-solid.-gold.svg": "/static/media/share-alt-solid.-gold.454c1a0f2bed13988ee5a2ad5c4007f1.svg",
     "static/media/location-gold-filled.svg": "/static/media/location-gold-filled.fbdef2176de9cf9eecb243c805972f8e.svg",
     "static/media/path387.svg": "/static/media/path387.1d8c978e21a6a6e69da218b2db87e89c.svg",
-    "main.ad3998a2.css.map": "/static/css/main.ad3998a2.css.map",
-    "main.843d957a.js.map": "/static/js/main.843d957a.js.map",
+    "main.c49efc7a.css.map": "/static/css/main.c49efc7a.css.map",
+    "main.66680e4b.js.map": "/static/js/main.66680e4b.js.map",
     "765.50f82f6f.chunk.js.map": "/static/js/765.50f82f6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad3998a2.css",
-    "static/js/main.843d957a.js"
+    "static/css/main.c49efc7a.css",
+    "static/js/main.66680e4b.js"
   ]
 }

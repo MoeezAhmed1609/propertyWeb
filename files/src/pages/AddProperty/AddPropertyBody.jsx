@@ -348,7 +348,7 @@ export default function AddPropertyBody() {
                     onChange={(e) => setCountry(e.target.value)}
                   >
                     <option value="default">-- Country --</option>
-                    <option value={"USA"}>USA</option>
+                    <option value={"San Francisco"}>San Francisco</option>
                   </select>
                 </label>
                 <label

@@ -1,13 +1,15 @@
 import { collection, doc, getDoc, onSnapshot, query } from 'firebase/firestore';
 import React from 'react'
 import { useEffect } from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { db } from '../../Config';
 import RawHTMLRenderer from '../../ReUseAbleComponent/RawHTMLRenderer';
 
 export default function BlogViewContainer() {
   const { id } = useParams();
-  const [blog, setBlogs] = React.useState([]);
+  const [blog, setBlog] = React.useState([]);
+  const [blogs, setBlogs] = React.useState([]);
+
 
   const HandleBlog = async () => {
     const q = query(collection(db, "Blogs"));
@@ -17,21 +19,17 @@ export default function BlogViewContainer() {
         cities.push({ id: doc.id, ...doc.data() });
       });
       console.log(cities);
+      setBlogs(cities)
 
       const newArr = cities.filter(item => item.id === id);
       console.log(newArr)
-      setBlogs(newArr)
+      setBlog(newArr)
 
     });
   }
   React.useEffect(() => {
     HandleBlog()
-  }, []);
-
-
-  React.useEffect(() => {
-    console.log(blog)
-  }, [])
+  }, [id]);
 
 
   return (
@@ -1069,10 +1067,10 @@ export default function BlogViewContainer() {
                       </figure>
                       <a
                         href="https://www.propertyturkey.com/real_estate/6173-dosemealti-houses-in-turkey-surrounded-by-nature"
-                        title="Dosemealti houses in USA surrounded by nature"
+                        title="Dosemealti houses in San Francisco surrounded by nature"
                         className="property-title abhaya"
                       >
-                        Dosemealti houses in USA surrounded by nature
+                        Dosemealti houses in San Francisco surrounded by nature
                       </a>
                       <a
                         rel="nofollow"
@@ -1186,7 +1184,7 @@ export default function BlogViewContainer() {
               src="https://www.propertyturkey.com/front/image/pt-brochure-download.jpg"
             />
           </a> */}
-          <div id="keywords" className="widget" style={{ margin: '15px 8px' }}>
+          {/* <div id="keywords" className="widget" style={{ margin: '15px 8px' }}>
             <h3 className="title" style={{}}>
               popular keywords
             </h3>
@@ -1200,18 +1198,18 @@ export default function BlogViewContainer() {
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=life in turkey"
                 freq={239}
-                title="life in USA"
+                title="life in San Francisco"
                 style={{ fontSize: "2.24161rem" }}
               >
-                life in USA
+                life in San Francisco
               </a>
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=tourism in turkey"
                 freq={228}
-                title="tourism in USA"
+                title="tourism in San Francisco"
                 style={{ fontSize: "2.13844rem" }}
               >
-                tourism in USA
+                tourism in San Francisco
               </a>
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=istanbul"
@@ -1227,7 +1225,7 @@ export default function BlogViewContainer() {
                 title="moving to turkey"
                 style={{ fontSize: "0.769086rem" }}
               >
-                moving to USA
+                moving to San Francisco
               </a>
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=bodrum"
@@ -1296,10 +1294,10 @@ export default function BlogViewContainer() {
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=retiring to turkey"
                 freq={42}
-                title="retiring to USA"
+                title="retiring to San Francisco"
                 style={{ fontSize: "1rem" }}
               >
-                retiring to USA
+                retiring to San Francisco
               </a>
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=Turkish history"
@@ -1336,10 +1334,10 @@ export default function BlogViewContainer() {
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=invest in Turkey"
                 freq={19}
-                title="invest in USA"
+                title="invest in San Francisco"
                 style={{ fontSize: "1rem" }}
               >
-                invest in USA
+                invest in San Francisco
               </a>
               <a
                 href="https://www.propertyturkey.com/related-blogs/keyword?keyword=turkish economy"
@@ -1350,35 +1348,37 @@ export default function BlogViewContainer() {
                 American economy
               </a>
             </div>
-          </div>
+          </div> */}
           <div className="widget" style={{ margin: '15px 8px' }}>
             <h3 className="title" style={{}}>
               Latest Posts
             </h3>
             <div className="body">
               <ul className="no-bullet">
-                <li>
-                  <a
-                    href="https://www.propertyturkey.com/blog-turkey/famous-landmarks-in-turkey-to-visit"
-                    title="Famous Landmarks in USA to Visit"
-                  >
-                    Famous Landmarks in USA to Visit
-                  </a>
-                </li>
-                <li>
+                {blogs.slice(0, 10).map((blog) => (
+                  <li>
+                    <Link
+                      to={`/blog/${blog.id}`}
+                      title="Famous Landmarks in San Francisco to Visit"
+                    >
+                      {blog.title}
+                    </Link>
+                  </li>
+                ))}
+                {/* <li>
                   <a
                     href="https://www.propertyturkey.com/blog-turkey/noahs-ark-and-the-mountains-of-ararat-in-turkey"
-                    title="Noah's Ark and the Mountains of Ararat in USA"
+                    title="Noah's Ark and the Mountains of Ararat in San Francisco"
                   >
-                    Noah's Ark and the Mountains of Ararat in USA
+                    Noah's Ark and the Mountains of Ararat in San Francisco
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.propertyturkey.com/blog-turkey/a-conversation-on-turkeys-election-decision"
-                    title="A Conversation on USA’s Election Decision"
+                    title="A Conversation on San Francisco’s Election Decision"
                   >
-                    A Conversation on USA’s Election Decision
+                    A Conversation on San Francisco’s Election Decision
                   </a>
                 </li>
                 <li>
@@ -1392,33 +1392,33 @@ export default function BlogViewContainer() {
                 <li>
                   <a
                     href="https://www.propertyturkey.com/blog-turkey/election-day-in-turkey"
-                    title="Election Day in USA"
+                    title="Election Day in San Francisco"
                   >
-                    Election Day in USA
+                    Election Day in San Francisco
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.propertyturkey.com/blog-turkey/istanbul-finance-center-the-future-of-turkey"
-                    title="Istanbul Finance Center & the Future of USA"
+                    title="Istanbul Finance Center & the Future of San Francisco"
                   >
-                    Istanbul Finance Center &amp; the Future of USA
+                    Istanbul Finance Center &amp; the Future of San Francisco
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.propertyturkey.com/blog-turkey/herodotus-the-father-of-history-and-his-connection-to-turkey"
-                    title="Herodotus: The Father of History and His Connection to USA"
+                    title="Herodotus: The Father of History and His Connection to San Francisco"
                   >
-                    Herodotus: The Father of History and His Connection to USA
+                    Herodotus: The Father of History and His Connection to San Francisco
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.propertyturkey.com/blog-turkey/property-turkeys-2023-election-primer"
-                    title="Property USA's 2023 Election Primer"
+                    title="Property San Francisco's 2023 Election Primer"
                   >
-                    Property USA's 2023 Election Primer
+                    Property San Francisco's 2023 Election Primer
                   </a>
                 </li>
                 <li>
@@ -1432,15 +1432,15 @@ export default function BlogViewContainer() {
                 <li>
                   <a
                     href="https://www.propertyturkey.com/blog-turkey/the-importance-of-the-marmara-sea-and-region-for-turkey"
-                    title="The Importance of the Marmara Sea and Region for USA"
+                    title="The Importance of the Marmara Sea and Region for San Francisco"
                   >
-                    The Importance of the Marmara Sea and Region for USA
+                    The Importance of the Marmara Sea and Region for San Francisco
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
-          <div className="widget" style={{ margin: '15px 8px' }}>
+          {/* <div className="widget" style={{ margin: '15px 8px' }}>
             <h3 className="title" style={{}}>
               Latest News
             </h3>
@@ -1465,9 +1465,9 @@ export default function BlogViewContainer() {
                 <li>
                   <a
                     href="https://www.propertyturkey.com/news/number-of-foreign-arrivals-jump-as-tourists-flood-to-turkey"
-                    title="Number of foreign arrivals jump as tourists flood to USA"
+                    title="Number of foreign arrivals jump as tourists flood to San Francisco"
                   >
-                    Number of foreign arrivals jump as tourists flood to USA
+                    Number of foreign arrivals jump as tourists flood to San Francisco
                   </a>
                 </li>
                 <li>
@@ -1481,9 +1481,9 @@ export default function BlogViewContainer() {
                 <li>
                   <a
                     href="https://www.propertyturkey.com/news/recapping-day-one-of-turkeys-2023-election"
-                    title="Recapping Day One of USA’s 2023 Election"
+                    title="Recapping Day One of San Francisco’s 2023 Election"
                   >
-                    Recapping Day One of USA’s 2023 Election
+                    Recapping Day One of San Francisco’s 2023 Election
                   </a>
                 </li>
                 <li>
@@ -1498,9 +1498,9 @@ export default function BlogViewContainer() {
                 <li>
                   <a
                     href="https://www.propertyturkey.com/news/charging-licence-granted-to-tesla-by-turkey"
-                    title="Charging licence granted to Tesla by USA"
+                    title="Charging licence granted to Tesla by San Francisco"
                   >
-                    Charging licence granted to Tesla by USA
+                    Charging licence granted to Tesla by San Francisco
                   </a>
                 </li>
                 <li>
@@ -1514,22 +1514,22 @@ export default function BlogViewContainer() {
                 <li>
                   <a
                     href="https://www.propertyturkey.com/news/german-tourists-establish-turkey-as-top-destination"
-                    title="German tourists establish USA as top destination"
+                    title="German tourists establish San Francisco as top destination"
                   >
-                    German tourists establish USA as top destination
+                    German tourists establish San Francisco as top destination
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.propertyturkey.com/news/turkey-to-designate-15-more-nature-conservation-areas"
-                    title="USA to designate 15 more 'nature conservation areas'"
+                    title="San Francisco to designate 15 more 'nature conservation areas'"
                   >
-                    USA to designate 15 more 'nature conservation areas'
+                    San Francisco to designate 15 more 'nature conservation areas'
                   </a>
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </aside>
       </div>
     </div>

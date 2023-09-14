@@ -10,26 +10,57 @@ import { toast } from "react-toastify";
 import StyledButton from "../../ReUseAbleComponent/StyledButton";
 
 export default function AdvisorDesk() {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
-
   const [stepVisible, setVisible] = useState(false);
-  const [Phone, setPhone] = useState();
+  const [Phone, setPhone] = useState("");
+  const [location, setLocation] = useState('')
+  const [email, setEmail] = useState('')
+  const [name, setName] = useState('')
+  const [message, setMessage] = useState('')
 
-  const onSubmit = async (data) => {
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    if (!location || !Phone || !name || !message || !email) {
+      toast('Fill all feilds!')
+      return
+    }
     const docRef = await addDoc(collection(db, "AdvisorDesk"), {
-      ...data,
+      location,
       Phone,
-    });
-    console.log("Document written with ID: ", docRef.id);
-    toast("Data Added Successfully!");
+      name, email, message
+    }).then(() => {
+      setLocation('')
+      setName('')
+      setPhone('')
+      setEmail('')
+      setMessage('')
+      setVisible(false)
+      toast("Data Added Successfully!");
+    }).catch(err => {
+      if (err) {
+        toast("Form submission failed!");
+        return
+      }
+    })
+  }
 
-    console.log(data);
-  };
+  // const onSubmit = async (data) => {
+  //   const docRef = await addDoc(collection(db, "AdvisorDesk"), {
+  //     ...data,
+  //     Phone,
+  //   });
+  //   console.log("Document written with ID: ", docRef.id);
+  //   toast("Data Added Successfully!");
+
+  //   console.log(data);
+  // };
+
+  const handleNext = () => {
+    if (!email || !location) {
+      toast('Fill all feilds!')
+      return
+    }
+    setVisible(true)
+  }
 
   const handlePhoneInputChange = (telNumber, selectedCountry) => {
     console.log(telNumber);
@@ -50,24 +81,24 @@ export default function AdvisorDesk() {
                   <br /> Property Adviser
                 </h2>
                 <form
-                  onSubmit={handleSubmit(onSubmit)}
                   className="body w-88"
-                  id="adviser-form"
+                // id="adviser-form"
                 >
                   <div className={`step1 step ${stepVisible ? "hide" : ""}`}>
                     <div className="form-field">
-                      <label>Where are you searching for homes *</label>
+                      <label>Where are you searching for homes*</label>
                       <i className="fa fa-search" aria-hidden="true" />
                       <input
                         type="text"
                         className="typeahead validatehomeform"
                         placeholder="Enter city, address, zip"
-                        {...register("address")}
+                        onChange={(e) => setLocation(e.target.value)}
+                        value={location}
                         required
                       />
                     </div>
                     <div className="form-field field margin-top-2">
-                      <label className="padding-top-xl-05">your e-mail *</label>
+                      <label className="padding-top-xl-05">Your Email*</label>
                       <i className="fa fa-envelope" aria-hidden="true" />
                       <input
                         title="your e-mail *"
@@ -75,9 +106,10 @@ export default function AdvisorDesk() {
                         id="valemail"
                         className="isValidEmail"
                         validation="email"
-                        placeholder="E-mail"
+                        placeholder="Email"
                         name="email"
-                        {...register("Email")}
+                        onChange={(e) => setEmail(e.target.value)}
+                        value={email}
                         required
                       />
                       <span className="validationError">
@@ -86,9 +118,8 @@ export default function AdvisorDesk() {
                     </div>
                     <div
                       className="text-center"
-                      onClick={() => setVisible(true)}
                     >
-                      <StyledButton title={"Next"} width={"50%"} />
+                      <StyledButton title={"Next"} onClick={handleNext} width={"50%"} />
                       {/* <button
                         className="adviser-form--btn"
                         id="adviser-form-step-1"
@@ -99,7 +130,7 @@ export default function AdvisorDesk() {
                   </div>
                   <div className={`step2 step ${stepVisible ? "" : "hide"}`}>
                     <div className="form-field field" id="form-nextstep">
-                      <label>your name *</label>
+                      <label>Your Name*</label>
                       <i style={{ top: "calc(93% - 1.8rem)" }}>
                         <img
                           data-src={UserGold}
@@ -115,12 +146,13 @@ export default function AdvisorDesk() {
                         placeholder="Name"
                         name="name"
                         type="text"
-                        {...register("Name")}
+                        onChange={(e) => setName(e.target.value)}
+                        value={name}
                         required
                       />
                     </div>
                     <div className="form-field field">
-                      <label>Please, write your phone *</label>
+                      <label>Your Phone*</label>
                       <div className="intl-tel-input allow-dropdown">
                         <div className="flag-container">
                           <PhoneComponent
@@ -141,11 +173,13 @@ export default function AdvisorDesk() {
                           type="text"
                           required
                           autoComplete="off"
+                          value={Phone}
+                          onChange={(e) => setPhone(e.target.value)}
                         />
                       </div>
                     </div>
                     <div className="form-field field">
-                      <label>Please, write your message *</label>
+                      <label>Your Message*</label>
                       <textarea
                         title="Please, write your message *"
                         rows={3}
@@ -153,9 +187,9 @@ export default function AdvisorDesk() {
                         placeholder="Message"
                         name="message"
                         cols={50}
-                        defaultValue={""}
+                        value={message}
                         required
-                        {...register("Message")}
+                        onChange={(e) => setMessage(e.target.value)}
                       />
                     </div>
                     <input
@@ -165,11 +199,12 @@ export default function AdvisorDesk() {
                       defaultValue=""
                     />
                     <div className="text-center">
-                      <input
+                      <StyledButton title={'Submit'} size='small' onClick={handleSubmit} />
+                      {/* <input
                         className="adviser-form-submit"
                         type="submit"
                         defaultValue="Send Enquire"
-                      />
+                      /> */}
                     </div>
                   </div>
                 </form>
@@ -201,7 +236,7 @@ export default function AdvisorDesk() {
               ></iframe>
               <div className="card-body text-center" id="insertbefore-youtube">
                 <h2 className="title-lined abhaya bold clr-pt-darkgrey">
-                  Property USA Culture
+                  Property San Francisco Culture
                 </h2>
                 <p className="card-text featuredin-title">
                   Tap into our unique Style and Culture

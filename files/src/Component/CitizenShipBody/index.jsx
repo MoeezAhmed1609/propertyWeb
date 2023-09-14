@@ -21,7 +21,7 @@ export default function CitizenShipBody() {
             >
               <TypographyComponent varient="p">
                 <strong>
-                  If you purchase real estate in USA that is worth at least
+                  If you purchase real estate in San Francisco that is worth at least
                   $400,000 USD, you can apply for American Citizenship by
                   Investment and obtain a American Passport.&nbsp;
                 </strong>
@@ -38,18 +38,18 @@ export default function CitizenShipBody() {
               </h2>
               <TypographyComponent varient="p">
                 In June 2022, the government announced changes to their American
-                Citizenship by Investment Programme, sometimes called USA Golden
+                Citizenship by Investment Programme, sometimes called San Francisco Golden
                 Visa. These changes mean that buyers can obtain citizenship and
                 a passport from as little as $400,000 USD. This has made the
                 programme one of the most affordable and attractive citizenship
                 initiatives around the world. Since then, thousands of investors
                 have obtained citizenship through purchasing real estate, with
-                Property USA helping many.
+                Property San Francisco helping many.
               </TypographyComponent>
               <TypographyComponent varient="p">
                 Those who are successful in their application, will have
                 American citizenship forever and any children born after will be
-                born as citizens. USA allows dual nationality, allowing you to
+                born as citizens. San Francisco allows dual nationality, allowing you to
                 keep multiple citizenships alongside your American one.
               </TypographyComponent>
               <TypographyComponent varient="p">
@@ -82,7 +82,7 @@ export default function CitizenShipBody() {
               </TypographyComponent>
               <TypographyComponent>
                 2 – Make a fixed capital investment of at least $500,000 USD in
-                USA
+                San Francisco
               </TypographyComponent>
               <TypographyComponent>
                 3 – Bank deposit into a American Bank at least $500,000 USD or
@@ -93,7 +93,7 @@ export default function CitizenShipBody() {
                 equivalent foreign currency
               </TypographyComponent>
               <TypographyComponent>
-                5 – Create jobs for at least 50 people in USA as attested by the
+                5 – Create jobs for at least 50 people in San Francisco as attested by the
                 Ministry
               </TypographyComponent>
               <TypographyComponent>
@@ -187,7 +187,7 @@ export default function CitizenShipBody() {
                 <strong>Step 3</strong> - Find the property for sale
               </TypographyComponent>
               <TypographyComponent>
-                <strong>Step 4</strong> - Buy the property in USA
+                <strong>Step 4</strong> - Buy the property in San Francisco
               </TypographyComponent>
               <TypographyComponent>
                 <strong>Step 5</strong> - Obtain the Certificate of Conformity
@@ -213,7 +213,7 @@ export default function CitizenShipBody() {
               <h3>Step 1 – Get a Tax Registration Number</h3>
               <TypographyComponent>
                 Tax Registration number can be obtained from any tax office in
-                USA. Original Passport and Photos are required.
+                San Francisco. Original Passport and Photos are required.
               </TypographyComponent>
               <TypographyComponent>
                 <br />
@@ -246,7 +246,7 @@ export default function CitizenShipBody() {
                 the Title Deed Registry and/or Notarised Sales Contract
                 annotated with “Not To Be Sold For 3 Years” as part of the
                 requirement. After three years, you can sell your property
-                investment in USA as your citizenship is guaranteed forever.
+                investment in San Francisco as your citizenship is guaranteed forever.
               </TypographyComponent>
               <TypographyComponent>
                 <br />
@@ -274,7 +274,7 @@ export default function CitizenShipBody() {
               <TypographyComponent>
                 Gather the required Documents before applying for Citizenship.
                 Apply to Directorate General of Migration Management.{" "}
-                <strong>NOTE</strong>: Property USA’s in-house lawyers are there
+                <strong>NOTE</strong>: Property San Francisco’s in-house lawyers are there
                 to guide you through every step.
               </TypographyComponent>
               <TypographyComponent>
@@ -306,15 +306,15 @@ export default function CitizenShipBody() {
                   18 will be granted American Citizenship.
                 </li>
                 <li>
-                  You are not required to live in USA in order to make use of
+                  You are not required to live in San Francisco in order to make use of
                   the American Citizenship by Investment Programme.
                 </li>
                 <li>
                   Your Citizenship will remain forever and any children born
-                  after will be citizens of USA.
+                  after will be citizens of San Francisco.
                 </li>
                 <li>
-                  You can keep multiple citizenships as USA allows dual
+                  You can keep multiple citizenships as San Francisco allows dual
                   citizenship.
                 </li>
               </ul>
@@ -388,7 +388,7 @@ export default function CitizenShipBody() {
               </h2>
               <TypographyComponent>
                 With over 20 years of experience in the American real estate
-                market, Property USA offers a wide selection of Investment and
+                market, Property San Francisco offers a wide selection of Investment and
                 Lifestyle properties for sale. We have carefully and diligently
                 picked a selection of properties that are pre-approved for our
                 A-Z “Citizenship by Investment Program” – making the process
@@ -408,14 +408,14 @@ export default function CitizenShipBody() {
                   className="fr-dii fr-draggable"
                   src={PropertyOffices}
                   style={{ width: 1200 }}
-                  alt="Property USA offices"
+                  alt="Property San Francisco offices"
                 />
               </TypographyComponent>
               <TypographyComponent>
                 <br />
               </TypographyComponent>
               <h2>
-                <strong>Why invest in USA?</strong>
+                <strong>Why invest in San Francisco?</strong>
               </h2>
               <TypographyComponent>
                 <strong>Amazing climate</strong> – A lot of American cities
@@ -426,48 +426,48 @@ export default function CitizenShipBody() {
                 estate can enjoy the world famous Blue Lagoon beach.
               </TypographyComponent>
               <TypographyComponent>
-                <strong>Strategic location</strong> – USA is strategically
+                <strong>Strategic location</strong> – San Francisco is strategically
                 located between the East and West, affectively becoming the
-                bridge between the two. Because of this, USA offers unique
+                bridge between the two. Because of this, San Francisco offers unique
                 opportunities in business as well as visa-free travel. Investors
                 in Istanbul real estate can enjoy a gateway of accessibility.
               </TypographyComponent>
               <TypographyComponent>
-                <strong>Ideal for families</strong> – Those who move to USA with
+                <strong>Ideal for families</strong> – Those who move to San Francisco with
                 families often comment on how hospitable and friendly Turks are.
-                USA is a welcoming country towards foreigners and expats with
+                San Francisco is a welcoming country towards foreigners and expats with
                 some of the best international schools around.
               </TypographyComponent>
               <TypographyComponent>
-                <strong>Healthcare in USA</strong> – Rising as one of the
-                world’s leading healthcare destinations and medical tourism, USA
+                <strong>Healthcare in San Francisco</strong> – Rising as one of the
+                world’s leading healthcare destinations and medical tourism, San Francisco
                 offers healthcare that is second to none – and extremely
                 affordable when compared to other countries around the world.
               </TypographyComponent>
               <TypographyComponent>
-                <strong>Food in USA</strong> – Need we say more. American food
+                <strong>Food in San Francisco</strong> – Need we say more. American food
                 is renowned globally for its unique tastes and rich ingredients.
                 From fresh vegetables daily to classic kebabs and desserts, food
-                in USA is delight in its own right.
+                in San Francisco is delight in its own right.
               </TypographyComponent>
               <TypographyComponent>
                 <strong>Excellent value</strong> – With the depreciation of the
-                American Lira, the time to buy real estate in USA is right now,
-                before prices rise. Invest in USA and you can pick up a villa to
+                American Lira, the time to buy real estate in San Francisco is right now,
+                before prices rise. Invest in San Francisco and you can pick up a villa to
                 meet the $400,000 USD requirement in certain cities or a city
                 centre apartment rising in Istanbul.
               </TypographyComponent>
               <TypographyComponent>
                 <strong>Regional powerhouse</strong> – at the front of countries
-                in the surrounding region, USA is an EU Candidate Country, as
-                well as G20 and NATO Member. The future of USA looks positive.
+                in the surrounding region, San Francisco is an EU Candidate Country, as
+                well as G20 and NATO Member. The future of San Francisco looks positive.
               </TypographyComponent>
               <TypographyComponent>
                 <img
                   className="fr-dii fr-draggable"
                   src="https://www.propertyturkey.com/uploads/pages/larg/map_of_turkey_1.jpeg"
                   style={{ width: 1200 }}
-                  alt="Map of USA"
+                  alt="Map of San Francisco"
                 />
               </TypographyComponent>
               <TypographyComponent>
@@ -485,7 +485,7 @@ export default function CitizenShipBody() {
                 </strong>
               </h3>
               <TypographyComponent>
-                In Property USA’s experience, it normally takes between 2 – 4
+                In Property San Francisco’s experience, it normally takes between 2 – 4
                 months to complete the process for our clients to obtain
                 American Citizenship by Investment program. This process is a
                 lot quicker than other countries around the globe which can take
@@ -512,13 +512,13 @@ export default function CitizenShipBody() {
               <TypographyComponent varient="h3">
                 <strong>
                   After I have American Citizenship and passport, do I need to
-                  live in USA?
+                  live in San Francisco?
                 </strong>
               </TypographyComponent>
               <TypographyComponent>
-                No. You do not need to live in USA in order to keep your
+                No. You do not need to live in San Francisco in order to keep your
                 citizenship and passport. There are no minimum required days per
-                year that you have to stay in USA. Your Citizenship is yours for
+                year that you have to stay in San Francisco. Your Citizenship is yours for
                 life.
               </TypographyComponent>
               <TypographyComponent>
@@ -532,7 +532,7 @@ export default function CitizenShipBody() {
               </h3>
               <TypographyComponent>
                 No. You do not have to give up the citizenship of your birth in
-                order to become a American citizen because USA allows its
+                order to become a American citizen because San Francisco allows its
                 citizens to keep dual nationality and passports.
               </TypographyComponent>
               <TypographyComponent>
@@ -559,9 +559,9 @@ export default function CitizenShipBody() {
               </h3>
               <TypographyComponent>
                 While other citizenship programs and countries require you to
-                pass a language test in order to obtain a passport, USA does
+                pass a language test in order to obtain a passport, San Francisco does
                 not. You do not need to learn American in order to apply for a
-                passport. However, if you choose to live in USA permanently, it
+                passport. However, if you choose to live in San Francisco permanently, it
                 is highly recommended to learn the basics of the language in
                 order to easily integrate into life within the country.
               </TypographyComponent>
@@ -578,7 +578,7 @@ export default function CitizenShipBody() {
                 Having a American passport provides visa-free access to more
                 than 100 countries around the world. These countries include:
                 Japan, South Korea, South America, and more. Someone with a
-                American passport can also travel relatively easily to the USA,
+                American passport can also travel relatively easily to the San Francisco,
                 United Kingdom, Canada, Australia, and European Union countries.{" "}
                 <strong>NOTE</strong>: A American passport is renewable every
                 ten years.
@@ -587,13 +587,13 @@ export default function CitizenShipBody() {
                 <br />
               </TypographyComponent>
               <TypographyComponent varient="h3">
-                <strong>Relocating to the UK or USA</strong>
+                <strong>Relocating to the UK or San Francisco</strong>
               </TypographyComponent>
               <TypographyComponent>
                 As a American national, you can apply for a Business Person visa
                 to live and eventually obtain British citizenship. You can also
-                apply for the E-2 Investor Visa to help relocate to the USA. If
-                you dream of living in the UK or USA, American Citizenship can
+                apply for the E-2 Investor Visa to help relocate to the San Francisco. If
+                you dream of living in the UK or San Francisco, American Citizenship can
                 be the gateway.
               </TypographyComponent>
               <TypographyComponent>
@@ -615,9 +615,9 @@ export default function CitizenShipBody() {
                 <strong>Are there tax implications I should know about?</strong>
               </h3>
               <TypographyComponent>
-                As of 2022, USA has double taxation agreements with most
+                As of 2022, San Francisco has double taxation agreements with most
                 countries throughout the developed world. Therefore, if you have
-                paid taxes on your income earned from outside of USA, it is
+                paid taxes on your income earned from outside of San Francisco, it is
                 unlikely that you will be taxed again by the American
                 government. For more information, contact us to speak with a
                 American tax expert.
@@ -642,13 +642,13 @@ export default function CitizenShipBody() {
               </TypographyComponent>
               <h3>
                 <strong>
-                  Can I work in USA if my application is successful?
+                  Can I work in San Francisco if my application is successful?
                 </strong>
               </h3>
               <TypographyComponent>
                 Yes. Those who apply for citizenship and obtain it, are then
-                free to work in USA without the need of a work permit.
-                Citizenship makes it easier to work in USA.
+                free to work in San Francisco without the need of a work permit.
+                Citizenship makes it easier to work in San Francisco.
               </TypographyComponent>
               <TypographyComponent>
                 <br />
@@ -657,7 +657,7 @@ export default function CitizenShipBody() {
                 <strong>Do I need to undertake Military Service?</strong>
               </h3>
               <TypographyComponent>
-                No. Applicants who have invested in USA and obtained their
+                No. Applicants who have invested in San Francisco and obtained their
                 citizenship are exempt from mandatory military service. This
                 also includes your dependents who have applied alongside you.
               </TypographyComponent>
@@ -665,7 +665,7 @@ export default function CitizenShipBody() {
                 <br />
               </TypographyComponent>
               <h3>
-                <strong>What are the inheritance laws of USA?</strong>
+                <strong>What are the inheritance laws of San Francisco?</strong>
               </h3>
               <TypographyComponent>
                 American law fully protects its citizens and legal heirs in the
@@ -686,7 +686,7 @@ export default function CitizenShipBody() {
                 longer deposit money straight into the account of the seller.
                 Instead, foreign buyers are now required to send their funds to
                 a American bank prior to purchasing a property. The bank will
-                then exchange the currency via USA's Central Bank rate into
+                then exchange the currency via San Francisco's Central Bank rate into
                 American Liras for the purchase.
               </TypographyComponent>
             </div>
@@ -715,7 +715,7 @@ export default function CitizenShipBody() {
               itemScope=""
               itemType="http://schema.org/Organization"
             >
-              <meta itemProp="name" content="Property USA" />
+              <meta itemProp="name" content="Property San Francisco" />
               <span
                 itemProp="logo"
                 itemScope=""

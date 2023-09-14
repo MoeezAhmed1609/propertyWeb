@@ -94,6 +94,20 @@ export default function About_Turkey__Tag() {
     FransicoCulture();
   }, []);
 
+  // Moeez Ahmed
+  const [link, setLink] = useState('About California')
+  const [index, setIndex] = useState(0)
+  function removewithfilter(arr) {
+    let outputArray = arr.filter(function (v, i, self) {
+
+      // It returns the index of the first
+      // instance of each value
+      return i == self.indexOf(v);
+    });
+
+    return outputArray;
+  }
+
   const ReadData = () => {
     const q = query(collection(db, "Contents"));
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
@@ -105,6 +119,27 @@ export default function About_Turkey__Tag() {
     });
   };
 
+  let keys = []
+  let contents = []
+  ReadContent.map((c) => {
+    if (c.page === 'San Francisco') {
+      keys.push(c.key)
+    }
+  })
+  keys = removewithfilter(keys)
+  ReadContent.map((c) => {
+    keys.map((key) => {
+      if (c.key === key) {
+        contents.push({
+          key,
+          c
+        })
+      }
+    })
+  })
+  // console.log({ keys })
+  console.log({ contents })
+
   useEffect(() => {
     ReadData();
   }, []);
@@ -112,142 +147,53 @@ export default function About_Turkey__Tag() {
   return (
     <>
       <section id="main" className="cf  disable-copy ">
-        <Header title="About Usa" />
+        <Header title="About San Francisco" />
         <Box className="buyer-guide" style={{ backgroundColor: "#f7f5f2" }}>
           <Box className="row">
             <Box className="col-12 col-md-3 buyer-guide--side-bar-bg">
               <Box className="container-fluid">
                 <Typography varient="p" className="buyer-guide--title">
-                  About USA
+                  About San Francisco
                 </Typography>
-                <Box className="padding-top-2 side-item">
-                  <Box className="buyer-guide--supertitle">
-                    <Typography
-                      varient="p"
-                      className="buyer-guide--title-tab"
-                      title="Mediterranean region"
-                    >
-                      About Sen Francisco
-                    </Typography>
-                    {toggleMedditerrian ? (
+                {/* use */}
+                {keys.map((key, i) => (
+                  <Box key={i} className="padding-top-2 side-item">
+                    <Box className="buyer-guide--supertitle">
+                      <Typography
+                        variant="h6"
+                        title="Mediterranean region"
+                        sx={{ color: 'black' }}
+                      >
+                        {key}
+                      </Typography>
                       <FiChevronDown
-                        onClick={() =>
-                          settoggleMedditerrian(!toggleMedditerrian)
+                        onClick={() => {
+                          settoggleMedditerrian(!toggleMedditerrian);
+                          setIndex(i + 1)
                         }
-                        className=" tabs-icon"
-                        aria-hidden="true"
-                      />
-                    ) : (
-                      <FiChevronUp
-                        onClick={() =>
-                          settoggleMedditerrian(!toggleMedditerrian)
                         }
                         className="tabs-icon"
                         aria-hidden="true"
                       />
-                    )}
-                  </Box>
-                  <ul
-                    className={`list-unstyled buyer-guide--ul ${
-                      toggleMedditerrian ? "" : "hide"
-                    }`}
-                  >
-                    <li className="">
-                      <Link title="American Mediterranean Region">
-                        About Sen Francisco Culture
-                      </Link>
-                    </li>
-                    <li className="">
-                      <Link title="History About Sen Francisco">
-                        History About Sen Francisco
-                      </Link>
-                    </li>
-                    <li className="">
-                      <Link title="About Sen Francisco Politics">
-                        About Sen Francisco Politics
-                      </Link>
-                    </li>
-                    <li className="">
-                      <Link title="About Sen Francisco Geography">
-                        About Sen Francisco Geography
-                      </Link>
-                    </li>
-                    {/* {
-                                            ReadContent.map((item) => {
-                                                return (
-                                                    <li className="">
-                                                        <Link title="About Alanya" to={`/${item.id}`}>
-                                                            {item.link}
-                                                        </Link>
-                                                    </li>
-                                                )
-                                            })
-                                        } */}
-                  </ul>
-                </Box>
-                <Box className="padding-top-2 side-item">
-                  <Box className="buyer-guide--supertitle">
-                    <Typography
-                      varient="p"
-                      className="buyer-guide--title-tab"
-                      title="Aegean region"
+                    </Box>
+                    <ul
+                      className={`list-unstyled buyer-guide--ul ${index === i + 1 && toggleMedditerrian ? "" : "hide"
+                        }`}
                     >
-                      About California
-                    </Typography>
-                    {toggleAegean ? (
-                      <FiChevronDown
-                        className="tabs-icon"
-                        onClick={() => settoggleAegean(!toggleAegean)}
-                        aria-hidden="true"
-                      />
-                    ) : (
-                      <FiChevronUp
-                        className="tabs-icon"
-                        onClick={() => settoggleAegean(!toggleAegean)}
-                        aria-hidden="true"
-                      />
-                    )}
+                      {contents.map((data, i) => {
+                        if (data.key === key) {
+                          return (
+                            <li key={i}>
+                              <Link onClick={() => setLink(data.c.link)}>
+                                {data.c.link}
+                              </Link>
+                            </li>
+                          )
+                        }
+                      })}
+                    </ul>
                   </Box>
-                  <ul
-                    className={`list-unstyled buyer-guide--ul ${
-                      toggleAegean ? "" : "hide"
-                    }`}
-                  >
-                    <li className="">
-                      <Link title="California Location’s ">
-                        California Location’s
-                      </Link>
-                    </li>
-
-                    <li className="">
-                      <Link title="California Several Region’s and Areas ">
-                        California Several Region’s and Areas
-                      </Link>
-                    </li>
-
-                    <li className="">
-                      <Link title="California Properties">
-                        California Properties
-                      </Link>
-                    </li>
-
-                    <li className="">
-                      <Link title="California Culture">California Culture</Link>
-                    </li>
-
-                    {/* {
-                                            HandleContent.map((item) => {
-                                                return (
-                                                    <li className="">
-                                                        <Link title="American Aegean region" to={`/${item.id}`}>
-                                                            {item.link}
-                                                        </Link>
-                                                    </li>
-                                                )
-                                            })
-                                        } */}
-                  </ul>
-                </Box>
+                ))}
               </Box>
             </Box>
             <Box className="col-12  col-md-9  buyer-guide--side-bar-bg-details">
@@ -260,7 +206,7 @@ export default function About_Turkey__Tag() {
                 />
                 <article className="page-content">
                   {ReadContent.filter(
-                    (item) => item.link === "About California"
+                    (item) => item.link === link
                   ).map((item) => {
                     return <RawHTMLRenderer html={item.value} />;
                   })}

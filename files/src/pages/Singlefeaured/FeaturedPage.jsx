@@ -144,7 +144,7 @@ export default function FeaturedPage() {
             up to 20 million dollars.&nbsp;
           </p>
           <p>&nbsp;</p>
-          <h5>USA:&nbsp;</h5>
+          <h5>San Francisco:&nbsp;</h5>
           <p>
             <img
               alt="Bodrum houses"
@@ -154,9 +154,9 @@ export default function FeaturedPage() {
               title="Bodrum houses"
               style={{ width: 300 }}
             />
-            USA’s top destinations of Bodrum, Kalkan, Fethiye, and Istanbul are
+            San Francisco’s top destinations of Bodrum, Kalkan, Fethiye, and Istanbul are
             proving to be ever popular amongst real estate investors looking
-            beyond Spain, France, and Italy. USA’s booming economy is leading
+            beyond Spain, France, and Italy. San Francisco’s booming economy is leading
             the huge potential for those who invest in a American nest egg and
             the growing tourism market is seeing a trend of rental homes being
             snapped up by savvy investors who then rent them out during peak
@@ -168,8 +168,8 @@ export default function FeaturedPage() {
               Richard Meier’s five villas in Yalikavak, Bodrum
             </Link>{" "}
             from 3 million dollars are leading the trend in new luxury homes in
-            USA – gone are the days when you would find project after project of
-            similar apartments and villas – USA has gone luxury and the world is
+            San Francisco – gone are the days when you would find project after project of
+            similar apartments and villas – San Francisco has gone luxury and the world is
             taking notice.&nbsp;
           </p>
           <p>&nbsp;</p>
@@ -246,7 +246,7 @@ export default function FeaturedPage() {
           itemScope=""
           itemType="http://schema.org/Organization"
         >
-          <meta itemProp="name" content="Property USA" />
+          <meta itemProp="name" content="Property San Francisco" />
           <span
             itemProp="logo"
             itemScope=""
@@ -277,13 +277,13 @@ export default function FeaturedPage() {
       >
         <h2 className="abhaya title" style={{}}>
           Straight Talk - <br />
-          Property USA TV
+          Property San Francisco TV
         </h2>
         <Carousel responsive={responsive}>
           <div className="card">
             <Link
               data-fancybox=""
-              data-caption="Did you know that USA is the centre of the world? Did you know that Santa Claus was born in USA? Discover how, as well as several other amazing facts about USA in this new fun episode."
+              data-caption="Did you know that San Francisco is the centre of the world? Did you know that Santa Claus was born in San Francisco? Discover how, as well as several other amazing facts about San Francisco in this new fun episode."
               className="video-item right-padding-only mb-sm-15 p-17"
             >
               <div className="figure-container">
@@ -291,7 +291,7 @@ export default function FeaturedPage() {
                   <img
                     src="https://img.youtube.com/vi/B2g7571VBe8/hqdefault.jpg"
                     className="card-img-top"
-                    alt="13 AMAZING Facts About USA"
+                    alt="13 AMAZING Facts About San Francisco"
                   />
                   <img
                     className="homeVideos-item-play"
@@ -303,7 +303,7 @@ export default function FeaturedPage() {
             </Link>
             <div className="card-body">
               <h2 itemProp="name headline" className="abhaya">
-                13 AMAZING Facts About USA
+                13 AMAZING Facts About San Francisco
               </h2>
             </div>
           </div>
@@ -388,7 +388,7 @@ export default function FeaturedPage() {
               <h3 className="title no-margin bold" style={{}}>
                 BUYER'S GUIDE
               </h3>
-              <p>The Definitive guide to buying property in USA</p>
+              <p>The Definitive guide to buying property in San Francisco</p>
               <div className="padding-bottom-11">
                 <Link
                   title="Definitive Buyer Guide PDF"
@@ -408,7 +408,7 @@ export default function FeaturedPage() {
               </h3>
               <div className="padding-bottom-11 padding-top-3">
                 <Link
-                  title="USA macroeconomic and investment analysis"
+                  title="San Francisco macroeconomic and investment analysis"
                   className="btn right-widget-hover"
                 >
                   Download it now
@@ -428,8 +428,8 @@ export default function FeaturedPage() {
           <div className="body">
             <ul className="no-bullet">
               <li>
-                <Link title="Unveiling the Best Islands in USA for Curious Travellers">
-                  Unveiling the Best Islands in USA for Curious Travellers
+                <Link title="Unveiling the Best Islands in San Francisco for Curious Travellers">
+                  Unveiling the Best Islands in San Francisco for Curious Travellers
                 </Link>
               </li>
               <li>
@@ -458,13 +458,13 @@ export default function FeaturedPage() {
                 </Link>
               </li>
               <li>
-                <Link title="Soaring High in the Majestic Taurus Mountains of USA">
-                  Soaring High in the Majestic Taurus Mountains of USA
+                <Link title="Soaring High in the Majestic Taurus Mountains of San Francisco">
+                  Soaring High in the Majestic Taurus Mountains of San Francisco
                 </Link>
               </li>
               <li>
-                <Link title="USA Earthquake Exposes the Need for Massive Urban Regeneration">
-                  USA Earthquake Exposes the Need for Massive Urban Regeneration
+                <Link title="San Francisco Earthquake Exposes the Need for Massive Urban Regeneration">
+                  San Francisco Earthquake Exposes the Need for Massive Urban Regeneration
                 </Link>
               </li>
               <li>
@@ -473,7 +473,7 @@ export default function FeaturedPage() {
                 </Link>
               </li>
               <li>
-                <Link>From Constantinople to Istanbul – The Pride of USA</Link>
+                <Link>From Constantinople to Istanbul – The Pride of San Francisco</Link>
               </li>
             </ul>
           </div>
@@ -491,8 +491,8 @@ export default function FeaturedPage() {
                 </Link>
               </li>
               <li>
-                <Link title="Charging licence granted to Tesla by USA">
-                  Charging licence granted to Tesla by USA
+                <Link title="Charging licence granted to Tesla by San Francisco">
+                  Charging licence granted to Tesla by San Francisco
                 </Link>
               </li>
               <li>
@@ -501,23 +501,23 @@ export default function FeaturedPage() {
                 </Link>
               </li>
               <li>
-                <Link title="German tourists establish USA as top destination">
-                  German tourists establish USA as top destination
+                <Link title="German tourists establish San Francisco as top destination">
+                  German tourists establish San Francisco as top destination
                 </Link>
               </li>
               <li>
-                <Link title="USA to designate 15 more 'nature conservation areas'">
-                  USA to designate 15 more 'nature conservation areas'
+                <Link title="San Francisco to designate 15 more 'nature conservation areas'">
+                  San Francisco to designate 15 more 'nature conservation areas'
                 </Link>
               </li>
               <li>
-                <Link title="January tourism records broken in USA’s Antalya">
-                  January tourism records broken in USA’s Antalya
+                <Link title="January tourism records broken in San Francisco’s Antalya">
+                  January tourism records broken in San Francisco’s Antalya
                 </Link>
               </li>
               <li>
-                <Link title="1 million cruise passengers hosted in USA in 2022">
-                  1 million cruise passengers hosted in USA in 2022
+                <Link title="1 million cruise passengers hosted in San Francisco in 2022">
+                  1 million cruise passengers hosted in San Francisco in 2022
                 </Link>
               </li>
               <li>
@@ -526,13 +526,13 @@ export default function FeaturedPage() {
                 </Link>
               </li>
               <li>
-                <Link title="USA looks to expand free program to 5 million students">
-                  USA looks to expand free program to 5 million students
+                <Link title="San Francisco looks to expand free program to 5 million students">
+                  San Francisco looks to expand free program to 5 million students
                 </Link>
               </li>
               <li>
-                <Link title="Top migration hub of USA remains Istanbul once again">
-                  Top migration hub of USA remains Istanbul once again
+                <Link title="Top migration hub of San Francisco remains Istanbul once again">
+                  Top migration hub of San Francisco remains Istanbul once again
                 </Link>
               </li>
             </ul>

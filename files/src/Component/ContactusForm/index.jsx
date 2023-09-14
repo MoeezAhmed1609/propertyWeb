@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./ContactusForm.css";
 import { db } from "../../Config";
-import { addDoc, collection } from "firebase/firestore";
+import { setDoc, doc } from "firebase/firestore";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { BsMap } from "react-icons/bs";
@@ -10,6 +10,7 @@ import { ContactPageData } from "../../Data/ContactPageData";
 import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 import StyledButton from "../../ReUseAbleComponent/StyledButton";
+import { v4 } from "uuid";
 
 export default function ContactusForm() {
   const user = useSelector((state) => state.AuthReducer.login);
@@ -34,34 +35,36 @@ export default function ContactusForm() {
   // console.log(Phone);
   // console.log(Email);
   // console.log(selectedValue);
+  console.log({ user })
 
   const HandleSubmit = async (e) => {
     e.preventDefault();
-
     // Add a new document with a generated id.
-    if (user.uid === null) {
+    if (!user) {
       return toast("Please Login First");
     }
-
     if (Name === "" || Phone === "" || Email === "" || selectedValue === "") {
       return toast("Filled All the fields to proceed further");
     }
-
-    const docRef = await addDoc(collection(db, "Contact__Form"), {
-      id: user.uid,
+    const id = v4()
+    const docRef = await setDoc(doc(db, "Contact__Form", id), {
+      user: user.uid,
       name: Name,
       phone: Phone,
       Email,
       Subject: selectedValue,
       Message,
+      id,
+      status: 'pending'
     }).then(() => {
       setName("")
       setPhone("")
       setEmail("")
       setMessage("")
-      console.log("Document written with ID: ", docRef.id);
       toast("Form Submitted Successfully");
-      window.location.reload()
+      // window.location.reload()
+    }).catch((err) => {
+      console.log(err)
     })
 
   };
@@ -129,6 +132,7 @@ export default function ContactusForm() {
               name="email"
               onChange={(e) => HandleEmailCheck(e.target.value)}
               type="email"
+              value={Email}
               validation="email"
               required
             />
@@ -139,6 +143,8 @@ export default function ContactusForm() {
               name="subject"
               className="subject hidden-field"
               onChange={(event) => setSelectedValue(event.target.value)}
+              value={selectedValue}
+              style={{ WebkitAppearance: "listbox" }}
             >
               <option value="Support">Support</option>
               <option value="Sales">Sales</option>
@@ -154,6 +160,7 @@ export default function ContactusForm() {
               rows={4}
               required
               style={{ height: "170px" }}
+              value={Message}
             />
           </label>
           <input
@@ -184,7 +191,7 @@ export default function ContactusForm() {
                 <b>
                   <Link
                     to=""
-                    title="Property USA UK Head Office"
+                    title="Property San Francisco UK Head Office"
                     className="flex gap-2"
                     style={{ alignItems: "center" }}
                   >

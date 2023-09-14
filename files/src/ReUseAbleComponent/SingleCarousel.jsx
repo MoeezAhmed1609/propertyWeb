@@ -39,7 +39,7 @@ const CarouselPreviousFilter = () => {
     <Box display="flex">
       <h2 className="abhaya title" style={{}}>
         Straight Talk - <br />
-        Property USA TV
+        Property San Francisco TV
       </h2>
       <Box display={'flex'} marginTop={5}>
         <Box onClick={CarouselNextFilter}>
@@ -67,7 +67,7 @@ const CarouselPreviousFilter = () => {
               <Box className="card">
                 <Link
                   data-fancybox=""
-                  data-caption="Did you know that USA is the centre of the world? Did you know that Santa Claus was born in Turkey? Discover how, as well as several other amazing facts about USA in this new fun episode."
+                  data-caption="Did you know that San Francisco is the centre of the world? Did you know that Santa Claus was born in Turkey? Discover how, as well as several other amazing facts about San Francisco in this new fun episode."
                   to="https://www.youtube.com/watch?v=B2g7571VBe8"
                   className="video-item right-padding-only mb-sm-15 p-17"
                 >
@@ -76,7 +76,7 @@ const CarouselPreviousFilter = () => {
                       <img
                         src={item.img}
                         className="card-img-top"
-                        alt="13 AMAZING Facts About USA"
+                        alt="13 AMAZING Facts About San Francisco"
                       />
                       <Image
                         className="homeVideos-item-play"

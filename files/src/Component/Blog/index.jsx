@@ -63,7 +63,7 @@ export default function Blog({ blogs }) {
       }}
     >
       <Grid container sx={{ width: "100%", height: "100%" }}>
-        <Grid item xs={12} sm={12} md={8}>
+        <Grid item xs={12} sm={12} md={12}>
           <Grid item xs={12} sx={{ display: "flex", alignItems: "flex-end" }}>
             <Typography
               variant="h5"
@@ -87,12 +87,12 @@ export default function Blog({ blogs }) {
             </Typography>
           </Grid>
           <Grid container>
-            {blogs.slice(0, 4)?.map((blog, i) => (
+            {blogs.slice(0, 6)?.map((blog, i) => (
               <Grid
                 item
                 xs={12}
-                sm={12}
-                md={6}
+                sm={6}
+                md={4}
                 sx={{ padding: "10px" }}
                 key={i}
               >
@@ -283,7 +283,8 @@ export default function Blog({ blogs }) {
             </Modal>
           </Grid>
         </Grid>
-        <Grid item xs={12} sm={12} md={4}>
+        {/* News */}
+        {/* <Grid item xs={12} sm={12} md={4}>
           <Grid item xs={12} sx={{ display: "flex", alignItems: "flex-end" }}>
             <Typography
               variant="h5"
@@ -362,7 +363,7 @@ export default function Blog({ blogs }) {
               <StyledButton title={"View All"} size="small" />
             </Link>
           </Grid>
-        </Grid>
+        </Grid> */}
       </Grid>
     </Box>
     // <section id="featured-latest" className="my-10">
@@ -510,38 +511,38 @@ export default function Blog({ blogs }) {
     //       </h2>
     //       <div className="col-dis-12 col-mob-12 right-padding-only">
     //         <Link
-    //           title="USA  to designate 15 more 'nature conservation areas'"
+    //           title="San Francisco  to designate 15 more 'nature conservation areas'"
     //           className="featured-box blog-item w-tab-502"
     //         >
     //           <figure className="col-dis-3 col-tab-3 col-mob-12">
     //             <Image
     //               data-src="https://www.propertyturkey.com/files/istanbul-national-park-turkey.jpg"
     //               className=" lazyloaded"
-    //               alt="USA  to designate 15 more 'nature conservation areas'"
+    //               alt="San Francisco  to designate 15 more 'nature conservation areas'"
     //               src={IstanbulPark}
     //             />
     //           </figure>
     //           <h2 itemProp="name headline">
-    //             USA to designate 15 more 'nature conservation areas'
+    //             San Francisco to designate 15 more 'nature conservation areas'
     //             <span>04 Mar 2023</span>
     //           </h2>
     //         </Link>
     //       </div>
     //       <div className="col-dis-12 col-mob-12 right-padding-only">
     //         <Link
-    //           title="January tourism records broken in USA ’s Antalya"
+    //           title="January tourism records broken in San Francisco ’s Antalya"
     //           className="featured-box blog-item w-tab-502"
     //         >
     //           <figure className="col-dis-3 col-tab-3 col-mob-12">
     //             <Image
     //               data-src="https://www.propertyturkey.com/files/antalya-duden-waterfalls-turkey_1677949063.jpg"
     //               className=" lazyloaded"
-    //               alt="January tourism records broken in USA ’s Antalya"
+    //               alt="January tourism records broken in San Francisco ’s Antalya"
     //               src={AnatylaDuden}
     //             />
     //           </figure>
     //           <h2 itemProp="name headline">
-    //             January tourism records broken in USA ’s Antalya
+    //             January tourism records broken in San Francisco ’s Antalya
     //             <span>04 Mar 2023</span>
     //           </h2>
     //         </Link>

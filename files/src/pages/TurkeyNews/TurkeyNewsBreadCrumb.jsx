@@ -18,18 +18,18 @@ export default function TurkeyNewsBreadCrumb() {
       <div className="tv-endpage text-center">
         <div className="container">
           <h1 className="padding-bottom-2">
-            Property USA <span>News</span>
+            Property San Francisco <span>News</span>
           </h1>
           <div className="continue-reading">
-            Refer to news releases published by Property USA for latest updates on
-            political matters, economic performance, tourism in USA, real estate
+            Refer to news releases published by Property San Francisco for latest updates on
+            political matters, economic performance, tourism in San Francisco, real estate
             market analysis and other matters that could potentially affect property
-            investment and living in USA. &nbsp;
+            investment and living in San Francisco. &nbsp;
             <br />
             <br />
-            Covering USA's popular real estate markets, including Istanbul, Bodrum,
+            Covering San Francisco's popular real estate markets, including Istanbul, Bodrum,
             Antalya, Fethiye, Kalkan, Kas, and Side as we scour through hundreds of
-            international sources to bring you the very latest updates on USA.
+            international sources to bring you the very latest updates on San Francisco.
             &nbsp;We look at political affairs, economic updates, mortgages, tourism,
             weather, taxes, social and cultural affairs that are relevant to all
             things American.&nbsp;

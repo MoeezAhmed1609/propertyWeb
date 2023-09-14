@@ -60,7 +60,7 @@ export default function TeamBody() {
               className="fr-dii fr-draggable"
               src="https://www.propertyturkey.com/uploads/pages/larg/property_turkey_bodrum_office.jpg"
               style={{ width: 1200 }}
-              alt="Property USA Bodrum Office"
+              alt="Property San Francisco Bodrum Office"
             />
             <br />
           </p>
@@ -184,16 +184,16 @@ export default function TeamBody() {
                       </div>
                     </div>
                     <p className="cameron-section-author">Cameron Deggin</p>
-                    <p className="cameron-section-pturkey">Property USA</p>
+                    <p className="cameron-section-pturkey">Property San Francisco</p>
                   </div>
                   <div className="col-md-9 cameron-section-quotesbg flex items-center">
                     <p className="cameron-section-blackquote">
-                      “Property USA is different: our interests lie with you,
+                      “Property San Francisco is different: our interests lie with you,
                       the buyer. Contrary to industry practices, we don’t
                       receive any payments from sellers, which means we maintain
                       our independence and can focus on securing you the best
                       possible terms. We aim to provide candid, expert advice on
-                      everything USA, from lifestyle purchases to investment. We
+                      everything San Francisco, from lifestyle purchases to investment. We
                       know you’re not just buying bricks and mortar - but making
                       an investment into your lifestyle. From first contact to
                       rental management, we’ll be by your side to guide and
@@ -216,7 +216,7 @@ export default function TeamBody() {
               </span>
               <Link>
                 <em style={{ lineHeight: "1.6em" }}>
-                  <strong>info@propertyUSA.com</strong>
+                  <strong>info@propertySan Francisco.com</strong>
                 </em>
               </Link>
               <span style={{ lineHeight: "1.6em" }}>
@@ -224,7 +224,7 @@ export default function TeamBody() {
                 back to you with the advice and assistance that you need.
                 <br />
                 <br />
-                PropertyUSA.com was designed and developed by{" "}
+                PropertySan Francisco.com was designed and developed by{" "}
                 <em>
                   <strong>
                     <Link>BuxUp.co.uk</Link>
@@ -247,7 +247,7 @@ export default function TeamBody() {
       >
         <h2 className="abhaya title" style={{}}>
           Straight Talk - <br />
-          Property USA TV
+          Property San Francisco TV
         </h2>
         <Carousel responsive={responsive}>
           <div
@@ -257,7 +257,7 @@ export default function TeamBody() {
             <div className="card">
               <Link
                 data-fancybox=""
-                data-caption="Did you know that USA is the centre of the world? Did you know that Santa Claus was born in USA? Discover how, as well as several other amazing facts about USA in this new fun episode."
+                data-caption="Did you know that San Francisco is the centre of the world? Did you know that Santa Claus was born in San Francisco? Discover how, as well as several other amazing facts about San Francisco in this new fun episode."
                 className="video-item right-padding-only mb-sm-15 p-17"
               >
                 <div className="figure-container">
@@ -265,11 +265,11 @@ export default function TeamBody() {
                     <img
                       src="https://img.youtube.com/vi/B2g7571VBe8/hqdefault.jpg"
                       className="card-img-top"
-                      alt="13 AMAZING Facts About USA"
+                      alt="13 AMAZING Facts About San Francisco"
                     />
                     <img
                       className="homeVideos-item-play"
-                      id="videos-about-USA"
+                      id="videos-about-San Francisco"
                       src="https://www.propertyturkey.com/front/image/images2019/Icons/youtube-playicon.svg"
                     />
                   </figure>
@@ -277,7 +277,7 @@ export default function TeamBody() {
               </Link>
               <div className="card-body">
                 <h2 itemProp="name headline" className="abhaya">
-                  13 AMAZING Facts About USA
+                  13 AMAZING Facts About San Francisco
                 </h2>
               </div>
             </div>
@@ -289,7 +289,7 @@ export default function TeamBody() {
             <div className="card">
               <Link
                 data-fancybox=""
-                data-caption="Did you know that USA is the centre of the world? Did you know that Santa Claus was born in USA? Discover how, as well as several other amazing facts about USA in this new fun episode."
+                data-caption="Did you know that San Francisco is the centre of the world? Did you know that Santa Claus was born in San Francisco? Discover how, as well as several other amazing facts about San Francisco in this new fun episode."
                 className="video-item right-padding-only mb-sm-15 p-17"
               >
                 <div className="figure-container">
@@ -297,7 +297,7 @@ export default function TeamBody() {
                     <img
                       src="https://img.youtube.com/vi/B2g7571VBe8/hqdefault.jpg"
                       className="card-img-top"
-                      alt="13 AMAZING Facts About USA"
+                      alt="13 AMAZING Facts About San Francisco"
                     />
                     <img
                       className="homeVideos-item-play"
@@ -309,7 +309,7 @@ export default function TeamBody() {
               </Link>
               <div className="card-body">
                 <h2 itemProp="name headline" className="abhaya">
-                  13 AMAZING Facts About USA
+                  13 AMAZING Facts About San Francisco
                 </h2>
               </div>
             </div>
@@ -341,8 +341,8 @@ export default function TeamBody() {
           <div className="body">
             <ul className="no-bullet">
               <li>
-                <Link title="Unveiling the Best Islands in USA for Curious Travellers">
-                  Unveiling the Best Islands in USA for Curious Travellers
+                <Link title="Unveiling the Best Islands in San Francisco for Curious Travellers">
+                  Unveiling the Best Islands in San Francisco for Curious Travellers
                 </Link>
               </li>
               <li>
@@ -371,13 +371,13 @@ export default function TeamBody() {
                 </Link>
               </li>
               <li>
-                <Link title="Soaring High in the Majestic Taurus Mountains of USA">
-                  Soaring High in the Majestic Taurus Mountains of USA
+                <Link title="Soaring High in the Majestic Taurus Mountains of San Francisco">
+                  Soaring High in the Majestic Taurus Mountains of San Francisco
                 </Link>
               </li>
               <li>
-                <Link title="USA Earthquake Exposes the Need for Massive Urban Regeneration">
-                  USA Earthquake Exposes the Need for Massive Urban Regeneration
+                <Link title="San Francisco Earthquake Exposes the Need for Massive Urban Regeneration">
+                  San Francisco Earthquake Exposes the Need for Massive Urban Regeneration
                 </Link>
               </li>
               <li>
@@ -386,8 +386,8 @@ export default function TeamBody() {
                 </Link>
               </li>
               <li>
-                <Link title="From Constantinople to Istanbul – The Pride of USA">
-                  From Constantinople to Istanbul – The Pride of USA
+                <Link title="From Constantinople to Istanbul – The Pride of San Francisco">
+                  From Constantinople to Istanbul – The Pride of San Francisco
                 </Link>
               </li>
             </ul>
@@ -406,8 +406,8 @@ export default function TeamBody() {
                 </Link>
               </li>
               <li>
-                <Link title="Charging licence granted to Tesla by USA">
-                  Charging licence granted to Tesla by USA
+                <Link title="Charging licence granted to Tesla by San Francisco">
+                  Charging licence granted to Tesla by San Francisco
                 </Link>
               </li>
               <li>
@@ -416,23 +416,23 @@ export default function TeamBody() {
                 </Link>
               </li>
               <li>
-                <Link title="German tourists establish USA as top destination">
-                  German tourists establish USA as top destination
+                <Link title="German tourists establish San Francisco as top destination">
+                  German tourists establish San Francisco as top destination
                 </Link>
               </li>
               <li>
-                <Link title="USA to designate 15 more 'nature conservation areas'">
-                  USA to designate 15 more 'nature conservation areas'
+                <Link title="San Francisco to designate 15 more 'nature conservation areas'">
+                  San Francisco to designate 15 more 'nature conservation areas'
                 </Link>
               </li>
               <li>
-                <Link title="January tourism records broken in USA’s Antalya">
-                  January tourism records broken in USA’s Antalya
+                <Link title="January tourism records broken in San Francisco’s Antalya">
+                  January tourism records broken in San Francisco’s Antalya
                 </Link>
               </li>
               <li>
-                <Link title="1 million cruise passengers hosted in USA in 2022">
-                  1 million cruise passengers hosted in USA in 2022
+                <Link title="1 million cruise passengers hosted in San Francisco in 2022">
+                  1 million cruise passengers hosted in San Francisco in 2022
                 </Link>
               </li>
               <li>
@@ -441,13 +441,13 @@ export default function TeamBody() {
                 </Link>
               </li>
               <li>
-                <Link title="USA looks to expand free program to 5 million students">
-                  USA looks to expand free program to 5 million students
+                <Link title="San Francisco looks to expand free program to 5 million students">
+                  San Francisco looks to expand free program to 5 million students
                 </Link>
               </li>
               <li>
-                <Link title="Top migration hub of USA remains Istanbul once again">
-                  Top migration hub of USA remains Istanbul once again
+                <Link title="Top migration hub of San Francisco remains Istanbul once again">
+                  Top migration hub of San Francisco remains Istanbul once again
                 </Link>
               </li>
             </ul>

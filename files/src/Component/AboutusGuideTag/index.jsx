@@ -155,7 +155,7 @@ export default function AboutusGuideTag({ title }) {
                 </h4>
                 <p>
                   To be the most trusted reference for lifestyle and investment
-                  property in USA.
+                  property in San Francisco.
                 </p>
                 <p>
                   <br />
@@ -174,7 +174,7 @@ export default function AboutusGuideTag({ title }) {
                   </span>
                 </h4>
                 <p>
-                  To open up USA's lifestyle and investment opportunities to a
+                  To open up San Francisco's lifestyle and investment opportunities to a
                   global audience.&nbsp;
                 </p>
                 <p>
@@ -185,11 +185,11 @@ export default function AboutusGuideTag({ title }) {
                   <br />
                 </p>
                 <h2 style={{ textAlign: "left" }}>
-                  <strong>The Property USA Difference</strong>
+                  <strong>The Property San Francisco Difference</strong>
                 </h2>
                 <p>
                   With 20+ years experience in the American real estate market,
-                  team Property USA are your experienced, friendly, and
+                  team Property San Francisco are your experienced, friendly, and
                   independent overseas real estate consultants. Our head office
                   is located in London, UK with regional operational offices
                   in:&nbsp;
@@ -219,15 +219,15 @@ export default function AboutusGuideTag({ title }) {
                   &nbsp;
                 </p>
                 <p>
-                  For us buying a property in USA is not about buying 'bricks
+                  For us buying a property in San Francisco is not about buying 'bricks
                   and mortar' but about 'lifestyle and investment'.
                 </p>
                 <p>
                   <Image
-                    alt="Property USA"
+                    alt="Property San Francisco"
                     className="fr-image-dropped fr-fin fr-dib fr-draggable"
                     src={Turkey1}
-                    title="Property USA"
+                    title="Property San Francisco"
                     style={{ width: 1200 }}
                   />
                 </p>
@@ -239,12 +239,12 @@ export default function AboutusGuideTag({ title }) {
                 </h2>
                 <p>
                   In the crowded field of American investment and property,
-                  Property USA stands head and shoulders above the rest. Our
+                  Property San Francisco stands head and shoulders above the rest. Our
                   success in American real estate and investment over the past
                   20+ years has cemented our position as industry leaders and
                   experts. Client-focused, knowledgeable and thorough, we’re
                   simply the most effective investment consultants for property
-                  in USA.
+                  in San Francisco.
                 </p>
                 <p>
                   <br />
@@ -276,10 +276,10 @@ export default function AboutusGuideTag({ title }) {
                 />
                 <p>
                   <img
-                    alt="Offices in London and USA"
+                    alt="Offices in London and San Francisco"
                     className="fr-fin fr-dib fr-draggable"
                     src={Offices1}
-                    title="Offices in London and USA"
+                    title="Offices in London and San Francisco"
                     style={{ width: 1200 }}
                   />
                 </p>
@@ -287,10 +287,10 @@ export default function AboutusGuideTag({ title }) {
                   <br />
                 </p>
                 <h2>
-                  <strong>The Property USA Experience</strong>
+                  <strong>The Property San Francisco Experience</strong>
                 </h2>
                 <DescriptionContent
-                  text=" Property USA does not use agents or intermediaries. Each regional
+                  text=" Property San Francisco does not use agents or intermediaries. Each regional
                 office is staffed by our very own trained consultants. As well as
                 keeping prices down for our clients, this strategy means service
                 quality stays high, wherever you are: our clients receive the same
@@ -299,10 +299,10 @@ export default function AboutusGuideTag({ title }) {
 
                 <p>
                   <img
-                    alt="The property USA experience"
+                    alt="The property San Francisco experience"
                     className="fr-fin fr-dib fr-draggable"
                     src={Middlemen}
-                    title="The property USA experience"
+                    title="The property San Francisco experience"
                     style={{ width: 1200 }}
                   />
                 </p>
@@ -341,18 +341,18 @@ export default function AboutusGuideTag({ title }) {
                             Cameron Deggin
                           </p>
                           <p className="cameron-section-pturkey">
-                            Property USA
+                            Property San Francisco
                           </p>
                         </Box>
                         <Box className="col-md-9 cameron-section-quotesbg flex items-center">
                           <DescriptionContent
                             className="cameron-section-blackquote"
-                            text="“Property USA is different: our interests lie with you,
+                            text="“Property San Francisco is different: our interests lie with you,
                           the buyer. Contrary to industry practices, we don’t
                           receive any payments from sellers, which means we maintain
                           our independence and can focus on securing you the best
                           possible terms. We aim to provide candid, expert advice on
-                          everything USA, from lifestyle purchases to investment.
+                          everything San Francisco, from lifestyle purchases to investment.
                           We know you’re not just buying bricks and mortar - but
                           making an investment into your lifestyle. From first
                           contact to rental management, we’ll be by your side to
@@ -373,9 +373,9 @@ export default function AboutusGuideTag({ title }) {
                     <span style={{ lineHeight: "1.6em" }}>
                       &nbsp;or via email&nbsp;
                     </span>
-                    <Link to="mailto:info@propertyUSA.com">
+                    <Link to="mailto:info@propertySan Francisco.com">
                       <em style={{ lineHeight: "1.6em" }}>
-                        <strong>info@propertyUSA.com</strong>
+                        <strong>info@propertySan Francisco.com</strong>
                       </em>
                     </Link>
                     <span style={{ lineHeight: "1.6em" }}>
@@ -384,7 +384,7 @@ export default function AboutusGuideTag({ title }) {
                       need.
                       <br />
                       <br />
-                      USA.com was designed and developed by{" "}
+                      San Francisco.com was designed and developed by{" "}
                       <em>
                         <strong>
                           <Link to="">BuxUp.co.uk</Link>
@@ -414,7 +414,7 @@ export default function AboutusGuideTag({ title }) {
                     <h3 className="title no-margin bold" style={{}}>
                       BUYER'S GUIDE
                     </h3>
-                    <p>The Definitive guide to buying property in USA</p>
+                    <p>The Definitive guide to buying property in San Francisco</p>
                     <Box className="padding-bottom-11">
                       <Link
                         to="/buyer-guide/definitive-buyer-guide-pdf"
@@ -441,7 +441,7 @@ export default function AboutusGuideTag({ title }) {
                   src={Logo}
                   width={80}
                   className="img-fluid lazyload"
-                  alt="Property USA"
+                  alt="Property San Francisco"
                 />{" "}
               </Box>
               <h3 className="margin-bottom-3 margin-top-1">

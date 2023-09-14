@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { PhoneTelData } from '../../Data'
-import USA from "../../assets/Flags/usa.png"
+import San Francisco from "../../assets/Flags/usa.png"
 import UK from "../../assets/Flags/uk.png"
 import IntlTelInput from 'react-intl-tel-input';
 import 'react-intl-tel-input/dist/main.css';

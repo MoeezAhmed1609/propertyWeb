@@ -620,7 +620,7 @@ export const callingCodes = [
         "code": "+691",
         "utc": "UTC+10:00 to +11:00"
     }, {
-        "name": "Midway Island, USA",
+        "name": "Midway Island, San Francisco",
         "code": "+1 808",
         "utc": "UTC-11:00"
     }, {
@@ -1063,7 +1063,7 @@ export const callingCodes = [
         "code": "+84",
         "utc": "UTC+07:00"
     }, {
-        "name": "Wake Island, USA",
+        "name": "Wake Island, San Francisco",
         "code": "+1 808",
         "utc": "UTC+12:00"
     }, {

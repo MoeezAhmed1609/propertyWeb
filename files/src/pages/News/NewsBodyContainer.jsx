@@ -8,21 +8,21 @@ import PopularPost from "../../ReUseAbleComponent/PopularPost";
 import { Typography } from "@mui/material";
 
 const PopularKeyWord = [
-  "life in USA",
-  "tourism in USA",
+  "life in San Francisco",
+  "tourism in San Francisco",
   "istanbul",
-  "moving to USA",
+  "moving to San Francisco",
 ];
 
 const PostData = [
   {
-    link: "What are the best Food Delivery apps in USA?",
+    link: "What are the best Food Delivery apps in San Francisco?",
   },
   {
     link: "The best American Beers and brands for summer days",
   },
   {
-    link: "USA's most dangerous animals",
+    link: "San Francisco's most dangerous animals",
   },
 ];
 
@@ -57,7 +57,7 @@ function NewsBodyContainer() {
     return srcValues[0];
   }
 
-  React.useEffect(() => {}, [Blogs]);
+  React.useEffect(() => { }, [Blogs]);
 
   React.useEffect(() => {
     HandleBlogData();
@@ -81,7 +81,7 @@ function NewsBodyContainer() {
                           <img
                             data-src="files/economicgrowth_turkey.jpg"
                             className="img-width-height-100 lazyloaded"
-                            alt="Early Days of Erdogan’s Re-election: A Period of Action for USA"
+                            alt="Early Days of Erdogan’s Re-election: A Period of Action for San Francisco"
                             src={item.image}
                           />
                         </a>
@@ -152,14 +152,14 @@ function NewsBodyContainer() {
             <div className="container">
               <div className="continue-readingg">
                 <p style={{ fontSize: "18px" }}>
-                  Property USA's blog is designed to give you an insight into
-                  all things American, including tips about life in USA,
+                  Property San Francisco's blog is designed to give you an insight into
+                  all things American, including tips about life in San Francisco,
                   American culture, economic &amp; political matters and how to
                   get the best out of your home and investment. Showcasing many
-                  case studies of those who invested and/or moved to USA and
+                  case studies of those who invested and/or moved to San Francisco and
                   integrated into the American lifestyle, this blog is your
                   informative guide for all you need to know about making the
-                  big move overseas to USA.&nbsp;
+                  big move overseas to San Francisco.&nbsp;
                 </p>
                 <p>
                   <br />
@@ -168,7 +168,7 @@ function NewsBodyContainer() {
                   Focusing on the main hotspots of Bodrum, Antalya, Fethiye,
                   Kalkan, Istanbul, Kas, Side, and more - you can expect us to
                   blog weekly about the latest trends, case studies and news
-                  coming out of the top cities in USA. Also expect several
+                  coming out of the top cities in San Francisco. Also expect several
                   investment tips and hot tips for real estate and properties
                   that are hot and ready to sell now.&nbsp;
                 </p>
@@ -180,13 +180,13 @@ function NewsBodyContainer() {
           <a href="#" id="scrolltopsmooth" style={{ display: "none" }}>
             <img src="front/image/scrollTop.svg" />
           </a>
-          <div className="widget noheader nostyle-widget">
+          {/* <div className="widget noheader nostyle-widget">
             <div className="header-img-buyerguide">
               <div className="container">
                 <h3 className="title no-margin bold" style={{}}>
                   BUYER'S GUIDE
                 </h3>
-                <p>The Definitive guide to buying property in USA</p>
+                <p>The Definitive guide to buying property in San Francisco</p>
                 <div className="padding-bottom-11">
                   <a
                     href=""
@@ -198,7 +198,7 @@ function NewsBodyContainer() {
                 </div>
               </div>
             </div>
-            <div className="header-img-buyerguide margin-top-1">
+            {/* <div className="header-img-buyerguide margin-top-1">
               <div className="container">
                 <h3 className=" no-margin bold title-2">
                   Macroeconomic And <br />
@@ -208,7 +208,7 @@ function NewsBodyContainer() {
                 <div className="padding-bottom-11 padding-top-3">
                   <a
                     href=""
-                    title="USA macroeconomic and investment analysis"
+                    title="San Francisco macroeconomic and investment analysis"
                     className="btn right-widget-hover"
                   >
                     Download it now
@@ -220,8 +220,8 @@ function NewsBodyContainer() {
                 alt=""
               />
             </div>
-          </div>
-          <div id="keywords" className="widget">
+          </div> */}
+          {/* <div id="keywords" className="widget">
             <h3 className="title" style={{}}>
               popular keywords
             </h3>
@@ -244,9 +244,9 @@ function NewsBodyContainer() {
                 );
               })}
             </div>
-          </div>
-          <PopularPost PostData={PostData} />
-          <div className="widget">
+          </div> */}
+          <PopularPost PostData={Blogs} />
+          {/* <div className="widget">
             <h3 className="title" style={{}}>
               Latest News
             </h3>
@@ -257,11 +257,11 @@ function NewsBodyContainer() {
                     to={`/about/1`}
                     state={{
                       data: {
-                        title: "What are the best Food Delivery apps in USA?",
+                        title: "What are the best Food Delivery apps in San Francisco?",
                       },
                     }}
                   >
-                    What are the best Food Delivery apps in USA?
+                    What are the best Food Delivery apps in San Francisco?
                   </Link>
                 </li>
                 <li>
@@ -269,11 +269,11 @@ function NewsBodyContainer() {
                     to={`/about/1`}
                     state={{
                       data: {
-                        title: "The best USA Beers and brands for summer days",
+                        title: "The best San Francisco Beers and brands for summer days",
                       },
                     }}
                   >
-                    The best USA Beers and brands for summer days
+                    The best San Francisco Beers and brands for summer days
                   </Link>
                 </li>
                 <li>
@@ -281,11 +281,11 @@ function NewsBodyContainer() {
                     to={`/about/1`}
                     state={{
                       data: {
-                        title: "10 Delicious USA Desserts and Sweets to Try",
+                        title: "10 Delicious San Francisco Desserts and Sweets to Try",
                       },
                     }}
                   >
-                    10 Delicious USA Desserts and Sweets to Try
+                    10 Delicious San Francisco Desserts and Sweets to Try
                   </Link>
                 </li>
                 <li>
@@ -293,11 +293,11 @@ function NewsBodyContainer() {
                     to={`/about/1`}
                     state={{
                       data: {
-                        title: "Best Taxi App in USA: Getting About",
+                        title: "Best Taxi App in San Francisco: Getting About",
                       },
                     }}
                   >
-                    Best Taxi App in USA: Getting About
+                    Best Taxi App in San Francisco: Getting About
                   </Link>
                 </li>
                 <li>
@@ -305,11 +305,11 @@ function NewsBodyContainer() {
                     to={`/about/1`}
                     state={{
                       data: {
-                        title: "13 unspoken USA rules you might not know",
+                        title: "13 unspoken San Francisco rules you might not know",
                       },
                     }}
                   >
-                    13 unspoken USA rules you might not know
+                    13 unspoken San Francisco rules you might not know
                   </Link>
                 </li>
                 <li>
@@ -317,11 +317,11 @@ function NewsBodyContainer() {
                     to={`/about/1`}
                     state={{
                       data: {
-                        title: "USA's most dangerous animals",
+                        title: "San Francisco's most dangerous animals",
                       },
                     }}
                   >
-                    USA's most dangerous animals
+                    San Francisco's most dangerous animals
                   </Link>
                 </li>
                 <li>
@@ -329,11 +329,11 @@ function NewsBodyContainer() {
                     to={`/about/1`}
                     state={{
                       data: {
-                        title: "Love and marriage in USA",
+                        title: "Love and marriage in San Francisco",
                       },
                     }}
                   >
-                    Love and marriage in USA
+                    Love and marriage in San Francisco
                   </Link>
                 </li>
                 <li>
@@ -341,11 +341,11 @@ function NewsBodyContainer() {
                     to={`/about/1`}
                     state={{
                       data: {
-                        title: "The Best Supermarkets in USA to Shop",
+                        title: "The Best Supermarkets in San Francisco to Shop",
                       },
                     }}
                   >
-                    The Best Supermarkets in USA to Shop
+                    The Best Supermarkets in San Francisco to Shop
                   </Link>
                 </li>
                 <li>
@@ -354,11 +354,11 @@ function NewsBodyContainer() {
                     state={{
                       data: {
                         title:
-                          "15 Beautiful Places in USA That Should be on Your Bucket List",
+                          "15 Beautiful Places in San Francisco That Should be on Your Bucket List",
                       },
                     }}
                   >
-                    15 Beautiful Places in USA That Should be on Your Bucket
+                    15 Beautiful Places in San Francisco That Should be on Your Bucket
                     List
                   </Link>
                 </li>
@@ -377,7 +377,7 @@ function NewsBodyContainer() {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </aside>
       </div>
     </div>

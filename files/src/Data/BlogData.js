@@ -31,7 +31,7 @@ export const BlogData = [
     
     {
         id:uuidv4(),
-        title:'USA to designate 15 more nature conversation areas',
+        title:'San Francisco to designate 15 more nature conversation areas',
         date:'04 Mar 2023',
         img:IstanbulAtNight
     },

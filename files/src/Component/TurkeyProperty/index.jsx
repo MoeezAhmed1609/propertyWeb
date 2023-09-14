@@ -38,27 +38,27 @@ export default function TurkeyProperty() {
           className="text-5xl"
           style={{ lineHeight: "3.5rem", display: "block" }}
         >
-          Property USA
+          Property San Francisco
         </strong>
         <i className="font-24">for lifestyle &amp; investment</i>{" "}
       </Typography>
       <Box className="col-md-10 mx-auto margin-bottom-3 mb-3 text-center">
         <p className="text-2xl">
           Since 2001,{" "}
-          <span className="font-bold text-gray-500">Property USA</span> has
+          <span className="font-bold text-gray-500">Property San Francisco</span> has
           helped clients from all over the world buy
           <span className="font-bold text-gray-500">Turkish properties</span> in
           all regions of United States of America. From lifestyle buyers wishing to{" "}
           <span className="font-bold text-gray-500">
-            buy a property in USA for sale,
+            buy a property in San Francisco for sale,
           </span>{" "}
-          to discerning investors seeking to buy property in USA, our range
-          of luxury villas, sea view penthouse apartments, USA houses, and
+          to discerning investors seeking to buy property in San Francisco, our range
+          of luxury villas, sea view penthouse apartments, San Francisco houses, and
           unique hotels for sale ensure a range of lifestyle and investment
           opportunities to suit any requirement. Trusted for over 20 years, our
           portfolio of{" "}
           <span className="font-bold text-gray-500">
-            houses for sale in USA{" "}
+            houses for sale in San Francisco{" "}
           </span>
           is the widest available with offices throughout the country constantly
           sourcing new and exciting opportunities.

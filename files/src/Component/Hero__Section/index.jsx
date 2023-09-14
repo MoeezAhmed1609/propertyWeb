@@ -1,6 +1,6 @@
 import React from "react";
 import "./Index.css";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Tabs, Tab } from "@mui/material";
 import ConnecPt from "./ConnecPt";
 import { Link, useNavigate } from "react-router-dom";
 import Image from "../../ReUseAbleComponent/Image";
@@ -31,6 +31,7 @@ import { useEffect } from "react";
 import { PropertyFilter } from "../../Redux/Action/PropertyFilter";
 import ColumnBox from "../../ReUseAbleComponent/ColumnBox";
 import StyledButton from "../../ReUseAbleComponent/StyledButton";
+import CloseIcon from '@mui/icons-material/Close';
 
 export default function HeroSection() {
   const [locationtoggle, setLocationToggle] = React.useState(true);
@@ -124,7 +125,7 @@ export default function HeroSection() {
 
   const IstanbulInfo = () => {
     setIndex(1);
-    setcityKey("California");
+    setcityKey("San Francisco");
     setlocationToggleName("Area");
 
     const cities = cityToggle.filter((item) => item.key === cityKey);
@@ -132,29 +133,29 @@ export default function HeroSection() {
   };
 
   const BodrumInfo = () => {
-    setcityKey("California");
+    setcityKey("San Francisco");
     setIndex(2);
     setlocationToggleName("Area");
   };
   const AnatalyaInfo = () => {
-    setcityKey("California");
+    setcityKey("San Francisco");
     setIndex(3);
     setlocationToggleName("Area");
   };
 
   const BursaInfo = () => {
     setIndex(4);
-    setcityKey("California");
+    setcityKey("San Francisco");
     setlocationToggleName("Area");
   };
   const FethiyaInfo = () => {
     setIndex(5);
-    setcityKey("California");
+    setcityKey("San Francisco");
     setlocationToggleName("Area");
   };
 
   const BrowseAll = () => {
-    setcityKey("California");
+    setcityKey("San Francisco");
     setlocationToggleName("location");
     setIndex(0);
   };
@@ -231,93 +232,28 @@ export default function HeroSection() {
                 src="https://www.propertyturkey.com/front/image/home/tab-backgrounds/bg-tab-mobile-1.jpg"
               />
               <NavTab>
-                <li className="nav-item">
-                  <Button
-                    className="nav-link px-lg-4 px-2 rounded-0 active"
-                    data-target="#tab-1"
-                    type="button"
-                    onClick={BrowseAll}
-                  >
-                    <AiOutlineSearch />
-                    <span className="ps-md-3 ps-0 fs-5 fw-bold text-uppercase d-md-inline d-none">
-                      browse
-                    </span>
-                    <span className="ps-md-3 ps-0 fs-5 fw-bold text-uppercase d-md-inline d-none">
-                      All
-                    </span>
-                  </Button>
-                </li>
-                <li className="nav-item">
-                  <button
-                    className="nav-link px-lg-4 px-2 rounded-0"
-                    data-target="#tab-2"
-                    type="button"
-                    onClick={IstanbulInfo}
-                  >
-                    <Image src={IstanbulIcon} className="text-[#fff]" />
-                    <span className="ps-md-1 ps-0 fs-6 fw-bold text-uppercase">
-                      California
-                    </span>
-                  </button>
-                </li>
-                <li className="nav-item">
-                  <Button
-                    className="nav-link px-lg-4 px-2 rounded-0"
-                    data-target="#tab-3"
-                    type="button"
-                    onClick={BodrumInfo}
-                  >
-                    <GiCargoShip />
-                    <span className="ps-md-3 ps-0 fs-5 fw-bold text-uppercase">
-                      San Fransisco
-                    </span>
-                  </Button>
-                </li>
-                {/* <li className="nav-item mt-0">
-                  <button
-                    className="nav-link px-lg-4 px-2 rounded-0"
-                    data-target="#tab-4"
-                    type="button"
-                    onClick={AnatalyaInfo}
-                  >
-                    <FaHelicopter />
-                    <span className="ps-md-3 ps-0 fs-5 fw-bold text-uppercase">
-                      Arizona
-                    </span>
-                  </button>
-                </li>
-                <li className="nav-item">
-                  <Button
-                    className="nav-link px-lg-4 px-2 rounded-0"
-                    data-target="#tab-5"
-                    type="button"
-                    onClick={BursaInfo}
-                  >
-                    <GiCargoShip />
-                    <span className="ps-md-3 ps-0 fs-5 fw-bold text-uppercase">
-                      Florida
-                    </span>
-                  </Button>
-                </li>
-                <li className="nav-item me-0">
-                  <button
-                    className="nav-link px-lg-4 px-2 rounded-0"
-                    data-target="#tab-6"
-                    type="button"
-                    onClick={FethiyaInfo}
-                  >
-                    <img
-                      src={FethiyaIcon}
-                      width={40}
-                      height={40}
-                      loading="lazy"
-                      alt="fethiye icon"
-                    />
-                    <span className="ps-md-3 ps-0 fs-5 fw-bold text-uppercase">
-                      Georgia
-                    </span>
-                  </button>
-                </li> */}
+                <Tabs
+                  value={index}
+                  onChange={(e, newValue) => setIndex(newValue)}
+                  variant="scrollable"
+                  scrollButtons
+                  allowScrollButtonsMobile
+                  aria-label="scrollable force tabs example"
+                  sx={{ background: 'white' }}
+                >
+                  <Tab label="Browse All" sx={{ fontSize: '14px', fontWeight: 'bold' }} />
+                  <Tab label="Alameda" sx={{ fontSize: '14px', fontWeight: 'bold' }} />
+                  <Tab label="Contra Costa" sx={{ fontSize: '14px', fontWeight: 'bold' }} />
+                  <Tab label="Marine" sx={{ fontSize: '14px', fontWeight: 'bold' }} />
+                  <Tab label="Napa" sx={{ fontSize: '14px', fontWeight: 'bold' }} />
+                  <Tab label="San Francisco" sx={{ fontSize: '14px', fontWeight: 'bold' }} />
+                  <Tab label="San Mateo" sx={{ fontSize: '14px', fontWeight: 'bold' }} />
+                  <Tab label="Santa Clara" sx={{ fontSize: '14px', fontWeight: 'bold' }} />
+                  <Tab label="Santa Cruz" sx={{ fontSize: '14px', fontWeight: 'bold' }} />
+                  <Tab label="Solano" sx={{ fontSize: '14px', fontWeight: 'bold' }} />
+                  <Tab label="Sonoma" sx={{ fontSize: '14px', fontWeight: 'bold' }} />
+                </Tabs>
+
               </NavTab>
               <Box
                 className="w-100 bg-pt-off-white p-4 showRefId"
@@ -431,8 +367,17 @@ export default function HeroSection() {
 
                         <p
                           className={`block mb-0 font-black absolute bottom-0 text-sm`}
+                          style={{ display: 'flex' }}
                         >
                           {CityData}
+                          {CityData && (
+                            <span style={{ paddingLeft: "4px" }} onClick={() => {
+                              setCity("");
+                              setCityData("")
+                            }}>
+                              <CloseIcon sx={{ fontSize: '16px' }} />
+                            </span>
+                          )}
                         </p>
                       </span>
                       <Box
@@ -515,7 +460,16 @@ export default function HeroSection() {
                         >
                           Type
                         </p>
-                        <p className="absolute -bottom-4 text-sm">{TypeData}</p>
+                        {TypeData && (
+                          <p className="absolute -bottom-4 text-sm">{TypeData}
+                            <span style={{ paddingLeft: "4px" }} onClick={() => {
+                              setType("");
+                              setTypeData("")
+                            }}>
+                              <CloseIcon sx={{ fontSize: '16px' }} />
+                            </span>
+                          </p>
+                        )}
                       </span>
                       <div
                         className="search-filter-input-title relative"
@@ -566,9 +520,19 @@ export default function HeroSection() {
                         >
                           Price
                         </p>
-                        <p className="absolute text-sm">
-                          {minimumPriceValue}-{maximumPriceValue}
-                        </p>
+                        {minimumPriceValue && maximumPriceValue && (
+                          <p className="absolute text-sm">
+                            {minimumPriceValue}-{maximumPriceValue}
+                            <span style={{ paddingLeft: "4px" }} onClick={() => {
+                              setmimumPriceValue("");
+                              setmaximumPrice("")
+                              setMiniPrice("")
+                              setMaxPrice("")
+                            }}>
+                              <CloseIcon sx={{ fontSize: '16px' }} />
+                            </span>
+                          </p>
+                        )}
 
                         <Box className="priceValues">
                           <i className="search-filter-input-value minPriceValue" />
@@ -985,9 +949,18 @@ export default function HeroSection() {
                         >
                           Bedroom
                         </p>
-                        <p className="absolute -bottom-4 text-sm">
-                          {BedroomData}
-                        </p>
+                        {BedroomData && (
+                          <p className="absolute -bottom-4 text-sm">
+                            {BedroomData}
+                            <span style={{ paddingLeft: "4px" }} onClick={() => {
+                              setBedroom("")
+                              seBedroomData("")
+                            }}>
+                              <CloseIcon sx={{ fontSize: '16px' }} />
+                            </span>
+                          </p>
+                        )}
+
                       </span>
                       <Box
                         className="search-filter-input-title relative"
@@ -1063,9 +1036,17 @@ export default function HeroSection() {
                         >
                           Zip Code
                         </p>
-                        <p className={`absolute top-5 text-md`}>
-                          {HandleZipInput}
-                        </p>
+                        {HandleZipInput && (
+                          <p className={`absolute top-5 text-md`}>
+                            {HandleZipInput}
+                            <span style={{ paddingLeft: "4px" }} onClick={() => {
+                              setHandleZipInput("")
+                            }}>
+                              <CloseIcon sx={{ fontSize: '16px' }} />
+                            </span>
+                          </p>
+                        )}
+
                       </span>
                       <Box
                         className="search-filter-input-title relative"

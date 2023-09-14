@@ -8,8 +8,8 @@ import BuyerGuide from "../../assets/buyer-guide-banner-690x60.jpg"
 
 const contentData = [
   {
-    title: "Why invest in property in USA",
-    description: " USA economy has gone from strength to strength and the country is now one of the world’s top emerging economies. Thanks to stable inflation rates, favourable lending rates, a high GDP and a young, property-hungry population, investor confidence isat an all time high. Istanbul real estate and Mediterraneanproperty in USA is now some of the most sought-after in thenorthern hemisphere.",
+    title: "Why invest in property in San Francisco",
+    description: " San Francisco economy has gone from strength to strength and the country is now one of the world’s top emerging economies. Thanks to stable inflation rates, favourable lending rates, a high GDP and a young, property-hungry population, investor confidence isat an all time high. Istanbul real estate and Mediterraneanproperty in San Francisco is now some of the most sought-after in thenorthern hemisphere.",
     link: ""
   },
 
@@ -21,11 +21,11 @@ export default function ArticleBuyerGuide() {
     <article className="page-content">
       <div className="areabody clearfix" itemProp="articleBody">
         <p>
-          At Property USA, we get a lot of questions. In our buyer
+          At Property San Francisco, we get a lot of questions. In our buyer
           guide, we hope to provide you with the answers to your most
           common queries. We've compiled all the necessary information and
           guidance to help you make an informed decision about life in
-          USA, purchasing real estate, legal matters, USA's
+          San Francisco, purchasing real estate, legal matters, San Francisco's
           investment climate and many other relevant subjects.
         </p>
         <p>
@@ -37,15 +37,15 @@ export default function ArticleBuyerGuide() {
           <br />
         </p>
         <h2>
-          <strong>Why invest in property in USA</strong>
+          <strong>Why invest in property in San Francisco</strong>
         </h2>
         <p>
-          USA economy has gone from strength to strength and the
+          San Francisco economy has gone from strength to strength and the
           country is now one of the world’s top emerging economies. Thanks
           to stable inflation rates, favourable lending rates, a high GDP
           and a young, property-hungry population, investor confidence is
           at an all time high. Istanbul real estate and Mediterranean
-          property in USA is now some of the most sought-after in the
+          property in San Francisco is now some of the most sought-after in the
           northern hemisphere.{" "}
           <Link >
             Read more.
@@ -56,14 +56,14 @@ export default function ArticleBuyerGuide() {
             className="fr-dii fr-draggable"
             src={FethiyaWhiteHouse}
             style={{ width: 1200 }}
-            alt="Property in USA"
+            alt="Property in San Francisco"
           />
         </p>
         <p>
           <br />
         </p>
         <h2>
-          <strong>How to buy property in USA</strong>
+          <strong>How to buy property in San Francisco</strong>
         </h2>
         <p>
           Faced with growing numbers of overseas buyers, the Turkish
@@ -72,7 +72,7 @@ export default function ArticleBuyerGuide() {
           before to buy a home in , it’s best to be armed with the
           latest up-to-date information to guide you through the steps
           you’ll need to take to buy property in an unfamiliar country.
-          Our step-by-step guide to buying real estate in USA lays out
+          Our step-by-step guide to buying real estate in San Francisco lays out
           exactly what you’ll need to do to ensure your purchase goes
           without a hitch.{" "}
           <Link >
@@ -84,13 +84,13 @@ export default function ArticleBuyerGuide() {
           <br />
         </p>
         <h2>
-          <strong>Who Can Buy Property in USA</strong>
+          <strong>Who Can Buy Property in San Francisco</strong>
         </h2>
         <p>
           Turkish real estate is now available to the citizens of more
           countries than ever before. Thanks to a game-changing amendment
           to legislation which lifted restrictions and increased the
-          number of nationalities who can now buy homes in USA to 129.
+          number of nationalities who can now buy homes in San Francisco to 129.
           The relaxed laws have prompted an increase in overseas buyers of
           property.{" "}
           <Link >
@@ -123,7 +123,7 @@ export default function ArticleBuyerGuide() {
           <br />
         </p>
         <h2>
-          <strong>Citizenship by investment in USA</strong>
+          <strong>Citizenship by investment in San Francisco</strong>
         </h2>
         <p>
           With every purchase of a $250,000 property, foreign buyers are
@@ -144,7 +144,7 @@ export default function ArticleBuyerGuide() {
           <strong>Turkish Title Deeds (TAPU) - essential reading</strong>
         </h2>
         <p>
-          A Turkish title deed, known in USA as a TAPU, is an important
+          A Turkish title deed, known in San Francisco as a TAPU, is an important
           document denoting ownership of the property. Turkish title deeds
           include information about both the property itself and the
           owner. They are supplied, registered, and archived by the Tapu
@@ -164,7 +164,7 @@ export default function ArticleBuyerGuide() {
         <h2>
           <strong>
             <span style={{ fontSize: 13 }}>
-              Managing &amp; maintaining your new home in USA and
+              Managing &amp; maintaining your new home in San Francisco and
               associated fees
             </span>
           </strong>
@@ -179,7 +179,7 @@ export default function ArticleBuyerGuide() {
             appreciates in value, whereas a poorly maintained property,
             like any other asset, will lose its value faster than you can
             imagine. Good news is that management &amp; maintenance of
-            holiday homes in USA is not expensive. You can appoint
+            holiday homes in San Francisco is not expensive. You can appoint
             professional management companies that will provide necessary
             services from as low as Euro 600 per annum for apartments,{" "}
             <Link >
@@ -191,16 +191,16 @@ export default function ArticleBuyerGuide() {
           <br />
         </p>
         <h2>
-          <strong>Buying property in USA through a company</strong>
+          <strong>Buying property in San Francisco through a company</strong>
         </h2>
         <p>
           A number of people choose to buy a Turkish property through a
           foreign company due to certain advantages, while others take
-          this route if they’re not from one of USA recognised
+          this route if they’re not from one of San Francisco recognised
           reciprocal countries. Either way, if you choose to take this
           option you’ll need to carefully consider the steps you’ll need
           to take and the implications of operating a limited liability
-          company in USA. Read our guide for more information.{" "}
+          company in San Francisco. Read our guide for more information.{" "}
           <Link >
             Read more.
           </Link>
@@ -211,17 +211,17 @@ export default function ArticleBuyerGuide() {
         </p>
         <h2>
           <strong>
-            Should I use a solicitor to buy property in USA
+            Should I use a solicitor to buy property in San Francisco
           </strong>
         </h2>
         <p>
           Most people who find themselves victims of property scams in
-          USA could’ve avoided financial stress and ruin by simply
+          San Francisco could’ve avoided financial stress and ruin by simply
           hiring a solicitor. Employing a reputable solicitor not only
           saves you time and eases the way towards completing your
           property purchase, it helps you avoid the pitfalls many buyers
           fall into. Read our guide and discover the full advantages of
-          hiring a solicitor in USA and how to find a reputable
+          hiring a solicitor in San Francisco and how to find a reputable
           professional.{" "}
           <Link >
             Read more.
@@ -231,7 +231,7 @@ export default function ArticleBuyerGuide() {
           <br />
         </p>
         <h2>
-          <strong>Power of Attorney in USA</strong>
+          <strong>Power of Attorney in San Francisco</strong>
         </h2>
         <p>
           To complete the property buying process from your home country,
@@ -249,15 +249,15 @@ export default function ArticleBuyerGuide() {
           <br />
         </p>
         <h2>
-          <strong>Finance for property in USA</strong>
+          <strong>Finance for property in San Francisco</strong>
         </h2>
         <p>
           As long as you have a good credit history and a proof of income,
-          financial help to buy property in USA is available for home
+          financial help to buy property in San Francisco is available for home
           buyers. With a minimum 30% deposit and meet the minimum criteria
           you’ll be eligible for finance provided by major European
           financial institutions. Read our guide to financing property in
-          USA and then contact us to discover whether you’re eligible
+          San Francisco and then contact us to discover whether you’re eligible
           for finance.{" "}
           <Link >
             Read more.
@@ -267,12 +267,12 @@ export default function ArticleBuyerGuide() {
           <br />
         </p>
         <h2>
-          <strong>Residency permits in USA</strong>
+          <strong>Residency permits in San Francisco</strong>
         </h2>
         <p>
           As part of the government’s bid to ease the buying process for
           overseas property buyers, Turkish home buyers are now granted an
-          automatic year-long residence permit in USA. After your
+          automatic year-long residence permit in San Francisco. After your
           initial year is completed you can renew your permit and obtain a
           permit lasting as long as five years. The process to obtain a
           residency permit is relatively straightforward. Read our guide
@@ -287,11 +287,11 @@ export default function ArticleBuyerGuide() {
           <br />
         </p>
         <h2>
-          <strong>Work permits in USA</strong>
+          <strong>Work permits in San Francisco</strong>
         </h2>
         <p>
           All foreigners must obtain a work permit if they wish to work in
-          USA. Your company will need to sponsor your work permit, and
+          San Francisco. Your company will need to sponsor your work permit, and
           it’s possible to get the ball rolling while you’re still at
           home. Read more to discover the process by which a work permit
           is obtained - as well as which jobs and professions are
@@ -304,10 +304,10 @@ export default function ArticleBuyerGuide() {
           <br />
         </p>
         <h2>
-          <strong>How to set up a business in USA</strong>
+          <strong>How to set up a business in San Francisco</strong>
         </h2>
         <p>
-          USA is attracting large amounts of foreign investment and
+          San Francisco is attracting large amounts of foreign investment and
           growing numbers of entrepreneurs are combining their Turkish
           home purchase with new business ventures. Setting up a business
           in a new country can be tricky and you’ll need to do your
@@ -324,15 +324,15 @@ export default function ArticleBuyerGuide() {
           <br />
         </p>
         <h2>
-          <strong>Bringing your pets into USA</strong>
+          <strong>Bringing your pets into San Francisco</strong>
         </h2>
         <p>
-          Bringing your beloved pet to USA is easier than you think.
+          Bringing your beloved pet to San Francisco is easier than you think.
           Providing Rex or Fluffy have had up-to-date vaccinations and a
           pet passport or identification card, you’ll find importing your
-          cat or dog to USA a simple and painless process. Read our
+          cat or dog to San Francisco a simple and painless process. Read our
           guide to find out more about the process of importing animals to
-          USA, as well as a few handy tips on dealing with airlines and
+          San Francisco, as well as a few handy tips on dealing with airlines and
           what equipment you’ll need.{" "}
           <Link >
             Read more.
@@ -342,16 +342,16 @@ export default function ArticleBuyerGuide() {
           <br />
         </p>
         <h2>
-          <strong>Bringing your car into USA</strong>
+          <strong>Bringing your car into San Francisco</strong>
         </h2>
         <p>
-          Cars are considered a luxury item in USA and costs of
+          Cars are considered a luxury item in San Francisco and costs of
           vehicles, fuel and road tax can reach eye-watering proportions,
           costing around three times the amount you’re paying back home.
           Many overseas property buyers think they can drive their cars to
-          USA from their home country for use in USA. However, this
+          San Francisco from their home country for use in San Francisco. However, this
           is generally not the case. Read our guide and weigh up the pros
-          and cons of buying a car in USA or importing one from home.{" "}
+          and cons of buying a car in San Francisco or importing one from home.{" "}
           <Link >
             Read more.
           </Link>
@@ -367,9 +367,9 @@ export default function ArticleBuyerGuide() {
           If you’re buying Turkish real estate you’ll need at least a
           working knowledge on Turkish income tax laws, and how they apply
           to you as a foreign buyer. If you’re setting up a business in
-          USA or planning to earn rental income from your property it’s
+          San Francisco or planning to earn rental income from your property it’s
           essential you have some understanding of tax law. Our guide
-          explains the different categories of tax in USA and breaks
+          explains the different categories of tax in San Francisco and breaks
           down the laws pertaining to property income tax in easily
           digestible pieces.{" "}
           <Link >
@@ -398,12 +398,12 @@ export default function ArticleBuyerGuide() {
           <br />
         </p>
         <h2>
-          <strong>VAT exemption when buying property in USA</strong>
+          <strong>VAT exemption when buying property in San Francisco</strong>
         </h2>
         <p>
-          Value Added Tax (VAT - known in USA as Katma Deger Vergisi)
+          Value Added Tax (VAT - known in San Francisco as Katma Deger Vergisi)
           can be a considerable expense for foreign investors when buying
-          in USA. However, at the time of writing (May 2020), there is
+          in San Francisco. However, at the time of writing (May 2020), there is
           a concession in place that means foreigners do NOT have to pay
           VAT on their Turkish real estate investments.{" "}
           <Link
@@ -422,7 +422,7 @@ export default function ArticleBuyerGuide() {
         </h2>
         <p>
           A Turkish property inspection trip is a chance for you to not
-          only find your dream home, but to discover if USA’s culture
+          only find your dream home, but to discover if San Francisco’s culture
           and way of life is suitable for you and your family. We’ll help
           you to explore the local area and introduce you to the best
           possible properties for your budget. Our insider knowledge and
@@ -439,7 +439,7 @@ export default function ArticleBuyerGuide() {
             className="fr-dii fr-draggable"
             src={Fethiya}
             style={{ width: 1200 }}
-            alt="Meet us in USA"
+            alt="Meet us in San Francisco"
           />
         </p>
         <p>
@@ -469,7 +469,7 @@ export default function ArticleBuyerGuide() {
             className="fr-dii fr-draggable"
             src={VirtualProperty}
             style={{ width: 1200 }}
-            alt="Virtual tours with Property USA"
+            alt="Virtual tours with Property San Francisco"
           />
         </p>
         <p>
@@ -478,14 +478,14 @@ export default function ArticleBuyerGuide() {
         <p>
           Clicking through to the pages, you will find relevant and up to
           date information on questions you might be asking yourself
-          before deciding whether you want to buy a home in USA.
+          before deciding whether you want to buy a home in San Francisco.
         </p>
         <p>
           With the Turkish real estate market ever expanding and growing
           at an impressive rate, the amount of foreign nationals looking
-          to purchase in USA today is more than ever before. USA’s
+          to purchase in San Francisco today is more than ever before. San Francisco’s
           star is rising, and rising fast. Time has never been better to
-          invest in USA, and we are here to help you do just that in
+          invest in San Francisco, and we are here to help you do just that in
           the safest and most feasible way possible.
         </p>
         <p>

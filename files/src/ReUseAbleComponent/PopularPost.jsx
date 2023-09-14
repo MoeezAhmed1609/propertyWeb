@@ -8,18 +8,18 @@ export default function PopularPost({ PostData }) {
       </h3>
       <div className="body">
         <ul className="no-bullet">
-          {PostData.map((item) => {
+          {PostData.slice(0, 12).map((item) => {
             return (
               <li>
                 <Link
-                  to={`/about/1`}
+                  to={`/blog/${item.id}`}
                   state={{
                     data: {
-                      title: item.link,
+                      title: item.title,
                     },
                   }}
                 >
-                  {item.link}
+                  {item.title}
                 </Link>
               </li>
             );

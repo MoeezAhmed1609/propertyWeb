@@ -8,7 +8,7 @@ export default function CityGuide({ data }) {
       <div className="row">
         <div className="col-12 col-md-3 buyer-guide--side-bar-bg">
           <div className="container-fluid">
-            <p className="buyer-guide--title"> About USA</p>
+            <p className="buyer-guide--title"> About San Francisco</p>
             <div className="padding-top-2 side-item">
               <div className="buyer-guide--supertitle">
                 <p
@@ -298,7 +298,7 @@ export default function CityGuide({ data }) {
                     href="https://www.propertyturkey.com/about-turkey/airports-in-turkey"
                     title="Airports In Turkey"
                   >
-                    Airports In USA
+                    Airports In San Francisco
                   </a>
                 </p>
                 <i className="fa fa-angle-up tabs-icon" aria-hidden="true" />
@@ -372,12 +372,12 @@ export default function CityGuide({ data }) {
             </div>
             <div className="padding-top-2 side-item">
               <div className="buyer-guide--supertitle">
-                <p className="buyer-guide--title-tab" title="Weather In USA">
+                <p className="buyer-guide--title-tab" title="Weather In San Francisco">
                   <a
                     href="https://www.propertyturkey.com/about-turkey/weather-in-turkey"
-                    title="Weather In USA"
+                    title="Weather In San Francisco"
                   >
-                    Weather In USA
+                    Weather In San Francisco
                   </a>
                 </p>
                 <i

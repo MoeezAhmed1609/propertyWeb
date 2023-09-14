@@ -41,8 +41,8 @@ export default function SellPropertyBreadCrumb() {
           itemScope=""
           itemType="http://schema.org/ListItem"
         >
-          Sell your home with Property USA
-          <meta itemProp="name" content="Sell your home with Property USA" />
+          Sell your home with Property San Francisco
+          <meta itemProp="name" content="Sell your home with Property San Francisco" />
           <meta
             itemProp="item"
             content="https://www.propertyturkey.com/contact-us/sell-your-home-with-property-turkey"

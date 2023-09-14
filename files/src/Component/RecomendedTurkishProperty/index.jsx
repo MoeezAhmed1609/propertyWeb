@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Modals from "@mui/material/Modal";
 import "./index.css";
 import { RealState } from "../../Data";
 import ListingCards from "../../ReUseAbleComponent/ListingCards";
@@ -53,13 +54,27 @@ const responsive = {
   },
 };
 
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: { xs: '96vw', sm: '60vw', md: '35vw' },
+  height: { xs: "90vh !important", sm: "85vh !important" },
+  overflowY: "auto",
+  bgcolor: "background.paper",
+  boxShadow: 24,
+  p: 4,
+  borderRadius: '10px'
+};
+
 export default function RecomendedTurkishProperty() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [CarouselID, setCarouselID] = useState();
   const [Name, setName] = useState("");
   const [Phone, setPhone] = useState("1");
   const [Email, setEmail] = useState("");
-  const [Description, setDescription] = useState("");
+  const [Description, setDescription] = useState("I'm interested in this property");
   const [navigateProperty, setnavigateProperty] = useState(false);
   const [property, setForPropertyStatus] = useState("");
   const [Active, setActive] = useState("");
@@ -70,7 +85,7 @@ export default function RecomendedTurkishProperty() {
     console.log(propertiesData);
   }, []);
 
-  const [data, setData] = useState("California");
+  const [data, setData] = useState("San Francisco");
   const [isOpen, setIsOpen] = useState(false);
   console.log({ user });
 
@@ -78,9 +93,8 @@ export default function RecomendedTurkishProperty() {
     setIsOpen(false);
   };
 
-  const showModal = (id, Active) => {
+  const showModal = (id) => {
     setCarouselID(id);
-    setActive(Active);
     setIsOpen(true);
   };
   const handlePhoneInputChange = (telNumber, selectedCountry) => {
@@ -95,18 +109,31 @@ export default function RecomendedTurkishProperty() {
   };
 
   const HandleSubmitEnquiryForm = async (e) => {
+    console.log(
+      {
+        propertyID: CarouselID,
+        id: user.login.uid,
+        name: Name,
+        phone: Phone,
+        Email: Email,
+        desc: Description,
+        purpose: property,
+        Deal: "pending",
+      }
+    )
     e.preventDefault();
-    console.log({
-      propertyID: CarouselID,
-      id: user.login.uid,
-      name: Name,
-      phone: Phone,
-      Email: Email,
-      desc: Description,
-      purpose: property,
-      Deal: "pending",
-      // Active: Active,
-    });
+    if (
+      !CarouselID ||
+      !Name ||
+      !Phone ||
+      !Email ||
+      !Description ||
+      !property
+    ) {
+      toast("Fill all feilds!")
+      return
+    }
+
 
     const docRef = await addDoc(collection(db, "EnquiryForm"), {
       propertyID: CarouselID,
@@ -117,11 +144,14 @@ export default function RecomendedTurkishProperty() {
       desc: Description,
       purpose: property,
       Deal: "pending",
-      // Active: Active,
     }).then(() => {
-      console.log("Document written with ID: ", docRef.id);
       closeModal()
       toast("Form submitted successfully!")
+    }).catch((err) => {
+      if (err) {
+        toast('Submission Failed!')
+        return
+      }
     })
   };
 
@@ -143,7 +173,7 @@ export default function RecomendedTurkishProperty() {
         >
           <h1 className="title-lined abhaya">
             <Box className="font-small-29">
-              <b>Recommended</b> Properties in USA
+              <b>Recommended</b> Properties in San Francisco
             </Box>
           </h1>
           <Box className="section--filter-wrapper">
@@ -165,29 +195,11 @@ export default function RecomendedTurkishProperty() {
               </li>
               <li>
                 <StyledButton
-                  title={"California"}
-                  onClick={() => setData("California")}
-                  mode={data === "California" ? true : false}
-                />
-
-                {/* <Link
-                  onClick={() => setData("California")}
-                  className="btn section--filter-Link "
-                  // rel="Istanbul"
-                  style={{
-                    background: data === "California" ? "#5081ff" : "white",
-                  }}
-                >
-                  California
-                </Link> */}
-              </li>
-
-              <li>
-                <StyledButton
                   title={"San Francisco"}
                   onClick={() => setData("San Francisco")}
                   mode={data === "San Francisco" ? true : false}
                 />
+
                 {/* <Link
                   onClick={() => setData("San Francisco")}
                   className="btn section--filter-Link "
@@ -199,6 +211,14 @@ export default function RecomendedTurkishProperty() {
                   San Francisco
                 </Link> */}
               </li>
+
+              {/* <li>
+                <StyledButton
+                  title={"San Francisco"}
+                  onClick={() => setData("San Francisco")}
+                  mode={data === "San Francisco" ? true : false}
+                />
+              </li> */}
             </ul>
           </Box>
           <ElasticSlider ItemShop={4}>
@@ -353,7 +373,7 @@ export default function RecomendedTurkishProperty() {
                         <Box>
                           <StyledButton
                             title={"Quick Enquiry"}
-                            onClick={() => showModal(item.id, item.isActive)}
+                            onClick={() => showModal(item.id)}
                             size="small"
                             font="10"
                           />
@@ -373,6 +393,125 @@ export default function RecomendedTurkishProperty() {
           </ElasticSlider>
         </section>
       </Box>
+      <Modals
+        open={isOpen}
+        onClose={closeModal}
+        aria-labelledby="Modals-Modals-title"
+        aria-describedby="Modals-Modals-description"
+      >
+        <Box sx={style}>
+          {user.login ? (
+            <>
+              <form
+                onSubmit={HandleSubmitEnquiryForm}
+              // className="box white clearfix"
+              >
+                <Typography variant="h4" gutterBottom sx={{ textAlign: 'center', fontWeight: 'bold' }} className="title col-dis-12 col-tab-12 col-mob-12">
+                  Property Enquiry
+                </Typography>
+                <Box grid="">
+                  <Box className="col-dis-12 col-tab-12 col-mob-12">
+                    <label className="field col-dis-12 col-tab-6 col-mob-12">
+                      <input
+                        name="first_name"
+                        type="text"
+                        placeholder="your name *"
+                        defaultValue=""
+                        validation=""
+                        onChange={(e) => setName(e.target.value)}
+                      />
+                    </label>
+                    <Box className="field col-dis-12 col-tab-6 col-mob-12">
+                      <PhoneComponent
+                        containerClassName="intl-tel-input "
+                        inputClassName="form-control"
+                        defaultCountry={"us"}
+                        onPhoneNumberChange={handlePhoneInputChange}
+                        value={Phone}
+                        setValue={setPhone}
+                      />
+                    </Box>
+                    <label className="field col-dis-12 col-tab-6 col-mob-12">
+                      <input
+                        name="email"
+                        type="text"
+                        placeholder="E-mail"
+                        defaultValue=""
+                        validation="email"
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
+                    </label>
+                    <label className="field col-dis-12 col-tab-6 col-mob-12">
+                      <input
+                        type="text"
+                        placeholder="For Purpose Rent | Buy"
+                        defaultValue=""
+                        onChange={(e) => setForPropertyStatus(e.target.value)}
+                      />
+                    </label>
+                    <label className="field col-dis-12 col-tab-12 col-mob-12">
+                      <textarea
+                        name="msg"
+                        placeholder="Message"
+                        value={Description}
+                        onChange={(e) => setDescription(e.target.value)}
+                      />
+                    </label>
+                  </Box>
+                </Box>
+                <Box className="actions  col-dis-12 col-tab-12 col-mob-12 flex content-center padding-bottom-05">
+                  <input name="requestUrl" type="hidden" />
+                  <input
+                    type="hidden"
+                    id="propertyID"
+                    defaultValue={6173}
+                    name="propertyID[]"
+                  />
+                  <input
+                    type="text"
+                    style={{ display: "none" }}
+                    name="enqID"
+                    defaultValue=""
+                  />
+                  <StyledButton
+                    title={"Submit"}
+                    width="80%"
+                    size="small"
+                    type={"submit"}
+                  />
+                  {/* <input
+                type="submit"
+                defaultValue="Send"
+                className=" bg-[#5081ff] px-3 text-white rounded-md py-2"
+                onclick=""
+              /> */}
+                </Box>
+              </form>
+              <button
+                type="button"
+                data-fancybox-close=""
+                className="fancybox-button fancybox-close-small"
+                title="Close"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version={1}
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z" />
+                </svg>
+              </button>
+            </>
+          ) : (
+            <Box sx={{ display: 'flex', width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+              <Typography variant="h5" gutterBottom>
+                Please login to access enquiries!
+              </Typography>
+              <StyledButton title={'Login'} onClick={closeModal} width={'100px'} />
+            </Box>
+          )}
+        </Box>
+      </Modals>
 
       <ModalComponent
         style={{
@@ -382,7 +521,7 @@ export default function RecomendedTurkishProperty() {
           marginTop: 100,
           zIndex: 999,
         }}
-        isOpen={isOpen}
+        // isOpen={isOpen}
         onClose={closeModal}
       >
         <Box

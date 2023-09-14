@@ -17,7 +17,7 @@ export default function FeaturedComponent() {
           varient={"h2"}
           className="title-lined abhaya padding-bottom-1"
         >
-          Property USA <b>Featured In</b>
+          Property San Francisco <b>Featured In</b>
         </TypographyComponent>
 
         <Box className="">

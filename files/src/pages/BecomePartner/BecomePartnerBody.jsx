@@ -396,8 +396,8 @@ export default function BecomePartnerBody() {
         <hr />
         <div className="officelocation">
           <b className="flex gap-1">
-            Property USA UK Head Office
-            <Link href="" title="Property USA UK Head Office">
+            Property San Francisco UK Head Office
+            <Link href="" title="Property San Francisco UK Head Office">
               <BsFillMapFill color={"#5018ff"} />
             </Link>
           </b>
@@ -421,7 +421,7 @@ export default function BecomePartnerBody() {
         <hr />
         <div className="officelocation">
           <b className="flex gap-1">
-            Property USA Istanbul Head Office
+            Property San Francisco Istanbul Head Office
             <a>
               <BsFillMapFill color={"#5018ff"} />
             </a>
@@ -446,7 +446,7 @@ export default function BecomePartnerBody() {
         <hr />
         <div className="officelocation">
           <b className="flex gap-1">
-            Property USA Bodrum Office
+            Property San Francisco Bodrum Office
             <a>
               <BsFillMapFill color={"#5018ff"} />
             </a>
@@ -469,7 +469,7 @@ export default function BecomePartnerBody() {
         <hr />
         <div className="officelocation">
           <b className="flex gap-1">
-            Property USA Fethiye - Kalkan Office
+            Property San Francisco Fethiye - Kalkan Office
             <a>
               <BsFillMapFill color={"#5018ff"} />
             </a>
@@ -492,7 +492,7 @@ export default function BecomePartnerBody() {
         <hr />
         <div className="officelocation">
           <b className="flex gap-1">
-            Property USA Antalya Office
+            Property San Francisco Antalya Office
             <a>
               <BsFillMapFill color={"#5018ff"} />
             </a>
@@ -514,7 +514,7 @@ export default function BecomePartnerBody() {
         <hr />
         <div className="officelocation">
           <b className="flex gap-1">
-            Property USA Bursa Office
+            Property San Francisco Bursa Office
             <a>
               <BsFillMapFill color={"#5018ff"} />
             </a>
@@ -538,7 +538,7 @@ export default function BecomePartnerBody() {
         </div>
         <hr />
         <div className="officelocation">
-          <b>Property USA Pakistan</b>
+          <b>Property San Francisco Pakistan</b>
           <label>136/1 KH-E-TARIQ, Phase 6, DHA, Karachi</label>
           <label>
             Telephone:{" "}
@@ -555,7 +555,7 @@ export default function BecomePartnerBody() {
         </div>
         <hr />
         <div className="officelocation">
-          <b>Property USA South Africa</b>
+          <b>Property San Francisco South Africa</b>
           <label>
             28 Osborn Road, Houghton, 2192, Johannesburg, South Africa.
           </label>
@@ -580,7 +580,7 @@ export default function BecomePartnerBody() {
         </div>
         <hr />
         <div className="officelocation">
-          <b>Property USA India</b>
+          <b>Property San Francisco India</b>
           <label>The Morning Star, No 18/1, 1st Floor Rathan Singh Road</label>
           <label>Frazer Town, Bangalore - 560005, India</label>
           <label>
@@ -598,7 +598,7 @@ export default function BecomePartnerBody() {
         </div>
         <hr />
         <div className="officelocation">
-          <b>Property USA Iran</b>
+          <b>Property San Francisco Iran</b>
           {/* <label>Telephone: <b class="red" dir="ltr">+98 212 2924004</b></label>
           <label>Telephone: <b class="red" dir="ltr">+98 212 2924005</b></label>
           <label>Cell: <b class="red" dir="ltr">+98 912 9596695</b></label>

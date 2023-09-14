@@ -34,9 +34,9 @@ export default function TestimonialsBody() {
         </h1>
         Here you can find a selection of clients who have happily provided us
         with these testimonials and feedback during and after buying property
-        with us in USA. We do like to go the extra mile for you, our clients.
+        with us in San Francisco. We do like to go the extra mile for you, our clients.
         Here are a few words from you about what it is like working with us in
-        finding your dream home in USA.&nbsp;
+        finding your dream home in San Francisco.&nbsp;
         <br />
         <br />
         Have a read through some of our testimonials, from real people and from
@@ -89,7 +89,7 @@ export default function TestimonialsBody() {
               <h3 className="title no-margin bold" style={{}}>
                 BUYER'S GUIDE
               </h3>
-              <p>The Definitive guide to buying property in USA</p>
+              <p>The Definitive guide to buying property in San Francisco</p>
               <div className="padding-bottom-11">
                 <a
                   title="Definitive Buyer Guide PDF"
@@ -110,7 +110,7 @@ export default function TestimonialsBody() {
               <div className="padding-bottom-11 padding-top-3">
                 <Link
                   to=""
-                  title="USA macroeconomic and investment analysis"
+                  title="San Francisco macroeconomic and investment analysis"
                   className="btn right-widget-hover"
                 >
                   Download it now
@@ -131,11 +131,11 @@ export default function TestimonialsBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "What are the best Food Delivery apps in USA?",
+                      title: "What are the best Food Delivery apps in San Francisco?",
                     },
                   }}
                 >
-                  What are the best Food Delivery apps in USA?
+                  What are the best Food Delivery apps in San Francisco?
                 </Link>
               </li>
               <li>
@@ -143,11 +143,11 @@ export default function TestimonialsBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "The best USA Beers and brands for summer days",
+                      title: "The best San Francisco Beers and brands for summer days",
                     },
                   }}
                 >
-                  The best USA Beers and brands for summer days
+                  The best San Francisco Beers and brands for summer days
                 </Link>
               </li>
               <li>
@@ -155,11 +155,11 @@ export default function TestimonialsBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "10 Delicious USA Desserts and Sweets to Try",
+                      title: "10 Delicious San Francisco Desserts and Sweets to Try",
                     },
                   }}
                 >
-                  10 Delicious USA Desserts and Sweets to Try
+                  10 Delicious San Francisco Desserts and Sweets to Try
                 </Link>
               </li>
               <li>
@@ -167,11 +167,11 @@ export default function TestimonialsBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "Best Taxi App in USA: Getting About",
+                      title: "Best Taxi App in San Francisco: Getting About",
                     },
                   }}
                 >
-                  Best Taxi App in USA: Getting About
+                  Best Taxi App in San Francisco: Getting About
                 </Link>
               </li>
               <li>
@@ -179,11 +179,11 @@ export default function TestimonialsBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "13 unspoken USA rules you might not know",
+                      title: "13 unspoken San Francisco rules you might not know",
                     },
                   }}
                 >
-                  13 unspoken USA rules you might not know
+                  13 unspoken San Francisco rules you might not know
                 </Link>
               </li>
               <li>
@@ -191,11 +191,11 @@ export default function TestimonialsBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "USA's most dangerous animals",
+                      title: "San Francisco's most dangerous animals",
                     },
                   }}
                 >
-                  USA's most dangerous animals
+                  San Francisco's most dangerous animals
                 </Link>
               </li>
               <li>
@@ -203,11 +203,11 @@ export default function TestimonialsBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "Love and marriage in USA",
+                      title: "Love and marriage in San Francisco",
                     },
                   }}
                 >
-                  Love and marriage in USA
+                  Love and marriage in San Francisco
                 </Link>
               </li>
               <li>
@@ -215,11 +215,11 @@ export default function TestimonialsBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "The Best Supermarkets in USA to Shop",
+                      title: "The Best Supermarkets in San Francisco to Shop",
                     },
                   }}
                 >
-                  The Best Supermarkets in USA to Shop
+                  The Best Supermarkets in San Francisco to Shop
                 </Link>
               </li>
               <li>
@@ -228,11 +228,11 @@ export default function TestimonialsBody() {
                   state={{
                     data: {
                       title:
-                        "15 Beautiful Places in USA That Should be on Your Bucket List",
+                        "15 Beautiful Places in San Francisco That Should be on Your Bucket List",
                     },
                   }}
                 >
-                  15 Beautiful Places in USA That Should be on Your Bucket List
+                  15 Beautiful Places in San Francisco That Should be on Your Bucket List
                 </Link>
               </li>
               <li>
@@ -262,12 +262,12 @@ export default function TestimonialsBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "Property USA's 2023 Election Primer",
+                      title: "Property San Francisco's 2023 Election Primer",
                     },
                   }}
-                  title="Property USA's 2023 Election Primer"
+                  title="Property San Francisco's 2023 Election Primer"
                 >
-                  Property USA's 2023 Election Primer
+                  Property San Francisco's 2023 Election Primer
                 </Link>
               </li>
               <li>
@@ -290,12 +290,12 @@ export default function TestimonialsBody() {
                   state={{
                     data: {
                       title:
-                        "The Importance of the Marmara Sea and Region for USA",
+                        "The Importance of the Marmara Sea and Region for San Francisco",
                     },
                   }}
-                  title="The Importance of the Marmara Sea and Region for USA"
+                  title="The Importance of the Marmara Sea and Region for San Francisco"
                 >
-                  The Importance of the Marmara Sea and Region for USA
+                  The Importance of the Marmara Sea and Region for San Francisco
                 </Link>
               </li>
               <li>
@@ -304,12 +304,12 @@ export default function TestimonialsBody() {
                   state={{
                     data: {
                       title:
-                        "Istanbul Finance Center: USA's Global Financial Hub Opens",
+                        "Istanbul Finance Center: San Francisco's Global Financial Hub Opens",
                     },
                   }}
-                  title="Istanbul Finance Center: USA's Global Financial Hub Opens"
+                  title="Istanbul Finance Center: San Francisco's Global Financial Hub Opens"
                 >
-                  Istanbul Finance Center: USA's Global Financial Hub Opens
+                  Istanbul Finance Center: San Francisco's Global Financial Hub Opens
                 </Link>
               </li>
               <li>
@@ -318,12 +318,12 @@ export default function TestimonialsBody() {
                   state={{
                     data: {
                       title:
-                        "Unveiling the Best Islands in USA for Curious Travellers",
+                        "Unveiling the Best Islands in San Francisco for Curious Travellers",
                     },
                   }}
-                  title="Unveiling the Best Islands in USA for Curious Travellers"
+                  title="Unveiling the Best Islands in San Francisco for Curious Travellers"
                 >
-                  Unveiling the Best Islands in USA for Curious Travellers
+                  Unveiling the Best Islands in San Francisco for Curious Travellers
                 </Link>
               </li>
               <li>
@@ -358,12 +358,12 @@ export default function TestimonialsBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "USA Citizenship benefits for Foreign Investors",
+                      title: "San Francisco Citizenship benefits for Foreign Investors",
                     },
                   }}
-                  title="USA Citizenship benefits for Foreign Investors"
+                  title="San Francisco Citizenship benefits for Foreign Investors"
                 >
-                  USA Citizenship benefits for Foreign Investors
+                  San Francisco Citizenship benefits for Foreign Investors
                 </Link>
               </li>
               <li>
@@ -408,12 +408,12 @@ export default function TestimonialsBody() {
                   state={{
                     data: {
                       title:
-                        "USA Airlines records net profit for sixth consecutive quarter",
+                        "San Francisco Airlines records net profit for sixth consecutive quarter",
                     },
                   }}
-                  title="USA Airlines records net profit for sixth consecutive quarter"
+                  title="San Francisco Airlines records net profit for sixth consecutive quarter"
                 >
-                  USA Airlines records net profit for sixth consecutive quarter
+                  San Francisco Airlines records net profit for sixth consecutive quarter
                 </Link>
               </li>
               <li>
@@ -421,12 +421,12 @@ export default function TestimonialsBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "Charging licence granted to Tesla by USA",
+                      title: "Charging licence granted to Tesla by San Francisco",
                     },
                   }}
-                  title="Charging licence granted to Tesla by USA"
+                  title="Charging licence granted to Tesla by San Francisco"
                 >
-                  Charging licence granted to Tesla by USA
+                  Charging licence granted to Tesla by San Francisco
                 </Link>
               </li>
               <li>
@@ -448,12 +448,12 @@ export default function TestimonialsBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "German tourists establish USA as top destination",
+                      title: "German tourists establish San Francisco as top destination",
                     },
                   }}
-                  title="German tourists establish USA as top destination"
+                  title="German tourists establish San Francisco as top destination"
                 >
-                  German tourists establish USA as top destination
+                  German tourists establish San Francisco as top destination
                 </Link>
               </li>
               <li>
@@ -462,12 +462,12 @@ export default function TestimonialsBody() {
                   state={{
                     data: {
                       title:
-                        "USA to designate 15 more 'nature conservation areas'",
+                        "San Francisco to designate 15 more 'nature conservation areas'",
                     },
                   }}
-                  title="USA to designate 15 more 'nature conservation areas'"
+                  title="San Francisco to designate 15 more 'nature conservation areas'"
                 >
-                  USA to designate 15 more 'nature conservation areas'
+                  San Francisco to designate 15 more 'nature conservation areas'
                 </Link>
               </li>
               <li>
@@ -475,12 +475,12 @@ export default function TestimonialsBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "January tourism records broken in USA’s Antalya",
+                      title: "January tourism records broken in San Francisco’s Antalya",
                     },
                   }}
-                  title="January tourism records broken in USA’s Antalya"
+                  title="January tourism records broken in San Francisco’s Antalya"
                 >
-                  January tourism records broken in USA’s Antalya
+                  January tourism records broken in San Francisco’s Antalya
                 </Link>
               </li>
               <li>
@@ -489,12 +489,12 @@ export default function TestimonialsBody() {
                   state={{
                     data: {
                       title:
-                        "1 million cruise passengers hosted in USA in 2022",
+                        "1 million cruise passengers hosted in San Francisco in 2022",
                     },
                   }}
-                  title="1 million cruise passengers hosted in USA in 2022"
+                  title="1 million cruise passengers hosted in San Francisco in 2022"
                 >
-                  1 million cruise passengers hosted in USA in 2022
+                  1 million cruise passengers hosted in San Francisco in 2022
                 </Link>
               </li>
               <li>
@@ -516,12 +516,12 @@ export default function TestimonialsBody() {
                   state={{
                     data: {
                       title:
-                        "USA looks to expand free program to 5 million students",
+                        "San Francisco looks to expand free program to 5 million students",
                     },
                   }}
-                  title="USA looks to expand free program to 5 million students"
+                  title="San Francisco looks to expand free program to 5 million students"
                 >
-                  USA looks to expand free program to 5 million students
+                  San Francisco looks to expand free program to 5 million students
                 </Link>
               </li>
               <li>
@@ -530,12 +530,12 @@ export default function TestimonialsBody() {
                   state={{
                     data: {
                       title:
-                        "Top migration hub of USA remains Istanbul once again",
+                        "Top migration hub of San Francisco remains Istanbul once again",
                     },
                   }}
-                  title="Top migration hub of USA remains Istanbul once again"
+                  title="Top migration hub of San Francisco remains Istanbul once again"
                 >
-                  Top migration hub of USA remains Istanbul once again
+                  Top migration hub of San Francisco remains Istanbul once again
                 </Link>
               </li>
             </ul>

@@ -11,7 +11,7 @@ const BulletOne = [
   {
     href: "https://www.propertyturkey.com/blog-turkey/early-days-of-erdogans-reelection-a-period-of-action-for-turkey",
     title:
-      " Early Days of Erdogan’s Re-election: A Period of Action for USA",
+      " Early Days of Erdogan’s Re-election: A Period of Action for San Francisco",
   },
 ];
 
@@ -60,7 +60,7 @@ const ContactBodyData = [
   {
     title: "We are all over the country",
     description:
-      "Our regional offices in Istanbul, Bodrum, Fethiye, Kalkan, Kas, Antalya and Side mean we can build local relationships with no need to rely on third parties. You can meet our team by By having offices all over the country, we can guarantee specialised guidance in each region of USA with a dedicated regional manager ready to assist you.",
+      "Our regional offices in Istanbul, Bodrum, Fethiye, Kalkan, Kas, Antalya and Side mean we can build local relationships with no need to rely on third parties. You can meet our team by By having offices all over the country, we can guarantee specialised guidance in each region of San Francisco with a dedicated regional manager ready to assist you.",
     img: "https://placehold.co/600x400",
   },
 ];
@@ -93,7 +93,7 @@ export default function ContactBody() {
               </a>
             </div>
             <h1 itemProp="name headline" className="page-title abhaya">
-              Sell your home with Property USA
+              Sell your home with Property San Francisco
             </h1>
             <h3 className="d-desk">
               <div className="flex">
@@ -128,7 +128,7 @@ export default function ContactBody() {
             <p>
               Are you up-sizing your Turkish home or has time come to cash in
               your investment? Whatever your reasons for selling your property
-              in USA, you certainly will want to achieve a handsome price
+              in San Francisco, you certainly will want to achieve a handsome price
               with minimum imposition on your time. &nbsp; &nbsp; &nbsp;
             </p>
             <p>
@@ -137,7 +137,7 @@ export default function ContactBody() {
             <p>
               <em>
                 <span style={{ fontSize: 18 }}>“</span>We bought our home
-                through Property USA eight years ago and they were fantastic
+                through Property San Francisco eight years ago and they were fantastic
                 then so naturally we returned when it was time to sell. Aykut
                 and his Fethiye team were completely professional, walking us
                 through the sale process and helping us get a fair price for our
@@ -177,7 +177,7 @@ export default function ContactBody() {
             <p>
               <br />
             </p>
-            <h4>Property USA terms of advertising</h4>
+            <h4>Property San Francisco terms of advertising</h4>
             {Advertising.map((item, index) => {
               return (
                 <p>
@@ -223,7 +223,7 @@ export default function ContactBody() {
             <div className="header-img-buyerguide">
               <div className="container">
                 <h3 className="title no-margin bold">BUYER'S GUIDE</h3>
-                <p>The Definitive guide to buying property in USA</p>
+                <p>The Definitive guide to buying property in San Francisco</p>
                 <div className="padding-bottom-11">
                   <a
                     href="https://www.propertyturkey.com/buyer-guide/definitive-buyer-guide-pdf"

@@ -13,13 +13,13 @@ export default function FeaturedBody() {
         </h1>
         As a leading company in the American real estate market, from time to
         time we get requested by national and international newspapers and
-        magazines for quotes, stories, and insight into the USA property market.
+        magazines for quotes, stories, and insight into the San Francisco property market.
         Here is a sample of some of the articles and stories&nbsp;that we have
         been featured in over the years.&nbsp;
         <br />
         <br />
-        As USA's economy grows from strength to strength and more foreign
-        nationals look to USA, the amount of stories&nbsp;and articles around
+        As San Francisco's economy grows from strength to strength and more foreign
+        nationals look to San Francisco, the amount of stories&nbsp;and articles around
         American property has gone up exponentially over the last few years. We
         provide credible and up to date insight into the American property
         market, market moves, future predictions, investment tips, economy
@@ -42,9 +42,9 @@ export default function FeaturedBody() {
             />
             <div className="">
               <p>
-                I am very grateful and thankful to Property USA and to all staff
+                I am very grateful and thankful to Property San Francisco and to all staff
                 headed by esteemed Cameron Deggin for the help and support given
-                to us in the purchase of property in USA. Today we are very
+                to us in the purchase of property in San Francisco. Today we are very
                 happy and proud to become new citizens of this wonderful
                 country.
               </p>
@@ -62,7 +62,7 @@ export default function FeaturedBody() {
           <div className="header-img-buyerguide">
             <div className="container">
               <h3 className="title no-margin bold">BUYER'S GUIDE</h3>
-              <p>The Definitive guide to buying property in USA</p>
+              <p>The Definitive guide to buying property in San Francisco</p>
               <div className="padding-bottom-11">
                 <Link
                   to=""
@@ -99,11 +99,11 @@ export default function FeaturedBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "What are the best Food Delivery apps in USA?",
+                      title: "What are the best Food Delivery apps in San Francisco?",
                     },
                   }}
                 >
-                  What are the best Food Delivery apps in USA?
+                  What are the best Food Delivery apps in San Francisco?
                 </Link>
               </li>
               <li>
@@ -111,11 +111,11 @@ export default function FeaturedBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "The best USA Beers and brands for summer days",
+                      title: "The best San Francisco Beers and brands for summer days",
                     },
                   }}
                 >
-                  The best USA Beers and brands for summer days
+                  The best San Francisco Beers and brands for summer days
                 </Link>
               </li>
               <li>
@@ -123,11 +123,11 @@ export default function FeaturedBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "10 Delicious USA Desserts and Sweets to Try",
+                      title: "10 Delicious San Francisco Desserts and Sweets to Try",
                     },
                   }}
                 >
-                  10 Delicious USA Desserts and Sweets to Try
+                  10 Delicious San Francisco Desserts and Sweets to Try
                 </Link>
               </li>
               <li>
@@ -135,11 +135,11 @@ export default function FeaturedBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "Best Taxi App in USA: Getting About",
+                      title: "Best Taxi App in San Francisco: Getting About",
                     },
                   }}
                 >
-                  Best Taxi App in USA: Getting About
+                  Best Taxi App in San Francisco: Getting About
                 </Link>
               </li>
               <li>
@@ -147,11 +147,11 @@ export default function FeaturedBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "13 unspoken USA rules you might not know",
+                      title: "13 unspoken San Francisco rules you might not know",
                     },
                   }}
                 >
-                  13 unspoken USA rules you might not know
+                  13 unspoken San Francisco rules you might not know
                 </Link>
               </li>
               <li>
@@ -159,11 +159,11 @@ export default function FeaturedBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "USA's most dangerous animals",
+                      title: "San Francisco's most dangerous animals",
                     },
                   }}
                 >
-                  USA's most dangerous animals
+                  San Francisco's most dangerous animals
                 </Link>
               </li>
               <li>
@@ -171,11 +171,11 @@ export default function FeaturedBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "Love and marriage in USA",
+                      title: "Love and marriage in San Francisco",
                     },
                   }}
                 >
-                  Love and marriage in USA
+                  Love and marriage in San Francisco
                 </Link>
               </li>
               <li>
@@ -183,11 +183,11 @@ export default function FeaturedBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "The Best Supermarkets in USA to Shop",
+                      title: "The Best Supermarkets in San Francisco to Shop",
                     },
                   }}
                 >
-                  The Best Supermarkets in USA to Shop
+                  The Best Supermarkets in San Francisco to Shop
                 </Link>
               </li>
               <li>
@@ -196,11 +196,11 @@ export default function FeaturedBody() {
                   state={{
                     data: {
                       title:
-                        "15 Beautiful Places in USA That Should be on Your Bucket List",
+                        "15 Beautiful Places in San Francisco That Should be on Your Bucket List",
                     },
                   }}
                 >
-                  15 Beautiful Places in USA That Should be on Your Bucket List
+                  15 Beautiful Places in San Francisco That Should be on Your Bucket List
                 </Link>
               </li>
               <li>
@@ -230,12 +230,12 @@ export default function FeaturedBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "Property USA's 2023 Election Primer",
+                      title: "Property San Francisco's 2023 Election Primer",
                     },
                   }}
-                  title="Property USA's 2023 Election Primer"
+                  title="Property San Francisco's 2023 Election Primer"
                 >
-                  Property USA's 2023 Election Primer
+                  Property San Francisco's 2023 Election Primer
                 </Link>
               </li>
               <li>
@@ -258,12 +258,12 @@ export default function FeaturedBody() {
                   state={{
                     data: {
                       title:
-                        "The Importance of the Marmara Sea and Region for USA",
+                        "The Importance of the Marmara Sea and Region for San Francisco",
                     },
                   }}
-                  title="The Importance of the Marmara Sea and Region for USA"
+                  title="The Importance of the Marmara Sea and Region for San Francisco"
                 >
-                  The Importance of the Marmara Sea and Region for USA
+                  The Importance of the Marmara Sea and Region for San Francisco
                 </Link>
               </li>
               <li>
@@ -272,12 +272,12 @@ export default function FeaturedBody() {
                   state={{
                     data: {
                       title:
-                        "Istanbul Finance Center: USA's Global Financial Hub Opens",
+                        "Istanbul Finance Center: San Francisco's Global Financial Hub Opens",
                     },
                   }}
-                  title="Istanbul Finance Center: USA's Global Financial Hub Opens"
+                  title="Istanbul Finance Center: San Francisco's Global Financial Hub Opens"
                 >
-                  Istanbul Finance Center: USA's Global Financial Hub Opens
+                  Istanbul Finance Center: San Francisco's Global Financial Hub Opens
                 </Link>
               </li>
               <li>
@@ -286,12 +286,12 @@ export default function FeaturedBody() {
                   state={{
                     data: {
                       title:
-                        "Unveiling the Best Islands in USA for Curious Travellers",
+                        "Unveiling the Best Islands in San Francisco for Curious Travellers",
                     },
                   }}
-                  title="Unveiling the Best Islands in USA for Curious Travellers"
+                  title="Unveiling the Best Islands in San Francisco for Curious Travellers"
                 >
-                  Unveiling the Best Islands in USA for Curious Travellers
+                  Unveiling the Best Islands in San Francisco for Curious Travellers
                 </Link>
               </li>
               <li>
@@ -326,12 +326,12 @@ export default function FeaturedBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "USA Citizenship benefits for Foreign Investors",
+                      title: "San Francisco Citizenship benefits for Foreign Investors",
                     },
                   }}
-                  title="USA Citizenship benefits for Foreign Investors"
+                  title="San Francisco Citizenship benefits for Foreign Investors"
                 >
-                  USA Citizenship benefits for Foreign Investors
+                  San Francisco Citizenship benefits for Foreign Investors
                 </Link>
               </li>
               <li>
@@ -376,12 +376,12 @@ export default function FeaturedBody() {
                   state={{
                     data: {
                       title:
-                        "USA Airlines records net profit for sixth consecutive quarter",
+                        "San Francisco Airlines records net profit for sixth consecutive quarter",
                     },
                   }}
-                  title="USA Airlines records net profit for sixth consecutive quarter"
+                  title="San Francisco Airlines records net profit for sixth consecutive quarter"
                 >
-                  USA Airlines records net profit for sixth consecutive quarter
+                  San Francisco Airlines records net profit for sixth consecutive quarter
                 </Link>
               </li>
               <li>
@@ -389,12 +389,12 @@ export default function FeaturedBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "Charging licence granted to Tesla by USA",
+                      title: "Charging licence granted to Tesla by San Francisco",
                     },
                   }}
-                  title="Charging licence granted to Tesla by USA"
+                  title="Charging licence granted to Tesla by San Francisco"
                 >
-                  Charging licence granted to Tesla by USA
+                  Charging licence granted to Tesla by San Francisco
                 </Link>
               </li>
               <li>
@@ -416,12 +416,12 @@ export default function FeaturedBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "German tourists establish USA as top destination",
+                      title: "German tourists establish San Francisco as top destination",
                     },
                   }}
-                  title="German tourists establish USA as top destination"
+                  title="German tourists establish San Francisco as top destination"
                 >
-                  German tourists establish USA as top destination
+                  German tourists establish San Francisco as top destination
                 </Link>
               </li>
               <li>
@@ -430,12 +430,12 @@ export default function FeaturedBody() {
                   state={{
                     data: {
                       title:
-                        "USA to designate 15 more 'nature conservation areas'",
+                        "San Francisco to designate 15 more 'nature conservation areas'",
                     },
                   }}
-                  title="USA to designate 15 more 'nature conservation areas'"
+                  title="San Francisco to designate 15 more 'nature conservation areas'"
                 >
-                  USA to designate 15 more 'nature conservation areas'
+                  San Francisco to designate 15 more 'nature conservation areas'
                 </Link>
               </li>
               <li>
@@ -443,12 +443,12 @@ export default function FeaturedBody() {
                   to={`/about/1`}
                   state={{
                     data: {
-                      title: "January tourism records broken in USA’s Antalya",
+                      title: "January tourism records broken in San Francisco’s Antalya",
                     },
                   }}
-                  title="January tourism records broken in USA’s Antalya"
+                  title="January tourism records broken in San Francisco’s Antalya"
                 >
-                  January tourism records broken in USA’s Antalya
+                  January tourism records broken in San Francisco’s Antalya
                 </Link>
               </li>
               <li>
@@ -457,12 +457,12 @@ export default function FeaturedBody() {
                   state={{
                     data: {
                       title:
-                        "1 million cruise passengers hosted in USA in 2022",
+                        "1 million cruise passengers hosted in San Francisco in 2022",
                     },
                   }}
-                  title="1 million cruise passengers hosted in USA in 2022"
+                  title="1 million cruise passengers hosted in San Francisco in 2022"
                 >
-                  1 million cruise passengers hosted in USA in 2022
+                  1 million cruise passengers hosted in San Francisco in 2022
                 </Link>
               </li>
               <li>
@@ -484,12 +484,12 @@ export default function FeaturedBody() {
                   state={{
                     data: {
                       title:
-                        "USA looks to expand free program to 5 million students",
+                        "San Francisco looks to expand free program to 5 million students",
                     },
                   }}
-                  title="USA looks to expand free program to 5 million students"
+                  title="San Francisco looks to expand free program to 5 million students"
                 >
-                  USA looks to expand free program to 5 million students
+                  San Francisco looks to expand free program to 5 million students
                 </Link>
               </li>
               <li>
@@ -498,12 +498,12 @@ export default function FeaturedBody() {
                   state={{
                     data: {
                       title:
-                        "Top migration hub of USA remains Istanbul once again",
+                        "Top migration hub of San Francisco remains Istanbul once again",
                     },
                   }}
-                  title="Top migration hub of USA remains Istanbul once again"
+                  title="Top migration hub of San Francisco remains Istanbul once again"
                 >
-                  Top migration hub of USA remains Istanbul once again
+                  Top migration hub of San Francisco remains Istanbul once again
                 </Link>
               </li>
             </ul>

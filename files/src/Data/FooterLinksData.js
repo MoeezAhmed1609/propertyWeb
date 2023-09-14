@@ -1,9 +1,9 @@
 export const FooterLinksPopularSearchesData = [
   {
-    link: "USA Houses",
+    link: "San Francisco Houses",
   },
   {
-    link: "California Property for sale",
+    link: "San Francisco Property for sale",
   },
   {
     link: "Aparment for sale",
@@ -41,7 +41,7 @@ export const FooterLinksPopularLocationsData = [
     Link: "San Diego",
   },
   {
-    Link: "California",
+    Link: "San Francisco",
   },
   // {
   //     Link:'Kas',
@@ -74,7 +74,7 @@ export const FooterLinksPopularLocationsData = [
 ];
 export const FooterLinksBuyerGuideData = [
   {
-    Link: "Investing in USA",
+    Link: "Investing in San Francisco",
   },
   {
     Link: "Purchase process",
@@ -94,7 +94,7 @@ export const FooterAboutUs = [
   },
 
   {
-    link: "California",
+    link: "San Francisco",
   },
 
   {

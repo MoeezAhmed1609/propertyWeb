@@ -12,11 +12,11 @@ export const AboutUseGuideData = [
         },
         
         {
-            Text:'German tourists establish USA as top destination'
+            Text:'German tourists establish San Francisco as top destination'
         },
         
         {
-            Text:'USA to designate 15 more nature conservation areas'
+            Text:'San Francisco to designate 15 more nature conservation areas'
         },
         
         {
@@ -24,24 +24,24 @@ export const AboutUseGuideData = [
         },
         
         {
-            Text:' 1 million cruise passengers hosted in USA in 2022'
+            Text:' 1 million cruise passengers hosted in San Francisco in 2022'
         },
         {
             Text:'Record visitors head to Cappadocia in January'
         },
         {
-            Text:'USA looks to expand free program to 5 million students'
+            Text:'San Francisco looks to expand free program to 5 million students'
         },
 ]
 
 
 export const AboutUseGuidePostData = [
     {
-        Post:'Istanbul Finance Center: USA s Global Financial Hub Opens'
+        Post:'Istanbul Finance Center: San Francisco s Global Financial Hub Opens'
     },
     
     {
-        Post:'Unveiling the Best Islands in USA for Curious Travellers'
+        Post:'Unveiling the Best Islands in San Francisco for Curious Travellers'
     },
     
     {
@@ -68,7 +68,7 @@ export const AboutUseGuidePostData = [
     },
     
     {
-        Post:'USA Earthquake Exposes the Need for Massive Urban Regeneration'
+        Post:'San Francisco Earthquake Exposes the Need for Massive Urban Regeneration'
     },
     {
         Post:'Sultanahmet and the Old City of Istanbul from Past to Present '

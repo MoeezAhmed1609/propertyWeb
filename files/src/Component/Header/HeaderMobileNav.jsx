@@ -27,7 +27,7 @@ export default function HeaderMobileNav() {
             </li>
             <li className={`has-child ${AboutHandler ? 'active' : ''}`}>
                 <Link
-                    href="/USA"
+                    href="/San Francisco"
                     title="About Turkey"
                 >
                     <b>About Turkey</b>
@@ -458,7 +458,7 @@ export default function HeaderMobileNav() {
                                     </li>
                                     <li>
                                         <a>
-                                            Property USA Inspection Trips
+                                            Property San Francisco Inspection Trips
                                         </a>
                                     </li>
                                     <li>
@@ -498,7 +498,7 @@ export default function HeaderMobileNav() {
                                     </li>
                                     <li>
                                         <a>
-                                            Buying property in USA through a company
+                                            Buying property in San Francisco through a company
                                         </a>
                                     </li>
                                 </ul>
@@ -654,7 +654,7 @@ export default function HeaderMobileNav() {
             </li>
             <li className="bold">
                 <a>
-                    <strong>Property USA TV</strong>
+                    <strong>Property San Francisco TV</strong>
                 </a>
             </li>
             <div className="showMb-hideDt auth header-right order-1 flex">

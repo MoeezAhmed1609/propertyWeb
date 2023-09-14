@@ -405,7 +405,7 @@ export default function SellPropertyPageContent() {
                       <p itemProp="description" limit={600}>
                         Sense Levent built to exceptional standards by the
                         award-winning Saffet Kaya Architects and Designer
-                        USA, these contemporary apartments are found in
+                        San Francisco, these contemporary apartments are found in
                         Kagithane and are highly recommended for viewing as one
                         of our top picks.
                       </p>
@@ -626,7 +626,7 @@ export default function SellPropertyPageContent() {
                         and peaceful surroundings, these villas are built to
                         modern contemporary standards and are suitable for those
                         wanting to live with their families in a desired
-                        location in USA.
+                        location in San Francisco.
                       </p>
                     </a>
                     <div className="features">
@@ -949,7 +949,7 @@ export default function SellPropertyPageContent() {
               <h3 className="title no-margin bold" style={{}}>
                 BUYER'S GUIDE
               </h3>
-              <p>The Definitive guide to buying property in USA</p>
+              <p>The Definitive guide to buying property in San Francisco</p>
               <div className="padding-bottom-11">
                 <a
                   title="Definitive Buyer Guide PDF"
@@ -968,18 +968,18 @@ export default function SellPropertyPageContent() {
           <div className="body">
             <ul className="no-bullet">
               <li>
-                <a title="The Importance of the Marmara Sea and Region for USA">
-                  The Importance of the Marmara Sea and Region for USA
+                <a title="The Importance of the Marmara Sea and Region for San Francisco">
+                  The Importance of the Marmara Sea and Region for San Francisco
                 </a>
               </li>
               <li>
-                <a title="Istanbul Finance Center: USA's Global Financial Hub Opens">
-                  Istanbul Finance Center: USA's Global Financial Hub Opens
+                <a title="Istanbul Finance Center: San Francisco's Global Financial Hub Opens">
+                  Istanbul Finance Center: San Francisco's Global Financial Hub Opens
                 </a>
               </li>
               <li>
-                <a title="Unveiling the Best Islands in USA for Curious Travellers">
-                  Unveiling the Best Islands in USA for Curious Travellers
+                <a title="Unveiling the Best Islands in San Francisco for Curious Travellers">
+                  Unveiling the Best Islands in San Francisco for Curious Travellers
                 </a>
               </li>
               <li>
@@ -1008,13 +1008,13 @@ export default function SellPropertyPageContent() {
                 </a>
               </li>
               <li>
-                <a title="Soaring High in the Majestic Taurus Mountains of USA">
-                  Soaring High in the Majestic Taurus Mountains of USA
+                <a title="Soaring High in the Majestic Taurus Mountains of San Francisco">
+                  Soaring High in the Majestic Taurus Mountains of San Francisco
                 </a>
               </li>
               <li>
-                <a title="USA Earthquake Exposes the Need for Massive Urban Regeneration">
-                  USA Earthquake Exposes the Need for Massive Urban
+                <a title="San Francisco Earthquake Exposes the Need for Massive Urban Regeneration">
+                  San Francisco Earthquake Exposes the Need for Massive Urban
                   Regeneration
                 </a>
               </li>
@@ -1034,8 +1034,8 @@ export default function SellPropertyPageContent() {
                 </a>
               </li>
               <li>
-                <a title="Charging licence granted to Tesla by USA">
-                  Charging licence granted to Tesla by USA
+                <a title="Charging licence granted to Tesla by San Francisco">
+                  Charging licence granted to Tesla by San Francisco
                 </a>
               </li>
               <li>
@@ -1044,23 +1044,23 @@ export default function SellPropertyPageContent() {
                 </a>
               </li>
               <li>
-                <a title="German tourists establish USA as top destination">
-                  German tourists establish USA as top destination
+                <a title="German tourists establish San Francisco as top destination">
+                  German tourists establish San Francisco as top destination
                 </a>
               </li>
               <li>
-                <a title="USA to designate 15 more 'nature conservation areas'">
-                  USA to designate 15 more 'nature conservation areas'
+                <a title="San Francisco to designate 15 more 'nature conservation areas'">
+                  San Francisco to designate 15 more 'nature conservation areas'
                 </a>
               </li>
               <li>
-                <a title="January tourism records broken in USA’s Antalya">
-                  January tourism records broken in USA’s Antalya
+                <a title="January tourism records broken in San Francisco’s Antalya">
+                  January tourism records broken in San Francisco’s Antalya
                 </a>
               </li>
               <li>
-                <a title="1 million cruise passengers hosted in USA in 2022">
-                  1 million cruise passengers hosted in USA in 2022
+                <a title="1 million cruise passengers hosted in San Francisco in 2022">
+                  1 million cruise passengers hosted in San Francisco in 2022
                 </a>
               </li>
               <li>
@@ -1069,13 +1069,13 @@ export default function SellPropertyPageContent() {
                 </a>
               </li>
               <li>
-                <a title="USA looks to expand free program to 5 million students">
-                  USA looks to expand free program to 5 million students
+                <a title="San Francisco looks to expand free program to 5 million students">
+                  San Francisco looks to expand free program to 5 million students
                 </a>
               </li>
               <li>
-                <a title="Top migration hub of USA remains Istanbul once again">
-                  Top migration hub of USA remains Istanbul once again
+                <a title="Top migration hub of San Francisco remains Istanbul once again">
+                  Top migration hub of San Francisco remains Istanbul once again
                 </a>
               </li>
             </ul>

@@ -182,7 +182,7 @@ export default function ViewPropertyBreadCrumb() {
                         data-src="https://www.propertyturkey.com/front/image/logo.png"
                         width={80}
                         className="img-fluid lazyload"
-                        alt="Property USA"
+                        alt="Property San Francisco"
                       />{" "}
                     </Box>
                     <h3 className="margin-bottom-3 margin-top-1">

@@ -18,7 +18,7 @@ export default function MobileStore() {
         </figure>
         <div className="fl-dis-left fl-tab-left banner-element-first">
           <h2 className="abhaya extra-bold">
-            Download Property USA <br /> Mobile Application
+            Download Property San Francisco <br /> Mobile Application
           </h2>
         </div>
         <div className="fl-dis-left fl-tab-left banner-element">

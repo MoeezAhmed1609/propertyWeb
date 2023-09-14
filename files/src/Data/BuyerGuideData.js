@@ -1,6 +1,6 @@
 export const BuyerGuideSideBarData = [
     {
-        title:"Investing In USA",
+        title:"Investing In San Francisco",
         links:[
             {
                 link:'',

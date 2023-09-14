@@ -12,7 +12,7 @@ export default function BlogView() {
 
   return (
     <div>
-      <Header title={'Property USA Blog'}/>
+      <Header title={'Property San Francisco Blog'}/>
       <BlogViewContainer  />
     </div>
   )

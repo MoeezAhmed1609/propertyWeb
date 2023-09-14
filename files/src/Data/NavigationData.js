@@ -1,12 +1,12 @@
 const NavigationData = [
   {
-    title: "About USA",
+    title: "About San Francisco",
     innerLinks: [
       {
         title: "Medditrenean Region",
         innerLinks: [
           {
-            innerLinksText: "Turkish Meddetranian Region",
+            innerLinksText: "San Francisco Meddetranian Region",
           },
 
           {
@@ -41,7 +41,7 @@ const NavigationData = [
         title: "Agean Region",
         innerLinks: [
           {
-            innerLinksText: "Turkish Agean Region",
+            innerLinksText: "San Francisco Agean Region",
           },
 
           {
@@ -76,7 +76,7 @@ const NavigationData = [
         title: "Marma Region",
         innerLinks: [
           {
-            innerLinksText: "Turkish Agean Region",
+            innerLinksText: "San Francisco Agean Region",
           },
 
           {
@@ -110,7 +110,7 @@ const NavigationData = [
         title: "Lycian Cost",
         innerLinks: [
           {
-            innerLinksText: "Turkish Agean Region",
+            innerLinksText: "San Francisco Agean Region",
           },
 
           {
@@ -144,7 +144,7 @@ const NavigationData = [
         title: "Turqoise Coast",
         innerLinks: [
           {
-            innerLinksText: "Turkish Agean Region",
+            innerLinksText: "San Francisco Agean Region",
           },
 
           {
@@ -178,7 +178,7 @@ const NavigationData = [
         title: "Black Sea Region",
         innerLinks: [
           {
-            innerLinksText: "Turkish Agean Region",
+            innerLinksText: "San Francisco Agean Region",
           },
 
           {
@@ -209,10 +209,10 @@ const NavigationData = [
         ],
       },
       {
-        title: "Airports in USA",
+        title: "Airports in San Francisco",
         innerLinks: [
           {
-            innerLinksText: "Turkish Agean Region",
+            innerLinksText: "San Francisco Agean Region",
           },
 
           {
@@ -251,14 +251,14 @@ const BuyerGuideData = [
     title: "Buyer Guide",
     innerLinks: [
       {
-        title: "Investing In USA",
+        title: "Investing In San Francisco",
         innerLinks: [
           {
-            innerLinksText: "Why invest in property in USA",
+            innerLinksText: "Why invest in property in San Francisco",
           },
 
           {
-            innerLinksText: "How to setup a buisness in USA",
+            innerLinksText: "How to setup a buisness in San Francisco",
           },
 
           {
@@ -279,11 +279,11 @@ const BuyerGuideData = [
         title: "Purchase process",
         innerLinks: [
           {
-            innerLinksText: "Who can buy property in USA",
+            innerLinksText: "Who can buy property in San Francisco",
           },
 
           {
-            innerLinksText: "How to buy property in USA",
+            innerLinksText: "How to buy property in San Francisco",
           },
 
           {
@@ -291,7 +291,7 @@ const BuyerGuideData = [
           },
 
           {
-            innerLinksText: "Property USA Inspection Tips",
+            innerLinksText: "Property San Francisco Inspection Tips",
           },
 
           {
@@ -302,18 +302,18 @@ const BuyerGuideData = [
             innerLinksText: "Cost of purchasing a property",
           },
           {
-            innerLinksText: "Finance of property in USA",
+            innerLinksText: "Finance of property in San Francisco",
           },
           {
             innerLinksText: "Property maintenancs and management",
           },
 
           {
-            innerLinksText: "How to get a Turkish Title Deed",
+            innerLinksText: "How to get a San Francisco Title Deed",
           },
 
           {
-            innerLinksText: "Should i use a solicitor to buy property in USA",
+            innerLinksText: "Should i use a solicitor to buy property in San Francisco",
           },
 
           {
@@ -321,7 +321,7 @@ const BuyerGuideData = [
           },
 
           {
-            innerLinksText: "Buying property in USA through a compnay",
+            innerLinksText: "Buying property in San Francisco through a compnay",
           },
         ],
       },
@@ -330,7 +330,7 @@ const BuyerGuideData = [
         title: "Residency permit and visas",
         innerLinks: [
           {
-            innerLinksText: "Residency Permit in USA",
+            innerLinksText: "Residency Permit in San Francisco",
           },
 
           {
@@ -342,11 +342,11 @@ const BuyerGuideData = [
         title: "Yours Pets and cars",
         innerLinks: [
           {
-            innerLinksText: "Binging your pets in USA",
+            innerLinksText: "Binging your pets in San Francisco",
           },
 
           {
-            innerLinksText: "Bringing your car in USA",
+            innerLinksText: "Bringing your car in San Francisco",
           },
         ],
       },
@@ -362,7 +362,7 @@ const BuyerGuideData = [
           },
 
           {
-            innerLinksText: "VAT exemption when buying Turkish real estate",
+            innerLinksText: "VAT exemption when buying San Francisco real estate",
           },
 
           {
@@ -374,7 +374,7 @@ const BuyerGuideData = [
         title: "Living in Turkey",
         innerLinks: [
           {
-            innerLinksText: "Retire to low cost of living USA",
+            innerLinksText: "Retire to low cost of living San Francisco",
           },
 
           {
@@ -390,7 +390,7 @@ const BuyerGuideData = [
         title: "Download Complete Our Buyer guide",
         innerLinks: [
           {
-            innerLinksText: "Turkish Agean Region",
+            innerLinksText: "San Francisco Agean Region",
           },
 
           {

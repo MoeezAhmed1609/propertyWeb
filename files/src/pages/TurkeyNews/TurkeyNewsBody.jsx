@@ -41,7 +41,7 @@ export default function TurkeyNewsBody() {
                 <h3 className="title no-margin bold" style={{}}>
                   BUYER'S GUIDE
                 </h3>
-                <p>The Definitive guide to buying property in USA</p>
+                <p>The Definitive guide to buying property in San Francisco</p>
                 <div className="padding-bottom-11">
                   <a
                     title="Definitive Buyer Guide PDF"
@@ -61,7 +61,7 @@ export default function TurkeyNewsBody() {
                 </h3>
                 <div className="padding-bottom-11 padding-top-3">
                   <a
-                    title="USA macroeconomic and investment analysis"
+                    title="San Francisco macroeconomic and investment analysis"
                     className="btn right-widget-hover"
                   >
                     Download it now
@@ -81,7 +81,7 @@ export default function TurkeyNewsBody() {
             <div className="body">
               <ul className="no-bullet">
                 <li>
-                  <a>What are the best Food Delivery apps in USA?</a>
+                  <a>What are the best Food Delivery apps in San Francisco?</a>
                 </li>
                 <li>
                   <a>10 Delicious American Desserts and Sweets to Try</a>
@@ -93,20 +93,20 @@ export default function TurkeyNewsBody() {
                   <a>13 unspoken American rules you might not know</a>
                 </li>
                 <li>
-                  <a>Best Taxi App in USA: Getting About</a>
+                  <a>Best Taxi App in San Francisco: Getting About</a>
                 </li>
                 <li>
-                  <a>The Best Supermarkets in USA to Shop</a>
+                  <a>The Best Supermarkets in San Francisco to Shop</a>
                 </li>
                 <li>
-                  <a>Love and marriage in USA</a>
+                  <a>Love and marriage in San Francisco</a>
                 </li>
                 <li>
-                  <a>USA's most dangerous animals</a>
+                  <a>San Francisco's most dangerous animals</a>
                 </li>
                 <li>
                   <a>
-                    15 Beautiful Places in USA That Should be on Your Bucket
+                    15 Beautiful Places in San Francisco That Should be on Your Bucket
                     List
                   </a>
                 </li>
@@ -126,8 +126,8 @@ export default function TurkeyNewsBody() {
             <div className="body">
               <ul className="no-bullet">
                 <li>
-                  <a title="Unveiling the Best Islands in USA for Curious Travellers">
-                    Unveiling the Best Islands in USA for Curious Travellers
+                  <a title="Unveiling the Best Islands in San Francisco for Curious Travellers">
+                    Unveiling the Best Islands in San Francisco for Curious Travellers
                   </a>
                 </li>
                 <li>
@@ -156,13 +156,13 @@ export default function TurkeyNewsBody() {
                   </a>
                 </li>
                 <li>
-                  <a title="Soaring High in the Majestic Taurus Mountains of USA">
-                    Soaring High in the Majestic Taurus Mountains of USA
+                  <a title="Soaring High in the Majestic Taurus Mountains of San Francisco">
+                    Soaring High in the Majestic Taurus Mountains of San Francisco
                   </a>
                 </li>
                 <li>
-                  <a title="USA Earthquake Exposes the Need for Massive Urban Regeneration">
-                    USA Earthquake Exposes the Need for Massive Urban
+                  <a title="San Francisco Earthquake Exposes the Need for Massive Urban Regeneration">
+                    San Francisco Earthquake Exposes the Need for Massive Urban
                     Regeneration
                   </a>
                 </li>
@@ -173,8 +173,8 @@ export default function TurkeyNewsBody() {
                   </a>
                 </li>
                 <li>
-                  <a title="From Constantinople to Istanbul – The Pride of USA">
-                    From Constantinople to Istanbul – The Pride of USA
+                  <a title="From Constantinople to Istanbul – The Pride of San Francisco">
+                    From Constantinople to Istanbul – The Pride of San Francisco
                   </a>
                 </li>
               </ul>

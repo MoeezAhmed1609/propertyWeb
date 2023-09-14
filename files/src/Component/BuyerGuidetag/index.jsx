@@ -16,11 +16,11 @@ export default function BuyerGuidetag() {
 
   const filterDataInvest = [
     {
-      link: "Why invest in property in USA",
+      link: "Why invest in property in San Francisco",
     },
 
     {
-      link: "How to set up a business in USA",
+      link: "How to set up a business in San Francisco",
     },
   ];
 
@@ -37,9 +37,9 @@ export default function BuyerGuidetag() {
                   <div className="buyer-guide--supertitle">
                     <p
                       className="buyer-guide--title-tab"
-                      title="Investing in USA"
+                      title="Investing in San Francisco"
                     >
-                      Investing in USA
+                      Investing in San Francisco
                     </p>
                     {toggleInvesting ? (
                       <FiChevronDown
@@ -95,13 +95,13 @@ export default function BuyerGuidetag() {
                     }`}
                   >
                     <li className="">
-                      <Link title="Who Can Buy Property in USA">
-                        Who Can Buy Property in USA
+                      <Link title="Who Can Buy Property in San Francisco">
+                        Who Can Buy Property in San Francisco
                       </Link>
                     </li>
                     <li className="">
-                      <Link title="How to buy property in USA">
-                        How to buy property in USA
+                      <Link title="How to buy property in San Francisco">
+                        How to buy property in San Francisco
                       </Link>
                     </li>
                     <li className="">
@@ -110,23 +110,23 @@ export default function BuyerGuidetag() {
                       </Link>
                     </li>
                     <li className="">
-                      <Link title="Property USA Inspection Trips">
-                        Property USA Inspection Trips
+                      <Link title="Property San Francisco Inspection Trips">
+                        Property San Francisco Inspection Trips
                       </Link>
                     </li>
                     <li className="">
-                      <Link title="Virtual Tour with Property USA">
-                        Virtual Tour with Property USA
+                      <Link title="Virtual Tour with Property San Francisco">
+                        Virtual Tour with Property San Francisco
                       </Link>
                     </li>
                     <li className="">
-                      <Link title="Costs of Purchasing a Property in USA">
-                        Costs of Purchasing a Property in USA
+                      <Link title="Costs of Purchasing a Property in San Francisco">
+                        Costs of Purchasing a Property in San Francisco
                       </Link>
                     </li>
                     <li className="">
-                      <Link title="Finance for property in USA">
-                        Finance for property in USA
+                      <Link title="Finance for property in San Francisco">
+                        Finance for property in San Francisco
                       </Link>
                     </li>
                     <li className="">
@@ -135,23 +135,23 @@ export default function BuyerGuidetag() {
                       </Link>
                     </li>
                     <li className="">
-                      <Link title="How to get a USA Title Deed">
-                        How to get a USA Title Deed
+                      <Link title="How to get a San Francisco Title Deed">
+                        How to get a San Francisco Title Deed
                       </Link>
                     </li>
                     <li className="">
-                      <Link title="Should I use a solicitor to buy property in USA">
-                        Should I use a solicitor to buy property in USA
+                      <Link title="Should I use a solicitor to buy property in San Francisco">
+                        Should I use a solicitor to buy property in San Francisco
                       </Link>
                     </li>
                     <li className="">
-                      <Link title="Power of Attorney in USA">
-                        Power of Attorney in USA
+                      <Link title="Power of Attorney in San Francisco">
+                        Power of Attorney in San Francisco
                       </Link>
                     </li>
                     <li className="">
-                      <Link title="Buying property in USA through a company">
-                        Buying property in USA through a company
+                      <Link title="Buying property in San Francisco through a company">
+                        Buying property in San Francisco through a company
                       </Link>
                     </li>
                   </ul>
@@ -184,13 +184,13 @@ export default function BuyerGuidetag() {
                     }`}
                   >
                     <li className="">
-                      <Link title="Residency permits in USA">
-                        Residency permits in USA
+                      <Link title="Residency permits in San Francisco">
+                        Residency permits in San Francisco
                       </Link>
                     </li>
                     <li className="">
-                      <Link title="Work permits in USA">
-                        Work permits in USA
+                      <Link title="Work permits in San Francisco">
+                        Work permits in San Francisco
                       </Link>
                     </li>
                   </ul>
@@ -223,13 +223,13 @@ export default function BuyerGuidetag() {
                     }`}
                   >
                     <li className="">
-                      <Link title="Bringing your pets into USA">
-                        Bringing your pets into USA
+                      <Link title="Bringing your pets into San Francisco">
+                        Bringing your pets into San Francisco
                       </Link>
                     </li>
                     <li className="">
-                      <Link title="Bringing your car into USA">
-                        Bringing your car into USA
+                      <Link title="Bringing your car into San Francisco">
+                        Bringing your car into San Francisco
                       </Link>
                     </li>
                   </ul>
@@ -262,31 +262,31 @@ export default function BuyerGuidetag() {
                     }`}
                   >
                     <li className="">
-                      <Link title="Income Tax On USA Property">
-                        Income Tax On USA Property
+                      <Link title="Income Tax On San Francisco Property">
+                        Income Tax On San Francisco Property
                       </Link>
                     </li>
                     <li className="">
-                      <Link title="Capital Gains Tax On Sale Of USA Property">
-                        Capital Gains Tax On Sale Of USA Property
+                      <Link title="Capital Gains Tax On Sale Of San Francisco Property">
+                        Capital Gains Tax On Sale Of San Francisco Property
                       </Link>
                     </li>
                     <li className="">
-                      <Link title="VAT exemption when buying USA real estate">
-                        VAT exemption when buying USA real estate
+                      <Link title="VAT exemption when buying San Francisco real estate">
+                        VAT exemption when buying San Francisco real estate
                       </Link>
                     </li>
                     <li className="">
-                      <Link title="Real estate inheritance tax in USA">
-                        Real estate inheritance tax in USA
+                      <Link title="Real estate inheritance tax in San Francisco">
+                        Real estate inheritance tax in San Francisco
                       </Link>
                     </li>
                   </ul>
                 </div>
                 <div className="padding-top-2 side-item">
                   <div className="buyer-guide--supertitle">
-                    <p className="buyer-guide--title-tab" title="Living in USA">
-                      Living in USA
+                    <p className="buyer-guide--title-tab" title="Living in San Francisco">
+                      Living in San Francisco
                     </p>
                     {toggleLiving ? (
                       <FiChevronDown
@@ -308,16 +308,16 @@ export default function BuyerGuidetag() {
                     }`}
                   >
                     <li className="">
-                      <Link title="Retire to low cost of living in USA">
-                        Retire to low cost of living in USA
+                      <Link title="Retire to low cost of living in San Francisco">
+                        Retire to low cost of living in San Francisco
                       </Link>
                     </li>
                     <li className="">
-                      <Link title="Healthcare in USA">Healthcare in USA</Link>
+                      <Link title="Healthcare in San Francisco">Healthcare in San Francisco</Link>
                     </li>
                     <li className="">
-                      <Link title="Where to buy property in USA?">
-                        Where to buy property in USA?
+                      <Link title="Where to buy property in San Francisco?">
+                        Where to buy property in San Francisco?
                       </Link>
                     </li>
                   </ul>

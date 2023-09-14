@@ -15,7 +15,7 @@ export default function TurkeyTv() {
         className="pt-videos-listing wrap-dis-85 wrap-tab-11 wrap-mob-11"
       >
         <Typography varient="h2" className="title-lined abhaya">
-          <Typography variant='span' className="small">Straight Talk - Property USA TV</Typography>
+          <Typography variant='span' className="small">Straight Talk - Property San Francisco TV</Typography>
         </Typography>
         <ElasticSlider ItemShop={4}>
 
