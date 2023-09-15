@@ -43,7 +43,7 @@ export default function AutoForm() {
                     src="https://www.propertyturkey.com/images/exit-extent.jpg"
                 />
             </Link>
-            <TypographyComponent varient={'p'}>Smartly priced seafront Homes Istanbul</TypographyComponent>
+            <TypographyComponent varient={'p'}>Smartly priced seafront Homes San Francisco</TypographyComponent>
             <TypographyComponent varient={'p'}>Do not miss this opportunity</TypographyComponent>
             <label className="field">
                 <input

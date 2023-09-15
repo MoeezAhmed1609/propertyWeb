@@ -18,6 +18,7 @@ import Offices1 from "../../assets/AboutUsGuideImages/offices_1.png";
 import Middlemen from "../../assets/AboutUsGuideImages/middleman_1.png";
 import TriangleImage from "../../assets/AboutUsGuideImages/trianglered.png";
 import HomeLogo from "../../assets/home-logo.svg";
+import sanFlag from '../../assets/san-francisco-flag.webp'
 import {
   AiFillFacebook,
   AiFillLinkedin,
@@ -124,7 +125,7 @@ export default function AboutusGuideTag({ title }) {
             </Box>
           </Box>
           <Box className="page-content-container wrap-dis-9 wrap wrap-tab-11 wrap-mob-11 ">
-            <article className="page-content col-dis-9 col-tab-9 col-mob-12 no-padding">
+            <article className="page-content col-dis-12 col-tab-12 col-mob-12 no-padding">
               <Box
                 className="areabody clearfix f-15-h15"
                 itemProp="articleBody"
@@ -138,7 +139,7 @@ export default function AboutusGuideTag({ title }) {
                     draggable="true"
                   >
                     <img
-                      src="https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg"
+                      src={sanFlag}
                       style={{ height: "40vh" }}
                     />
                     {/* <iframe
@@ -399,8 +400,8 @@ export default function AboutusGuideTag({ title }) {
                 </Box>
               </Box>
             </article>
-            <SingleCarousel />
-            <aside className="widgets col-dis-3 col-tab-3 col-mob-12 no-padding widget-blogendpage">
+            {/* <SingleCarousel /> */}
+            {/* <aside className="widgets col-dis-3 col-tab-3 col-mob-12 no-padding widget-blogendpage">
               <Link to="" title="download our online borchour" target="_blank">
                 <img
                   alt="download our online borchour"
@@ -429,7 +430,7 @@ export default function AboutusGuideTag({ title }) {
               </Box>
               <AboutUsGuideLatestPost />
               <AboutUsGuideLatestNews />
-            </aside>
+            </aside> */}
           </Box>
         </Box>
         <Box style={{ display: "none" }} id="logins1">
