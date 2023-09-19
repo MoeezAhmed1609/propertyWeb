@@ -79,7 +79,7 @@ export default function ConnecPt() {
                 />
               </div>
               <div className="col-auto fw-bold text-pt-dark-red text-md">
-                CONNECT WITH PT
+                CONNECT WITH PS
               </div>
             </div>
           </div>

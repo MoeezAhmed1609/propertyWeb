@@ -47,7 +47,7 @@ export default function TurkeyProperty() {
           Since 2001,{" "}
           <span className="font-bold text-gray-500">Property San Francisco</span> has
           helped clients from all over the world buy
-          <span className="font-bold text-gray-500">Turkish properties</span> in
+          <span className="font-bold text-gray-500">San Francisco properties</span> in
           all regions of United States of America. From lifestyle buyers wishing to{" "}
           <span className="font-bold text-gray-500">
             buy a property in San Francisco for sale,

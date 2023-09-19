@@ -13,7 +13,7 @@ import PtBrochure from "../../assets/AboutUsGuideImages/pt-brochure-download.jpg
 import Logo from "../../assets/HeaderImages/logo.png";
 import ShareGoldIcon from "../../assets/AboutUsGuideImages/share-alt-solid.-gold.svg";
 import Path from "../../assets/AboutTurkeyTagImages/Path302.svg";
-import Turkey1 from "../../assets/AboutUsGuideImages/turkey_1.png";
+import Turkey1 from "../../assets/san-ban-1.jpg";
 import Offices1 from "../../assets/AboutUsGuideImages/offices_1.png";
 import Middlemen from "../../assets/AboutUsGuideImages/middleman_1.png";
 import TriangleImage from "../../assets/AboutUsGuideImages/trianglered.png";
