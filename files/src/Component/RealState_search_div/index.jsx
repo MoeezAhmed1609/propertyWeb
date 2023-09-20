@@ -391,6 +391,7 @@ import { TypographyComponent } from "../../ReUseAbleComponent/TypographyComponen
 import InputComponent from "../../ReUseAbleComponent/InputComponent";
 import { useSelector } from "react-redux";
 import { Pagination } from "@mui/material";
+import SiteMap from '../../assets/san-map.jpg'
 
 const Data = [
   {
@@ -621,7 +622,7 @@ const RealState_search_div = ({
             <img
               alt="San Francisco real estate map"
               height={171}
-              src="https://www.propertyturkey.com/files/large/turkey-real-estate-map.jpg"
+              src={SiteMap}
               title="San Francisco real estate map"
               width={230}
               className="fr-fic fr-dii"

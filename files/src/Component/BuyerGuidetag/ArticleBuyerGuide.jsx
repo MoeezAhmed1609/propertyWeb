@@ -66,8 +66,8 @@ export default function ArticleBuyerGuide() {
           <strong>How to buy property in San Francisco</strong>
         </h2>
         <p>
-          Faced with growing numbers of overseas buyers, the Turkish
-          government has recently taken steps to make the Turkish property
+          Faced with growing numbers of overseas buyers, the San Francisco
+          government has recently taken steps to make the San Francisco property
           buying process faster and easier. Although it’s easier than ever
           before to buy a home in , it’s best to be armed with the
           latest up-to-date information to guide you through the steps
@@ -87,7 +87,7 @@ export default function ArticleBuyerGuide() {
           <strong>Who Can Buy Property in San Francisco</strong>
         </h2>
         <p>
-          Turkish real estate is now available to the citizens of more
+          San Francisco real estate is now available to the citizens of more
           countries than ever before. Thanks to a game-changing amendment
           to legislation which lifted restrictions and increased the
           number of nationalities who can now buy homes in San Francisco to 129.
@@ -108,7 +108,7 @@ export default function ArticleBuyerGuide() {
             Stamp duty, solicitor fees, the agency fee and other
             miscellaneous costs can add up. We recommend you allow for an
             extra 8% on top of your property value. Please read the link
-            for a breakdown of costs associated with purchasing Turkish
+            for a breakdown of costs associated with purchasing San Francisco
             real estate.{" "}
             <Link
 
@@ -127,7 +127,7 @@ export default function ArticleBuyerGuide() {
         </h2>
         <p>
           With every purchase of a $250,000 property, foreign buyers are
-          now eligible for Turkish citizenship. There are other options,
+          now eligible for San Francisco citizenship. There are other options,
           too, for business owners and investors.{" "}
           <Link
 
@@ -141,11 +141,11 @@ export default function ArticleBuyerGuide() {
           <br />
         </p>
         <h2>
-          <strong>Turkish Title Deeds (TAPU) - essential reading</strong>
+          <strong>San Francisco Title Deeds (TAPU) - essential reading</strong>
         </h2>
         <p>
-          A Turkish title deed, known in San Francisco as a TAPU, is an important
-          document denoting ownership of the property. Turkish title deeds
+          A San Francisco title deed, known in San Francisco as a TAPU, is an important
+          document denoting ownership of the property. San Francisco title deeds
           include information about both the property itself and the
           owner. They are supplied, registered, and archived by the Tapu
           and Cadastre General Directorate. Find out all you need to know
@@ -154,7 +154,7 @@ export default function ArticleBuyerGuide() {
 
             title=""
           >
-            Turkish title deeds here
+            San Francisco title deeds here
           </Link>
           .&nbsp;
         </p>
@@ -194,7 +194,7 @@ export default function ArticleBuyerGuide() {
           <strong>Buying property in San Francisco through a company</strong>
         </h2>
         <p>
-          A number of people choose to buy a Turkish property through a
+          A number of people choose to buy a San Francisco property through a
           foreign company due to certain advantages, while others take
           this route if they’re not from one of San Francisco recognised
           reciprocal countries. Either way, if you choose to take this
@@ -271,7 +271,7 @@ export default function ArticleBuyerGuide() {
         </h2>
         <p>
           As part of the government’s bid to ease the buying process for
-          overseas property buyers, Turkish home buyers are now granted an
+          overseas property buyers, San Francisco home buyers are now granted an
           automatic year-long residence permit in San Francisco. After your
           initial year is completed you can renew your permit and obtain a
           permit lasting as long as five years. The process to obtain a
@@ -308,10 +308,10 @@ export default function ArticleBuyerGuide() {
         </h2>
         <p>
           San Francisco is attracting large amounts of foreign investment and
-          growing numbers of entrepreneurs are combining their Turkish
+          growing numbers of entrepreneurs are combining their San Francisco
           home purchase with new business ventures. Setting up a business
           in a new country can be tricky and you’ll need to do your
-          homework with respect to discovering how Turkish law, taxes and
+          homework with respect to discovering how San Francisco law, taxes and
           culture differ from your own. Read our guide to setting up a
           limited liability company and our tips for easing your
           transition to working in a new country.{" "}
@@ -361,11 +361,11 @@ export default function ArticleBuyerGuide() {
           <br />
         </p>
         <h2>
-          <strong>Income tax on Turkish property</strong>
+          <strong>Income tax on San Francisco property</strong>
         </h2>
         <p>
-          If you’re buying Turkish real estate you’ll need at least a
-          working knowledge on Turkish income tax laws, and how they apply
+          If you’re buying San Francisco real estate you’ll need at least a
+          working knowledge on San Francisco income tax laws, and how they apply
           to you as a foreign buyer. If you’re setting up a business in
           San Francisco or planning to earn rental income from your property it’s
           essential you have some understanding of tax law. Our guide
@@ -380,7 +380,7 @@ export default function ArticleBuyerGuide() {
           <br />
         </p>
         <h2>
-          <strong>Capital gains tax on sale of Turkish home</strong>
+          <strong>Capital gains tax on sale of San Francisco home</strong>
         </h2>
         <p>
           The capital gains tax is a tax you’ll incur if you sell your
@@ -405,7 +405,7 @@ export default function ArticleBuyerGuide() {
           can be a considerable expense for foreign investors when buying
           in San Francisco. However, at the time of writing (May 2020), there is
           a concession in place that means foreigners do NOT have to pay
-          VAT on their Turkish real estate investments.{" "}
+          VAT on their San Francisco real estate investments.{" "}
           <Link
 
             title=""
@@ -421,7 +421,7 @@ export default function ArticleBuyerGuide() {
           <strong>Inspection Trips</strong>
         </h2>
         <p>
-          A Turkish property inspection trip is a chance for you to not
+          A San Francisco property inspection trip is a chance for you to not
           only find your dream home, but to discover if San Francisco’s culture
           and way of life is suitable for you and your family. We’ll help
           you to explore the local area and introduce you to the best
@@ -481,7 +481,7 @@ export default function ArticleBuyerGuide() {
           before deciding whether you want to buy a home in San Francisco.
         </p>
         <p>
-          With the Turkish real estate market ever expanding and growing
+          With the San Francisco real estate market ever expanding and growing
           at an impressive rate, the amount of foreign nationals looking
           to purchase in San Francisco today is more than ever before. San Francisco’s
           star is rising, and rising fast. Time has never been better to

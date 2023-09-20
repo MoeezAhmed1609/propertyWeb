@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.c49efc7a.css",
-    "main.js": "/static/js/main.84987a3f.js",
+    "main.js": "/static/js/main.11a8ff52.js",
     "static/js/765.50f82f6f.chunk.js": "/static/js/765.50f82f6f.chunk.js",
     "static/media/Feature.jpg": "/static/media/Feature.309af511116035f843a4.jpg",
     "static/media/offices_1.png": "/static/media/offices_1.e9815002854fcfc4171f.png",
     "static/media/istanbul-national-park-turkey.jpg": "/static/media/istanbul-national-park-turkey.928bed795c32ee6ed48b.jpg",
     "static/media/19-facts-about-turkey.png": "/static/media/19-facts-about-turkey.41fa9bb9d7ed348a73c0.png",
-    "static/media/prop-phone.png": "/static/media/prop-phone.488f851d3acc830baf82.png",
+    "static/media/site-mobile.png": "/static/media/site-mobile.a33b12ef3e1e135ad9e9.png",
     "static/media/hippodrome-in-istanbul.jpg": "/static/media/hippodrome-in-istanbul.f163bb5fe91770b7d599.jpg",
     "static/media/littlebosphorus_blog_cover.jpg": "/static/media/littlebosphorus_blog_cover.d2c307021723cbaaa39f.jpg",
     "static/media/san-ban-2.jpg": "/static/media/san-ban-2.90afee137389f9bbe38c.jpg",
     "static/media/galata-tower-istanbul_1678985700.jpg": "/static/media/galata-tower-istanbul_1678985700.6d1d2f48746952eccf68.jpg",
+    "static/media/san-map.jpg": "/static/media/san-map.2621788c3fcd494405ec.jpg",
     "static/media/middleman_1.png": "/static/media/middleman_1.657e893dea4747c20c77.png",
     "static/media/cameron-contact-header.png": "/static/media/cameron-contact-header.24f02eebb2dbecf555c7.png",
     "static/media/san-ban-1.jpg": "/static/media/san-ban-1.a49bfe2c65034b024085.jpg",
@@ -70,11 +71,11 @@
     "static/media/location-gold-filled.svg": "/static/media/location-gold-filled.fbdef2176de9cf9eecb243c805972f8e.svg",
     "static/media/path387.svg": "/static/media/path387.1d8c978e21a6a6e69da218b2db87e89c.svg",
     "main.c49efc7a.css.map": "/static/css/main.c49efc7a.css.map",
-    "main.84987a3f.js.map": "/static/js/main.84987a3f.js.map",
+    "main.11a8ff52.js.map": "/static/js/main.11a8ff52.js.map",
     "765.50f82f6f.chunk.js.map": "/static/js/765.50f82f6f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c49efc7a.css",
-    "static/js/main.84987a3f.js"
+    "static/js/main.11a8ff52.js"
   ]
 }
