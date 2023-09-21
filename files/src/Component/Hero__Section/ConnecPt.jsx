@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { auth, db } from "../../Config";
 import { useSelector } from "react-redux";
 import { addDoc, collection } from "firebase/firestore";
@@ -10,6 +10,7 @@ import Swal from "sweetalert2";
 import { toast } from "react-toastify";
 import StyledButton from "../../ReUseAbleComponent/StyledButton";
 import { useNavigate } from "react-router-dom";
+import { FlagContext } from "../../Context/FlagContext";
 
 export default function ConnecPt() {
   const navigate = useNavigate()
@@ -20,6 +21,8 @@ export default function ConnecPt() {
   const [Email, setEmail] = useState("");
   const [phoneswitch, setPhoneswitch] = useState(false);
   const MySwal = withReactContent(Swal);
+
+  const {Flag} = useContext(FlagContext)
 
   const state = useSelector((state) => state.AuthReducer.login);
 
@@ -97,7 +100,9 @@ export default function ConnecPt() {
             </div>
           </div>
           <div className="col-lg col-12 mb-4">
-            <div className="search-filter-input search-tab-input w-100 flex items-center">
+          
+          {
+            Flag ? <div className="search-filter-input search-tab-input w-100 flex items-center">
               <PhoneComponent
                 containerClassName="intl-tel-input"
                 inputClassName="form-control"
@@ -107,7 +112,15 @@ export default function ConnecPt() {
                 value={Phone}
                 setValue={setPhone}
               />
+            </div>:<div className="search-filter-input rounded-md search-tab-input w-100 flex items-center">
+              <input 
+                type="text"
+                placeholder="(201) 555-0123"
+                className="w-full h-full bg-white  rounded-md"
+              />
             </div>
+          }
+           
           </div>
           <div className="col-lg col-12 mb-4">
             <div className="search-filter-input search-tab-input w-100 flex items-center">

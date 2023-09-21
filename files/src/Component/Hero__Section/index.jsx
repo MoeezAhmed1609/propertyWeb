@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Index.css";
 import { Box, Tabs, Tab } from "@mui/material";
 import ConnecPt from "./ConnecPt";
@@ -32,6 +32,7 @@ import { PropertyFilter } from "../../Redux/Action/PropertyFilter";
 import ColumnBox from "../../ReUseAbleComponent/ColumnBox";
 import StyledButton from "../../ReUseAbleComponent/StyledButton";
 import CloseIcon from '@mui/icons-material/Close';
+import { FlagContext } from "../../Context/FlagContext";
 
 export default function HeroSection() {
   const [locationtoggle, setLocationToggle] = React.useState(true);
@@ -58,6 +59,9 @@ export default function HeroSection() {
 
   const [HandleZipInput, setHandleZipInput] = useState();
   const [ZipCodeCountry, setZipCodeCountry] = useState();
+
+
+  const { FlagTrue } = useContext(FlagContext)
 
   // States (Moeez)
   const [city, setCity] = useState("");
@@ -91,6 +95,7 @@ export default function HeroSection() {
     setHandleZip(true);
     setPriceToggle(true);
     setBedRom(true);
+    FlagTrue()
   };
   const TypeToggle = () => {
     setTypetoggle(!Typetogglebtn);
@@ -98,6 +103,7 @@ export default function HeroSection() {
     setLocationToggle(true);
     setPriceToggle(true);
     setBedRom(true);
+    FlagTrue()
   };
 
   const PricesToggle = () => {
@@ -105,6 +111,7 @@ export default function HeroSection() {
     setTypetoggle(true);
     setLocationToggle(true);
     setBedRom(true);
+    FlagTrue()
   };
 
   const BedToggle = () => {
@@ -113,6 +120,7 @@ export default function HeroSection() {
     setPriceToggle(true);
     setTypetoggle(true);
     setLocationToggle(true);
+    
   };
 
   const HandleZipCode = () => {
