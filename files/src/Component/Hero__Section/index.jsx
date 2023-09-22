@@ -61,7 +61,7 @@ export default function HeroSection() {
   const [ZipCodeCountry, setZipCodeCountry] = useState();
 
 
-  const { FlagTrue } = useContext(FlagContext)
+  const { FlagTrue, FlagFalse } = useContext(FlagContext)
 
   // States (Moeez)
   const [city, setCity] = useState("");
@@ -95,7 +95,7 @@ export default function HeroSection() {
     setHandleZip(true);
     setPriceToggle(true);
     setBedRom(true);
-    FlagTrue()
+    FlagFalse()
   };
   const TypeToggle = () => {
     setTypetoggle(!Typetogglebtn);
@@ -103,15 +103,15 @@ export default function HeroSection() {
     setLocationToggle(true);
     setPriceToggle(true);
     setBedRom(true);
-    FlagTrue()
+    FlagFalse()
   };
 
   const PricesToggle = () => {
-    setPriceToggle(!PriceToggle);
+    setPriceToggle(false);
     setTypetoggle(true);
     setLocationToggle(true);
     setBedRom(true);
-    FlagTrue()
+    FlagFalse()
   };
 
   const BedToggle = () => {
@@ -120,7 +120,7 @@ export default function HeroSection() {
     setPriceToggle(true);
     setTypetoggle(true);
     setLocationToggle(true);
-    
+
   };
 
   const HandleZipCode = () => {
@@ -325,7 +325,7 @@ export default function HeroSection() {
                   <Box
                     className="col-lg-2 col-md-4 col-12 mb-4"
                     onClick={LocationToggle}
-                    onMouseLeave={() => setLocationToggle(true)}
+                    onMouseLeave={() => { setLocationToggle(true); FlagTrue() }}
                   >
                     <Box
                       className={`${locationtoggle ? "hasValue" : "open"
@@ -427,7 +427,7 @@ export default function HeroSection() {
                       className={`search-filter-input search-tab-input originValue ${Typetogglebtn ? "" : "open"
                         }`}
                       linktype="type"
-                      onMouseLeave={() => setTypetoggle(true)}
+                      onMouseLeave={() => { setTypetoggle(true); FlagTrue() }}
                     >
                       <div className="filter-type-dropdown-wrap">
                         <div className="filter-type-dropdown">
@@ -517,7 +517,7 @@ export default function HeroSection() {
                       className={`${PriceToggle ? "" : "open"
                         } h-[45px] py-3 originValue search-filter-input search-tab-input d-lg-flex price-toggle`}
                       id="price-toggle"
-                      onMouseLeave={() => setPriceToggle(true)}
+                      onMouseLeave={() => { setPriceToggle(true); FlagTrue() }}
                     >
                       <span className="search-filter-input-title relative search-tab-input-title fs-5 fw-bold px-0">
                         <p
